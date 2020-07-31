@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.camera.ui.ColorActivateTextView android:textSize="@dimen/mode_select_text_size" android:textColor="#b2ffffff" android:ellipsize="end" android:id="@id/text_item_title" android:focusable="false" android:maxEms="6" android:singleLine="true" android:includeFontPadding="false" android:paddingStart="@dimen/aiwatermark_menu_select_text_padding" android:paddingEnd="@dimen/aiwatermark_menu_select_text_padding" style="@style/SingeTextItemTextStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

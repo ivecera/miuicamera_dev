@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/mimoji_edit_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="top" android:id="@id/rl_top_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/mimoji_edit_back_top" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/mimoji_edit_back_left" android:layout_marginEnd="@dimen/mimoji_edit_back_left">
+        <ImageView android:gravity="center" android:id="@id/btn_back" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mimoji_back" />
+        <TextView android:textSize="@dimen/mimoji_edit_back_text_size" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emoticon" android:layout_centerInParent="true" />
+        <ImageView android:gravity="center" android:id="@id/btn_select_all" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_btn_mimoji_emoticon_all_selected" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_bottom_action" android:layout_below="@id/rl_top_bar">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv_emoticon" android:paddingLeft="@dimen/mimoji_emoticon_offset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_bottom_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/mimoji_edit_back_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_share_emoticon" android:background="@drawable/bg_btn_mimoji_edit_black" android:layout_width="300.0dip" android:layout_height="46.5dip" android:text="@string/share" />
+        <TextView android:textSize="@dimen/mimoji_edit_back_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_save_emoticon" android:background="@drawable/bg_btn_mimoji_edit_blue" android:layout_width="300.0dip" android:layout_height="46.5dip" android:layout_marginTop="14.5dip" android:text="@string/mimoji_save" />
+    </LinearLayout>
+</RelativeLayout>

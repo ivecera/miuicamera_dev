@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:focusable="false" android:layout_width="@dimen/wm_item_width" android:layout_height="@dimen/wm_item_height">
+        <ImageView android:id="@id/watermark_item_image" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerInParent="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/watermark_item_selected_indicator" android:focusable="false" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/filter_item_selected_bg" android:layout_centerInParent="true" android:contentDescription="@null" />
+    </RelativeLayout>
+</FrameLayout>

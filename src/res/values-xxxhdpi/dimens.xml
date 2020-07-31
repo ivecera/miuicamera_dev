@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="face_rect_width">2.0dip</dimen>
+    <dimen name="preference_category_text_size">7.5sp</dimen>
+    <dimen name="preview_edge_touch_slop">25.0dip</dimen>
+    <dimen name="pro_video_zoom_view_margin_left">350.0dip</dimen>
+    <dimen name="pro_video_zoom_view_margin_top">220.0dip</dimen>
+    <dimen name="pro_view_zoom_view_height">232.32999dip</dimen>
+    <dimen name="pro_view_zoom_view_width">52.329987dip</dimen>
+    <dimen name="top_toast_tip_height">17.5dip</dimen>
+    <dimen name="zoom_popup_line_height_nornal">3.0dip</dimen>
+    <dimen name="zoom_popup_line_height_select">15.0dip</dimen>
+    <dimen name="zoom_popup_line_height_target">7.5dip</dimen>
+    <dimen name="zoom_popup_line_text_margin">7.5dip</dimen>
+    <dimen name="zoom_popup_line_width">1.0dip</dimen>
+    <dimen name="zoom_popup_padding_left">13.329987dip</dimen>
+    <dimen name="zoom_popup_text_size">8.5dip</dimen>
+    <dimen name="zoom_ratio_dot_text_width">31.269989dip</dimen>
+    <dimen name="dialog_userdefine_watermark_tip_top">7.5dip</dimen>
+</resources>

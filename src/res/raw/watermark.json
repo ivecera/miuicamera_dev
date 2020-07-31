@@ -1,0 +1,10 @@
+{
+"WatermarkerItem": [
+{"key":"SUNRISE","type":3,"id":1,"location":1},
+{"key":"SUNSET","type":3,"id":1,"location":1},
+{"key":"SPRING_FESTIVAL","type":2,"id":1,"location":1},
+{"key":"AGRA_FORT","type":1,"id":1,"location":1},
+{"key":"BEI_JING","type":4,"id":1,"location":1}
+]
+}
+

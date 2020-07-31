@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/mimoji_edit_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/rv_top_navigation_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/mimoji_edit_back_top" android:layout_marginStart="22.899994dip" android:layout_marginEnd="22.899994dip" android:layout_alignParentStart="true">
+        <ImageView android:gravity="center" android:id="@id/iv_gif_share" android:background="@drawable/ic_gif_share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>
