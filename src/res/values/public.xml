@@ -2539,6 +2539,7 @@
     <public type="raw" name="goofy_face" id="0x7f0e0003" />
     <public type="raw" name="watermark" id="0x7f0e0004" />
     <public type="raw" name="xiaomi_static_config" id="0x7f0e0005" />
+    <public type="raw" name="feature_pyxis" id="0x7f0e0006" />
     <public type="string" name="access_sd_fail" id="0x7f0f0000" />
     <public type="string" name="accessibility_ai_scene_off" id="0x7f0f0001" />
     <public type="string" name="accessibility_ai_scene_on" id="0x7f0f0002" />
