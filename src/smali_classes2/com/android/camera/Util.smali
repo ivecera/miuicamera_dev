@@ -9687,7 +9687,7 @@
 .method public static getLanTineGBTypeface(Landroid/content/Context;)Landroid/graphics/Typeface;
     .locals 1
 
-    const-string v0, "vendor/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf"
+    const-string v0, "vendor/etc/camera/fonts/MI+LanTing_GB+Outside+YS_V2.3_20160322.ttf"
 
     invoke-static {p0, v0}, Lcom/android/camera/Util;->getTypefaceFromFile(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Typeface;
 
@@ -9699,7 +9699,7 @@
 .method public static getMFYueYuanTypeface(Landroid/content/Context;)Landroid/graphics/Typeface;
     .locals 1
 
-    const-string v0, "vendor/camera/fonts/MFYueYuan-Regular.ttf"
+    const-string v0, "vendor/etc/camera/fonts/MFYueYuan-Regular.ttf"
 
     invoke-static {p0, v0}, Lcom/android/camera/Util;->getTypefaceFromFile(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Typeface;
 
