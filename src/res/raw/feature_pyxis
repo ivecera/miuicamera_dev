@@ -1,7 +1,9 @@
 {
+  "c_0x01_p_g_a_v": 301,
+  "c_0x02_p_c_r_v": 0.935279806,
   "c_0x18": true,
   "c_0x34": false,
-  "c_0x41": false,
+  "c_0x41": true,
   "s_c_w_m": true,
   "s_o_a_w": true
 }
