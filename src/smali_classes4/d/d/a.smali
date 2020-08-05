@@ -1310,11 +1310,13 @@
 
     sput-boolean v4, Ld/d/a;->kh:Z
 
-    invoke-static {v0, v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v4, "ro.boot.hwc"
+
+    invoke-static {v4, v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    const-string v5, "_global"
+    const-string v5, "GLOBAL"
 
     invoke-virtual {v4, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 

@@ -14405,7 +14405,7 @@
 .method public static isGlobalVersion()Z
     .locals 2
 
-    const-string v0, "ro.product.mod_device"
+    const-string v0, "ro.boot.hwc"
 
     const-string v1, ""
 
@@ -14413,7 +14413,7 @@
 
     move-result-object v0
 
-    const-string v1, "_global"
+    const-string v1, "GLOBAL"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -14553,7 +14553,7 @@
 .method public static isInternationalBuild()Z
     .locals 2
 
-    const-string v0, "ro.product.mod_device"
+    const-string v0, "ro.boot.hwc"
 
     const-string v1, ""
 
@@ -14561,7 +14561,7 @@
 
     move-result-object v0
 
-    const-string v1, "_global"
+    const-string v1, "GLOBAL"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
