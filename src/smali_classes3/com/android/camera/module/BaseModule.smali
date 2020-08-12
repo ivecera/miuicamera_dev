@@ -2144,7 +2144,7 @@
     :goto_2
     iput-boolean v0, p0, Lcom/android/camera/module/BaseModule;->mFocusOrAELockSupported:Z
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->ld()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_19039_0x0009()Z
 
     move-result p1
 

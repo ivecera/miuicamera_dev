@@ -597,8 +597,8 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
         boolean z = true;
         this.mAELockOnlySupported = dataItemFeature.c_e_f_a_l() && !this.mFocusAreaSupported && this.mMeteringAreaSupported && this.mAeLockSupported;
         this.mFocusOrAELockSupported = this.mFocusAreaSupported || this.mAELockOnlySupported;
-        boolean ld = dataItemFeature.ld();
-        if (!CameraSettings.isAEAFLockSupport() || (!ld && !isBackCamera() && !this.mAELockOnlySupported)) {
+        boolean c_19039_0x0009 = dataItemFeature.c_19039_0x0009();
+        if (!CameraSettings.isAEAFLockSupport() || (!c_19039_0x0009 && !isBackCamera() && !this.mAELockOnlySupported)) {
             z = false;
         }
         this.m3ALockSupported = z;

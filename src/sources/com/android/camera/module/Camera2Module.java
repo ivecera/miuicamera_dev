@@ -1032,7 +1032,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             if (!ModuleManager.isSuperNightScene() && !this.mShowSuperNightHint && !((BaseModule) this).mMutexModePicker.isHdr() && !this.mIsLLSNeeded && !((BaseModule) this).mCamera2Device.getCameraConfigs().isSuperResolutionEnabled()) {
                 return;
             }
-            if ((!ModuleManager.isSuperNightScene() && !this.mShowSuperNightHint) || DataRepository.dataItemFeature().lf()) {
+            if ((!ModuleManager.isSuperNightScene() && !this.mShowSuperNightHint) || DataRepository.dataItemFeature().c_19039_0x0021()) {
                 if (((BaseModule) this).mMutexModePicker.isHdr()) {
                     boolean z2 = true;
                     if (!b.jv || ((BaseModule) this).mCamera2Device.getCapabilities().getFacing() != 1 || ((BaseModule) this).mCamera2Device.isMacroMode() || ((BaseModule) this).mCamera2Device.getCameraConfigs().isRearBokehEnabled()) {
@@ -1920,7 +1920,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private boolean isInQCFAMode() {
-        return (getModuleIndex() == 163 || getModuleIndex() == 165) && ((BaseModule) this).mCameraCapabilities.isSupportedQcfa() && isFrontCamera() && !DataRepository.dataItemFeature().lc();
+        return (getModuleIndex() == 163 || getModuleIndex() == 165) && ((BaseModule) this).mCameraCapabilities.isSupportedQcfa() && isFrontCamera() && !DataRepository.dataItemFeature().f_a_u_u();
     }
 
     private boolean isLaunchedByMainIntent() {
