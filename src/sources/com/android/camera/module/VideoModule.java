@@ -2825,7 +2825,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
 
     @Override // com.android.camera.module.BaseModule
     public void updateSATZooming(boolean z) {
-        if (DataRepository.dataItemFeature().Qc() && HybridZoomingSystem.IS_3_OR_MORE_SAT && ((BaseModule) this).mCamera2Device != null && DataRepository.dataItemFeature().sf() && isInVideoSAT()) {
+        if (DataRepository.dataItemFeature().c_19039_0x0006() && HybridZoomingSystem.IS_3_OR_MORE_SAT && ((BaseModule) this).mCamera2Device != null && DataRepository.dataItemFeature().sf() && isInVideoSAT()) {
             ((BaseModule) this).mCamera2Device.setSatIsZooming(z);
             resumePreview();
         }

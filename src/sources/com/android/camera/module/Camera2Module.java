@@ -6871,7 +6871,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     @Override // com.android.camera.module.BaseModule
     public void updateSATZooming(boolean z) {
         Camera2Proxy camera2Proxy;
-        if (DataRepository.dataItemFeature().Qc() && HybridZoomingSystem.IS_3_OR_MORE_SAT && (camera2Proxy = ((BaseModule) this).mCamera2Device) != null) {
+        if (DataRepository.dataItemFeature().c_19039_0x0006() && HybridZoomingSystem.IS_3_OR_MORE_SAT && (camera2Proxy = ((BaseModule) this).mCamera2Device) != null) {
             camera2Proxy.setSatIsZooming(z);
             resumePreviewInWorkThread();
         }
