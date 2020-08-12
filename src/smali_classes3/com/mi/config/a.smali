@@ -691,7 +691,7 @@
     return-object p0
 .end method
 
-.method public Bc()Z
+.method public c_19039_0x0005_EQ_1()Z
     .locals 2
 
     const-string v0, "c_19039_0x0005"

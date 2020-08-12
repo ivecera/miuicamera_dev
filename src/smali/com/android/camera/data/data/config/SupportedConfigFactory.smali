@@ -1866,7 +1866,7 @@
 
     if-eqz v0, :cond_15
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Bc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_19039_0x0005_EQ_1()Z
 
     move-result v0
 
@@ -2047,7 +2047,7 @@
 
     if-eqz v0, :cond_1d
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Bc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_19039_0x0005_EQ_1()Z
 
     move-result v0
 
@@ -2374,7 +2374,7 @@
 
     if-eqz v0, :cond_31
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Bc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_19039_0x0005_EQ_1()Z
 
     move-result v0
 

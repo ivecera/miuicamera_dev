@@ -460,7 +460,7 @@ public class SupportedConfigFactory {
                     if (z && dataItemFeature.xd()) {
                         arrayList.add(createConfigItem(216, 17));
                     }
-                    if (i == 162 && dataItemRunning.supportMacroMode() && dataItemFeature.Bc()) {
+                    if (i == 162 && dataItemRunning.supportMacroMode() && dataItemFeature.c_19039_0x0005_EQ_1()) {
                         arrayList.add(createConfigItem(255, 17));
                     }
                     if (z) {
@@ -515,7 +515,7 @@ public class SupportedConfigFactory {
                     if (dataItemFeature.supportColorEnhance() && capabilitiesByBogusCameraId.isSupportedColorEnhance() && i2 == 0) {
                         arrayList.add(createConfigItem(227));
                     }
-                    if (dataItemRunning.supportMacroMode() && dataItemFeature.Bc()) {
+                    if (dataItemRunning.supportMacroMode() && dataItemFeature.c_19039_0x0005_EQ_1()) {
                         arrayList.add(createConfigItem(255));
                     }
                     if (dataItemRunning.supportTopShineEntry()) {
@@ -548,7 +548,7 @@ public class SupportedConfigFactory {
                     if (dataItemFeature.supportColorEnhance() && capabilitiesByBogusCameraId.isSupportedColorEnhance() && i2 == 0) {
                         arrayList.add(createConfigItem(227));
                     }
-                    if (dataItemRunning.supportMacroMode() && dataItemFeature.Bc()) {
+                    if (dataItemRunning.supportMacroMode() && dataItemFeature.c_19039_0x0005_EQ_1()) {
                         arrayList.add(createConfigItem(255));
                     }
                     if (z && dataItemFeature.vd() && !dataItemFeature.xc()) {
