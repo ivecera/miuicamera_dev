@@ -61,7 +61,7 @@ public class ComponentConfigAi extends ComponentData {
                     if (DataRepository.dataItemFeature().Wc()) {
                         arrayList.add(new ComponentDataItem((int) R.drawable.ic_new_ai_scene_off, (int) R.drawable.ic_new_ai_scene_on, (int) R.string.accessibility_ai_scene_on, "on"));
                     }
-                } else if (DataRepository.dataItemFeature().Fe()) {
+                } else if (DataRepository.dataItemFeature().s_f_a()) {
                     arrayList.add(new ComponentDataItem((int) R.drawable.ic_new_ai_scene_off, (int) R.drawable.ic_new_ai_scene_on, (int) R.string.accessibility_ai_scene_on, "on"));
                 }
             }
@@ -70,7 +70,7 @@ public class ComponentConfigAi extends ComponentData {
                 if (DataRepository.dataItemFeature().Xe()) {
                     arrayList.add(new ComponentDataItem((int) R.drawable.ic_new_ai_scene_off, (int) R.drawable.ic_new_ai_scene_on, (int) R.string.accessibility_ai_scene_on, "on"));
                 }
-            } else if (DataRepository.dataItemFeature().Fe()) {
+            } else if (DataRepository.dataItemFeature().s_f_a()) {
                 arrayList.add(new ComponentDataItem((int) R.drawable.ic_new_ai_scene_off, (int) R.drawable.ic_new_ai_scene_on, (int) R.string.accessibility_ai_scene_on, "on"));
             }
         }

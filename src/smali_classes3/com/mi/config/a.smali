@@ -977,7 +977,7 @@
     return p0
 .end method
 
-.method public Fe()Z
+.method public s_f_a()Z
     .locals 2
 
     const-string v0, "s_f_a"
