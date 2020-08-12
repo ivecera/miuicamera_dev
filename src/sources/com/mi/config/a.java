@@ -67,10 +67,6 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_16001_0x0001, false);
     }
 
-    private boolean Sm() {
-        return getBoolean(c.c_s_a_u_q, false);
-    }
-
     private void c(String str, boolean z) throws JSONException {
         JSONObject jSONObject = new JSONObject(str);
         Iterator<String> keys = jSONObject.keys();
@@ -104,6 +100,10 @@ public class a extends DataItemBase implements c {
 
     private int c_28041_0x0004_or_0() {
         return getInt(c.c_28041_0x0004, 0);
+    }
+
+    private boolean c_s_a_u_q() {
+        return getBoolean(c.c_s_a_u_q, false);
     }
 
     /* JADX WARNING: Code restructure failed: missing block: B:15:0x0073, code lost:
@@ -162,7 +162,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean Ae() {
-        return Build.VERSION.SDK_INT > 28 ? Sm() : getBoolean(c.s_a_u, false);
+        return Build.VERSION.SDK_INT > 28 ? c_s_a_u_q() : getBoolean(c.s_a_u, false);
     }
 
     public String Bb() {

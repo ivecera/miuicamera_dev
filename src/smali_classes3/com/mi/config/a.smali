@@ -214,7 +214,7 @@
     return v1
 .end method
 
-.method private Sm()Z
+.method private c_s_a_u_q()Z
     .locals 2
 
     const-string v0, "c_s_a_u_q"
@@ -659,7 +659,7 @@
 
     if-le v0, v1, :cond_0
 
-    invoke-direct {p0}, Lcom/mi/config/a;->Sm()Z
+    invoke-direct {p0}, Lcom/mi/config/a;->c_s_a_u_q()Z
 
     move-result p0
 
