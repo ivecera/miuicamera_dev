@@ -604,7 +604,7 @@ public class FragmentBeauty extends BaseFragment implements ModeProtocol.HandleB
 
     private void showHideEyeLighting(boolean z) {
         setAdjustSeekBarVisible(false, false);
-        if (DataRepository.dataItemFeature().Ce() && CameraSettings.isSupportBeautyMakeup()) {
+        if (DataRepository.dataItemFeature().s_b_m() && CameraSettings.isSupportBeautyMakeup()) {
             if (this.mEyeLightFragment == null) {
                 this.mEyeLightFragment = new BeautyEyeLightFragment();
             }

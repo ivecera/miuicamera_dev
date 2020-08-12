@@ -807,7 +807,7 @@
     return p0
 .end method
 
-.method public Ce()Z
+.method public s_b_m()Z
     .locals 2
 
     const-string v0, "s_b_m"

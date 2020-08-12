@@ -161,10 +161,6 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_26813_0x0001, false) && !SystemProperties.getBoolean("close.append.yuv", false);
     }
 
-    public boolean Ce() {
-        return getBoolean(c.s_b_m, false);
-    }
-
     public float Db() {
         return (float) getDoubleFromValues(c.c_0x02_p_c_r_v, 0.8766000270843506d);
     }
@@ -993,6 +989,10 @@ public class a extends DataItemBase implements c {
 
     public String s(boolean z) {
         return z ? getString(c.c_0x29, "4.5") : getString(c.c_0x30, "4");
+    }
+
+    public boolean s_b_m() {
+        return getBoolean(c.s_b_m, false);
     }
 
     public boolean s_m_c_t_f() {

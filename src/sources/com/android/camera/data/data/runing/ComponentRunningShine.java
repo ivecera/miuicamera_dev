@@ -347,7 +347,7 @@ public class ComponentRunningShine extends ComponentData {
             return true;
         }
         if (i != 169 || !this.mSupportSmoothLevel) {
-            return i == 180 && this.mSupportVideoFilter;
+            return (i != 180 || !this.mSupportVideoFilter) ? false : true;
         }
         return true;
     }
@@ -507,7 +507,7 @@ public class ComponentRunningShine extends ComponentData {
                         if (!DataRepository.dataItemFeature().nc()) {
                             this.mSupportBeautyModel = true;
                             ((ComponentData) this).mItems.add(generateModelItem());
-                            if (DataRepository.dataItemFeature().Ce() && cameraCapabilities.isSupportBeautyMakeup()) {
+                            if (DataRepository.dataItemFeature().s_b_m() && cameraCapabilities.isSupportBeautyMakeup()) {
                                 this.mSupportBeautyMakeUp = true;
                                 ((ComponentData) this).mItems.add(generateMakeupItem());
                             }

@@ -25,7 +25,7 @@ public class FrontFragmentBusiness extends AbBeautyFragmentBusiness {
             this.mFragments.add(new BeautyLevelFragment());
             this.mFragments.add(new MakeupParamsFragment());
         }
-        if (DataRepository.dataItemFeature().Ce() && CameraSettings.isSupportBeautyMakeup()) {
+        if (DataRepository.dataItemFeature().s_b_m() && CameraSettings.isSupportBeautyMakeup()) {
             this.mFragments.add(new MakeupBeautyFragment());
         }
         return this.mFragments;

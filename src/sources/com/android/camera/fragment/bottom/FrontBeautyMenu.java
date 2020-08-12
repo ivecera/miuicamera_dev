@@ -111,7 +111,7 @@ public class FrontBeautyMenu extends AbBottomMenu implements View.OnClickListene
         menuItem2.number = 1;
         this.mFrontBeautyMenuTabList.put(1, menuItem);
         this.mFrontBeautyMenuTabList.put(2, menuItem2);
-        if (DataRepository.dataItemFeature().Ce() && CameraSettings.isSupportBeautyMakeup()) {
+        if (DataRepository.dataItemFeature().s_b_m() && CameraSettings.isSupportBeautyMakeup()) {
             MenuItem menuItem3 = new MenuItem();
             menuItem3.type = 3;
             menuItem3.text = string3;
