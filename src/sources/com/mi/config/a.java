@@ -296,6 +296,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x31, false);
     }
 
+    public boolean c_0x33_OR_T() {
+        return getBoolean(c.c_0x33, true);
+    }
+
     public boolean c_0x34_OR_T() {
         return getBoolean(c.c_0x34, true);
     }
@@ -318,6 +322,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x42_m() {
         return getBoolean(c.c_0x42_m, false);
+    }
+
+    public boolean c_0x43_AND_param(boolean z) {
+        return z && getBoolean(c.c_0x43, false);
     }
 
     public boolean c_0x44() {
@@ -670,6 +678,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_36211_0x0001, false);
     }
 
+    public boolean c_36658_0x0001() {
+        return getBoolean(c.c_36658_0x0001, false);
+    }
+
     public boolean c_36658_0x0002() {
         return getBoolean(c.c_36658_0x0002, false);
     }
@@ -723,6 +735,10 @@ public class a extends DataItemBase implements c {
 
     public boolean e_m_a_u_q_s() {
         return getBoolean(c.e_m_a_u_q_s, false);
+    }
+
+    public boolean e_p_p_l_t() {
+        return getBoolean(c.e_p_p_l_t, false);
     }
 
     public boolean enSlowMotion_120_only() {
@@ -824,7 +840,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean ke() {
-        return (tc() && rd()) || c_36658_0x0002();
+        return (tc() && c_36658_0x0001()) || c_36658_0x0002();
     }
 
     public boolean me() {
@@ -846,7 +862,7 @@ public class a extends DataItemBase implements c {
     public boolean of() {
         int Hb = Hb();
         if (Hb == 1 || Hb == 2 || Hb == 3) {
-            return re();
+            return c_0x33_OR_T();
         }
         return false;
     }
@@ -860,31 +876,11 @@ public class a extends DataItemBase implements c {
         return getValues().containsKey(str);
     }
 
-    public boolean r(boolean z) {
-        return z && getBoolean(c.c_0x43, false);
-    }
-
-    public boolean rb() {
-        return getBoolean(c.e_p_p_l_t, false);
-    }
-
     public boolean rc() {
         if (getBoolean(c.c_13254_0x02, false)) {
             return tc() || xc();
         }
         return false;
-    }
-
-    public boolean rd() {
-        return getBoolean(c.c_36658_0x0001, false);
-    }
-
-    public boolean re() {
-        return getBoolean(c.c_0x33, true);
-    }
-
-    public boolean rf() {
-        return getBoolean(c.s_v_b, false);
     }
 
     public boolean ro_boot_hwc_EQ_cn() {
@@ -988,6 +984,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_s_v_OR_T() {
         return getBoolean(c.s_s_v, true);
+    }
+
+    public boolean s_v_b() {
+        return getBoolean(c.s_v_b, false);
     }
 
     public boolean s_v_f_m() {

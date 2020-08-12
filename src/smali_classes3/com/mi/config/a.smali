@@ -3202,7 +3202,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->rd()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_36658_0x0001()Z
 
     move-result v0
 
@@ -3540,7 +3540,7 @@
     return p0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/mi/config/a;->re()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_0x33_OR_T()Z
 
     move-result p0
 
@@ -3739,7 +3739,7 @@
     return p0
 .end method
 
-.method public r(Z)Z
+.method public c_0x43_AND_param(Z)Z
     .locals 1
 
     const/4 v0, 0x0
@@ -3760,7 +3760,7 @@
     return v0
 .end method
 
-.method public rb()Z
+.method public e_p_p_l_t()Z
     .locals 2
 
     const-string v0, "e_p_p_l_t"
@@ -3806,7 +3806,7 @@
     return v0
 .end method
 
-.method public rd()Z
+.method public c_36658_0x0001()Z
     .locals 2
 
     const-string v0, "c_36658_0x0001"
@@ -3820,7 +3820,7 @@
     return p0
 .end method
 
-.method public re()Z
+.method public c_0x33_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x33"
@@ -3834,7 +3834,7 @@
     return p0
 .end method
 
-.method public rf()Z
+.method public s_v_b()Z
     .locals 2
 
     const-string v0, "s_v_b"

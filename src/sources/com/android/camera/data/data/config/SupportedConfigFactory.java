@@ -423,7 +423,7 @@ public class SupportedConfigFactory {
         }
         switch (i) {
             case 161:
-                if (z && i2 != 0 && dataItemFeature.rf()) {
+                if (z && i2 != 0 && dataItemFeature.s_v_b()) {
                     arrayList.add(createConfigItem(243));
                 }
                 if (dataItemRunning.supportTopShineEntry()) {
@@ -434,7 +434,7 @@ public class SupportedConfigFactory {
             case 162:
             case 169:
                 if (i2 != 0) {
-                    if (z && i == 162 && dataItemFeature.rf()) {
+                    if (z && i == 162 && dataItemFeature.s_v_b()) {
                         arrayList.add(createConfigItem(243));
                     }
                     if (dataItemRunning.supportTopShineEntry()) {
@@ -605,7 +605,7 @@ public class SupportedConfigFactory {
                 arrayList.add(createConfigItem(197));
                 break;
             case 174:
-                if (z && i2 != 0 && dataItemFeature.rf()) {
+                if (z && i2 != 0 && dataItemFeature.s_v_b()) {
                     arrayList.add(createConfigItem(243));
                 }
                 arrayList.add(createConfigItem(245, 17));

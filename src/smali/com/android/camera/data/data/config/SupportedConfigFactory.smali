@@ -1528,7 +1528,7 @@
 
     if-eqz v1, :cond_7
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->rf()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->s_v_b()Z
 
     move-result v0
 
@@ -2135,7 +2135,7 @@
 
     if-ne v0, v13, :cond_23
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->rf()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->s_v_b()Z
 
     move-result v0
 
@@ -2193,7 +2193,7 @@
 
     if-eqz v1, :cond_26
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->rf()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->s_v_b()Z
 
     move-result v0
 

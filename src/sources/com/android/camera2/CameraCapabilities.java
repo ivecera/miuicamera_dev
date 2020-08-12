@@ -760,7 +760,7 @@ public class CameraCapabilities {
 
     public boolean isQcfaMode() {
         int i = this.mOperatingMode;
-        return i == 32775 || i == 36865 || DataRepository.dataItemFeature().r(CameraSettings.isFrontCamera());
+        return i == 32775 || i == 36865 || DataRepository.dataItemFeature().c_0x43_AND_param(CameraSettings.isFrontCamera());
     }
 
     public boolean isRemosaicDetecedSupported() {

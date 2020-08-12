@@ -518,7 +518,7 @@ public class CaptureRequestBuilder {
 
     static void applyPortraitLighting(CaptureRequest.Builder builder, int i, CameraCapabilities cameraCapabilities, CameraConfigs cameraConfigs) {
         if (builder != null) {
-            if ((i == 3 || DataRepository.dataItemFeature().rb()) && cameraCapabilities.isSupportPortraitLighting()) {
+            if ((i == 3 || DataRepository.dataItemFeature().e_p_p_l_t()) && cameraCapabilities.isSupportPortraitLighting()) {
                 MiCameraCompat.applyPortraitLighting(builder, cameraConfigs.getPortraitLightingPattern());
             }
         }
