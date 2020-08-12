@@ -1930,7 +1930,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private boolean isLimitSize() {
-        return isBackCamera() && !CameraSettings.isUltraPixelOn() && DataRepository.dataItemFeature().Fc();
+        return isBackCamera() && !CameraSettings.isUltraPixelOn() && DataRepository.dataItemFeature().c_27810_0x0003();
     }
 
     private static boolean isLiveShotAvailable(int i) {

@@ -165,10 +165,6 @@ public class a extends DataItemBase implements c {
         return (float) getDoubleFromValues(c.c_0x02_p_c_r_v, 0.8766000270843506d);
     }
 
-    public boolean Fc() {
-        return getBoolean(c.c_27810_0x0003, false);
-    }
-
     public boolean Fd() {
         return getBoolean(c.c_0x10, true);
     }
@@ -582,6 +578,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19039_0x0005_eq_2() {
         return getInt(c.c_19039_0x0005, -1) == 2;
+    }
+
+    public boolean c_27810_0x0003() {
+        return getBoolean(c.c_27810_0x0003, false);
     }
 
     public String c_27810_0x0004() {
