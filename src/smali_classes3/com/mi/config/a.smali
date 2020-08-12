@@ -2349,7 +2349,7 @@
     return p0
 .end method
 
-.method public ac()Z
+.method public c_9006_0x0006()Z
     .locals 2
 
     const-string v0, "c_9006_0x0006"
@@ -2363,7 +2363,7 @@
     return p0
 .end method
 
-.method public ad()Z
+.method public c_0x19_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x19"
@@ -2377,7 +2377,7 @@
     return p0
 .end method
 
-.method public ae()Z
+.method public c_35893_0x0001()Z
     .locals 2
 
     const-string v0, "c_35893_0x0001"
@@ -2391,7 +2391,7 @@
     return p0
 .end method
 
-.method public af()Z
+.method public c_19039_0x0015()Z
     .locals 2
 
     const-string v0, "c_19039_0x0015"

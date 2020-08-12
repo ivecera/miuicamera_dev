@@ -820,10 +820,10 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
                 if (!Util.isGlobalVersion() || resourceFloat == 0.0f) {
                     resourceFloat = getResourceFloat(R.dimen.fps960_watermark_size_ratio, 0.0f);
                 }
-                z = VideoInterpolator.doDecodeAndEncodeSyncWithWatermark(file.getAbsolutePath(), file2.getAbsolutePath(), DataRepository.dataItemFeature().ad(), load960fpsCameraWatermark, new float[]{resourceFloat, getResourceFloat(R.dimen.fps960_watermark_padding_x_ratio, 0.0f), getResourceFloat(R.dimen.fps960_watermark_padding_y_ratio, 0.0f)}, z3);
+                z = VideoInterpolator.doDecodeAndEncodeSyncWithWatermark(file.getAbsolutePath(), file2.getAbsolutePath(), DataRepository.dataItemFeature().c_0x19_OR_T(), load960fpsCameraWatermark, new float[]{resourceFloat, getResourceFloat(R.dimen.fps960_watermark_padding_x_ratio, 0.0f), getResourceFloat(R.dimen.fps960_watermark_padding_y_ratio, 0.0f)}, z3);
             } else {
                 Log.d(VideoBase.TAG, "postProcessVideo: start ");
-                z = VideoInterpolator.doDecodeAndEncodeSync(file.getAbsolutePath(), file2.getAbsolutePath(), DataRepository.dataItemFeature().ad(), z3);
+                z = VideoInterpolator.doDecodeAndEncodeSync(file.getAbsolutePath(), file2.getAbsolutePath(), DataRepository.dataItemFeature().c_0x19_OR_T(), z3);
                 Log.d(VideoBase.TAG, "postProcessVideo: end ");
             }
             if (z && file2.renameTo(file3)) {
@@ -1343,7 +1343,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
     }
 
     private void updateHFRDeflicker() {
-        if (DataRepository.dataItemFeature().ad() && isFPS960()) {
+        if (DataRepository.dataItemFeature().c_0x19_OR_T() && isFPS960()) {
             ((BaseModule) this).mCamera2Device.setHFRDeflickerEnable(true);
         }
     }

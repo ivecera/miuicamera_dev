@@ -107,7 +107,7 @@ public class DataItemGlobal extends DataItemBase {
                         }
                         return 0;
                     case 172:
-                        if (this.mDataItemFeature.ae()) {
+                        if (this.mDataItemFeature.c_35893_0x0001()) {
                             return Integer.valueOf(getString("pref_camera_id_key", String.valueOf(getDefaultCameraId(i)))).intValue();
                         }
                         return 0;

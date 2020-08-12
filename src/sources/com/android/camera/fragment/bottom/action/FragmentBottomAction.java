@@ -1858,7 +1858,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
                     break;
                 }
             case 172:
-                if (!DataRepository.dataItemFeature().ae()) {
+                if (!DataRepository.dataItemFeature().c_35893_0x0001()) {
                     this.mCameraPickEnable = false;
                     i3 = -1;
                     i4 = 1;

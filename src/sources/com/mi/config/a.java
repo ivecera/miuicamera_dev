@@ -210,22 +210,6 @@ public class a extends DataItemBase implements c {
         return (tc() || uc()) && getBoolean(c.s_p_l_i_e, false);
     }
 
-    public boolean ac() {
-        return getBoolean(c.c_9006_0x0006, false);
-    }
-
-    public boolean ad() {
-        return getBoolean(c.c_0x19, true);
-    }
-
-    public boolean ae() {
-        return getBoolean(c.c_35893_0x0001, false);
-    }
-
-    public boolean af() {
-        return getBoolean(c.c_19039_0x0015, false);
-    }
-
     public boolean bc() {
         if (this.Ii == null) {
             this.Ii = SystemProperties.get("ro.boot.hwc");
@@ -263,6 +247,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x17() {
         return getBoolean(c.c_0x17, false);
+    }
+
+    public boolean c_0x19_OR_T() {
+        return getBoolean(c.c_0x19, true);
     }
 
     public boolean c_0x1a_ANDNOT_global() {
@@ -370,6 +358,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19039_0x0013() {
         return getBoolean(c.c_19039_0x0013, false);
+    }
+
+    public boolean c_19039_0x0015() {
+        return getBoolean(c.c_19039_0x0015, false);
     }
 
     public boolean c_19039_0x0016() {
@@ -484,6 +476,10 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_32889_0x0002, 0);
     }
 
+    public boolean c_35893_0x0001() {
+        return getBoolean(c.c_35893_0x0001, false);
+    }
+
     public int c_35955_0x0002_OR_1() {
         return getInt(c.c_35955_0x0002, 1);
     }
@@ -506,6 +502,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_9006_0x0003() {
         return getBoolean(c.c_9006_0x0003, false);
+    }
+
+    public boolean c_9006_0x0006() {
+        return getBoolean(c.c_9006_0x0006, false);
     }
 
     public boolean c_9006_0x0007() {

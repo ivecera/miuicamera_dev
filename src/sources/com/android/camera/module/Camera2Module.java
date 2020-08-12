@@ -682,7 +682,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 if (-1 == i) {
                     i = 0;
                 }
-                this.mParallelParameter = filterId.setOrientation(i).setJpegRotation(Camera2Module.this.mJpegRotation).setShootRotation(Camera2Module.this.mShootRotation).setShootOrientation(Camera2Module.this.mShootOrientation).setLocation(access$1700).setFrontCamera(Camera2Module.this.isFrontCamera()).setBokehFrontCamera(Camera2Module.this.isPictureUseDualFrontCamera()).setAlgorithmName(Camera2Module.this.mAlgorithmName).setPictureInfo(Camera2Module.this.getPictureInfo()).setSuffix(Camera2Module.this.getSuffix()).setSaveGroupshotPrimitive(false).setDeviceWatermarkParam(Camera2Module.this.getDeviceWaterMarkParam()).setJpegQuality(access$1600).setReprocessBurstShotPicture(Camera2Module.this.isZoomRatioBetweenUltraAndWide() && DataRepository.dataItemFeature().ac()).build();
+                this.mParallelParameter = filterId.setOrientation(i).setJpegRotation(Camera2Module.this.mJpegRotation).setShootRotation(Camera2Module.this.mShootRotation).setShootOrientation(Camera2Module.this.mShootOrientation).setLocation(access$1700).setFrontCamera(Camera2Module.this.isFrontCamera()).setBokehFrontCamera(Camera2Module.this.isPictureUseDualFrontCamera()).setAlgorithmName(Camera2Module.this.mAlgorithmName).setPictureInfo(Camera2Module.this.getPictureInfo()).setSuffix(Camera2Module.this.getSuffix()).setSaveGroupshotPrimitive(false).setDeviceWatermarkParam(Camera2Module.this.getDeviceWaterMarkParam()).setJpegQuality(access$1600).setReprocessBurstShotPicture(Camera2Module.this.isZoomRatioBetweenUltraAndWide() && DataRepository.dataItemFeature().c_9006_0x0006()).build();
             }
             parallelTaskData.fillParameter(this.mParallelParameter);
             if (!((BaseModule) Camera2Module.this).mActivity.getImageSaver().isSaveQueueFull()) {
@@ -2685,7 +2685,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (!this.mIsMoonMode || DataRepository.dataItemFeature().c_22367_0x0009()) {
             Camera2Proxy camera2Proxy = ((BaseModule) this).mCamera2Device;
             if (camera2Proxy == null || ((BaseModule) this).mCameraCapabilities == null || !camera2Proxy.useLegacyFlashStrategy() || !((BaseModule) this).mCamera2Device.isNeedFlashOn() || !((BaseModule) this).mCameraCapabilities.isFlashSupported()) {
-                if (((BaseModule) this).mModuleIndex == 167 && DataRepository.dataItemFeature().af() && ((BaseModule) this).mCamera2Device.getCameraConfigs().isSuperResolutionEnabled()) {
+                if (((BaseModule) this).mModuleIndex == 167 && DataRepository.dataItemFeature().c_19039_0x0015() && ((BaseModule) this).mCamera2Device.getCameraConfigs().isSuperResolutionEnabled()) {
                     return true;
                 }
                 if (((BaseModule) this).mMutexModePicker.isHdr() || this.mShouldDoMFNR || ((BaseModule) this).mMutexModePicker.isSuperResolution() || CameraSettings.isGroupShotOn()) {
