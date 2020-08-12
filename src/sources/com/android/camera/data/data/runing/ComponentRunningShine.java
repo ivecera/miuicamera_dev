@@ -504,7 +504,7 @@ public class ComponentRunningShine extends ComponentData {
                         }
                     } else {
                         this.mShineEntry = 4;
-                        if (!DataRepository.dataItemFeature().nc()) {
+                        if (!DataRepository.dataItemFeature().c_0x39()) {
                             this.mSupportBeautyModel = true;
                             ((ComponentData) this).mItems.add(generateModelItem());
                             if (DataRepository.dataItemFeature().s_b_m() && cameraCapabilities.isSupportBeautyMakeup()) {

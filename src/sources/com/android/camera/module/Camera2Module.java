@@ -1864,7 +1864,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (isInQCFAMode()) {
             return true;
         }
-        return CameraSettings.isUltraPixelOn() && DataRepository.dataItemFeature().nf();
+        return CameraSettings.isUltraPixelOn() && DataRepository.dataItemFeature().c_9006_0x0000();
     }
 
     private boolean isFaceBeautyOn(BeautyValues beautyValues) {
@@ -1886,7 +1886,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private boolean isHeicPreferred() {
-        if (this.mIsImageCaptureIntent || !((BaseModule) this).mCameraCapabilities.isHeicSupported() || !DataRepository.dataItemFeature().nb() || !CameraSettings.isHeicImageFormatSelected() || !this.mEnableParallelSession) {
+        if (this.mIsImageCaptureIntent || !((BaseModule) this).mCameraCapabilities.isHeicSupported() || !DataRepository.dataItemFeature().c_28041_0x0005() || !CameraSettings.isHeicImageFormatSelected() || !this.mEnableParallelSession) {
             return false;
         }
         int i = ((BaseModule) this).mModuleIndex;

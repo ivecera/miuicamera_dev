@@ -3369,7 +3369,7 @@
     return-object p0
 .end method
 
-.method public nb()Z
+.method public c_28041_0x0005()Z
     .locals 2
 
     const-string v0, "c_28041_0x0005"
@@ -3383,7 +3383,7 @@
     return p0
 .end method
 
-.method public nc()Z
+.method public c_0x39()Z
     .locals 2
 
     const-string v0, "c_0x39"
@@ -3397,7 +3397,7 @@
     return p0
 .end method
 
-.method public nd()Z
+.method public c_27810_0x0005()Z
     .locals 2
 
     const-string v0, "c_27810_0x0005"
@@ -3411,7 +3411,7 @@
     return p0
 .end method
 
-.method public ne()Z
+.method public c_0x0e()Z
     .locals 2
 
     const-string v0, "c_0x0e"
@@ -3425,7 +3425,7 @@
     return p0
 .end method
 
-.method public nf()Z
+.method public c_9006_0x0000()Z
     .locals 2
 
     const-string v0, "c_9006_0x0000"

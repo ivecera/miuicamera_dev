@@ -385,7 +385,7 @@ public class SupportedConfigFactory {
                     supportedConfigs.add(229);
                 }
             } else if (i2 == 1) {
-                if (dataItemFeature.nd()) {
+                if (dataItemFeature.c_27810_0x0005()) {
                     supportedConfigs.add(233);
                 }
                 if (cameraCapabilities.isSupportedVideoMiMovie()) {

@@ -37,7 +37,7 @@ public class FrontBeautyMenu extends AbBottomMenu implements View.OnClickListene
 
     private boolean isJustBeautyTab() {
         int currentMode;
-        return DataRepository.dataItemFeature().nc() || (currentMode = ((DataItemGlobal) DataRepository.provider().dataGlobal()).getCurrentMode()) == 162 || currentMode == 161 || currentMode == 174 || currentMode == 183 || currentMode == 171 || currentMode == 176;
+        return DataRepository.dataItemFeature().c_0x39() || (currentMode = ((DataItemGlobal) DataRepository.provider().dataGlobal()).getCurrentMode()) == 162 || currentMode == 161 || currentMode == 174 || currentMode == 183 || currentMode == 171 || currentMode == 176;
     }
 
     @Override // com.android.camera.fragment.bottom.AbBottomMenu

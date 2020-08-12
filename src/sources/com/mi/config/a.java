@@ -218,6 +218,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x0c, false) && tc();
     }
 
+    public boolean c_0x0e() {
+        return getBoolean(c.c_0x0e, false);
+    }
+
     public boolean c_0x10_OR_T() {
         return getBoolean(c.c_0x10, true);
     }
@@ -290,6 +294,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x38() {
         return getBoolean(c.c_0x38, false);
+    }
+
+    public boolean c_0x39() {
+        return getBoolean(c.c_0x39, false);
     }
 
     public boolean c_0x42_m() {
@@ -524,6 +532,10 @@ public class a extends DataItemBase implements c {
         return getString(c.c_27810_0x0004, null);
     }
 
+    public boolean c_27810_0x0005() {
+        return getBoolean(c.c_27810_0x0005, false);
+    }
+
     public boolean c_27810_0x0006() {
         return getBoolean(c.c_27810_0x0006, false);
     }
@@ -546,6 +558,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_28041_0x0001() {
         return getBoolean(c.c_28041_0x0001, false);
+    }
+
+    public boolean c_28041_0x0005() {
+        return getBoolean(c.c_28041_0x0005, false);
     }
 
     public int c_28041_0x0008_OR_0() {
@@ -602,6 +618,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_36658_0x0002() {
         return getBoolean(c.c_36658_0x0002, false);
+    }
+
+    public boolean c_9006_0x0000() {
+        return getBoolean(c.c_9006_0x0000, false);
     }
 
     public boolean c_9006_0x0002() {
@@ -759,26 +779,6 @@ public class a extends DataItemBase implements c {
 
     public String n(String str) {
         return getString(c.c_22756_0x0001, str);
-    }
-
-    public boolean nb() {
-        return getBoolean(c.c_28041_0x0005, false);
-    }
-
-    public boolean nc() {
-        return getBoolean(c.c_0x39, false);
-    }
-
-    public boolean nd() {
-        return getBoolean(c.c_27810_0x0005, false);
-    }
-
-    public boolean ne() {
-        return getBoolean(c.c_0x0e, false);
-    }
-
-    public boolean nf() {
-        return getBoolean(c.c_9006_0x0000, false);
     }
 
     public String o(String str) {

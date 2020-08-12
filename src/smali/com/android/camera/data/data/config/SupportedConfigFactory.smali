@@ -1073,7 +1073,7 @@
     goto :goto_3
 
     :cond_28
-    invoke-virtual {v5}, Lcom/mi/config/a;->nd()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_27810_0x0005()Z
 
     move-result v1
 

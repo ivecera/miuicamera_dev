@@ -422,7 +422,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
     }
 
     private boolean isHeicImageFormatSelectable() {
-        if (DataRepository.dataItemFeature().nb() != 1 || CameraSettings.isCameraParallelProcessEnable() != 1 || DataRepository.dataItemGlobal().isNormalIntent() != 1 || CameraSettings.isLiveShotOn() || CameraSettings.isDocumentModeOn(this.mFromWhere)) {
+        if (DataRepository.dataItemFeature().c_28041_0x0005() != 1 || CameraSettings.isCameraParallelProcessEnable() != 1 || DataRepository.dataItemGlobal().isNormalIntent() != 1 || CameraSettings.isLiveShotOn() || CameraSettings.isDocumentModeOn(this.mFromWhere)) {
             return false;
         }
         int i = this.mFromWhere;
