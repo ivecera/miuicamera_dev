@@ -153,10 +153,6 @@ public class a extends DataItemBase implements c {
         return N(getString(c.c_19040_0x0005, ""));
     }
 
-    public boolean Ad() {
-        return getBoolean(c.c_36211_0x0001, false);
-    }
-
     public boolean Ae() {
         return Build.VERSION.SDK_INT > 28 ? c_s_a_u_q() : getBoolean(c.s_a_u, false);
     }
@@ -626,6 +622,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19039_0x0005_eq_2() {
         return getInt(c.c_19039_0x0005, -1) == 2;
+    }
+
+    public boolean c_36211_0x0001() {
+        return getBoolean(c.c_36211_0x0001, false);
     }
 
     public boolean cc() {

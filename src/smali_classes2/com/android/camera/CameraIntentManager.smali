@@ -951,7 +951,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Ad()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_36211_0x0001()Z
 
     move-result p0
 

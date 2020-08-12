@@ -169,7 +169,7 @@
 
     if-nez v3, :cond_2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->Ad()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_36211_0x0001()Z
 
     move-result v3
 
@@ -198,7 +198,7 @@
 
     if-nez v3, :cond_3
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->Ad()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_36211_0x0001()Z
 
     move-result v3
 

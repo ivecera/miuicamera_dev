@@ -372,7 +372,7 @@ public class CameraIntentManager {
                 if (DataRepository.dataItemFeature().ud()) {
                     return 174;
                 }
-                return DataRepository.dataItemFeature().Ad() ? 183 : 161;
+                return DataRepository.dataItemFeature().c_36211_0x0001() ? 183 : 161;
             case '\b':
                 return 162;
             case '\t':
