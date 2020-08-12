@@ -295,7 +295,7 @@ public class DataItemGlobal extends DataItemBase {
         int currentCameraId;
         int i4;
         setForceMainBackCamera(false);
-        if (DataRepository.dataItemFeature().Lc() && Util.isScreenSlideOff(CameraAppImpl.getAndroidContext())) {
+        if (DataRepository.dataItemFeature().s_s_s() && Util.isScreenSlideOff(CameraAppImpl.getAndroidContext())) {
             setCameraId(0);
         }
         String action = intent.getAction();

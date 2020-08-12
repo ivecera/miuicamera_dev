@@ -1326,7 +1326,7 @@
     return p0
 .end method
 
-.method public Lc()Z
+.method public s_s_s()Z
     .locals 2
 
     const-string v0, "s_s_s"

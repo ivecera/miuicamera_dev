@@ -51,7 +51,7 @@ public class AsdSceneConstant {
         } else if (z2) {
             mFrameNumber = 0;
             return -1;
-        } else if (!DataRepository.dataItemFeature().Lc() || (i = mFrameNumber) >= 2) {
+        } else if (!DataRepository.dataItemFeature().s_s_s() || (i = mFrameNumber) >= 2) {
             float f2 = ModuleManager.isFunARModule() ? AEC_LUX_HEIGHT_LIGHT * 0.87f : AEC_LUX_HEIGHT_LIGHT;
             if (mIsFlashRetain && aecLux > f2) {
                 return 9;
