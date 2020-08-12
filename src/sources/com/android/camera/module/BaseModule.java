@@ -441,13 +441,13 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
         if (i2 != Camera2DataContainer.getInstance().getUltraWideCameraId()) {
             return i2 == Camera2DataContainer.getInstance().getAuxCameraId() ? HybridZoomingSystem.clamp(this.mZoomRatio / HybridZoomingSystem.FLOAT_ZOOM_RATIO_TELE, 1.0f, this.mCameraCapabilities.getMaxZoomRatio()) : f3;
         }
-        String Qb = DataRepository.dataItemFeature().Qb();
+        String c_22367_0x0006 = DataRepository.dataItemFeature().c_22367_0x0006();
         if (!CameraSettings.isMacroModeEnabled(this.mModuleIndex) || HybridZoomingSystem.sDefaultMacroOpticalZoomRatio == 0.6f) {
             f2 = HybridZoomingSystem.clamp(this.mZoomRatio / 0.6f, 1.0f, this.mCameraCapabilities.getMaxZoomRatio());
-        } else if (!CameraSettings.isMacroModeEnabled(this.mModuleIndex) || Qb == null) {
+        } else if (!CameraSettings.isMacroModeEnabled(this.mModuleIndex) || c_22367_0x0006 == null) {
             return f3;
         } else {
-            f2 = HybridZoomingSystem.clamp(this.mZoomRatio * Float.valueOf(Qb).floatValue(), getMinZoomRatio() * Float.valueOf(Qb).floatValue(), getMaxZoomRatio() * Float.valueOf(Qb).floatValue());
+            f2 = HybridZoomingSystem.clamp(this.mZoomRatio * Float.valueOf(c_22367_0x0006).floatValue(), getMinZoomRatio() * Float.valueOf(c_22367_0x0006).floatValue(), getMaxZoomRatio() * Float.valueOf(c_22367_0x0006).floatValue());
         }
         return f2;
     }

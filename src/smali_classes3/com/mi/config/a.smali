@@ -1664,7 +1664,7 @@
     return p0
 .end method
 
-.method public Qb()Ljava/lang/String;
+.method public c_22367_0x0006()Ljava/lang/String;
     .locals 2
 
     const-string v0, "c_22367_0x0006"
