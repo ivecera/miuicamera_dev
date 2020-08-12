@@ -3556,17 +3556,17 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             ((BaseModule) this).mCamera2Device.setTelePictureSize(((BaseModule) this).mTelePictureSize);
             ((BaseModule) this).mPictureSize = getSatPictureSize();
         } else {
-            int Pb = (!isUltraTeleCamera() || ((BaseModule) this).mModuleIndex != 167) ? 0 : DataRepository.dataItemFeature().Pb();
+            int c_22367_0x000A_OR_0 = (!isUltraTeleCamera() || ((BaseModule) this).mModuleIndex != 167) ? 0 : DataRepository.dataItemFeature().c_22367_0x000A_OR_0();
             if (isSensorRawStreamRequired()) {
                 List<CameraSize> supportedOutputSizeWithAssignedMode2 = ((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(32);
                 if (((BaseModule) this).mModuleIndex != 167) {
                     ((BaseModule) this).mSensorRawImageSize = getBestPictureSize(supportedOutputSizeWithAssignedMode2);
                 } else if (supportedOutputSizeWithAssignedMode2 == null || supportedOutputSizeWithAssignedMode2.size() == 0) {
                     Log.w(TAG, "The supported raw size list return from hal is null!");
-                } else if (Pb == 0) {
+                } else if (c_22367_0x000A_OR_0 == 0) {
                     ((BaseModule) this).mSensorRawImageSize = getBestPictureSize(supportedOutputSizeWithAssignedMode2, 1.3333333f);
                 } else {
-                    PictureSizeManager.initializeLimitWidth(supportedOutputSizeWithAssignedMode2, Pb, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
+                    PictureSizeManager.initializeLimitWidth(supportedOutputSizeWithAssignedMode2, c_22367_0x000A_OR_0, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
                     ((BaseModule) this).mSensorRawImageSize = PictureSizeManager.getBestPictureSize(1.3333333f);
                 }
                 String str2 = TAG;
@@ -3581,8 +3581,8 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 if (b.isMTKPlatform() && isFrontCamera() && isParallelSessionEnable()) {
                     bestPictureSize = new CameraSize(bestPictureSize.width / 2, bestPictureSize.height / 2);
                 }
-                if (Pb != 0) {
-                    PictureSizeManager.initializeLimitWidth(supportedOutputSizeWithAssignedMode3, Pb, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
+                if (c_22367_0x000A_OR_0 != 0) {
+                    PictureSizeManager.initializeLimitWidth(supportedOutputSizeWithAssignedMode3, c_22367_0x000A_OR_0, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
                     bestPictureSize = PictureSizeManager.getBestPictureSize();
                 }
                 if (isLimitSize()) {

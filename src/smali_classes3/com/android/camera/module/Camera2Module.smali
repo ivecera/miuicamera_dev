@@ -14124,7 +14124,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/mi/config/a;->Pb()I
+    invoke-virtual {v3}, Lcom/mi/config/a;->c_22367_0x000A_OR_0()I
 
     move-result v3
 

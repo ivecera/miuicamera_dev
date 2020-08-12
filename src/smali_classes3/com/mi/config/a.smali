@@ -1586,7 +1586,7 @@
     return p0
 .end method
 
-.method public Pb()I
+.method public c_22367_0x000A_OR_0()I
     .locals 2
 
     const-string v0, "c_22367_0x000A"
