@@ -136,7 +136,7 @@ public class ComponentManuallyWB extends ComponentData {
         arrayList.add(new ComponentDataItem((int) R.drawable.ic_white_balance_sunlight_normal, (int) R.drawable.ic_white_balance_sunlight_selected, -1, "5"));
         arrayList.add(new ComponentDataItem((int) R.drawable.ic_white_balance_fluorescent_normal, (int) R.drawable.ic_white_balance_fluorescent_selected, -1, "3"));
         arrayList.add(new ComponentDataItem((int) R.drawable.ic_white_balance_cloudy_normal, (int) R.drawable.ic_white_balance_cloudy_selected, -1, "6"));
-        if (b.Zl() && DataRepository.dataItemFeature().De()) {
+        if (b.Zl() && DataRepository.dataItemFeature().s_c_w_b_OR_T()) {
             arrayList.add(new ComponentDataItem((int) R.drawable.ic_white_balance_manual_normal, (int) R.drawable.ic_white_balance_manual_selected, -1, "manual"));
         }
         ((ComponentData) this).mItems = Collections.unmodifiableList(arrayList);

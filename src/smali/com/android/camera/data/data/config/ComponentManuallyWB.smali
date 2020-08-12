@@ -406,7 +406,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lcom/mi/config/a;->De()Z
+    invoke-virtual {p2}, Lcom/mi/config/a;->s_c_w_b_OR_T()Z
 
     move-result p2
 

@@ -865,7 +865,7 @@
     return p0
 .end method
 
-.method public De()Z
+.method public s_c_w_b_OR_T()Z
     .locals 2
 
     const-string v0, "s_c_w_b"
