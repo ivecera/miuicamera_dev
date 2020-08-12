@@ -1977,7 +1977,7 @@ public class MiCamera2 extends Camera2Proxy {
                 lockFocusInCAF(true);
                 setAWBLock(true);
                 lockExposure(true, true);
-                if (DataRepository.dataItemFeature().Ie() && this.mConfigs.isHDREnabled()) {
+                if (DataRepository.dataItemFeature().c_19039_0x0017() && this.mConfigs.isHDREnabled()) {
                     this.mCaptureCallback.setState(12);
                     return;
                 }
