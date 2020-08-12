@@ -167,7 +167,7 @@
     return-object p0
 .end method
 
-.method private Qm()I
+.method private c_28041_0x0004_or_0()I
     .locals 2
 
     const-string v0, "c_28041_0x0004"
@@ -4436,7 +4436,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/mi/config/a;->Qm()I
+    invoke-direct {p0}, Lcom/mi/config/a;->c_28041_0x0004_or_0()I
 
     move-result p0
 
@@ -4564,7 +4564,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/mi/config/a;->Qm()I
+    invoke-direct {p0}, Lcom/mi/config/a;->c_28041_0x0004_or_0()I
 
     move-result p0
 

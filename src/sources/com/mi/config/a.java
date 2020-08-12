@@ -60,10 +60,6 @@ public class a extends DataItemBase implements c {
         return null;
     }
 
-    private int Qm() {
-        return getInt(c.c_28041_0x0004, 0);
-    }
-
     private boolean Rm() {
         if (b.jl() || b.kl()) {
             return false;
@@ -104,6 +100,10 @@ public class a extends DataItemBase implements c {
         if (!TextUtils.isEmpty(str2)) {
             d(str2, false);
         }
+    }
+
+    private int c_28041_0x0004_or_0() {
+        return getInt(c.c_28041_0x0004, 0);
     }
 
     /* JADX WARNING: Code restructure failed: missing block: B:15:0x0073, code lost:
@@ -1110,7 +1110,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean wd() {
-        return Rm() && Qm() == 1;
+        return Rm() && c_28041_0x0004_or_0() == 1;
     }
 
     public boolean we() {
@@ -1133,7 +1133,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean xd() {
-        return Rm() && Qm() == 0;
+        return Rm() && c_28041_0x0004_or_0() == 0;
     }
 
     public boolean xe() {
