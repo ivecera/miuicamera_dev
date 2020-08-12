@@ -161,10 +161,6 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_26813_0x0001, false) && !SystemProperties.getBoolean("close.append.yuv", false);
     }
 
-    public boolean Cd() {
-        return getBoolean(c.c_0x54, false);
-    }
-
     public boolean Ce() {
         return getBoolean(c.s_b_m, false);
     }
@@ -598,6 +594,10 @@ public class a extends DataItemBase implements c {
 
     public boolean bf() {
         return getBoolean(c.c_0x5e, false);
+    }
+
+    public boolean c_0x54() {
+        return getBoolean(c.c_0x54, false);
     }
 
     public boolean c_19039_0x0005_EQ_1() {

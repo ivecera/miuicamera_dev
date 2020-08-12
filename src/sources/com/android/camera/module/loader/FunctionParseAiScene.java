@@ -18,7 +18,7 @@ public class FunctionParseAiScene implements Function<CaptureResult, Integer> {
     private int mModuleIndex;
     private int mParsedAiScene;
     private int mSameFaceSceneDetectedTimes;
-    private final boolean mSupportMoonMode = DataRepository.dataItemFeature().Cd();
+    private final boolean mSupportMoonMode = DataRepository.dataItemFeature().c_0x54();
 
     public FunctionParseAiScene(int i, CameraCapabilities cameraCapabilities) {
         this.mModuleIndex = i;

@@ -793,7 +793,7 @@
     return p0
 .end method
 
-.method public Cd()Z
+.method public c_0x54()Z
     .locals 2
 
     const-string v0, "c_0x54"
