@@ -1753,7 +1753,7 @@ public class MiCamera2 extends Camera2Proxy {
                 if (Camera2DataContainer.getInstance().isFrontCameraId(getId()) && DataRepository.dataItemFeature().dd()) {
                     CameraSize photoSize = this.mConfigs.getPhotoSize();
                     arrayList.add(new IImageReaderParameterSets(photoSize.getWidth(), photoSize.getHeight(), 35, MAX_IMAGE_BUFFER_SIZE, 0));
-                } else if (!this.mCapabilities.isQcfaMode() || !DataRepository.dataItemFeature().Jc()) {
+                } else if (!this.mCapabilities.isQcfaMode() || !DataRepository.dataItemFeature().c_0x5c()) {
                     CameraSize photoSize2 = this.mConfigs.getPhotoSize();
                     arrayList.add(new IImageReaderParameterSets(photoSize2.getWidth(), photoSize2.getHeight(), 35, MAX_IMAGE_BUFFER_SIZE, 0));
                     this.mWideParallelSurfaceIndex = 0;

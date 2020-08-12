@@ -5423,7 +5423,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->Jc()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x5c()Z
 
     move-result v2
 
