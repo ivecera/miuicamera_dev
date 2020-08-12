@@ -176,10 +176,6 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_9006_0x0001, 5);
     }
 
-    public boolean Me() {
-        return getBoolean(c.s_i_a, false) && tc();
-    }
-
     public Size Nb() {
         return O(getString(c.c_19040_0x0005, ""));
     }
@@ -977,6 +973,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_f_a() {
         return getBoolean(c.s_f_a, false);
+    }
+
+    public boolean s_i_a_AND_india() {
+        return getBoolean(c.s_i_a, false) && tc();
     }
 
     public boolean s_m_c_t_f() {

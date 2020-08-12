@@ -115,7 +115,7 @@ public class LensAgent {
         if (i == -1 || i == 19 || i == 25) {
             return true;
         }
-        return i != 31 ? i == 34 || i == 37 : DataRepository.dataItemFeature().Me();
+        return i != 31 ? i == 34 || i == 37 : DataRepository.dataItemFeature().s_i_a_AND_india();
     }
 
     static /* synthetic */ void r(int i) {

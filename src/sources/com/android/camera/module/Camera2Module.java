@@ -2416,7 +2416,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                                             case 29:
                                             case 30:
                                             case 31:
-                                                if (!DataRepository.dataItemFeature().Me()) {
+                                                if (!DataRepository.dataItemFeature().s_i_a_AND_india()) {
                                                     configChanges.restoreAllMutexElement("e");
                                                     updatePreferenceInWorkThread(UpdateConstant.AI_SCENE_CONFIG);
                                                     break;

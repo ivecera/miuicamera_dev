@@ -8320,7 +8320,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/mi/config/a;->Me()Z
+    invoke-virtual {v3}, Lcom/mi/config/a;->s_i_a_AND_india()Z
 
     move-result v3
 
