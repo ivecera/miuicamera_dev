@@ -1828,7 +1828,7 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
                 cameraCapabilities.setOperatingMode(getOperatingMode());
             }
         }
-        if (DataRepository.dataItemFeature().m1if()) {
+        if (DataRepository.dataItemFeature().c_0x50()) {
             this.mStandaloneMacroCameraCapabilities = Camera2DataContainer.getInstance().getCapabilities(Camera2DataContainer.getInstance().getStandaloneMacroCameraId());
             CameraCapabilities cameraCapabilities2 = this.mStandaloneMacroCameraCapabilities;
             if (cameraCapabilities2 != null) {

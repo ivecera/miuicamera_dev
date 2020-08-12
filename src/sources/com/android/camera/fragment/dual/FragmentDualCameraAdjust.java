@@ -208,7 +208,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
                         z6 = true;
                     }
                     if (i == 162) {
-                        int i6 = (!HybridZoomingSystem.IS_2_SAT && ((miBeautyProtocol = (ModeProtocol.MiBeautyProtocol) ModeCoordinatorImpl.getInstance().getAttachProtocol(194)) == null || !miBeautyProtocol.isBeautyPanelShow()) && !DataRepository.dataItemRunning().getComponentRunningShine().isVideoBeautyOpen(162) && (((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isUltraWideConfigOpen(i)) || DataRepository.dataItemFeature().m1if())) ? 1 : -1;
+                        int i6 = (!HybridZoomingSystem.IS_2_SAT && ((miBeautyProtocol = (ModeProtocol.MiBeautyProtocol) ModeCoordinatorImpl.getInstance().getAttachProtocol(194)) == null || !miBeautyProtocol.isBeautyPanelShow()) && !DataRepository.dataItemRunning().getComponentRunningShine().isVideoBeautyOpen(162) && (((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isUltraWideConfigOpen(i)) || DataRepository.dataItemFeature().c_0x50())) ? 1 : -1;
                         boolean z9 = i6 == -1 || (!isNormalIntent && currentCameraCapabilities != null && currentCameraCapabilities.isSupportLightTripartite());
                         if (i6 != -1 && (isNormalIntent || currentCameraCapabilities == null || !currentCameraCapabilities.isSupportLightTripartite())) {
                             z8 = false;
@@ -226,7 +226,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
                         z2 = i3 == -1;
                     } else {
                         if (i == 163) {
-                            int i7 = (((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isUltraWideConfigOpen(i) && !CameraSettings.isUltraPixelRearOn()) || DataRepository.dataItemFeature().m1if()) ? 1 : -1;
+                            int i7 = (((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isUltraWideConfigOpen(i) && !CameraSettings.isUltraPixelRearOn()) || DataRepository.dataItemFeature().c_0x50()) ? 1 : -1;
                             if (!CameraSettings.isAIWatermarkOn() || !CameraSettings.isBackCamera()) {
                                 i5 = i7;
                             }

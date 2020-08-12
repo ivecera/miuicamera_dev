@@ -607,7 +607,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
             MistatsWrapper.mistatEvent(MistatsConstants.MacroAttr.FUCNAME_MACRO_MODE, hashMap);
             ModeProtocol.LensProtocol lensProtocol = (ModeProtocol.LensProtocol) ModeCoordinatorImpl.getInstance().getAttachProtocol(200);
             if (lensProtocol != null) {
-                lensProtocol.onSwitchLens(DataRepository.dataItemFeature().m1if(), z);
+                lensProtocol.onSwitchLens(DataRepository.dataItemFeature().c_0x50(), z);
             }
             ModeProtocol.BottomPopupTips bottomPopupTips = (ModeProtocol.BottomPopupTips) ModeCoordinatorImpl.getInstance().getAttachProtocol(175);
             ModeProtocol.DualController dualController = (ModeProtocol.DualController) ModeCoordinatorImpl.getInstance().getAttachProtocol(182);

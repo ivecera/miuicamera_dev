@@ -2655,7 +2655,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (!CameraSettings.shouldUltraWideLDCBeVisibleInMode(((BaseModule) this).mModuleIndex)) {
             return false;
         }
-        if (CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex) && !DataRepository.dataItemFeature().m1if()) {
+        if (CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex) && !DataRepository.dataItemFeature().c_0x50()) {
             return true;
         }
         if (((BaseModule) this).mActualCameraId == Camera2DataContainer.getInstance().getUltraWideCameraId()) {

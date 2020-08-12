@@ -1786,7 +1786,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
                 }
             } else if (i == 163) {
                 boolean c_22367_0x0001 = DataRepository.dataItemFeature().c_22367_0x0001();
-                boolean z = DataRepository.dataItemFeature().m1if();
+                boolean c_0x50 = DataRepository.dataItemFeature().c_0x50();
                 boolean isSupportUltraWide = DataRepository.dataItemFeature().isSupportUltraWide();
                 if (DataRepository.dataItemFeature().c_35893_0x0002()) {
                     if (!isNewBieAlive(9) && dataItemGlobal.getBoolean(DataItemGlobal.DATA_COMMON_DOCUMENT_MODE_USE_HINT_SHOWN, true)) {
@@ -1796,7 +1796,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
                     if (!isNewBieAlive(7) && dataItemGlobal.getBoolean("pref_camera_first_ultra_tele_use_hint_shown_key", true)) {
                         showNewBie(7);
                     }
-                } else if (z) {
+                } else if (c_0x50) {
                     if (!isNewBieAlive(5) && dataItemGlobal.getBoolean("pref_camera_first_macro_mode_use_hint_shown_key", true)) {
                         showNewBie(5);
                     }

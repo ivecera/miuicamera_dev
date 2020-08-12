@@ -2884,7 +2884,7 @@
     return p0
 .end method
 
-.method public ic()Z
+.method public s_f_s_c()Z
     .locals 2
 
     const-string v0, "s_f_s_c"
@@ -2898,7 +2898,7 @@
     return p0
 .end method
 
-.method public ie()Z
+.method public c_0x11()Z
     .locals 2
 
     const-string v0, "c_0x11"
@@ -2912,7 +2912,7 @@
     return p0
 .end method
 
-.method public if()Z
+.method public c_0x50()Z
     .locals 2
 
     const-string v0, "c_0x50"

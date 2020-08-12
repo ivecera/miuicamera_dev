@@ -1322,7 +1322,7 @@ public class CameraStatUtils {
             } else {
                 str = "off";
             }
-            if (DataRepository.dataItemFeature().m1if()) {
+            if (DataRepository.dataItemFeature().c_0x50()) {
                 hashMap.put(MistatsConstants.SensorAttr.PARAM_STANDALONE_MACRO_MODE, str);
             } else {
                 hashMap.put(MistatsConstants.SensorAttr.PARAM_MACRO_MODE, str);

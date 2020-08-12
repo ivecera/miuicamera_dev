@@ -1726,7 +1726,7 @@ public class CameraSettings {
     }
 
     public static boolean isSupportQuickShot() {
-        return DataRepository.dataItemFeature().ic() || (DEBUG_FAST_SHOT && !b.pv);
+        return DataRepository.dataItemFeature().s_f_s_c() || (DEBUG_FAST_SHOT && !b.pv);
     }
 
     public static boolean isSupportedDualCameraWaterMark() {

@@ -189,7 +189,7 @@ public class Camera2DataContainer {
                                 i3 = getUltraWideCameraId();
                                 break;
                             }
-                        } else if (DataRepository.dataItemFeature().m1if() && !b.fv) {
+                        } else if (DataRepository.dataItemFeature().c_0x50() && !b.fv) {
                             i3 = getStandaloneMacroCameraId();
                             break;
                         } else {
@@ -200,7 +200,7 @@ public class Camera2DataContainer {
                     case 163:
                     case 165:
                         if (CameraSettings.isMacroModeEnabled(i2)) {
-                            if (!DataRepository.dataItemFeature().m1if()) {
+                            if (!DataRepository.dataItemFeature().c_0x50()) {
                                 i3 = getUltraWideCameraId();
                                 break;
                             } else {

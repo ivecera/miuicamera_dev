@@ -15133,7 +15133,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p3}, Lcom/mi/config/a;->ie()Z
+    invoke-virtual {p3}, Lcom/mi/config/a;->c_0x11()Z
 
     move-result p3
 
@@ -15394,7 +15394,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lcom/mi/config/a;->ie()Z
+    invoke-virtual {p2}, Lcom/mi/config/a;->c_0x11()Z
 
     move-result p2
 

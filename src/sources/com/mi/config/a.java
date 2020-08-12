@@ -222,6 +222,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x10, true);
     }
 
+    public boolean c_0x11() {
+        return getBoolean(c.c_0x11, false);
+    }
+
     public boolean c_0x17() {
         return getBoolean(c.c_0x17, false);
     }
@@ -290,6 +294,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x4a_1() {
         return getBoolean(c.c_0x4a_1, false);
+    }
+
+    public boolean c_0x50() {
+        return getBoolean(c.c_0x50, false);
     }
 
     public boolean c_0x54() {
@@ -631,19 +639,6 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.i_s_s_b, false);
     }
 
-    public boolean ic() {
-        return getBoolean(c.s_f_s_c, false);
-    }
-
-    public boolean ie() {
-        return getBoolean(c.c_0x11, false);
-    }
-
-    /* renamed from: if  reason: not valid java name */
-    public boolean m1if() {
-        return getBoolean(c.c_0x50, false);
-    }
-
     public boolean is4K30FpsEISSupported() {
         return getBoolean(c.c_0x07, false);
     }
@@ -941,6 +936,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_f_a() {
         return getBoolean(c.s_f_a, false);
+    }
+
+    public boolean s_f_s_c() {
+        return getBoolean(c.s_f_s_c, false);
     }
 
     public boolean s_f_z_i() {

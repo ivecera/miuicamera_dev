@@ -4125,7 +4125,7 @@ public class MiCamera2 extends Camera2Proxy {
                     this.mSessionConfigs.set(CaptureRequestVendorTags.MTK_CONFIGURE_SETTING_PROPRIETARY, CaptureRequestVendorTags.MTK_CONFIGURE_SETTING_PROPRIETARY_ON);
                     MiCameraCompat.applyPqFeature(this.mPreviewRequestBuilder, true);
                     int intValue = this.mHighSpeedFpsRange.getUpper().intValue();
-                    if (DataRepository.dataItemFeature().ie()) {
+                    if (DataRepository.dataItemFeature().c_0x11()) {
                         if (intValue == 120) {
                             iArr = CaptureRequestVendorTags.VALUE_SMVR_MODE_120FPS;
                         } else if (intValue == 240) {
@@ -4156,7 +4156,7 @@ public class MiCamera2 extends Camera2Proxy {
                     } else {
                         throw new UnsupportedOperationException("Unsupported Slow Motion Recording: " + this.mHighSpeedFpsRange);
                     }
-                } else if (this.mHighSpeedFpsRange.getUpper().intValue() == 120 && !DataRepository.dataItemFeature().ie()) {
+                } else if (this.mHighSpeedFpsRange.getUpper().intValue() == 120 && !DataRepository.dataItemFeature().c_0x11()) {
                     ArrayList arrayList3 = new ArrayList();
                     for (Surface surface5 : asList) {
                         arrayList3.add(new OutputConfiguration(surface5));
