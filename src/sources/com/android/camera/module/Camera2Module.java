@@ -2682,7 +2682,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
 
     private boolean shouldDoMultiFrameCapture() {
         boolean z = false;
-        if (!this.mIsMoonMode || DataRepository.dataItemFeature().Jd()) {
+        if (!this.mIsMoonMode || DataRepository.dataItemFeature().c_22367_0x0009()) {
             Camera2Proxy camera2Proxy = ((BaseModule) this).mCamera2Device;
             if (camera2Proxy == null || ((BaseModule) this).mCameraCapabilities == null || !camera2Proxy.useLegacyFlashStrategy() || !((BaseModule) this).mCamera2Device.isNeedFlashOn() || !((BaseModule) this).mCameraCapabilities.isFlashSupported()) {
                 if (((BaseModule) this).mModuleIndex == 167 && DataRepository.dataItemFeature().af() && ((BaseModule) this).mCamera2Device.getCameraConfigs().isSuperResolutionEnabled()) {
@@ -4252,7 +4252,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                     }
                 }
                 updateMoon(false);
-                if (((BaseModule) this).mMutexModePicker.isSuperResolution() && !DataRepository.dataItemFeature().Jd()) {
+                if (((BaseModule) this).mMutexModePicker.isSuperResolution() && !DataRepository.dataItemFeature().c_22367_0x0009()) {
                     ((BaseModule) this).mCamera2Device.setSuperResolution(true);
                 }
             }
@@ -6789,7 +6789,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     public void updateMoon(boolean z) {
         if (z) {
             this.mIsMoonMode = true;
-            if (!DataRepository.dataItemFeature().Jd()) {
+            if (!DataRepository.dataItemFeature().c_22367_0x0009()) {
                 ((BaseModule) this).mCamera2Device.setSuperResolution(false);
             }
             updateFocusMode();

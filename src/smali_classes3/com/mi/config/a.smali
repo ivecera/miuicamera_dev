@@ -1240,7 +1240,7 @@
     return p0
 .end method
 
-.method public Jd()Z
+.method public c_22367_0x0009()Z
     .locals 2
 
     const-string v0, "c_22367_0x0009"
