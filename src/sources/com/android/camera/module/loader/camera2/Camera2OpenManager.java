@@ -62,7 +62,7 @@ public class Camera2OpenManager {
         public void onClosed(@NonNull CameraDevice cameraDevice) {
             String access$300 = Camera2OpenManager.TAG;
             Log.d(access$300, "CameraOpenCallback: closed " + cameraDevice.getId());
-            if (DataRepository.dataItemFeature().oc() && Integer.valueOf(cameraDevice.getId()).intValue() == 1 && Camera2OpenManager.this.mPendingCameraId.get() == -1) {
+            if (DataRepository.dataItemFeature().c_0x1b() && Integer.valueOf(cameraDevice.getId()).intValue() == 1 && Camera2OpenManager.this.mPendingCameraId.get() == -1) {
                 CompatibilityUtils.takebackMotor();
             }
             Camera2OpenManager.this.mCameraHandler.sendEmptyMessage(3);
@@ -97,7 +97,7 @@ public class Camera2OpenManager {
                 Camera2OpenManager camera2OpenManager = Camera2OpenManager.this;
                 Camera2Proxy unused = camera2OpenManager.mCamera2Device = new MiCamera2(cameraDevice, parseInt, capabilities, camera2OpenManager.getCameraHandler(), Camera2OpenManager.this.getCameraPreviewHandler(), Camera2OpenManager.this.getCameraMainThreadHandler());
                 Camera2DataContainer.getInstance().setCurrentOpenedCameraId(parseInt);
-                if (DataRepository.dataItemFeature().oc()) {
+                if (DataRepository.dataItemFeature().c_0x1b()) {
                     long currentTimeMillis = System.currentTimeMillis() - Camera2OpenManager.this.mPopCameraTimeStamp.get();
                     Log.d(Camera2OpenManager.TAG, str + ", current delay = " + currentTimeMillis + ", should delay = " + Camera2OpenManager.POP_CAMERA_DELAY_CREATE_SESSION);
                     if (currentTimeMillis <= Camera2OpenManager.POP_CAMERA_DELAY_CREATE_SESSION) {
@@ -239,7 +239,7 @@ public class Camera2OpenManager {
             if (i != 2) {
                 if (i == 3) {
                     Log.e(TAG, "close finish");
-                    if (DataRepository.dataItemFeature().oc() && this.mPopCameraTimeStamp.get() > 0 && this.mPendingCameraId.get() == -1) {
+                    if (DataRepository.dataItemFeature().c_0x1b() && this.mPopCameraTimeStamp.get() > 0 && this.mPendingCameraId.get() == -1) {
                         CompatibilityUtils.takebackMotor();
                     }
                     setManagerState(1);
@@ -375,7 +375,7 @@ public class Camera2OpenManager {
         int actualOpenCameraId = Camera2DataContainer.getInstance().getActualOpenCameraId(i, i2);
         String str = TAG;
         Log.d(str, "openCamera: pendingOpenId = " + actualOpenCameraId + ", mPendingCameraId = " + this.mPendingCameraId.get() + ", currentMode = " + i2 + ", mCurrentModule = " + this.mCurrentModule.get() + ", forceClose = " + z);
-        if (DataRepository.dataItemFeature().oc()) {
+        if (DataRepository.dataItemFeature().c_0x1b()) {
             if (i == 1 && this.mPendingCameraId.get() != actualOpenCameraId) {
                 boolean popupMotor = CompatibilityUtils.popupMotor();
                 this.mPopCameraTimeStamp.set(System.currentTimeMillis());

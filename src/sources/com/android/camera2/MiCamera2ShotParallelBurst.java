@@ -126,7 +126,7 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
             builder.set(CaptureRequest.CONTROL_AE_EXPOSURE_COMPENSATION, Integer.valueOf(this.mHdrCheckerEvValue[i]));
             MiCameraCompat.applyHdrParameter(builder, Integer.valueOf(this.mHdrCheckerSceneType), Integer.valueOf(this.mHdrCheckerAdrc));
             boolean z = !b.fv ? (b.jv || b.hv || b.lv) && this.mHdrCheckerEvValue[i] == 0 : this.mHdrCheckerEvValue[i] >= 0;
-            if (DataRepository.dataItemFeature().oe() && ((((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 2 || ((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 1 || (((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 3 && b.lv)) && z && isIn3OrMoreSatMode() && this.mSequenceNum < 4)) {
+            if (DataRepository.dataItemFeature().c_28041_0x0007() && ((((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 2 || ((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 1 || (((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 3 && b.lv)) && z && isIn3OrMoreSatMode() && this.mSequenceNum < 4)) {
                 Log.d(TAG, "applyHdrParameter enable mfnr EV = " + this.mHdrCheckerEvValue[i]);
                 MiCameraCompat.applyMfnrEnable(builder, true);
             } else if (this.mSingleCaptureForHDRplusMFNR) {

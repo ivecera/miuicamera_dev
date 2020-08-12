@@ -3451,7 +3451,7 @@
     return-object p0
 .end method
 
-.method public ob()Z
+.method public c_0x26()Z
     .locals 2
 
     const-string v0, "c_0x26"
@@ -3465,7 +3465,7 @@
     return p0
 .end method
 
-.method public oc()Z
+.method public c_0x1b()Z
     .locals 2
 
     const-string v0, "c_0x1b"
@@ -3502,7 +3502,7 @@
     return v0
 .end method
 
-.method public oe()Z
+.method public c_28041_0x0007()Z
     .locals 2
 
     const-string v0, "c_28041_0x0007"

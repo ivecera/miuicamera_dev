@@ -710,7 +710,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
         obtain.what = 10;
         obtain.arg1 = i;
         ((ActivityBase) this).mHandler.sendMessage(obtain);
-        if (DataRepository.dataItemFeature().oc()) {
+        if (DataRepository.dataItemFeature().c_0x1b()) {
             CompatibilityUtils.takebackMotor();
         }
     }

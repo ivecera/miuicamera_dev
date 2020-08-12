@@ -469,7 +469,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->oe()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_28041_0x0007()Z
 
     move-result v5
 

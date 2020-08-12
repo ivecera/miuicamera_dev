@@ -4183,7 +4183,7 @@ public class MiCamera2 extends Camera2Proxy {
         if (checkCaptureSession("startHighSpeedRecording")) {
             Log.d(TAG, "startHighSpeedRecording");
             MiCameraCompat.applyIsHfrPreview(this.mPreviewRequestBuilder, false);
-            if (DataRepository.dataItemFeature().ob()) {
+            if (DataRepository.dataItemFeature().c_0x26()) {
                 Log.d(TAG, "startHighSpeedRecording: CAF is disabled");
                 this.mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AF_MODE, 1);
             }

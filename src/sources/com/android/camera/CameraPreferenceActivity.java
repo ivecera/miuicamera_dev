@@ -245,7 +245,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
         if (CameraSettings.getScanQrcodeSettingNeedRemove(this.mFromWhere, this.mIsFrontCamera) == 1) {
             removePreference(this.mPreferenceGroup, "pref_scan_qrcode_key");
         }
-        if (!DataRepository.dataItemFeature().oc()) {
+        if (!DataRepository.dataItemFeature().c_0x1b()) {
             removePreference(this.mPreferenceGroup, "pref_popup_camera");
         }
         removeIncompatibleAdvancePreference();

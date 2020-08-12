@@ -249,6 +249,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x1a, false);
     }
 
+    public boolean c_0x1b() {
+        return getBoolean(c.c_0x1b, false);
+    }
+
     public boolean c_0x1c() {
         return getBoolean(c.c_0x1c, false);
     }
@@ -270,6 +274,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x25() {
         return getBoolean(c.c_0x25, false);
+    }
+
+    public boolean c_0x26() {
+        return getBoolean(c.c_0x26, false);
     }
 
     public boolean c_0x27_OR_T() {
@@ -564,6 +572,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_28041_0x0005, false);
     }
 
+    public boolean c_28041_0x0007() {
+        return getBoolean(c.c_28041_0x0007, false);
+    }
+
     public int c_28041_0x0008_OR_0() {
         return getInt(c.c_28041_0x0008, 0);
     }
@@ -785,20 +797,8 @@ public class a extends DataItemBase implements c {
         return getString(c.c_28041_0x0000, str);
     }
 
-    public boolean ob() {
-        return getBoolean(c.c_0x26, false);
-    }
-
-    public boolean oc() {
-        return getBoolean(c.c_0x1b, false);
-    }
-
     public boolean od() {
         return getBoolean(c.c_0x37, false) && !d.d.a.lh;
-    }
-
-    public boolean oe() {
-        return getBoolean(c.c_28041_0x0007, false);
     }
 
     public boolean of() {
