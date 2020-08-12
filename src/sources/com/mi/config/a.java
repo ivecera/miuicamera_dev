@@ -203,7 +203,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean Ye() {
-        return (tc() || uc()) && getBoolean(c.s_p_l_i_e, false);
+        return (ro_boot_hwc_EQ_india() || uc()) && getBoolean(c.s_p_l_i_e, false);
     }
 
     public int c_0x01_p_g_a_v_OR_280() {
@@ -212,6 +212,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x08() {
         return getBoolean(c.c_0x08, false);
+    }
+
+    public boolean c_0x09() {
+        return getBoolean(c.c_0x09, false);
     }
 
     public boolean c_0x0a() {
@@ -223,7 +227,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean c_0x0c() {
-        return getBoolean(c.c_0x0c, false) && tc();
+        return getBoolean(c.c_0x0c, false) && ro_boot_hwc_EQ_india();
     }
 
     public boolean c_0x0e() {
@@ -782,6 +786,10 @@ public class a extends DataItemBase implements c {
         return getInt(c.AEC_LUX_HEIGHT_LIGHT, 300);
     }
 
+    public int getAECLuxLastLight() {
+        return getInt(c.AEC_LUX_LAST_LIGHT, 350);
+    }
+
     public String h_d_v() {
         return getString(c.h_d_v, "");
     }
@@ -865,7 +873,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean ke() {
-        return (tc() && c_36658_0x0001()) || c_36658_0x0002();
+        return (ro_boot_hwc_EQ_india() && c_36658_0x0001()) || c_36658_0x0002();
     }
 
     public boolean me() {
@@ -903,7 +911,7 @@ public class a extends DataItemBase implements c {
 
     public boolean rc() {
         if (getBoolean(c.c_13254_0x02, false)) {
-            return tc() || xc();
+            return ro_boot_hwc_EQ_india() || xc();
         }
         return false;
     }
@@ -913,6 +921,16 @@ public class a extends DataItemBase implements c {
             this.Ii = SystemProperties.get("ro.boot.hwc");
         }
         return "cn".equalsIgnoreCase(this.Ii);
+    }
+
+    public boolean ro_boot_hwc_EQ_india() {
+        if (this.Ii == null) {
+            this.Ii = SystemProperties.get("ro.boot.hwc");
+        }
+        if ("india".equalsIgnoreCase(this.Ii)) {
+            return true;
+        }
+        return !TextUtils.isEmpty(this.Ii) && this.Ii.toLowerCase(Locale.ENGLISH).startsWith("india_");
     }
 
     public boolean s_a() {
@@ -960,7 +978,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean s_i_a_AND_india() {
-        return getBoolean(c.s_i_a, false) && tc();
+        return getBoolean(c.s_i_a, false) && ro_boot_hwc_EQ_india();
     }
 
     public boolean s_m_c_t_f() {
@@ -1015,6 +1033,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.s_v_f_m, false);
     }
 
+    public boolean s_z_m() {
+        return getBoolean(c.s_z_m, false);
+    }
+
     public boolean se() {
         return ((double) Math.abs((((float) Util.sWindowHeight) / ((float) Util.sWindowWidth)) - 2.0833333f)) < 0.02d && getBoolean(c.s_18_7_5_9_s, false);
     }
@@ -1024,33 +1046,11 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean supportColorEnhance() {
-        return getBoolean(c.c_35955_0x0003, false) && tc();
-    }
-
-    public int tb() {
-        return getInt(c.AEC_LUX_LAST_LIGHT, 350);
-    }
-
-    public boolean tc() {
-        if (this.Ii == null) {
-            this.Ii = SystemProperties.get("ro.boot.hwc");
-        }
-        if ("india".equalsIgnoreCase(this.Ii)) {
-            return true;
-        }
-        return !TextUtils.isEmpty(this.Ii) && this.Ii.toLowerCase(Locale.ENGLISH).startsWith("india_");
-    }
-
-    public boolean td() {
-        return getBoolean(c.c_0x09, false);
+        return getBoolean(c.c_35955_0x0003, false) && ro_boot_hwc_EQ_india();
     }
 
     public boolean te() {
         return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.1666667f && getBoolean(c.s_f_s, false);
-    }
-
-    public boolean tf() {
-        return getBoolean(c.s_z_m, false);
     }
 
     public boolean ub() {
@@ -1110,7 +1110,7 @@ public class a extends DataItemBase implements c {
 
     public boolean we() {
         if (getBoolean(c.c_35955_0x0001, false)) {
-            return tc() || ro_boot_hwc_EQ_cn();
+            return ro_boot_hwc_EQ_india() || ro_boot_hwc_EQ_cn();
         }
         return false;
     }

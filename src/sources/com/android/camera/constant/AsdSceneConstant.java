@@ -9,7 +9,7 @@ import java.lang.annotation.RetentionPolicy;
 
 public class AsdSceneConstant {
     private static final float AEC_LUX_HEIGHT_LIGHT = ((float) DataRepository.dataItemFeature().getAECLuxHeightLight());
-    private static final float AEC_LUX_LAST_LIGHT = ((float) DataRepository.dataItemFeature().tb());
+    private static final float AEC_LUX_LAST_LIGHT = ((float) DataRepository.dataItemFeature().getAECLuxLastLight());
     private static final float AEC_LUX_LOW_LIGHT = 450.0f;
     private static final int FRAME_BYPASS_NUMBER = 2;
     private static final float LENS_FOCUS_DISTANCE_TOO_CLOSE = 2.5f;

@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->tb()I
+    invoke-virtual {v0}, Lcom/mi/config/a;->getAECLuxLastLight()I
 
     move-result v0
 

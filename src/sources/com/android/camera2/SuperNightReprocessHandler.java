@@ -47,12 +47,12 @@ public class SuperNightReprocessHandler extends Handler {
         int i2;
         if (i == 0) {
             this.superNightRawFormat = SuperNightProcess.ASVL_PAF_RAW12_GRBG_16B;
-            i2 = DataRepository.dataItemFeature().tc() ? SuperNightProcess.ARC_SN_CAMERA_MODE_XIAOMI_G90_GW1_INDIA : 1793;
+            i2 = DataRepository.dataItemFeature().ro_boot_hwc_EQ_india() ? SuperNightProcess.ARC_SN_CAMERA_MODE_XIAOMI_G90_GW1_INDIA : 1793;
         } else if (i != 1) {
             i2 = 0;
         } else {
             this.superNightRawFormat = SuperNightProcess.ASVL_PAF_RAW10_GRBG_16B;
-            i2 = DataRepository.dataItemFeature().tc() ? SuperNightProcess.ARC_SN_CAMERA_MODE_XIAOMI_J15S_G85_S5KGM1_N_INDIA : SuperNightProcess.ARC_SN_CAMERA_MODE_XIAOMI_J15S_G85_S5KGM1_N;
+            i2 = DataRepository.dataItemFeature().ro_boot_hwc_EQ_india() ? SuperNightProcess.ARC_SN_CAMERA_MODE_XIAOMI_J15S_G85_S5KGM1_N_INDIA : SuperNightProcess.ARC_SN_CAMERA_MODE_XIAOMI_J15S_G85_S5KGM1_N;
         }
         this.mCameraDevice = miCamera2;
         this.mCaptureStateHandler = this.mCameraDevice.getCameraHandler();

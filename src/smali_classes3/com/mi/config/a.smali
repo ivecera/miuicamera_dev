@@ -1423,7 +1423,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result p0
 
@@ -1494,7 +1494,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result p0
 
@@ -2203,7 +2203,7 @@
 .method public Ye()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result v0
 
@@ -3196,7 +3196,7 @@
 .method public ke()Z
     .locals 1
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result v0
 
@@ -3787,7 +3787,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result v1
 
@@ -4032,7 +4032,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result p0
 
@@ -4044,7 +4044,7 @@
     return v0
 .end method
 
-.method public tb()I
+.method public getAECLuxLastLight()I
     .locals 2
 
     const-string v0, "a_l_l_l"
@@ -4058,7 +4058,7 @@
     return p0
 .end method
 
-.method public tc()Z
+.method public ro_boot_hwc_EQ_india()Z
     .locals 2
 
     iget-object v0, p0, Lcom/mi/config/a;->Ii:Ljava/lang/String;
@@ -4121,7 +4121,7 @@
     return p0
 .end method
 
-.method public td()Z
+.method public c_0x09()Z
     .locals 2
 
     const-string v0, "c_0x09"
@@ -4170,7 +4170,7 @@
     return v1
 .end method
 
-.method public tf()Z
+.method public s_z_m()Z
     .locals 2
 
     const-string v0, "s_z_m"
@@ -4454,7 +4454,7 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result v1
 

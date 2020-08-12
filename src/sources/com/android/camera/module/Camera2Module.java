@@ -3427,7 +3427,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                         }
                         if (isStandaloneMacroCamera()) {
                         }
-                        if (!DataRepository.dataItemFeature().tf()) {
+                        if (!DataRepository.dataItemFeature().s_z_m()) {
                             if (getZoomRatio() != 1.0f) {
                                 if (!isUltraWideBackCamera()) {
                                 }

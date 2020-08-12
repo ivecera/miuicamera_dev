@@ -940,7 +940,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
 
     public void hideLensDirtyDetectedHint() {
         Fragment findFragmentByTag;
-        if (!DataRepository.dataItemFeature().td() && (findFragmentByTag = getSupportFragmentManager().findFragmentByTag(LensDirtyDetectDialogFragment.TAG)) != null && (findFragmentByTag instanceof DialogFragment)) {
+        if (!DataRepository.dataItemFeature().c_0x09() && (findFragmentByTag = getSupportFragmentManager().findFragmentByTag(LensDirtyDetectDialogFragment.TAG)) != null && (findFragmentByTag instanceof DialogFragment)) {
             ((DialogFragment) findFragmentByTag).dismissAllowingStateLoss();
         }
     }
@@ -1814,7 +1814,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
     }
 
     public void showLensDirtyDetectedHint() {
-        if (DataRepository.dataItemFeature().td()) {
+        if (DataRepository.dataItemFeature().c_0x09()) {
             ((ActivityBase) this).mHandler.post(new Runnable() {
                 /* class com.android.camera.Camera.AnonymousClass9 */
 
