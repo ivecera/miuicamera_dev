@@ -425,7 +425,7 @@
 
     move-result-object v11
 
-    invoke-virtual {v11}, Lcom/mi/config/a;->Ue()Z
+    invoke-virtual {v11}, Lcom/mi/config/a;->c_27845_0x0003()Z
 
     move-result v11
 

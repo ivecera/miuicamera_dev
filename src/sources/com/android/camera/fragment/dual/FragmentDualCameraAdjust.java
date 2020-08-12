@@ -116,7 +116,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
     private int mZoomSwitchLayoutHeight;
 
     private void adjustViewBackground(View view, int i) {
-        if (DataRepository.dataItemFeature().Ub() == 0) {
+        if (DataRepository.dataItemFeature().c_28041_0x0008_OR_0() == 0) {
             view.setBackgroundResource(R.color.fullscreen_background);
             return;
         }
@@ -309,14 +309,14 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
 
     private void initSlideZoomView() {
         float minZoomRatio = ((BaseModule) ((ActivityBase) getContext()).getCurrentModule()).getMinZoomRatio();
-        int Ub = DataRepository.dataItemFeature().Ub();
-        if (Ub > 0) {
-            if (Ub == 5) {
+        int c_28041_0x0008_OR_0 = DataRepository.dataItemFeature().c_28041_0x0008_OR_0();
+        if (c_28041_0x0008_OR_0 > 0) {
+            if (c_28041_0x0008_OR_0 == 5) {
                 this.mSlidingAdapter = new FiveStopsZoomSliderAdapter(getContext(), ((BaseFragment) this).mCurrentMode, this);
-            } else if (Ub == 4) {
+            } else if (c_28041_0x0008_OR_0 == 4) {
                 this.mSlidingAdapter = new FourStopsZoomSliderAdapter(getContext(), ((BaseFragment) this).mCurrentMode, this);
             } else {
-                throw new IllegalStateException("Unsupported stop point count: " + Ub);
+                throw new IllegalStateException("Unsupported stop point count: " + c_28041_0x0008_OR_0);
             }
         } else if (minZoomRatio < 1.0f) {
             this.mSlidingAdapter = new TriSatZoomSliderAdapter(getContext(), ((BaseFragment) this).mCurrentMode, this);
@@ -475,7 +475,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
     }
 
     private void updateZoomSlider(boolean z) {
-        if (DataRepository.dataItemFeature().Ub() > 0) {
+        if (DataRepository.dataItemFeature().c_28041_0x0008_OR_0() > 0) {
             updateZoomSliderPosition(z);
         } else if (HybridZoomingSystem.IS_2_SAT || ((BaseFragment) this).mCurrentMode == 173) {
             float decimal = HybridZoomingSystem.toDecimal(CameraSettings.readZoom());
@@ -592,7 +592,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
         findViewById.setOnLongClickListener(this.mZoomRatioToggleView);
         this.mHorizontalZoomView = (HorizontalZoomView) view.findViewById(R.id.dual_camera_zoom);
         this.mHorizontalZoomViewSlide = (HorizontalSlideView) view.findViewById(R.id.dual_camera_zoom_slider);
-        if (DataRepository.dataItemFeature().Ub() > 0) {
+        if (DataRepository.dataItemFeature().c_28041_0x0008_OR_0() > 0) {
             this.mHorizontalSlideView = this.mHorizontalZoomView;
             this.mHorizontalZoomViewSlide.setVisibility(8);
             this.mZoomSliderViewX = 0.0f;
@@ -867,7 +867,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
         int i5 = this.mZoomSliderLayoutHeight;
         ViewGroup.LayoutParams layoutParams = this.mHorizontalSlideLayout.getLayoutParams();
         int i6 = i4 / 6;
-        if (DataRepository.dataItemFeature().Ub() <= 0 || ((BaseFragment) this).mCurrentMode == 165) {
+        if (DataRepository.dataItemFeature().c_28041_0x0008_OR_0() <= 0 || ((BaseFragment) this).mCurrentMode == 165) {
             layoutParams.height = i6;
         } else {
             layoutParams.height = (i6 * 2) / 3;
@@ -1040,7 +1040,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
     public boolean updateSlideAndZoomRatio(int i) {
         float decimal = HybridZoomingSystem.toDecimal(CameraSettings.readZoom());
         boolean z = false;
-        if ((DataRepository.dataItemFeature().Ub() > 0) && ((i == 2 || i == 1) && decimal > 5.0f)) {
+        if ((DataRepository.dataItemFeature().c_28041_0x0008_OR_0() > 0) && ((i == 2 || i == 1) && decimal > 5.0f)) {
             z = showSlideView();
         }
         updateZoomRatio(i);

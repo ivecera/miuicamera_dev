@@ -1904,7 +1904,7 @@
     return p0
 .end method
 
-.method public Ub()I
+.method public c_28041_0x0008_OR_0()I
     .locals 2
 
     const-string v0, "c_28041_0x0008"
@@ -1918,7 +1918,7 @@
     return p0
 .end method
 
-.method public Uc()Z
+.method public c_0x31()Z
     .locals 2
 
     const-string v0, "c_0x31"
@@ -1932,7 +1932,7 @@
     return p0
 .end method
 
-.method public Ud()Z
+.method public c_22367_0x0002_OR_T()Z
     .locals 2
 
     const-string v0, "c_22367_0x0002"
@@ -1946,7 +1946,7 @@
     return p0
 .end method
 
-.method public Ue()Z
+.method public c_27845_0x0003()Z
     .locals 2
 
     const-string v0, "c_27845_0x0003"

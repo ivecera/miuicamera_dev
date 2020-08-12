@@ -1613,7 +1613,7 @@
 
     if-eqz p2, :cond_9
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Ud()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_22367_0x0002_OR_T()Z
 
     move-result v0
 

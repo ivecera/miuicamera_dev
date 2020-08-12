@@ -133,7 +133,7 @@ public class FunctionCameraPrepare extends Func1Base<Camera, BaseModule> {
             }
         }
         if (((Func1Base) this).mTargetMode == 167) {
-            if (!Util.isStringValueContained(dataItemConfig2.getString(CameraSettings.KEY_QC_ISO, CameraAppImpl.getAndroidContext().getString(R.string.pref_camera_iso_default)), (DataRepository.dataItemFeature().bf() || DataRepository.dataItemFeature().Ue()) ? R.array.pref_camera_iso_entryvalues_new : R.array.pref_camera_iso_entryvalues)) {
+            if (!Util.isStringValueContained(dataItemConfig2.getString(CameraSettings.KEY_QC_ISO, CameraAppImpl.getAndroidContext().getString(R.string.pref_camera_iso_default)), (DataRepository.dataItemFeature().bf() || DataRepository.dataItemFeature().c_27845_0x0003()) ? R.array.pref_camera_iso_entryvalues_new : R.array.pref_camera_iso_entryvalues)) {
                 editor.remove(CameraSettings.KEY_QC_ISO);
             }
         }

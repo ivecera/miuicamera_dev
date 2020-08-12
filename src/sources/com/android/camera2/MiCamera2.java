@@ -714,7 +714,7 @@ public class MiCamera2 extends Camera2Proxy {
     }
 
     private void abortCaptures() {
-        if (DataRepository.dataItemFeature().Uc()) {
+        if (DataRepository.dataItemFeature().c_0x31()) {
             synchronized (this.mSessionLock) {
                 if (this.mCaptureSession != null) {
                     try {
@@ -2325,7 +2325,7 @@ public class MiCamera2 extends Camera2Proxy {
         this.mIsCameraClosed = true;
         abortCaptures();
         if (this.mCameraDevice != null) {
-            if (DataRepository.dataItemFeature().jd() && !DataRepository.dataItemFeature().Uc()) {
+            if (DataRepository.dataItemFeature().jd() && !DataRepository.dataItemFeature().c_0x31()) {
                 try {
                     this.mCameraDevice.flush();
                 } catch (CameraAccessException e2) {

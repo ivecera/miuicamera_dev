@@ -581,7 +581,7 @@ public class SupportedConfigFactory {
                 arrayList.add(createConfigItem(197));
                 break;
             case 171:
-                if (dataItemFeature.isSupportUltraWide() && CameraSettings.isSupportedOpticalZoom() && i2 == 0 && z && dataItemFeature.Ud()) {
+                if (dataItemFeature.isSupportUltraWide() && CameraSettings.isSupportedOpticalZoom() && i2 == 0 && z && dataItemFeature.c_22367_0x0002_OR_T()) {
                     arrayList.add(createConfigItem(207));
                 }
                 if (dataItemConfig.supportAi()) {
