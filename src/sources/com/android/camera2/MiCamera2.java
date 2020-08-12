@@ -2014,7 +2014,7 @@ public class MiCamera2 extends Camera2Proxy {
             lockFocus();
         } else if (DataRepository.dataItemFeature().c_0x42_m() && z) {
             runPreCaptureSequence();
-        } else if (!DataRepository.dataItemFeature().me() || !z) {
+        } else if (!DataRepository.dataItemFeature().c_0x42_OR_NEG_c_0x56() || !z) {
             lockFocus();
         } else {
             this.mCaptureCallback.setState(5);

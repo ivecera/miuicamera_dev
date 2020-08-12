@@ -3193,7 +3193,7 @@
     return p0
 .end method
 
-.method public ke()Z
+.method public c_36658_0x0002_OR_c_36658_0x0001_IF_india()Z
     .locals 1
 
     invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
@@ -3325,7 +3325,7 @@
     return p0
 .end method
 
-.method public me()Z
+.method public c_0x42_OR_NEG_c_0x56()Z
     .locals 2
 
     invoke-virtual {p0}, Lcom/mi/config/a;->c_0x56()Z
@@ -3357,7 +3357,7 @@
     return p0
 .end method
 
-.method public n(Ljava/lang/String;)Ljava/lang/String;
+.method public c_22756_0x0001_OR_param(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     const-string v0, "c_22756_0x0001"
@@ -3439,7 +3439,7 @@
     return p0
 .end method
 
-.method public o(Ljava/lang/String;)Ljava/lang/String;
+.method public c_28041_0x0000_OR_param(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     const-string v0, "c_28041_0x0000"
@@ -3774,7 +3774,7 @@
     return p0
 .end method
 
-.method public rc()Z
+.method public c_13254_0x02_AND_c_28041_0x0002_OR_india()Z
     .locals 2
 
     const/4 v0, 0x0

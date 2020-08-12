@@ -298,7 +298,7 @@ public class SupportedConfigFactory {
                                                     supportedConfigs.add(255);
                                                 }
                                                 if (z) {
-                                                    if (!dataItemFeature.rc()) {
+                                                    if (!dataItemFeature.c_13254_0x02_AND_c_28041_0x0002_OR_india()) {
                                                         if (!CameraSettings.checkLensAvailability(CameraAppImpl.getAndroidContext())) {
                                                             if (dataItemFeature.c_0x00_s_l_s_IFNOT_global() && dataItemFeature.c_28041_0x0002()) {
                                                                 supportedConfigs.add(206);
@@ -504,7 +504,7 @@ public class SupportedConfigFactory {
                         arrayList.add(createConfigItem(200));
                     }
                     if (z) {
-                        if (!dataItemFeature.rc() || i2 != 0) {
+                        if (!dataItemFeature.c_13254_0x02_AND_c_28041_0x0002_OR_india() || i2 != 0) {
                             if ((!dataItemFeature.c_28041_0x0002() || i2 == 1) && dataItemFeature.c_0x00_s_l_s_IFNOT_global()) {
                                 arrayList.add(createConfigItem(206));
                             }

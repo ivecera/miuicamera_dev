@@ -363,6 +363,10 @@ public class a extends DataItemBase implements c {
         return getString(c.c_0x40, "common");
     }
 
+    public boolean c_0x42_OR_NEG_c_0x56() {
+        return getBoolean(c.c_0x42, !c_0x56());
+    }
+
     public boolean c_0x42_m() {
         return getBoolean(c.c_0x42_m, false);
     }
@@ -464,6 +468,13 @@ public class a extends DataItemBase implements c {
 
     public boolean c_13254_0x01() {
         return getBoolean(c.c_13254_0x01, false);
+    }
+
+    public boolean c_13254_0x02_AND_c_28041_0x0002_OR_india() {
+        if (getBoolean(c.c_13254_0x02, false)) {
+            return ro_boot_hwc_EQ_india() || c_28041_0x0002();
+        }
+        return false;
     }
 
     public boolean c_16001_0x0002_OR_T() {
@@ -614,6 +625,10 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_22367_0x000A, 0);
     }
 
+    public String c_22756_0x0001_OR_param(String str) {
+        return getString(c.c_22756_0x0001, str);
+    }
+
     public int c_26813_0x0002_OR_0() {
         return getInt(c.c_26813_0x0002, 0);
     }
@@ -676,6 +691,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_27845_0x0003() {
         return getBoolean(c.c_27845_0x0003, false);
+    }
+
+    public String c_28041_0x0000_OR_param(String str) {
+        return getString(c.c_28041_0x0000, str);
     }
 
     public boolean c_28041_0x0001() {
@@ -779,6 +798,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_36658_0x0002() {
         return getBoolean(c.c_36658_0x0002, false);
+    }
+
+    public boolean c_36658_0x0002_OR_c_36658_0x0001_IF_india() {
+        return (ro_boot_hwc_EQ_india() && c_36658_0x0001()) || c_36658_0x0002();
     }
 
     public boolean c_9006_0x0000() {
@@ -934,22 +957,6 @@ public class a extends DataItemBase implements c {
         return true;
     }
 
-    public boolean ke() {
-        return (ro_boot_hwc_EQ_india() && c_36658_0x0001()) || c_36658_0x0002();
-    }
-
-    public boolean me() {
-        return getBoolean(c.c_0x42, !c_0x56());
-    }
-
-    public String n(String str) {
-        return getString(c.c_22756_0x0001, str);
-    }
-
-    public String o(String str) {
-        return getString(c.c_28041_0x0000, str);
-    }
-
     public boolean od() {
         return getBoolean(c.c_0x37, false) && !d.d.a.lh;
     }
@@ -969,13 +976,6 @@ public class a extends DataItemBase implements c {
 
     public boolean q(String str) {
         return getValues().containsKey(str);
-    }
-
-    public boolean rc() {
-        if (getBoolean(c.c_13254_0x02, false)) {
-            return ro_boot_hwc_EQ_india() || c_28041_0x0002();
-        }
-        return false;
     }
 
     public boolean ro_boot_hwc_EQ_cn() {

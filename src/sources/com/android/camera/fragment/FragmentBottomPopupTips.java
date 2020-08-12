@@ -328,7 +328,7 @@ public class FragmentBottomPopupTips extends BaseFragment implements View.OnClic
                     }
                     return;
                 case 22:
-                    if (DataRepository.dataItemFeature().ke()) {
+                    if (DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india()) {
                         hideAllTipImage();
                         showKaleidoscope();
                         return;
@@ -742,7 +742,7 @@ public class FragmentBottomPopupTips extends BaseFragment implements View.OnClic
                     boolean z3 = false;
                     if (i3 != -1) {
                         if (i3 == 22) {
-                            i4 = DataRepository.dataItemFeature().ke() ? DataRepository.dataItemRunning().getComponentRunningKaleidoscope().isSwitchOn() ? R.drawable.ic_wht_on : R.drawable.ic_wht_normal : 0;
+                            i4 = DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india() ? DataRepository.dataItemRunning().getComponentRunningKaleidoscope().isSwitchOn() ? R.drawable.ic_wht_on : R.drawable.ic_wht_normal : 0;
                         } else if (i3 != 34) {
                             i4 = 0;
                             z2 = true;
@@ -801,7 +801,7 @@ public class FragmentBottomPopupTips extends BaseFragment implements View.OnClic
                     }
                 }
             }
-        } else if (DataRepository.dataItemFeature().ke()) {
+        } else if (DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india()) {
             i3 = 22;
             boolean z32 = false;
             if (i3 != -1) {
@@ -926,7 +926,7 @@ public class FragmentBottomPopupTips extends BaseFragment implements View.OnClic
                     switch (i2) {
                         case 161:
                             if (!z3 || currentCameraId != 0) {
-                                if (DataRepository.dataItemFeature().ke()) {
+                                if (DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india()) {
                                     i6 = 22;
                                     i7 = i6;
                                     break;
@@ -980,7 +980,7 @@ public class FragmentBottomPopupTips extends BaseFragment implements View.OnClic
                                 i5 = i8;
                                 break;
                             case 22:
-                                if (DataRepository.dataItemFeature().ke()) {
+                                if (DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india()) {
                                     if (!DataRepository.dataItemRunning().getComponentRunningKaleidoscope().isSwitchOn()) {
                                         i5 = R.drawable.ic_wht_normal;
                                         break;
@@ -1861,7 +1861,7 @@ public class FragmentBottomPopupTips extends BaseFragment implements View.OnClic
                             if (intValue2 == 34) {
                                 showMimojiPanel(2);
                             }
-                        } else if (DataRepository.dataItemFeature().ke()) {
+                        } else if (DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india()) {
                             hideAllTipImage();
                             showKaleidoscope();
                         }

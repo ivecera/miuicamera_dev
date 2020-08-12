@@ -530,7 +530,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
                         } else if (i != 179) {
                             if (i != 180) {
                                 if (i == 183) {
-                                    if (DataRepository.dataItemFeature().ke()) {
+                                    if (DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india()) {
                                         this.mVideoCaptureEnable = true;
                                     } else {
                                         this.mVideoCaptureEnable = false;
@@ -578,7 +578,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
             this.mVideoPauseSupported = false;
             this.mVideoReverseEnable = false;
             this.mBackEnable = false;
-            if (DataRepository.dataItemFeature().ke()) {
+            if (DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india()) {
                 this.mVideoCaptureEnable = true;
             } else {
                 this.mVideoCaptureEnable = false;
@@ -1614,7 +1614,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
                     FragmentBottomAction.this.mModeSelectView.setVisibility(8);
                     Completable.create(new AlphaInOnSubscribe(FragmentBottomAction.this.mModeSelectLayout.getView())).subscribe();
                     FragmentBottomAction.this.mRecordingReverse.setVisibility(FragmentBottomAction.this.mRecordingReverse.getVisibility() == 0 ? 8 : 0);
-                    if (((BaseFragment) FragmentBottomAction.this).mCurrentMode == 183 && DataRepository.dataItemFeature().ke()) {
+                    if (((BaseFragment) FragmentBottomAction.this).mCurrentMode == 183 && DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india()) {
                         FragmentBottomAction.this.mRecordingSnap.setVisibility(8);
                     }
                     FragmentBottomAction.this.mBottomAnimator.removeListener(this);
@@ -1678,7 +1678,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
             }
             imageView.setVisibility(i2);
         }
-        if (((BaseFragment) this).mCurrentMode == 183 && DataRepository.dataItemFeature().ke()) {
+        if (((BaseFragment) this).mCurrentMode == 183 && DataRepository.dataItemFeature().c_36658_0x0002_OR_c_36658_0x0001_IF_india()) {
             this.mRecordingSnap.setVisibility(0);
         }
     }

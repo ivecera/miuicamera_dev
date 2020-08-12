@@ -37,8 +37,8 @@ public class HybridZoomingSystem {
     public static final boolean IS_3_SAT = OPTICAL_ZOOM_RATIO_COMBINATION.matches("^\\d+\\.\\d+\\s*:\\s*\\d+\\.\\d+\\s*:\\s*\\d+\\.\\d+$");
     public static final boolean IS_4_OR_MORE_SAT = OPTICAL_ZOOM_RATIO_COMBINATION.matches("^\\d+\\.\\d+\\s*:\\s*\\d+\\.\\d+\\s*:\\s*\\d+\\.\\d+\\s*:\\s*\\d+\\.\\d+(\\s*:\\s*\\d+\\.\\d+)*$");
     public static final boolean IS_4_SAT = OPTICAL_ZOOM_RATIO_COMBINATION.matches("^\\d+\\.\\d+\\s*:\\s*\\d+\\.\\d+\\s*:\\s*\\d+\\.\\d+\\s*:\\s*\\d+\\.\\d+$");
-    private static final String MACRO_OPTICAL_ZOOM_RATIO_COMBINATION = DataRepository.dataItemFeature().n(DEFAULT_OPTICAL_ZOOM_RATIO_COMBINATION);
-    private static final String OPTICAL_ZOOM_RATIO_COMBINATION = DataRepository.dataItemFeature().o(DEFAULT_OPTICAL_ZOOM_RATIO_COMBINATION);
+    private static final String MACRO_OPTICAL_ZOOM_RATIO_COMBINATION = DataRepository.dataItemFeature().c_22756_0x0001_OR_param(DEFAULT_OPTICAL_ZOOM_RATIO_COMBINATION);
+    private static final String OPTICAL_ZOOM_RATIO_COMBINATION = DataRepository.dataItemFeature().c_28041_0x0000_OR_param(DEFAULT_OPTICAL_ZOOM_RATIO_COMBINATION);
     public static final String STRING_ZOOM_RATIO_NONE = "1.0";
     public static final String STRING_ZOOM_RATIO_TELE = String.format(Locale.US, "%.1fx", Float.valueOf(FLOAT_ZOOM_RATIO_TELE));
     public static final String STRING_ZOOM_RATIO_TELE_5X = String.format(Locale.US, "%.1fx", Float.valueOf(5.0f));

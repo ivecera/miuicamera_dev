@@ -176,7 +176,7 @@
 
     sget-object v4, Lcom/android/camera/HybridZoomingSystem;->DEFAULT_OPTICAL_ZOOM_RATIO_COMBINATION:Ljava/lang/String;
 
-    invoke-virtual {v1, v4}, Lcom/mi/config/a;->o(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v4}, Lcom/mi/config/a;->c_28041_0x0000_OR_param(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -188,7 +188,7 @@
 
     sget-object v4, Lcom/android/camera/HybridZoomingSystem;->DEFAULT_OPTICAL_ZOOM_RATIO_COMBINATION:Ljava/lang/String;
 
-    invoke-virtual {v1, v4}, Lcom/mi/config/a;->n(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v4}, Lcom/mi/config/a;->c_22756_0x0001_OR_param(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

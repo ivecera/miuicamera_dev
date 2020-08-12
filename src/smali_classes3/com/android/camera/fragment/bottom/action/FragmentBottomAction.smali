@@ -1956,7 +1956,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->ke()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_36658_0x0002_OR_c_36658_0x0001_IF_india()Z
 
     move-result v2
 
@@ -2089,7 +2089,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->ke()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_36658_0x0002_OR_c_36658_0x0001_IF_india()Z
 
     move-result v2
 
@@ -6783,7 +6783,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/mi/config/a;->ke()Z
+    invoke-virtual {v1}, Lcom/mi/config/a;->c_36658_0x0002_OR_c_36658_0x0001_IF_india()Z
 
     move-result v1
 

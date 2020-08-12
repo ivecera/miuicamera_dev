@@ -732,7 +732,7 @@
 
     if-eqz p4, :cond_13
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->rc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_13254_0x02_AND_c_28041_0x0002_OR_india()Z
 
     move-result v1
 
@@ -2291,7 +2291,7 @@
     :cond_2c
     if-eqz p2, :cond_2f
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->rc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_13254_0x02_AND_c_28041_0x0002_OR_india()Z
 
     move-result v0
 
