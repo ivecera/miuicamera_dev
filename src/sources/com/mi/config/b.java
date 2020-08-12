@@ -30,7 +30,7 @@ public class b {
     public static final boolean Mu = "chiron".equals(vu);
     public static final boolean Nu = "beryllium".equals(vu);
     public static final boolean Ou = "violet".equals(vu);
-    public static final boolean Pu = d.getBoolean(d.Pu, false);
+    public static final boolean Pu = d.getBoolean(d.is_hongmi, false);
     public static final boolean Qu = "polaris".equals(vu);
     public static final boolean Ru = "sirius".equals(vu);
     public static final boolean Su = "dipper".equals(vu);
@@ -60,7 +60,7 @@ public class b {
     public static final boolean pv = a.bh;
     public static final boolean qv = a.hh;
     public static final boolean rv = a.Xg;
-    public static final boolean sg = d.getBoolean(d.sg, false);
+    public static final boolean sg = d.getBoolean(d.is_xiaomi, false);
     private static final int sv = 1;
     private static final int tv = 4;
     private static final int uv = 8;
@@ -83,27 +83,27 @@ public class b {
     }
 
     public static boolean Al() {
-        return d.getBoolean(d.jx, false);
+        return d.getBoolean(d.support_3d_face_beauty, false);
     }
 
     public static boolean Bl() {
-        return d.getBoolean(d.sx, false);
+        return d.getBoolean(d.support_camera_role, false);
     }
 
     public static boolean Cl() {
-        return d.getBoolean(d.nx, false);
+        return d.getBoolean(d.support_camera_dynamic_light_spot, false);
     }
 
     public static boolean Dl() {
-        return d.getBoolean(d.hx, false);
+        return d.getBoolean(d.support_front_beauty_mfnr, false);
     }
 
     public static boolean El() {
-        return d.getBoolean(d.Cw, false);
+        return d.getBoolean(d.support_front_flash, false);
     }
 
     public static boolean Fl() {
-        return d.getBoolean(d.mw, false);
+        return d.getBoolean(d.support_camera_gradienter, false);
     }
 
     public static boolean G(boolean z) {
@@ -122,7 +122,7 @@ public class b {
     }
 
     public static boolean Hl() {
-        return d.getBoolean(d.kx, false);
+        return d.getBoolean(d.support_mi_face_beauty, false);
     }
 
     public static boolean Il() {
@@ -130,7 +130,7 @@ public class b {
     }
 
     public static boolean Jl() {
-        return d.getBoolean(d.gx, true);
+        return d.getBoolean(d.support_psensor_pocket_mode, true);
     }
 
     public static boolean Kl() {
@@ -138,35 +138,35 @@ public class b {
     }
 
     public static boolean Ll() {
-        return d.getBoolean(d.ex, false);
+        return d.getBoolean(d.support_screen_light, false);
     }
 
     public static boolean Ml() {
-        return (d.getInteger(d._v, 0) & 13) != 0;
+        return (d.getInteger(d.camera_supported_asd, 0) & 13) != 0;
     }
 
     public static boolean Nl() {
-        return !a.lh && d.getBoolean(d.Lv, false);
+        return !a.lh && d.getBoolean(d.support_camera_age_detection, false);
     }
 
     public static boolean Ol() {
-        return d.getBoolean(d.Sv, false);
+        return d.getBoolean(d.support_camera_aohdr, false);
     }
 
     public static boolean Pl() {
-        return (d.getInteger(d._v, 0) & 1) != 0;
+        return (d.getInteger(d.camera_supported_asd, 0) & 1) != 0;
     }
 
     public static boolean Qk() {
-        return !qv && d.getBoolean(d.Qv, false);
+        return !qv && d.getBoolean(d.support_camera_boost_brightness, false);
     }
 
     public static boolean Ql() {
-        return (d.getInteger(d._v, 0) & 4) != 0;
+        return (d.getInteger(d.camera_supported_asd, 0) & 4) != 0;
     }
 
     public static boolean Rk() {
-        return d.getBoolean(d.mx, false);
+        return d.getBoolean(d.enable_algorithm_in_file_suffix, false);
     }
 
     public static boolean Rl() {
@@ -184,7 +184,7 @@ public class b {
     }
 
     public static boolean Sl() {
-        return d.getBoolean(d.Uv, false);
+        return d.getBoolean(d.support_chroma_flash, false);
     }
 
     public static boolean Te() {
@@ -194,7 +194,7 @@ public class b {
     public static ArrayList<String> Tk() {
         if (vv == null) {
             vv = new ArrayList<>();
-            String[] stringArray = d.getStringArray(d.Ev);
+            String[] stringArray = d.getStringArray(d.fp_nav_event_name_list);
             if (stringArray != null) {
                 Collections.addAll(vv, stringArray);
             }
@@ -203,7 +203,7 @@ public class b {
     }
 
     public static boolean Tl() {
-        return d.getBoolean(d.Bv, false);
+        return d.getBoolean(d.support_edge_handgrip, false);
     }
 
     public static String Uk() {
@@ -211,7 +211,7 @@ public class b {
     }
 
     public static boolean Ul() {
-        return d.getBoolean(d.zw, false);
+        return d.getBoolean(d.support_camera_face_info_water_mark, false);
     }
 
     public static int Vk() {
@@ -232,19 +232,19 @@ public class b {
     }
 
     public static boolean Wk() {
-        return d.getBoolean(d.tx, false);
+        return d.getBoolean(d.sensor_has_latency, false);
     }
 
     public static boolean Wl() {
-        return d.getBoolean(d.Mv, false);
+        return d.getBoolean(d.support_camera_record_location, false);
     }
 
     public static boolean Xk() {
-        return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.0f && d.getBoolean(d.Lw, false);
+        return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.0f && d.getBoolean(d.is_18x9_ratio_screen, false);
     }
 
     public static boolean Xl() {
-        return d.getBoolean(d.Gv, false);
+        return d.getBoolean(d.support_camera_burst_shoot, false);
     }
 
     public static boolean Yk() {
@@ -252,7 +252,7 @@ public class b {
     }
 
     public static boolean Yl() {
-        return !a.lh && d.getBoolean(d.uw, false);
+        return !a.lh && d.getBoolean(d.support_camera_magic_mirror, false);
     }
 
     public static boolean Zk() {
@@ -260,7 +260,7 @@ public class b {
     }
 
     public static boolean Zl() {
-        return d.getBoolean(d.ew, false);
+        return d.getBoolean(d.support_camera_manual_function, false);
     }
 
     public static boolean _k() {
@@ -274,11 +274,11 @@ public class b {
         if (cl()) {
             return false;
         }
-        return d.getBoolean(d.Jv, false);
+        return d.getBoolean(d.support_camera_movie_solid, false);
     }
 
     public static boolean al() {
-        return d.getBoolean(d.sw, false);
+        return d.getBoolean(d.is_camera_app_water_mark, false);
     }
 
     public static boolean am() {
@@ -291,7 +291,7 @@ public class b {
     }
 
     public static boolean bm() {
-        return d.getBoolean(d.Ov, false);
+        return d.getBoolean(d.support_camera_new_style_time_water_mark, false);
     }
 
     public static boolean cl() {
@@ -303,7 +303,7 @@ public class b {
     }
 
     public static boolean cm() {
-        return d.getBoolean(d.Vv, false);
+        return d.getBoolean(d.support_object_track, false);
     }
 
     public static boolean dl() {
@@ -311,7 +311,7 @@ public class b {
     }
 
     public static boolean dm() {
-        return d.getBoolean(d.lw, false);
+        return d.getBoolean(d.support_camera_peaking_mf, false);
     }
 
     public static boolean el() {
@@ -319,7 +319,7 @@ public class b {
     }
 
     public static boolean em() {
-        return !a.lh && d.getBoolean(d.vw, false);
+        return !a.lh && d.getBoolean(d.support_camera_quick_snap, false);
     }
 
     public static boolean fl() {
@@ -327,11 +327,11 @@ public class b {
     }
 
     public static boolean fm() {
-        return d.getBoolean(d.Av, false);
+        return d.getBoolean(d.support_dual_sd_card, false);
     }
 
     public static int getBurstShootCount() {
-        return d.getInteger(d.Iv, 100);
+        return d.getInteger(d.burst_shoot_count, 100);
     }
 
     public static String getCountry() {
@@ -340,11 +340,11 @@ public class b {
     }
 
     public static boolean gl() {
-        return !Fu && !Hu && !a.Jg && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && d.getBoolean(d.Ow, true);
+        return !Fu && !Hu && !a.Jg && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && d.getBoolean(d.is_front_video_quality_1080p, true);
     }
 
     public static boolean gm() {
-        return d.getBoolean(d.Fv, false);
+        return d.getBoolean(d.support_camera_shader_effect, false);
     }
 
     public static boolean hl() {
@@ -352,7 +352,7 @@ public class b {
     }
 
     public static boolean hm() {
-        return d.getBoolean(d.Kv, false);
+        return d.getBoolean(d.support_camera_skin_beauty, false);
     }
 
     public static boolean il() {
@@ -360,7 +360,7 @@ public class b {
     }
 
     public static boolean im() {
-        return d.getBoolean(d.Vw, false);
+        return d.getBoolean(d.is_support_stereo, false);
     }
 
     public static boolean isMTKPlatform() {
@@ -375,11 +375,11 @@ public class b {
     }
 
     public static boolean isSupportSuperResolution() {
-        return d.getBoolean(d.px, false);
+        return d.getBoolean(d.support_super_resolution, false);
     }
 
     public static boolean isSupportedOpticalZoom() {
-        return d.getBoolean(d.Ww, false);
+        return d.getBoolean(d.is_support_optical_zoom, false);
     }
 
     public static boolean jl() {
@@ -387,7 +387,7 @@ public class b {
     }
 
     public static boolean jm() {
-        return d.getBoolean(d.tw, false);
+        return d.getBoolean(d.support_camera_tilt_shift, false);
     }
 
     public static boolean kl() {
@@ -395,7 +395,7 @@ public class b {
     }
 
     public static boolean km() {
-        return d.getBoolean(d.Nv, false);
+        return d.getBoolean(d.support_camera_water_mark, false);
     }
 
     private static boolean ko() {
@@ -407,27 +407,27 @@ public class b {
     }
 
     public static boolean lm() {
-        return d.getBoolean(d.hw, false);
+        return d.getBoolean(d.support_camera_torch_capture, false);
     }
 
     private static boolean lo() {
-        return d.getBoolean(d.Iw, false) || ko();
+        return d.getBoolean(d.front_fingerprint_sensor, false) || ko();
     }
 
     public static boolean ml() {
-        return d.getBoolean(d.Sw, false);
+        return d.getBoolean(d.is_hal_does_caf_when_flash_on, false);
     }
 
     public static boolean mm() {
-        return d.getBoolean(d.Pv, false);
+        return d.getBoolean(d.support_camera_video_pause, false);
     }
 
     public static boolean nl() {
-        return d.getBoolean(d.kw, false);
+        return d.getBoolean(d.is_camera_hold_blur_background, false);
     }
 
     public static boolean nm() {
-        return d.getBoolean(d.Wv, false);
+        return d.getBoolean(d.support_camera_4k_quality, false);
     }
 
     public static boolean ol() {
@@ -435,7 +435,7 @@ public class b {
     }
 
     public static boolean om() {
-        return d.getBoolean(d.Rw, false);
+        return d.getBoolean(d.is_surface_size_limit, false);
     }
 
     public static boolean pd() {
@@ -443,7 +443,7 @@ public class b {
     }
 
     public static boolean pl() {
-        return d.getBoolean(d.Ew, true);
+        return d.getBoolean(d.is_camera_isp_rotated, true);
     }
 
     public static boolean pm() {
@@ -455,15 +455,15 @@ public class b {
     }
 
     public static boolean qm() {
-        return !Fu && !Hu && !a.Jg && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && !Iu && d.getBoolean(d.Qw, true);
+        return !Fu && !Hu && !a.Jg && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && !Iu && d.getBoolean(d.is_video_snapshot_size_limit, true);
     }
 
     public static boolean rl() {
-        return d.getBoolean(d.nw, false);
+        return d.getBoolean(d.is_camera_lower_qrscan_frequency, false);
     }
 
     public static boolean rm() {
-        return d.getBoolean(d.rx, false);
+        return d.getBoolean(d.support_picture_watermark, false);
     }
 
     public static boolean sl() {
@@ -471,11 +471,11 @@ public class b {
     }
 
     public static boolean sm() {
-        return d.getBoolean(d.qx, true);
+        return d.getBoolean(d.support_realtime_manual_exposure_time, true);
     }
 
     public static boolean tl() {
-        return d.getBoolean(d.zv, false);
+        return d.getBoolean(d.is_pad, false);
     }
 
     public static boolean ul() {
@@ -491,7 +491,7 @@ public class b {
     }
 
     public static boolean xl() {
-        return d.getBoolean(d._w, true);
+        return d.getBoolean(d.is_rgb888_egl_prefer, true);
     }
 
     public static boolean yl() {
@@ -499,6 +499,6 @@ public class b {
     }
 
     public static boolean zl() {
-        return d.getBoolean(d.ow, false);
+        return d.getBoolean(d.is_camera_preview_with_subthread_looper, false);
     }
 }

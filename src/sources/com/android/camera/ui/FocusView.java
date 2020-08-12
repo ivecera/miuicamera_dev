@@ -59,7 +59,7 @@ public class FocusView extends View implements FocusIndicator, V6FunctionUI, Rot
     private static final int DRAG_MODE_MOVE_FOCUS = 2;
     private static final int DRAG_MODE_NONE = 0;
     private static final int END_DISAPPEAR_TIMEOUT = 800;
-    private static final float GAP_NUM = d.getFloat(d.rw, 0.0f).floatValue();
+    private static final float GAP_NUM = d.getFloat(d.camera_exposure_compensation_steps_num, 0.0f).floatValue();
     public static final int MAX_SLIDE_DISTANCE = Util.dpToPixel(110.3f);
     private static final int MODE_AUTO = 0;
     private static final int MODE_FLAG_ANY = 0;

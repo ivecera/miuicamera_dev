@@ -4,32 +4,32 @@ import java.util.HashMap;
 
 class FeatureParserWrapper$1 extends HashMap<String, String> {
     FeatureParserWrapper$1() {
-        put(d.ex, "o_0x00_s_s_l");
-        put(d.pw, "o_0x01_r_p_s_f");
+        put(d.support_screen_light, "o_0x00_s_s_l");
+        put(d.camera_reduce_preview_flag, "o_0x01_r_p_s_f");
         put(d.VENDOR, "o_0x02_soc_vendor");
-        put(d.jx, "o_0x03_support_3d_face_beauty");
-        put(d.kx, "o_0x04_support_mi_face_beauty");
-        put(d.Ww, "o_0x05_is_support_optical_zoom");
-        put(d.lw, "o_0x06_is_support_peaking_mf");
-        put(d.nx, "o_0x08_is_support_dynamic_light_spot");
-        put(d.Tv, "o_0x07_support_hfr");
-        put(d.Jv, "o_0x08_support_movie_solid");
-        put(d.tw, "o_0x09_support_tilt_shift");
-        put(d.mw, "o_0x10_support_gradienter");
-        put(d.rx, "o_0x11_picture_water_mark");
-        put(d.uw, "o_0x12_magic_mirror");
-        put(d.Lv, "o_0x13_age_detection");
-        put(d.Iv, "o_0x14_burst_count");
-        put(d.Av, "o_0x15_support_dual_sd_card");
-        put(d.gx, "o_0x16_support_psensor_pocket_mode");
-        put(d.px, "o_0x17_support_super_resolution");
-        put(d.vw, "o_0x18_support_camera_quick_snap");
-        put(d.sx, "o_0x19_camera_role");
-        put(d.Nv, "o_0x20_time_water_mark");
-        put(d.Gv, "o_0x21_long_press_shutter");
-        put(d.Mv, "o_0x22_support_location");
-        put(d.ew, "o_0x23_support_manual");
-        put(d.nw, "o_0x24_support_qr_code");
+        put(d.support_3d_face_beauty, "o_0x03_support_3d_face_beauty");
+        put(d.support_mi_face_beauty, "o_0x04_support_mi_face_beauty");
+        put(d.is_support_optical_zoom, "o_0x05_is_support_optical_zoom");
+        put(d.support_camera_peaking_mf, "o_0x06_is_support_peaking_mf");
+        put(d.support_camera_dynamic_light_spot, "o_0x08_is_support_dynamic_light_spot");
+        put(d.support_camera_hfr, "o_0x07_support_hfr");
+        put(d.support_camera_movie_solid, "o_0x08_support_movie_solid");
+        put(d.support_camera_tilt_shift, "o_0x09_support_tilt_shift");
+        put(d.support_camera_gradienter, "o_0x10_support_gradienter");
+        put(d.support_picture_watermark, "o_0x11_picture_water_mark");
+        put(d.support_camera_magic_mirror, "o_0x12_magic_mirror");
+        put(d.support_camera_age_detection, "o_0x13_age_detection");
+        put(d.burst_shoot_count, "o_0x14_burst_count");
+        put(d.support_dual_sd_card, "o_0x15_support_dual_sd_card");
+        put(d.support_psensor_pocket_mode, "o_0x16_support_psensor_pocket_mode");
+        put(d.support_super_resolution, "o_0x17_support_super_resolution");
+        put(d.support_camera_quick_snap, "o_0x18_support_camera_quick_snap");
+        put(d.support_camera_role, "o_0x19_camera_role");
+        put(d.support_camera_water_mark, "o_0x20_time_water_mark");
+        put(d.support_camera_burst_shoot, "o_0x21_long_press_shutter");
+        put(d.support_camera_record_location, "o_0x22_support_location");
+        put(d.support_camera_manual_function, "o_0x23_support_manual");
+        put(d.is_camera_lower_qrscan_frequency, "o_0x24_support_qr_code");
     }
 
     public String put(String str, String str2) {

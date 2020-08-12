@@ -428,7 +428,7 @@ public class EffectController {
             }
             z3 = true;
         }
-        if (d.getBoolean(d.dw, false) || renderGroup.getRender(FilterInfo.FILTER_ID_GAUSSIAN) != null || (!z && i != FilterInfo.FILTER_ID_GAUSSIAN && (i >= 0 || z3))) {
+        if (d.getBoolean(d.is_camera_replace_higher_cost_effect, false) || renderGroup.getRender(FilterInfo.FILTER_ID_GAUSSIAN) != null || (!z && i != FilterInfo.FILTER_ID_GAUSSIAN && (i >= 0 || z3))) {
             z4 = z3;
         } else if (z || i == FilterInfo.FILTER_ID_GAUSSIAN || renderGroup.isPartComplete(3)) {
             renderGroup.addRender(new PipeRenderPair(gLCanvas, FilterInfo.FILTER_ID_GAUSSIAN, new PipeRenderPair(gLCanvas, renderGroup.getPartRender(0) != null ? renderGroup.getPartRender(0) : new XGaussianEffectRender(gLCanvas), renderGroup.getPartRender(1) != null ? renderGroup.getPartRender(1) : new YGaussianEffectRender(gLCanvas), false), renderGroup.getPartRender(2) != null ? renderGroup.getPartRender(2) : new GaussianMaskEffectRender(gLCanvas), false));

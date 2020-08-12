@@ -797,7 +797,7 @@ public class e {
         try {
             Class<?> cls2 = Class.forName("d.g.a");
             if (cls2 != null) {
-                return ((Boolean) cls2.getMethod("getBoolean", String.class, Boolean.TYPE).invoke(null, d.zv, false)).booleanValue();
+                return ((Boolean) cls2.getMethod("getBoolean", String.class, Boolean.TYPE).invoke(null, d.is_pad, false)).booleanValue();
             }
         } catch (Exception unused2) {
         }

@@ -2298,7 +2298,7 @@ public final class Util {
             Log.w(TAG, "null preview size list");
             return null;
         }
-        int integer = com.mi.config.d.getInteger(com.mi.config.d.pw, 0);
+        int integer = com.mi.config.d.getInteger(com.mi.config.d.camera_reduce_preview_flag, 0);
         int i3 = 1080;
         if (integer != 0) {
             boolean z3 = i == Camera2DataContainer.getInstance().getFrontCameraId();
