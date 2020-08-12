@@ -44,7 +44,7 @@ public class ComponentConfigFlash extends ComponentData {
         ArrayList arrayList = new ArrayList();
         boolean z = false;
         this.mIsHardwareSupported = (!cameraCapabilities.isFlashSupported() || DataRepository.dataItemGlobal().getDisplayMode() != 1) ? false : true;
-        if (DataRepository.dataItemFeature().hd() && i2 == 0 && cameraCapabilities.isBackSoftLightSupported()) {
+        if (DataRepository.dataItemFeature().c_33066_0x0001() && i2 == 0 && cameraCapabilities.isBackSoftLightSupported()) {
             z = true;
         }
         this.mIsBackSoftLightSupported = z;

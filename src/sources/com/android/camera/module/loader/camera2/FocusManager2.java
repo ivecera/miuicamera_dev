@@ -953,7 +953,7 @@ public class FocusManager2 extends FocusManagerAbstract {
         this.mLockAeAwbNeeded = cameraCapabilities.isAELockSupported() || cameraCapabilities.isAWBLockSupported();
         this.mSupportedFocusModes = AutoFocus.convertToLegacyFocusModes(cameraCapabilities.getSupportedFocusModes());
         ((FocusManagerAbstract) this).mActiveArraySize = cameraCapabilities.getActiveArraySize();
-        if (DataRepository.dataItemFeature().hc() && !this.mFocusAreaSupported && this.mMeteringAreaSupported && cameraCapabilities.isAELockSupported()) {
+        if (DataRepository.dataItemFeature().c_e_f_a_l() && !this.mFocusAreaSupported && this.mMeteringAreaSupported && cameraCapabilities.isAELockSupported()) {
             z = true;
         }
         this.mAELockOnlySupported = z;

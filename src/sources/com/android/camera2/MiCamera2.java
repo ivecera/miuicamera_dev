@@ -639,7 +639,7 @@ public class MiCamera2 extends Camera2Proxy {
         /* access modifiers changed from: package-private */
         public void onCapabilityChanged(CameraCapabilities cameraCapabilities) {
             this.mFocusAreaSupported = cameraCapabilities.isAFRegionSupported();
-            this.mAELockOnlySupported = DataRepository.dataItemFeature().hc() && !this.mFocusAreaSupported && cameraCapabilities.isAERegionSupported() && cameraCapabilities.isAELockSupported();
+            this.mAELockOnlySupported = DataRepository.dataItemFeature().c_e_f_a_l() && !this.mFocusAreaSupported && cameraCapabilities.isAERegionSupported() && cameraCapabilities.isAELockSupported();
         }
 
         public void onCaptureCompleted(@NonNull CameraCaptureSession cameraCaptureSession, @NonNull CaptureRequest captureRequest, @NonNull TotalCaptureResult totalCaptureResult) {

@@ -2808,7 +2808,7 @@
     return p0
 .end method
 
-.method public hc()Z
+.method public c_e_f_a_l()Z
     .locals 2
 
     const-string v0, "c_e_f_a_l"
@@ -2822,7 +2822,7 @@
     return p0
 .end method
 
-.method public hd()Z
+.method public c_33066_0x0001()Z
     .locals 2
 
     const-string v0, "c_33066_0x0001"
@@ -2870,7 +2870,7 @@
     return p0
 .end method
 
-.method public hf()Z
+.method public c_19039_0x0018()Z
     .locals 2
 
     const-string v0, "c_19039_0x0018"

@@ -388,6 +388,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_19039_0x0017, false);
     }
 
+    public boolean c_19039_0x0018() {
+        return getBoolean(c.c_19039_0x0018, false);
+    }
+
     public boolean c_19039_0x0019() {
         return getBoolean(c.c_19039_0x0019, false);
     }
@@ -512,6 +516,10 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_32889_0x0002, 0);
     }
 
+    public boolean c_33066_0x0001() {
+        return getBoolean(c.c_33066_0x0001, false);
+    }
+
     public boolean c_33066_0x0003() {
         return getBoolean(c.c_33066_0x0003, false);
     }
@@ -564,6 +572,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_d_e_f_w, false);
     }
 
+    public boolean c_e_f_a_l() {
+        return getBoolean(c.c_e_f_a_l, true);
+    }
+
     public boolean c_r_i_m_m() {
         return getBoolean(c.c_r_i_m_m, false);
     }
@@ -601,18 +613,6 @@ public class a extends DataItemBase implements c {
 
     public String h_d_v() {
         return getString(c.h_d_v, "");
-    }
-
-    public boolean hc() {
-        return getBoolean(c.c_e_f_a_l, true);
-    }
-
-    public boolean hd() {
-        return getBoolean(c.c_33066_0x0001, false);
-    }
-
-    public boolean hf() {
-        return getBoolean(c.c_19039_0x0018, false);
     }
 
     public boolean i_q_a_u_m() {

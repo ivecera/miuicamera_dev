@@ -2443,7 +2443,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                             this.mCurrentAiScene = i;
                             z2 = false;
                         }
-                    } else if (DataRepository.dataItemFeature().hd() && isBackCamera() && !MiAlgoAsdSceneProfile.isAlreadyTip()) {
+                    } else if (DataRepository.dataItemFeature().c_33066_0x0001() && isBackCamera() && !MiAlgoAsdSceneProfile.isAlreadyTip()) {
                         MiAlgoAsdSceneProfile.setTipEnable(MiAlgoAsdSceneProfile.COMPAT_FOOD, true);
                         updateTipMessage(20, R.string.recommend_soft_light_tip, 2);
                     }

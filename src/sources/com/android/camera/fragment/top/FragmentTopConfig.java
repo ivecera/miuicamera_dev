@@ -1599,7 +1599,7 @@ public class FragmentTopConfig extends BaseFragment implements View.OnClickListe
                                     ToastUtils.showToast(getActivity(), disableReasonString);
                                 }
                                 Log.w(TAG, "ignore click flash for disable update");
-                            } else if (((BaseFragment) this).mCurrentMode != 171 || !DataRepository.dataItemFeature().hd() || !CameraSettings.isBackCamera()) {
+                            } else if (((BaseFragment) this).mCurrentMode != 171 || !DataRepository.dataItemFeature().c_33066_0x0001() || !CameraSettings.isBackCamera()) {
                                 expandExtra(componentFlash, view, topConfigItem.configItem);
                             } else {
                                 String componentValue = componentFlash.getComponentValue(((BaseFragment) this).mCurrentMode);

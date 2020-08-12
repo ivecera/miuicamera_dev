@@ -2090,7 +2090,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->hc()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_e_f_a_l()Z
 
     move-result v0
 

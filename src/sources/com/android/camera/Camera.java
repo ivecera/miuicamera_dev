@@ -1684,7 +1684,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
         EffectChangedListenerController.setHoldKey(hashCode());
         this.mImplFactory = new ImplFactory();
         this.mImplFactory.initBase(this, 171);
-        if (DataRepository.dataItemFeature().hf()) {
+        if (DataRepository.dataItemFeature().c_19039_0x0018()) {
             this.mImplFactory.initBase(this, 239);
         }
         DataItemGlobal dataItemGlobal = DataRepository.dataItemGlobal();
