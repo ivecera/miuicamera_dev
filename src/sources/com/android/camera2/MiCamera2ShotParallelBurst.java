@@ -378,7 +378,7 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
             this.mSingleCaptureForHDRplusMFNR = b.jv && ((MiCamera2Shot) this).mMiCamera.getCapabilities().getFacing() == 1 && !((MiCamera2Shot) this).mMiCamera.isMacroMode() && !this.mIsHdrBokeh;
             this.mAlgoType = 1;
             prepareHdr();
-        } else if (DataRepository.dataItemFeature().Oe() && ((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isRearBokehEnabled()) {
+        } else if (DataRepository.dataItemFeature().c_9006_0x0003() && ((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isRearBokehEnabled()) {
             this.mAlgoType = 9;
             prepareLowLightBokeh();
         } else if (CameraSettings.isGroupShotOn()) {

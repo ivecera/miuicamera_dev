@@ -3856,7 +3856,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                     Log.d(TAG, "enableParallel=" + this.mEnableParallelSession + " mEnableShot2Gallery=" + this.mEnableShot2Gallery + " shotType=" + i2);
                     ((BaseModule) this).mCamera2Device.setShotType(i2);
                     ((BaseModule) this).mCamera2Device.setShot2Gallery(this.mEnableShot2Gallery);
-                } else if (!isBackCamera() || !DataRepository.dataItemFeature().Oe()) {
+                } else if (!isBackCamera() || !DataRepository.dataItemFeature().c_9006_0x0003()) {
                     if (!shouldDoMultiFrameCapture()) {
                         if (isDualFrontCamera() || isDualCamera() || isBokehUltraWideBackCamera()) {
                             if (z) {

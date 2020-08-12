@@ -1572,7 +1572,7 @@
     return p0
 .end method
 
-.method public Oe()Z
+.method public c_9006_0x0003()Z
     .locals 2
 
     const-string v0, "c_9006_0x0003"
