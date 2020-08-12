@@ -328,7 +328,7 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    sget-boolean v2, Ld/d/a;->lh:Z
+    sget-boolean v2, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-nez v2, :cond_1
 

@@ -3051,7 +3051,7 @@
     const/4 v5, 0x0
 
     :try_start_0
-    sget-boolean v6, Ld/d/a;->lh:Z
+    sget-boolean v6, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     const/4 v7, 0x1
 

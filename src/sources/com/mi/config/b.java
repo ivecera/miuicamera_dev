@@ -17,14 +17,14 @@ import java.util.concurrent.atomic.AtomicReference;
 public class b {
     public static final boolean Au = ("cancro".equals(vu) && Build.MODEL.startsWith("MI 3"));
     public static final boolean Bu = Au;
-    public static final boolean Cu = (a.yg && !a.vg && !a.wg);
-    public static final boolean Du = a.wg;
-    public static final boolean Eu = a.xg;
-    public static final boolean Fu = a.vg;
-    public static final boolean Gu = a.zg;
-    public static final boolean Hu = a.mg;
-    public static final boolean Iu = a.qg;
-    public static final boolean Ju = a.rg;
+    public static final boolean Cu = (a.device_is_HM201302x && !a.device_is_armani && !a.device_is_HM201401x);
+    public static final boolean Du = a.device_is_HM201401x;
+    public static final boolean Eu = a.device_is_HM2014501;
+    public static final boolean Fu = a.device_is_armani;
+    public static final boolean Gu = a.device_is_lcsh92_wet_x;
+    public static final boolean Hu = a.device_is_lte26007;
+    public static final boolean Iu = a.device_is_cancro_mi4;
+    public static final boolean Ju = a.device_is_virgo;
     public static final boolean Ku = "leo".equals(vu);
     public static final boolean Lu = "lithium".equals(vu);
     public static final boolean Mu = "chiron".equals(vu);
@@ -51,15 +51,15 @@ public class b {
     public static final boolean hv = "umi".equals(vu);
     public static final boolean jv = "cmi".equals(vu);
     public static final boolean kv = ("lmi".equals(vu) || "lmiin".equals(vu));
-    public static final boolean lg = a.kg;
+    public static final boolean lg = a.device_is_aries_or_taurus;
     public static final boolean lv = ("lmipro".equals(vu) || "lmiinpro".equals(vu));
     public static final boolean mv = "draco".equals(vu);
     public static final boolean nv;
-    public static final boolean og = a.og;
+    public static final boolean og = a.model_is_m2ax;
     public static final boolean ov = "crux".equals(vu);
-    public static final boolean pv = a.bh;
-    public static final boolean qv = a.hh;
-    public static final boolean rv = a.Xg;
+    public static final boolean pv = a.build_type_user_version_incremental_not_XYZ;
+    public static final boolean qv = a.ro_cust_test_is_cm;
+    public static final boolean rv = a.carrier_name_is_cm_variant_cn_chinamobile_cta;
     public static final boolean sg = d.getBoolean(d.is_xiaomi, false);
     private static final int sv = 1;
     private static final int tv = 4;
@@ -146,7 +146,7 @@ public class b {
     }
 
     public static boolean Nl() {
-        return !a.lh && d.getBoolean(d.support_camera_age_detection, false);
+        return !a.ro_boot_hwc_contains_GLOBAL_or_is_android_one && d.getBoolean(d.support_camera_age_detection, false);
     }
 
     public static boolean Ol() {
@@ -252,7 +252,7 @@ public class b {
     }
 
     public static boolean Yl() {
-        return !a.lh && d.getBoolean(d.support_camera_magic_mirror, false);
+        return !a.ro_boot_hwc_contains_GLOBAL_or_is_android_one && d.getBoolean(d.support_camera_magic_mirror, false);
     }
 
     public static boolean Zk() {
@@ -264,7 +264,7 @@ public class b {
     }
 
     public static boolean _k() {
-        if (a.lh) {
+        if (a.ro_boot_hwc_contains_GLOBAL_or_is_android_one) {
             return W(getCountry());
         }
         return false;
@@ -319,7 +319,7 @@ public class b {
     }
 
     public static boolean em() {
-        return !a.lh && d.getBoolean(d.support_camera_quick_snap, false);
+        return !a.ro_boot_hwc_contains_GLOBAL_or_is_android_one && d.getBoolean(d.support_camera_quick_snap, false);
     }
 
     public static boolean fl() {
@@ -340,7 +340,7 @@ public class b {
     }
 
     public static boolean gl() {
-        return !Fu && !Hu && !a.Jg && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && d.getBoolean(d.is_front_video_quality_1080p, true);
+        return !Fu && !Hu && !a.device_is_HM2014xxx && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && d.getBoolean(d.is_front_video_quality_1080p, true);
     }
 
     public static boolean gm() {
@@ -348,7 +348,7 @@ public class b {
     }
 
     public static boolean hl() {
-        return Uu && a.lh;
+        return Uu && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean hm() {
@@ -356,7 +356,7 @@ public class b {
     }
 
     public static boolean il() {
-        return vu.equalsIgnoreCase("davinci") && a.lh;
+        return vu.equalsIgnoreCase("davinci") && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean im() {
@@ -383,7 +383,7 @@ public class b {
     }
 
     public static boolean jl() {
-        return vu.equalsIgnoreCase("raphael") && a.lh;
+        return vu.equalsIgnoreCase("raphael") && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean jm() {
@@ -391,7 +391,7 @@ public class b {
     }
 
     public static boolean kl() {
-        return bv && a.lh;
+        return bv && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean km() {
@@ -403,7 +403,7 @@ public class b {
     }
 
     public static boolean ll() {
-        return fv && a.lh;
+        return fv && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean lm() {
@@ -455,7 +455,7 @@ public class b {
     }
 
     public static boolean qm() {
-        return !Fu && !Hu && !a.Jg && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && !Iu && d.getBoolean(d.is_video_snapshot_size_limit, true);
+        return !Fu && !Hu && !a.device_is_HM2014xxx && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && !Iu && d.getBoolean(d.is_video_snapshot_size_limit, true);
     }
 
     public static boolean rl() {

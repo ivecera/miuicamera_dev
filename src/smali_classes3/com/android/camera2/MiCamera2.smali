@@ -3112,7 +3112,7 @@
 
     if-eqz v2, :cond_2
 
-    sget-boolean v2, Ld/d/a;->bh:Z
+    sget-boolean v2, Ld/d/a;->build_type_user_version_incremental_not_XYZ:Z
 
     if-eqz v2, :cond_1
 

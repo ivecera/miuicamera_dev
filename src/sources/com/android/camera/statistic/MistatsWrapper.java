@@ -209,7 +209,7 @@ public class MistatsWrapper {
                     sIsEnabled = resources.getBoolean(R.bool.pref_camera_statistic_default);
                     if (sIsEnabled) {
                         sIsCounterEventEnabled = resources.getBoolean(R.bool.pref_camera_statistic_counter_event_default);
-                        sIsAnonymous = a.lh;
+                        sIsAnonymous = a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
                         MiStat.initialize(context, APP_ID, APP_KEY, false, CHANNEL);
                         if (!sIsAnonymous) {
                             z = true;
@@ -220,7 +220,7 @@ public class MistatsWrapper {
                         }
                         MiStat.setUploadInterval(90000);
                         MiStat.setUseSystemUploadingService(true, true);
-                        if (a.lh) {
+                        if (a.ro_boot_hwc_contains_GLOBAL_or_is_android_one) {
                             MiStat.setInternationalRegion(true, a.getRegion());
                         }
                     }

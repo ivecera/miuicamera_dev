@@ -677,7 +677,7 @@
 
     sput-boolean v2, Lcom/android/camera/statistic/MistatsWrapper;->sIsCounterEventEnabled:Z
 
-    sget-boolean v2, Ld/d/a;->lh:Z
+    sget-boolean v2, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     sput-boolean v2, Lcom/android/camera/statistic/MistatsWrapper;->sIsAnonymous:Z
 
@@ -711,7 +711,7 @@
 
     invoke-static {v1, v1}, Lcom/xiaomi/stat/MiStat;->setUseSystemUploadingService(ZZ)Z
 
-    sget-boolean p0, Ld/d/a;->lh:Z
+    sget-boolean p0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-eqz p0, :cond_3
 

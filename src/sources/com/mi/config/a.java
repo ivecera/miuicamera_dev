@@ -154,7 +154,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean Bd() {
-        return getBoolean(c.c_33066_0x0004, false) && !d.d.a.lh;
+        return getBoolean(c.c_33066_0x0004, false) && !d.d.a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public boolean Be() {
@@ -958,7 +958,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean od() {
-        return getBoolean(c.c_0x37, false) && !d.d.a.lh;
+        return getBoolean(c.c_0x37, false) && !d.d.a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public boolean of() {

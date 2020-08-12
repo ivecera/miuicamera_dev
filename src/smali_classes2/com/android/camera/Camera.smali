@@ -2069,7 +2069,7 @@
     return-void
 
     :cond_0
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     sget-object v2, Lcom/android/camera/Util;->sRegion:Ljava/lang/String;
 

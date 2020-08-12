@@ -4,135 +4,133 @@
 
 
 # static fields
-.field public static final Ag:Z
+.field public static final device_is_dior:Z
 
-.field public static final Bg:Z
+.field public static final device_is_dior_modem_LTETD:Z
 
-.field public static final Cg:Z
+.field public static final device_is_dior_modem_LTEW:Z
 
-.field public static final Dg:Z
+.field public static final device_is_HM2014811:Z
 
-.field public static final Eg:Z
+.field public static final device_is_HM2014812_or_HM2014821:Z
 
-.field public static final Fg:Z
+.field public static final device_is_HM2014813_or_HM2014112:Z
 
-.field public static final Gg:Z
+.field public static final device_is_HM2014818:Z
 
-.field public static final Hg:Z
+.field public static final device_is_HM2014817:Z
 
 .field public static final IS_DEBUGGABLE:Z
 
-.field public static final Ig:Z
+.field public static final device_is_HM2014819:Z
 
-.field public static final Jg:Z
+.field public static final device_is_HM2014xxx:Z
 
-.field public static final Kg:Z
+.field public static final device_is_gucci:Z
 
-.field public static final Lg:Z
+.field public static final device_is_gucci_modem_cm:Z
 
-.field public static final Mg:Z
+.field public static final device_is_gucci_modem_cu:Z
 
-.field public static final Ng:Z
+.field public static final device_is_gucci_modem_ct:Z
 
-.field public static final Og:Z
+.field public static final device_is_mione_soc_msm9660:Z
 
-.field public static final Pg:Z
+.field public static final device_is_cancro_mi4_modem_CDMA:Z
 
-.field public static final Qg:Z
+.field public static final device_is_cancro_mi4_modem_LTE_CMCC:Z
 
-.field public static final Rg:Z
+.field public static final device_is_cancro_mi4_modem_LTE_CU:Z
 
-.field public static final Sg:Z
+.field public static final device_is_cancro_mi4_modem_LTE_CT:Z
 
-.field public static final Tg:Z
+.field public static final device_is_cancro_mi4_modem_LTE_India:Z
 
-.field public static final Ug:Z
+.field public static final device_is_cancro_mi4_modem_LTE_SEAsa:Z
 
-.field public static final Vg:Z
+.field public static final device_is_HM2013022:Z
 
-.field public static final Wg:Z
+.field public static final carrier_name_is_cu:Z
 
-.field public static final Xg:Z
+.field public static final carrier_name_is_cm_variant_cn_chinamobile_cta:Z
 
-.field public static final Yg:Z
+.field public static final carrier_name_is_cm_variant_cn_cmcooperation:Z
 
-.field public static final Zg:Z
+.field public static final carrier_name_is_ct:Z
 
-.field public static final _g:Z
+.field public static final version_incremental_is_XYZ:Z
 
-.field public static final bh:Z
+.field public static final build_type_user_version_incremental_not_XYZ:Z
 
-.field public static final dh:Z
+.field public static final build_type_user_or_version_incremental_XYZ:Z
 
-.field public static final eh:Z
+.field public static final product_mod_device_ends_alpha:Z
 
-.field public static final fh:Z
+.field public static final miui_optimization_disabled:Z
 
-.field public static final gh:Z
+.field public static final ro_miui_cta_is_1:Z
 
-.field private static final hg:Ljava/lang/String; = "\\d+.\\d+.\\d+(-internal)?"
+.field private static final digit_digit_digit:Ljava/lang/String; = "\\d+.\\d+.\\d+(-internal)?"
 
-.field public static final hh:Z
+.field public static final ro_cust_test_is_cm:Z
 
 .field private static final ig:Ljava/lang/String; = "([A-Z]{3}|[A-Z]{7})\\d+.\\d+"
 
-.field public static final ih:Z
+.field public static final ro_cust_test_is_cu:Z
 
-.field public static final jg:Z
+.field public static final device_is_mione:Z
 
-.field public static final jh:Z
+.field public static final ro_cust_test_is_ct:Z
 
-.field public static final kg:Z
+.field public static final device_is_aries_or_taurus:Z
 
-.field public static final kh:Z
+.field public static final persist_sys_func_limit_switch_is_1:Z
 
-.field public static final lg:Z
+.field public static final ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
-.field public static final lh:Z
+.field public static final device_is_lte26007:Z
 
-.field public static final mg:Z
+.field public static final product_mod_device_ends_global:Z
 
-.field public static final mh:Z
-
-.field public static final ng:Z
+.field public static final model_is_m1sx:Z
 
 .field public static final nh:Z
 
-.field public static final og:Z
+.field public static final model_is_m2ax:Z
 
-.field public static final oh:Ljava/lang/String; = "persist.sys.user_mode"
+.field public static final user_mode_key:Ljava/lang/String; = "persist.sys.user_mode"
 
-.field public static final pg:Z
+.field public static final device_is_cancro_model_mi3:Z
 
 .field public static final ph:I = 0x0
 
-.field public static final qg:Z
+.field public static final device_is_cancro_mi4:Z
 
 .field public static final qh:I = 0x1
 
-.field public static final rg:Z
+.field public static final device_is_virgo:Z
 
 .field public static final rh:Ljava/lang/String;
 
-.field public static final sg:Z
+.field public static final device_is_mione_cancro_virgo:Z
 
-.field public static final sh:Z
+.field public static final has_not_cust_part:Z
 
-.field public static final tg:Z
+.field public static final device_is_mocha:Z
 
-.field public static final th:Z
+.field public static final miui_cust_device_ends_pro:Z
 
-.field public static final ug:Z
+.field public static final device_is_flo:Z
 
-.field public static final vg:Z
+.field public static final device_is_armani:Z
 
-.field public static final wg:Z
+.field public static final device_is_HM201401x:Z
 
-.field public static final xg:Z
+.field public static final device_is_HM2014501:Z
 
-.field public static final yg:Z
+.field public static final device_is_HM201302x:Z
 
-.field public static final zg:Z
+.field public static final device_is_lcsh92_wet_x:Z
 
 
 # direct methods
@@ -175,7 +173,7 @@
     move v0, v2
 
     :goto_1
-    sput-boolean v0, Ld/d/a;->jg:Z
+    sput-boolean v0, Ld/d/a;->device_is_mione:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -219,11 +217,9 @@
     move v0, v2
 
     :goto_3
-    sput-boolean v0, Ld/d/a;->kg:Z
+    sput-boolean v0, Ld/d/a;->device_is_aries_or_taurus:Z
 
-    sget-boolean v0, Ld/d/a;->kg:Z
-
-    sput-boolean v0, Ld/d/a;->lg:Z
+    sget-boolean v0, Ld/d/a;->device_is_aries_or_taurus:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -233,7 +229,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->mg:Z
+    sput-boolean v0, Ld/d/a;->device_is_lte26007:Z
 
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
@@ -267,7 +263,7 @@
     move v0, v2
 
     :goto_5
-    sput-boolean v0, Ld/d/a;->ng:Z
+    sput-boolean v0, Ld/d/a;->model_is_m1sx:Z
 
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
@@ -301,7 +297,7 @@
     move v0, v2
 
     :goto_7
-    sput-boolean v0, Ld/d/a;->og:Z
+    sput-boolean v0, Ld/d/a;->model_is_m2ax:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -331,7 +327,7 @@
     move v0, v1
 
     :goto_8
-    sput-boolean v0, Ld/d/a;->pg:Z
+    sput-boolean v0, Ld/d/a;->device_is_cancro_model_mi3:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -359,7 +355,7 @@
     move v0, v1
 
     :goto_9
-    sput-boolean v0, Ld/d/a;->qg:Z
+    sput-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -369,21 +365,21 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->rg:Z
+    sput-boolean v0, Ld/d/a;->device_is_virgo:Z
 
-    sget-boolean v0, Ld/d/a;->jg:Z
-
-    if-nez v0, :cond_b
-
-    sget-boolean v0, Ld/d/a;->pg:Z
+    sget-boolean v0, Ld/d/a;->device_is_mione:Z
 
     if-nez v0, :cond_b
 
-    sget-boolean v0, Ld/d/a;->qg:Z
+    sget-boolean v0, Ld/d/a;->device_is_cancro_model_mi3:Z
 
     if-nez v0, :cond_b
 
-    sget-boolean v0, Ld/d/a;->rg:Z
+    sget-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
+
+    if-nez v0, :cond_b
+
+    sget-boolean v0, Ld/d/a;->device_is_virgo:Z
 
     if-eqz v0, :cond_a
 
@@ -399,7 +395,7 @@
     move v0, v2
 
     :goto_b
-    sput-boolean v0, Ld/d/a;->sg:Z
+    sput-boolean v0, Ld/d/a;->device_is_mione_cancro_virgo:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -409,7 +405,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->tg:Z
+    sput-boolean v0, Ld/d/a;->device_is_mocha:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -419,7 +415,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->ug:Z
+    sput-boolean v0, Ld/d/a;->device_is_flo:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -429,7 +425,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->vg:Z
+    sput-boolean v0, Ld/d/a;->device_is_armani:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -463,7 +459,7 @@
     move v0, v2
 
     :goto_d
-    sput-boolean v0, Ld/d/a;->wg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM201401x:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -473,7 +469,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->xg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM2014501:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -495,11 +491,11 @@
 
     if-nez v0, :cond_f
 
-    sget-boolean v0, Ld/d/a;->vg:Z
+    sget-boolean v0, Ld/d/a;->device_is_armani:Z
 
     if-nez v0, :cond_f
 
-    sget-boolean v0, Ld/d/a;->wg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM201401x:Z
 
     if-eqz v0, :cond_e
 
@@ -515,7 +511,7 @@
     move v0, v2
 
     :goto_f
-    sput-boolean v0, Ld/d/a;->yg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM201302x:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -549,7 +545,7 @@
     move v0, v2
 
     :goto_11
-    sput-boolean v0, Ld/d/a;->zg:Z
+    sput-boolean v0, Ld/d/a;->device_is_lcsh92_wet_x:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -559,9 +555,9 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->Ag:Z
+    sput-boolean v0, Ld/d/a;->device_is_dior:Z
 
-    sget-boolean v0, Ld/d/a;->Ag:Z
+    sget-boolean v0, Ld/d/a;->device_is_dior:Z
 
     if-eqz v0, :cond_12
 
@@ -587,9 +583,9 @@
     move v0, v1
 
     :goto_12
-    sput-boolean v0, Ld/d/a;->Bg:Z
+    sput-boolean v0, Ld/d/a;->device_is_dior_modem_LTETD:Z
 
-    sget-boolean v0, Ld/d/a;->Ag:Z
+    sget-boolean v0, Ld/d/a;->device_is_dior:Z
 
     if-eqz v0, :cond_13
 
@@ -615,7 +611,7 @@
     move v0, v1
 
     :goto_13
-    sput-boolean v0, Ld/d/a;->Cg:Z
+    sput-boolean v0, Ld/d/a;->device_is_dior_modem_LTEW:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -625,7 +621,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->Dg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM2014811:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -659,7 +655,7 @@
     move v0, v2
 
     :goto_15
-    sput-boolean v0, Ld/d/a;->Eg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM2014812_or_HM2014821:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -693,7 +689,7 @@
     move v0, v2
 
     :goto_17
-    sput-boolean v0, Ld/d/a;->Fg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM2014813_or_HM2014112:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -703,7 +699,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->Gg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM2014818:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -713,7 +709,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->Hg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM2014817:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -723,29 +719,29 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->Ig:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM2014819:Z
 
-    sget-boolean v0, Ld/d/a;->Dg:Z
-
-    if-nez v0, :cond_19
-
-    sget-boolean v0, Ld/d/a;->Eg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM2014811:Z
 
     if-nez v0, :cond_19
 
-    sget-boolean v0, Ld/d/a;->Fg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM2014812_or_HM2014821:Z
 
     if-nez v0, :cond_19
 
-    sget-boolean v0, Ld/d/a;->Gg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM2014813_or_HM2014112:Z
 
     if-nez v0, :cond_19
 
-    sget-boolean v0, Ld/d/a;->Hg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM2014818:Z
 
     if-nez v0, :cond_19
 
-    sget-boolean v0, Ld/d/a;->Ig:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM2014817:Z
+
+    if-nez v0, :cond_19
+
+    sget-boolean v0, Ld/d/a;->device_is_HM2014819:Z
 
     if-eqz v0, :cond_18
 
@@ -761,7 +757,7 @@
     move v0, v2
 
     :goto_19
-    sput-boolean v0, Ld/d/a;->Jg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM2014xxx:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -771,9 +767,9 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->Kg:Z
+    sput-boolean v0, Ld/d/a;->device_is_gucci:Z
 
-    sget-boolean v0, Ld/d/a;->Kg:Z
+    sget-boolean v0, Ld/d/a;->device_is_gucci:Z
 
     const-string v4, "persist.sys.modem"
 
@@ -799,9 +795,9 @@
     move v0, v1
 
     :goto_1a
-    sput-boolean v0, Ld/d/a;->Lg:Z
+    sput-boolean v0, Ld/d/a;->device_is_gucci_modem_cm:Z
 
-    sget-boolean v0, Ld/d/a;->Kg:Z
+    sget-boolean v0, Ld/d/a;->device_is_gucci:Z
 
     const-string v6, "cu"
 
@@ -825,9 +821,9 @@
     move v0, v1
 
     :goto_1b
-    sput-boolean v0, Ld/d/a;->Mg:Z
+    sput-boolean v0, Ld/d/a;->device_is_gucci_modem_cu:Z
 
-    sget-boolean v0, Ld/d/a;->Kg:Z
+    sget-boolean v0, Ld/d/a;->device_is_gucci:Z
 
     const-string v7, "ct"
 
@@ -851,13 +847,13 @@
     move v0, v1
 
     :goto_1c
-    sput-boolean v0, Ld/d/a;->Ng:Z
+    sput-boolean v0, Ld/d/a;->device_is_gucci_modem_ct:Z
 
-    sget-boolean v0, Ld/d/a;->jg:Z
+    sget-boolean v0, Ld/d/a;->device_is_mione:Z
 
     if-eqz v0, :cond_1d
 
-    invoke-static {}, Ld/d/a;->Om()Z
+    invoke-static {}, Ld/d/a;->soc_is_msm9660()Z
 
     move-result v0
 
@@ -871,9 +867,9 @@
     move v0, v1
 
     :goto_1d
-    sput-boolean v0, Ld/d/a;->Og:Z
+    sput-boolean v0, Ld/d/a;->device_is_mione_soc_msm9660:Z
 
-    sget-boolean v0, Ld/d/a;->qg:Z
+    sget-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
 
     const-string v4, "persist.radio.modem"
 
@@ -899,9 +895,9 @@
     move v0, v1
 
     :goto_1e
-    sput-boolean v0, Ld/d/a;->Pg:Z
+    sput-boolean v0, Ld/d/a;->device_is_cancro_mi4_modem_CDMA:Z
 
-    sget-boolean v0, Ld/d/a;->qg:Z
+    sget-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
 
     if-eqz v0, :cond_1f
 
@@ -925,9 +921,9 @@
     move v0, v1
 
     :goto_1f
-    sput-boolean v0, Ld/d/a;->Qg:Z
+    sput-boolean v0, Ld/d/a;->device_is_cancro_mi4_modem_LTE_CMCC:Z
 
-    sget-boolean v0, Ld/d/a;->qg:Z
+    sget-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
 
     if-eqz v0, :cond_20
 
@@ -951,9 +947,9 @@
     move v0, v1
 
     :goto_20
-    sput-boolean v0, Ld/d/a;->Rg:Z
+    sput-boolean v0, Ld/d/a;->device_is_cancro_mi4_modem_LTE_CU:Z
 
-    sget-boolean v0, Ld/d/a;->qg:Z
+    sget-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
 
     if-eqz v0, :cond_21
 
@@ -977,9 +973,9 @@
     move v0, v1
 
     :goto_21
-    sput-boolean v0, Ld/d/a;->Sg:Z
+    sput-boolean v0, Ld/d/a;->device_is_cancro_mi4_modem_LTE_CT:Z
 
-    sget-boolean v0, Ld/d/a;->qg:Z
+    sget-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
 
     if-eqz v0, :cond_22
 
@@ -1003,9 +999,9 @@
     move v0, v1
 
     :goto_22
-    sput-boolean v0, Ld/d/a;->Tg:Z
+    sput-boolean v0, Ld/d/a;->device_is_cancro_mi4_modem_LTE_India:Z
 
-    sget-boolean v0, Ld/d/a;->qg:Z
+    sget-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
 
     if-eqz v0, :cond_23
 
@@ -1029,7 +1025,7 @@
     move v0, v1
 
     :goto_23
-    sput-boolean v0, Ld/d/a;->Ug:Z
+    sput-boolean v0, Ld/d/a;->device_is_cancro_mi4_modem_LTE_SEAsa:Z
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
@@ -1037,7 +1033,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->Vg:Z
+    sput-boolean v0, Ld/d/a;->device_is_HM2013022:Z
 
     const-string v0, "ro.carrier.name"
 
@@ -1049,7 +1045,7 @@
 
     move-result v3
 
-    sput-boolean v3, Ld/d/a;->Wg:Z
+    sput-boolean v3, Ld/d/a;->carrier_name_is_cu:Z
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1096,7 +1092,7 @@
     move v3, v1
 
     :goto_24
-    sput-boolean v3, Ld/d/a;->Xg:Z
+    sput-boolean v3, Ld/d/a;->carrier_name_is_cm_variant_cn_chinamobile_cta:Z
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1128,7 +1124,7 @@
     move v3, v1
 
     :goto_25
-    sput-boolean v3, Ld/d/a;->Yg:Z
+    sput-boolean v3, Ld/d/a;->carrier_name_is_cm_variant_cn_cmcooperation:Z
 
     invoke-static {v0}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1138,7 +1134,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->Zg:Z
+    sput-boolean v0, Ld/d/a;->carrier_name_is_ct:Z
 
     sget-object v0, Landroid/os/Build$VERSION;->INCREMENTAL:Ljava/lang/String;
 
@@ -1166,7 +1162,7 @@
     move v0, v1
 
     :goto_26
-    sput-boolean v0, Ld/d/a;->_g:Z
+    sput-boolean v0, Ld/d/a;->version_incremental_is_XYZ:Z
 
     sget-object v0, Landroid/os/Build;->TYPE:Ljava/lang/String;
 
@@ -1178,7 +1174,7 @@
 
     if-eqz v0, :cond_28
 
-    sget-boolean v0, Ld/d/a;->_g:Z
+    sget-boolean v0, Ld/d/a;->version_incremental_is_XYZ:Z
 
     if-nez v0, :cond_28
 
@@ -1190,13 +1186,13 @@
     move v0, v1
 
     :goto_27
-    sput-boolean v0, Ld/d/a;->bh:Z
+    sput-boolean v0, Ld/d/a;->build_type_user_version_incremental_not_XYZ:Z
 
-    sget-boolean v0, Ld/d/a;->_g:Z
+    sget-boolean v0, Ld/d/a;->version_incremental_is_XYZ:Z
 
     if-nez v0, :cond_2a
 
-    sget-boolean v0, Ld/d/a;->bh:Z
+    sget-boolean v0, Ld/d/a;->build_type_user_version_incremental_not_XYZ:Z
 
     if-eqz v0, :cond_29
 
@@ -1212,7 +1208,7 @@
     move v0, v2
 
     :goto_29
-    sput-boolean v0, Ld/d/a;->dh:Z
+    sput-boolean v0, Ld/d/a;->build_type_user_or_version_incremental_XYZ:Z
 
     const-string v0, "ro.product.mod_device"
 
@@ -1228,7 +1224,7 @@
 
     move-result v4
 
-    sput-boolean v4, Ld/d/a;->eh:Z
+    sput-boolean v4, Ld/d/a;->product_mod_device_ends_alpha:Z
 
     const-string v4, "ro.miui.cts"
 
@@ -1252,7 +1248,7 @@
 
     xor-int/2addr v4, v2
 
-    sput-boolean v4, Ld/d/a;->fh:Z
+    sput-boolean v4, Ld/d/a;->miui_optimization_disabled:Z
 
     const-string v4, "ro.miui.cta"
 
@@ -1264,7 +1260,7 @@
 
     move-result v4
 
-    sput-boolean v4, Ld/d/a;->gh:Z
+    sput-boolean v4, Ld/d/a;->ro_miui_cta_is_1:Z
 
     const-string v4, "ro.cust.test"
 
@@ -1276,7 +1272,7 @@
 
     move-result v5
 
-    sput-boolean v5, Ld/d/a;->hh:Z
+    sput-boolean v5, Ld/d/a;->ro_cust_test_is_cm:Z
 
     invoke-static {v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1286,7 +1282,7 @@
 
     move-result v5
 
-    sput-boolean v5, Ld/d/a;->ih:Z
+    sput-boolean v5, Ld/d/a;->ro_cust_test_is_cu:Z
 
     invoke-static {v4}, Landroid/os/SystemProperties;->get(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1296,7 +1292,7 @@
 
     move-result v4
 
-    sput-boolean v4, Ld/d/a;->jh:Z
+    sput-boolean v4, Ld/d/a;->ro_cust_test_is_ct:Z
 
     const-string v4, "persist.sys.func_limit_switch"
 
@@ -1308,7 +1304,7 @@
 
     move-result v4
 
-    sput-boolean v4, Ld/d/a;->kh:Z
+    sput-boolean v4, Ld/d/a;->persist_sys_func_limit_switch_is_1:Z
 
     const-string v4, "ro.boot.hwc"
 
@@ -1346,7 +1342,7 @@
     move v4, v2
 
     :goto_2b
-    sput-boolean v4, Ld/d/a;->lh:Z
+    sput-boolean v4, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     invoke-static {v0, v3}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1358,15 +1354,15 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->mh:Z
+    sput-boolean v0, Ld/d/a;->product_mod_device_ends_global:Z
 
-    invoke-static {}, Ld/d/a;->Pm()Z
+    invoke-static {}, Ld/d/a;->ro_build_characteristics_has_tablet()Z
 
     move-result v0
 
     sput-boolean v0, Ld/d/a;->nh:Z
 
-    invoke-static {}, Ld/d/a;->Nm()Ljava/lang/String;
+    invoke-static {}, Ld/d/a;->getUserdataVersionRegionCarrier()Ljava/lang/String;
 
     move-result-object v0
 
@@ -1394,7 +1390,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->sh:Z
+    sput-boolean v0, Ld/d/a;->has_not_cust_part:Z
 
     const-string v0, "ro.miui.cust_device"
 
@@ -1408,7 +1404,7 @@
 
     move-result v0
 
-    sput-boolean v0, Ld/d/a;->th:Z
+    sput-boolean v0, Ld/d/a;->miui_cust_device_ends_pro:Z
 
     return-void
 .end method
@@ -1432,10 +1428,10 @@
     throw p0
 .end method
 
-.method public static Ca()Ljava/lang/String;
+.method public static getCustVariant()Ljava/lang/String;
     .locals 2
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     const-string v1, "ro.miui.cust_variant"
 
@@ -1459,7 +1455,7 @@
     return-object v0
 .end method
 
-.method public static Da()I
+.method public static getUserMode()I
     .locals 2
 
     const-string v0, "persist.sys.user_mode"
@@ -1487,7 +1483,7 @@
     return p0
 .end method
 
-.method private static Nm()Ljava/lang/String;
+.method private static getUserdataVersionRegionCarrier()Ljava/lang/String;
     .locals 5
 
     const-string v0, ""
@@ -1509,7 +1505,7 @@
     return-object v0
 
     :cond_0
-    sget-boolean v2, Ld/d/a;->lh:Z
+    sget-boolean v2, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-eqz v2, :cond_1
 
@@ -1573,7 +1569,7 @@
     return-object v0
 .end method
 
-.method private static Om()Z
+.method private static soc_is_msm9660()Z
     .locals 2
 
     const-string v0, "ro.soc.name"
@@ -1613,7 +1609,7 @@
     return v0
 .end method
 
-.method private static Pm()Z
+.method private static ro_build_characteristics_has_tablet()Z
     .locals 2
 
     const-string v0, "ro.build.characteristics"
@@ -1631,7 +1627,7 @@
     return v0
 .end method
 
-.method public static a(Landroid/content/Context;I)V
+.method public static setUserMode(Landroid/content/Context;I)V
     .locals 0
 
     invoke-static {p1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -1659,7 +1655,7 @@
     return-object v0
 .end method
 
-.method public static k(Ljava/lang/String;)Z
+.method public static isRegionEqualTo(Ljava/lang/String;)Z
     .locals 1
 
     invoke-static {}, Ld/d/a;->getRegion()Ljava/lang/String;

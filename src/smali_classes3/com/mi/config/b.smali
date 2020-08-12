@@ -150,11 +150,11 @@
 
     sput-object v0, Lcom/mi/config/b;->zu:Ljava/lang/String;
 
-    sget-boolean v0, Ld/d/a;->kg:Z
+    sget-boolean v0, Ld/d/a;->device_is_aries_or_taurus:Z
 
     sput-boolean v0, Lcom/mi/config/b;->lg:Z
 
-    sget-boolean v0, Ld/d/a;->og:Z
+    sget-boolean v0, Ld/d/a;->model_is_m2ax:Z
 
     sput-boolean v0, Lcom/mi/config/b;->og:Z
 
@@ -196,15 +196,15 @@
 
     sput-boolean v0, Lcom/mi/config/b;->Bu:Z
 
-    sget-boolean v0, Ld/d/a;->yg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM201302x:Z
 
     if-eqz v0, :cond_1
 
-    sget-boolean v0, Ld/d/a;->vg:Z
+    sget-boolean v0, Ld/d/a;->device_is_armani:Z
 
     if-nez v0, :cond_1
 
-    sget-boolean v0, Ld/d/a;->wg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM201401x:Z
 
     if-nez v0, :cond_1
 
@@ -218,31 +218,31 @@
     :goto_1
     sput-boolean v0, Lcom/mi/config/b;->Cu:Z
 
-    sget-boolean v0, Ld/d/a;->wg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM201401x:Z
 
     sput-boolean v0, Lcom/mi/config/b;->Du:Z
 
-    sget-boolean v0, Ld/d/a;->xg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM2014501:Z
 
     sput-boolean v0, Lcom/mi/config/b;->Eu:Z
 
-    sget-boolean v0, Ld/d/a;->vg:Z
+    sget-boolean v0, Ld/d/a;->device_is_armani:Z
 
     sput-boolean v0, Lcom/mi/config/b;->Fu:Z
 
-    sget-boolean v0, Ld/d/a;->zg:Z
+    sget-boolean v0, Ld/d/a;->device_is_lcsh92_wet_x:Z
 
     sput-boolean v0, Lcom/mi/config/b;->Gu:Z
 
-    sget-boolean v0, Ld/d/a;->mg:Z
+    sget-boolean v0, Ld/d/a;->device_is_lte26007:Z
 
     sput-boolean v0, Lcom/mi/config/b;->Hu:Z
 
-    sget-boolean v0, Ld/d/a;->qg:Z
+    sget-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
 
     sput-boolean v0, Lcom/mi/config/b;->Iu:Z
 
-    sget-boolean v0, Ld/d/a;->rg:Z
+    sget-boolean v0, Ld/d/a;->device_is_virgo:Z
 
     sput-boolean v0, Lcom/mi/config/b;->Ju:Z
 
@@ -665,15 +665,15 @@
 
     sput-boolean v0, Lcom/mi/config/b;->ov:Z
 
-    sget-boolean v0, Ld/d/a;->bh:Z
+    sget-boolean v0, Ld/d/a;->build_type_user_version_incremental_not_XYZ:Z
 
     sput-boolean v0, Lcom/mi/config/b;->pv:Z
 
-    sget-boolean v0, Ld/d/a;->hh:Z
+    sget-boolean v0, Ld/d/a;->ro_cust_test_is_cm:Z
 
     sput-boolean v0, Lcom/mi/config/b;->qv:Z
 
-    sget-boolean v0, Ld/d/a;->Xg:Z
+    sget-boolean v0, Ld/d/a;->carrier_name_is_cm_variant_cn_chinamobile_cta:Z
 
     sput-boolean v0, Lcom/mi/config/b;->rv:Z
 
@@ -984,7 +984,7 @@
 .method public static Nl()Z
     .locals 2
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     const/4 v1, 0x0
 
@@ -1576,7 +1576,7 @@
 .method public static Yl()Z
     .locals 2
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     const/4 v1, 0x0
 
@@ -1645,7 +1645,7 @@
 .method public static _k()Z
     .locals 1
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-eqz v0, :cond_0
 
@@ -1909,7 +1909,7 @@
 .method public static em()Z
     .locals 2
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     const/4 v1, 0x0
 
@@ -2037,7 +2037,7 @@
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Ld/d/a;->Jg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM2014xxx:Z
 
     if-nez v0, :cond_0
 
@@ -2111,7 +2111,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-eqz v0, :cond_0
 
@@ -2153,7 +2153,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-eqz v0, :cond_0
 
@@ -2320,7 +2320,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-eqz v0, :cond_0
 
@@ -2356,7 +2356,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-eqz v0, :cond_0
 
@@ -2406,7 +2406,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Ld/d/a;->lh:Z
+    sget-boolean v0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-eqz v0, :cond_0
 
@@ -2652,7 +2652,7 @@
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Ld/d/a;->Jg:Z
+    sget-boolean v0, Ld/d/a;->device_is_HM2014xxx:Z
 
     if-nez v0, :cond_0
 

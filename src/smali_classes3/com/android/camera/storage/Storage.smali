@@ -393,7 +393,7 @@
 
     sput v0, Lcom/android/camera/storage/Storage;->SECONDARY_RAW_BUCKET_ID:I
 
-    sget-boolean v0, Ld/d/a;->eh:Z
+    sget-boolean v0, Ld/d/a;->product_mod_device_ends_alpha:Z
 
     if-eqz v0, :cond_1
 

@@ -73,7 +73,7 @@ public class PermissionManager {
             if (ContextCompat.checkSelfPermission(CameraAppImpl.getAndroidContext(), str) != 0) {
                 Log.i(TAG, "getNeedCheckPermissionList() permission =" + str);
                 arrayList.add(str);
-                if (!a.lh && (str.equals("android.permission.ACCESS_COARSE_LOCATION") || str.equals("android.permission.ACCESS_FINE_LOCATION"))) {
+                if (!a.ro_boot_hwc_contains_GLOBAL_or_is_android_one && (str.equals("android.permission.ACCESS_COARSE_LOCATION") || str.equals("android.permission.ACCESS_FINE_LOCATION"))) {
                     arrayList.add(CameraAppImpl.getAndroidContext().getString(R.string.location_permission_des));
                 }
             }

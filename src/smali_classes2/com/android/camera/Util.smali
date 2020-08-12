@@ -436,7 +436,7 @@
 
     sput-object v0, Lcom/android/camera/Util;->SCREEN_SLIDE_STATUS_SETTING_URI:Landroid/net/Uri;
 
-    sget-boolean v0, Ld/d/a;->bh:Z
+    sget-boolean v0, Ld/d/a;->build_type_user_version_incremental_not_XYZ:Z
 
     xor-int/lit8 v0, v0, 0x1
 

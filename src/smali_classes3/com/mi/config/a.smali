@@ -728,7 +728,7 @@
 
     if-eqz p0, :cond_0
 
-    sget-boolean p0, Ld/d/a;->lh:Z
+    sget-boolean p0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-nez p0, :cond_0
 
@@ -3492,7 +3492,7 @@
 
     if-eqz p0, :cond_0
 
-    sget-boolean p0, Ld/d/a;->lh:Z
+    sget-boolean p0, Ld/d/a;->ro_boot_hwc_contains_GLOBAL_or_is_android_one:Z
 
     if-nez p0, :cond_0
 

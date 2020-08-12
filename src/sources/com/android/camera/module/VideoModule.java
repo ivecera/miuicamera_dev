@@ -813,7 +813,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
         File file3 = Storage.isUseDocumentMode() ? new File(Storage.generatePrimaryFilepath(file.getName())) : new File(Storage.generateFilepath(file.getName()));
         boolean z2 = false;
         try {
-            boolean z3 = !a.lh && CameraSettings.isSupport960VideoEditor();
+            boolean z3 = !a.ro_boot_hwc_contains_GLOBAL_or_is_android_one && CameraSettings.isSupport960VideoEditor();
             if (CameraSettings.is960WatermarkOn(getModuleIndex())) {
                 Bitmap load960fpsCameraWatermark = Util.load960fpsCameraWatermark(((BaseModule) this).mActivity);
                 float resourceFloat = getResourceFloat(R.dimen.global_fps960_watermark_size_ratio, 0.0f);

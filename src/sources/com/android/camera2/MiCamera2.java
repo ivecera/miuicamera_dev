@@ -1197,7 +1197,7 @@ public class MiCamera2 extends Camera2Proxy {
             }
             RuntimeException runtimeException = new RuntimeException(str2);
             if (Build.IS_DEBUGGABLE) {
-                if (!a.bh) {
+                if (!a.build_type_user_version_incremental_not_XYZ) {
                     throw runtimeException;
                 }
             }

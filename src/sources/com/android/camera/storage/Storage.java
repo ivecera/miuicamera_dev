@@ -80,7 +80,7 @@ public class Storage {
     private static final AtomicLong LEFT_SPACE = new AtomicLong(0);
     public static final String LIVE_SHOT_PREFIX = "MV";
     public static final long LOW_STORAGE_THRESHOLD = 52428800;
-    private static final int MAX_WRITE_RETRY = (a.eh ? 1 : 3);
+    private static final int MAX_WRITE_RETRY = (a.product_mod_device_ends_alpha ? 1 : 3);
     public static final String MIME_DNG = "image/x-adobe-dng";
     public static final String MIME_GIF = "image/gif";
     public static final String MIME_HEIC = "image/heic";

@@ -753,7 +753,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
 
     private void showFirstUsePermissionActivity() {
         if (DataRepository.dataItemGlobal().getBoolean("pref_camera_first_use_permission_shown_key", true)) {
-            boolean z = d.d.a.lh;
+            boolean z = d.d.a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
             String str = Util.sRegion;
             if (z && "KR".equals(str)) {
                 Intent intent = new Intent("miui.intent.action.APP_PERMISSION_USE");

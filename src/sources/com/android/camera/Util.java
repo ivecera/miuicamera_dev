@@ -172,7 +172,7 @@ public final class Util {
     private static final List<Integer> COLOR_TEMPERATURE_LIST = new ArrayList();
     private static final List<Integer> COLOR_TEMPERATURE_MAP = new ArrayList();
     public static final String CUSTOM_DEFAULT_WATERMARK_PREFIX = "1";
-    public static final boolean DEBUG = (!a.bh);
+    public static final boolean DEBUG = (!a.build_type_user_version_incremental_not_XYZ);
     public static final String EXTRAS_SKIP_LOCK = "skip_interception";
     private static final String EXTRAS_START_WITH_EFFECT_RENDER = "android.intent.extras.START_WITH_EFFECT_RENDER";
     public static final int FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS = Integer.MIN_VALUE;
