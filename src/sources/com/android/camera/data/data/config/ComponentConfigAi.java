@@ -67,7 +67,7 @@ public class ComponentConfigAi extends ComponentData {
             }
         } else if (i == 171) {
             if (i2 == 0) {
-                if (DataRepository.dataItemFeature().Xe()) {
+                if (DataRepository.dataItemFeature().s_p_a()) {
                     arrayList.add(new ComponentDataItem((int) R.drawable.ic_new_ai_scene_off, (int) R.drawable.ic_new_ai_scene_on, (int) R.string.accessibility_ai_scene_on, "on"));
                 }
             } else if (DataRepository.dataItemFeature().s_f_a()) {

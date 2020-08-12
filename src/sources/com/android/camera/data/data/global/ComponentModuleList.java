@@ -69,7 +69,7 @@ public class ComponentModuleList extends ComponentData {
                     if (this.mIntentType == 0 && dataItemFeature.of() && DataRepository.dataItemGlobal().getDisplayMode() == 1) {
                         arrayList.add(new ComponentDataItem(-1, -1, CameraAppImpl.getAndroidContext().getResources().getString(R.string.module_name_pixel), String.valueOf(175)));
                     }
-                    if (dataItemFeature.Xd() && this.mIntentType == 0) {
+                    if (dataItemFeature.c_0x34_OR_T() && this.mIntentType == 0) {
                         arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.module_name_portrait, String.valueOf(171)));
                     }
                     if ((dataItemFeature.ee() || dataItemFeature.cf()) && this.mIntentType == 0 && DataRepository.dataItemGlobal().getDisplayMode() == 1) {

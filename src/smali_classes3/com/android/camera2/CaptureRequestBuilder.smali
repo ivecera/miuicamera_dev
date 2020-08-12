@@ -2876,7 +2876,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p3}, Lcom/mi/config/a;->Xb()Z
+    invoke-virtual {p3}, Lcom/mi/config/a;->c_19039_0x0011()Z
 
     move-result p3
 

@@ -2084,7 +2084,7 @@
     return p0
 .end method
 
-.method public Xb()Z
+.method public c_19039_0x0011()Z
     .locals 2
 
     const-string v0, "c_19039_0x0011"
@@ -2098,7 +2098,7 @@
     return p0
 .end method
 
-.method public Xc()Z
+.method public s_a()Z
     .locals 2
 
     const-string v0, "s_a"
@@ -2112,7 +2112,7 @@
     return p0
 .end method
 
-.method public Xd()Z
+.method public c_0x34_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x34"
@@ -2126,7 +2126,7 @@
     return p0
 .end method
 
-.method public Xe()Z
+.method public s_p_a()Z
     .locals 2
 
     const-string v0, "s_p_a"

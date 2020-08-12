@@ -168,7 +168,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Xe()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->s_p_a()Z
 
     move-result p1
 

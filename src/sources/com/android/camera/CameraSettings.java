@@ -1742,7 +1742,7 @@ public class CameraSettings {
     }
 
     public static boolean isSupportedPortrait() {
-        return DataRepository.dataItemFeature().Xd() && Camera2DataContainer.getInstance().hasPortraitCamera();
+        return DataRepository.dataItemFeature().c_0x34_OR_T() && Camera2DataContainer.getInstance().hasPortraitCamera();
     }
 
     public static boolean isSupportedZslShutter() {

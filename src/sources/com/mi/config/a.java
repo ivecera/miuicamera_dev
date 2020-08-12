@@ -202,22 +202,6 @@ public class a extends DataItemBase implements c {
         return Hb() < 0 || getBoolean(c.c_0x0f, false);
     }
 
-    public boolean Xb() {
-        return getBoolean(c.c_19039_0x0011, false);
-    }
-
-    public boolean Xc() {
-        return getBoolean(c.s_a, false);
-    }
-
-    public boolean Xd() {
-        return getBoolean(c.c_0x34, true);
-    }
-
-    public boolean Xe() {
-        return getBoolean(c.s_p_a, false);
-    }
-
     public boolean Yb() {
         return getInt(c.c_22367_0x0008, 0) == 1;
     }
@@ -336,6 +320,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x31, false);
     }
 
+    public boolean c_0x34_OR_T() {
+        return getBoolean(c.c_0x34, true);
+    }
+
     public boolean c_0x44() {
         return getBoolean(c.c_0x44, false);
     }
@@ -406,6 +394,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19039_0x0010() {
         return getBoolean(c.c_19039_0x0010, false);
+    }
+
+    public boolean c_19039_0x0011() {
+        return getBoolean(c.c_19039_0x0011, false);
     }
 
     public boolean c_19039_0x0012() {
@@ -939,6 +931,10 @@ public class a extends DataItemBase implements c {
         return z ? getString(c.c_0x29, "4.5") : getString(c.c_0x30, "4");
     }
 
+    public boolean s_a() {
+        return getBoolean(c.s_a, false);
+    }
+
     public boolean s_b_a_OR_T() {
         return getBoolean(c.s_b_a, true);
     }
@@ -981,6 +977,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_o_a_w() {
         return getBoolean(c.s_o_a_w, false);
+    }
+
+    public boolean s_p_a() {
+        return getBoolean(c.s_p_a, false);
     }
 
     public int s_p_r_n_OR_M1() {

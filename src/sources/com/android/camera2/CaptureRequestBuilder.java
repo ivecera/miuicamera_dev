@@ -618,10 +618,10 @@ public class CaptureRequestBuilder {
         if (builder != null && cameraCapabilities.isSupportSuperResolution()) {
             boolean isSuperResolutionEnabled = cameraConfigs.isSuperResolutionEnabled();
             if (!b.isMTKPlatform()) {
-                boolean Xb = DataRepository.dataItemFeature().Xb();
+                boolean c_19039_0x0011 = DataRepository.dataItemFeature().c_19039_0x0011();
                 String str = TAG;
-                Log.d(str, "applySuperResolution: applySr2PreviewStream = " + Xb);
-                if (!Xb || ModuleManager.isProPhotoModule()) {
+                Log.d(str, "applySuperResolution: applySr2PreviewStream = " + c_19039_0x0011);
+                if (!c_19039_0x0011 || ModuleManager.isProPhotoModule()) {
                     isSuperResolutionEnabled &= i == 3;
                 }
                 String str2 = TAG;
