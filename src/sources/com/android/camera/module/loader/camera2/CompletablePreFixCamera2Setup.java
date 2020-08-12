@@ -127,7 +127,7 @@ public class CompletablePreFixCamera2Setup implements CompletableOnSubscribe, Ob
             i = dataItemGlobal.getCurrentCameraId();
             i2 = dataItemGlobal.getCurrentMode();
         }
-        Camera2OpenManager.getInstance().openCamera(i, i2, this, DataRepository.dataItemFeature().jc());
+        Camera2OpenManager.getInstance().openCamera(i, i2, this, DataRepository.dataItemFeature().c_0x20_OR_T());
         ParallelSnapshotManager.getInstance().openCamera(i, this);
     }
 }

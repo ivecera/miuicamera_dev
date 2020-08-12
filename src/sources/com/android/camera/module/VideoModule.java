@@ -1690,7 +1690,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
     /* access modifiers changed from: protected */
     @Override // com.android.camera.module.VideoBase
     public boolean enableFaceDetection() {
-        if (!DataRepository.dataItemFeature().je() || !isBackCamera()) {
+        if (!DataRepository.dataItemFeature().i_v_b_c_f_d() || !isBackCamera()) {
             return (!ModuleManager.isVideoNewSlowMotion() || !isBackCamera()) && DataRepository.dataItemGlobal().getBoolean("pref_camera_facedetection_key", getResources().getBoolean(R.bool.pref_camera_facedetection_default));
         }
         return false;

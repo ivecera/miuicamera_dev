@@ -226,6 +226,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x11, false);
     }
 
+    public boolean c_0x16() {
+        return getBoolean(c.c_0x16, false);
+    }
+
     public boolean c_0x17() {
         return getBoolean(c.c_0x17, false);
     }
@@ -243,6 +247,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x1c() {
         return getBoolean(c.c_0x1c, false);
+    }
+
+    public boolean c_0x20_OR_T() {
+        return getBoolean(c.c_0x20, true);
     }
 
     public boolean c_0x21() {
@@ -298,6 +306,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x50() {
         return getBoolean(c.c_0x50, false);
+    }
+
+    public boolean c_0x53() {
+        return getBoolean(c.c_0x53, false);
     }
 
     public boolean c_0x54() {
@@ -639,6 +651,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.i_s_s_b, false);
     }
 
+    public boolean i_v_b_c_f_d() {
+        return getBoolean(c.i_v_b_c_f_d, false);
+    }
+
     public boolean is4K30FpsEISSupported() {
         return getBoolean(c.c_0x07, false);
     }
@@ -695,22 +711,6 @@ public class a extends DataItemBase implements c {
     @Override // com.android.camera.data.provider.DataProvider.ProviderEvent
     public boolean isTransient() {
         return true;
-    }
-
-    public boolean jc() {
-        return getBoolean(c.c_0x20, true);
-    }
-
-    public boolean jd() {
-        return getBoolean(c.c_0x16, false);
-    }
-
-    public boolean je() {
-        return getBoolean(c.i_v_b_c_f_d, false);
-    }
-
-    public boolean jf() {
-        return getBoolean(c.c_0x53, false);
     }
 
     public boolean kc() {

@@ -3109,7 +3109,7 @@
     return p0
 .end method
 
-.method public jc()Z
+.method public c_0x20_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x20"
@@ -3123,7 +3123,7 @@
     return p0
 .end method
 
-.method public jd()Z
+.method public c_0x16()Z
     .locals 2
 
     const-string v0, "c_0x16"
@@ -3137,7 +3137,7 @@
     return p0
 .end method
 
-.method public je()Z
+.method public i_v_b_c_f_d()Z
     .locals 2
 
     const-string v0, "i_v_b_c_f_d"
@@ -3151,7 +3151,7 @@
     return p0
 .end method
 
-.method public jf()Z
+.method public c_0x53()Z
     .locals 2
 
     const-string v0, "c_0x53"

@@ -284,7 +284,7 @@ public class Camera2OpenManager {
                         return;
                     }
                     Log.d(TAG, str);
-                    if (!DataRepository.dataItemFeature().jc()) {
+                    if (!DataRepository.dataItemFeature().c_0x20_OR_T()) {
                         this.mCamera2Device.cancelSession();
                     }
                     onCameraOpenSuccess();

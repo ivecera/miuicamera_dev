@@ -2325,7 +2325,7 @@ public class MiCamera2 extends Camera2Proxy {
         this.mIsCameraClosed = true;
         abortCaptures();
         if (this.mCameraDevice != null) {
-            if (DataRepository.dataItemFeature().jd() && !DataRepository.dataItemFeature().c_0x31()) {
+            if (DataRepository.dataItemFeature().c_0x16() && !DataRepository.dataItemFeature().c_0x31()) {
                 try {
                     this.mCameraDevice.flush();
                 } catch (CameraAccessException e2) {

@@ -38,7 +38,7 @@ public class ComponentManuallyDualLens extends ComponentData {
 
     private List<ComponentDataItem> initItems(int i) {
         ArrayList arrayList = new ArrayList();
-        if (DataRepository.dataItemFeature().c_0x50() && DataRepository.dataItemFeature().jf()) {
+        if (DataRepository.dataItemFeature().c_0x50() && DataRepository.dataItemFeature().c_0x53()) {
             arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.pref_camera_zoom_mode_entry_macro_abbr, "macro"));
         }
         if (DataRepository.dataItemFeature().isSupportUltraWide()) {

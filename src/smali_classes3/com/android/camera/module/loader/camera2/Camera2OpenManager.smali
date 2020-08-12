@@ -1032,7 +1032,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->jc()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_0x20_OR_T()Z
 
     move-result p1
 

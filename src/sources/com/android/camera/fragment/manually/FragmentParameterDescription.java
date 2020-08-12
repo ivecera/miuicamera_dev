@@ -65,7 +65,7 @@ public class FragmentParameterDescription extends BaseDialogFragment {
         if (DataRepository.dataItemFeature().isSupportUltraWide()) {
             str = str + getContext().getString(R.string.parameter_lens_uw);
         }
-        if (DataRepository.dataItemFeature().c_0x50() && DataRepository.dataItemFeature().jf()) {
+        if (DataRepository.dataItemFeature().c_0x50() && DataRepository.dataItemFeature().c_0x53()) {
             str = str + getContext().getString(R.string.parameter_lens_marco);
         }
         if (CameraSettings.isSupportedOpticalZoom()) {
