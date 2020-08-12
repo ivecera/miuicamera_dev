@@ -1770,7 +1770,7 @@ public class Panorama3Module extends BaseModule implements ModeProtocol.CameraAc
     public void onCreate(int i, int i2) {
         super.onCreate(i, i2);
         ((BaseModule) this).mHandler = new MainHandler(this, ((BaseModule) this).mActivity.getMainLooper());
-        this.mGoalAngle = DataRepository.dataItemFeature().Eb();
+        this.mGoalAngle = DataRepository.dataItemFeature().c_0x01_p_g_a_v_OR_280();
         this.mLongSideCropRatio = DataRepository.dataItemFeature().Db();
         this.mSmallPreviewHeight = (int) ((BaseModule) this).mActivity.getResources().getDimension(R.dimen.pano_preview_hint_frame_height);
         EffectController.getInstance().setEffect(FilterInfo.FILTER_ID_NONE);

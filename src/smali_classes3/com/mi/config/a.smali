@@ -879,7 +879,7 @@
     return p0
 .end method
 
-.method public Eb()I
+.method public c_0x01_p_g_a_v_OR_280()I
     .locals 2
 
     const-string v0, "c_0x01_p_g_a_v"

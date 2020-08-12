@@ -4365,7 +4365,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Eb()I
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_0x01_p_g_a_v_OR_280()I
 
     move-result p1
 
