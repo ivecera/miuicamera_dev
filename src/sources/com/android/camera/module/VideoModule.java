@@ -1131,7 +1131,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
         if (!initializeRecorder(true)) {
             return false;
         }
-        if (DataRepository.dataItemFeature().Dd() && CameraSettings.is4KHigherVideoQuality(this.mQuality)) {
+        if (DataRepository.dataItemFeature().c_27845_0x0001() && CameraSettings.is4KHigherVideoQuality(this.mQuality)) {
             int hSRValue = getHSRValue();
             if (hSRValue <= 0) {
                 hSRValue = this.mProfile.videoFrameRate;
@@ -1177,7 +1177,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
     private void stopRecorder() {
         this.mPendingStopRecorder = false;
         ((BaseModule) this).mHandler.removeMessages(46);
-        if (DataRepository.dataItemFeature().Dd() && CameraSettings.is4KHigherVideoQuality(this.mQuality)) {
+        if (DataRepository.dataItemFeature().c_27845_0x0001() && CameraSettings.is4KHigherVideoQuality(this.mQuality)) {
             int hSRValue = getHSRValue();
             if (hSRValue <= 0) {
                 hSRValue = this.mProfile.videoFrameRate;
@@ -2535,7 +2535,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
             silenceOuterAudio();
             if (!startRecorder()) {
                 onStartRecorderFail();
-                if (DataRepository.dataItemFeature().Dd() && CameraSettings.is4KHigherVideoQuality(this.mQuality)) {
+                if (DataRepository.dataItemFeature().c_27845_0x0001() && CameraSettings.is4KHigherVideoQuality(this.mQuality)) {
                     int hSRValue = getHSRValue();
                     if (hSRValue <= 0) {
                         hSRValue = this.mProfile.videoFrameRate;
