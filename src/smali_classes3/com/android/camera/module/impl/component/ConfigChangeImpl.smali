@@ -8649,7 +8649,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/mi/config/a;->Kc()Z
+    invoke-virtual {v1}, Lcom/mi/config/a;->c_r_i_m_m()Z
 
     move-result v1
 
@@ -9309,7 +9309,7 @@
 
     move-result-object v10
 
-    invoke-virtual {v10}, Lcom/mi/config/a;->Kc()Z
+    invoke-virtual {v10}, Lcom/mi/config/a;->c_r_i_m_m()Z
 
     move-result v10
 
@@ -9343,7 +9343,7 @@
 
     move-result-object v16
 
-    invoke-virtual/range {v16 .. v16}, Lcom/mi/config/a;->Kc()Z
+    invoke-virtual/range {v16 .. v16}, Lcom/mi/config/a;->c_r_i_m_m()Z
 
     move-result v16
 

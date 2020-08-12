@@ -56,7 +56,7 @@ public final class ComponentConfigRaw extends ComponentData {
 
     public void reInit(int i, int i2, CameraCapabilities cameraCapabilities) {
         ArrayList arrayList = new ArrayList();
-        if (i == 167 && cameraCapabilities.isSupportRaw() && DataRepository.dataItemFeature().qb()) {
+        if (i == 167 && cameraCapabilities.isSupportRaw() && DataRepository.dataItemFeature().c_r_i_m_m()) {
             arrayList.add(new ComponentDataItem((int) R.drawable.ic_raw_off, (int) R.drawable.ic_raw_on, -1, "on"));
         }
         ((ComponentData) this).mItems = Collections.unmodifiableList(arrayList);

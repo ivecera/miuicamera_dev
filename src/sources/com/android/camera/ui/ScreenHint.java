@@ -115,7 +115,7 @@ public class ScreenHint {
     public void updateHint() {
         Storage.switchStoragePathIfNeeded();
         this.mStorageSpace = Storage.getAvailableSpace();
-        if (DataRepository.dataItemFeature().qb()) {
+        if (DataRepository.dataItemFeature().c_r_i_m_m()) {
             Storage.getAvailableSpace(Storage.RAW_DIRECTORY);
         }
         long j = this.mStorageSpace;

@@ -176,10 +176,6 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_9006_0x0001, 5);
     }
 
-    public boolean Kc() {
-        return qb();
-    }
-
     public boolean Kd() {
         return getBoolean(c.i_s_s_b, false);
     }
@@ -580,6 +576,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_36211_0x0001, false);
     }
 
+    public boolean c_r_i_m_m() {
+        return getBoolean(c.c_r_i_m_m, false);
+    }
+
     public boolean c_s_a_u_q_OR_s_a_u() {
         return Build.VERSION.SDK_INT > 28 ? c_s_a_u_q() : getBoolean(c.s_a_u, false);
     }
@@ -907,10 +907,6 @@ public class a extends DataItemBase implements c {
 
     public boolean q(String str) {
         return getValues().containsKey(str);
-    }
-
-    public boolean qb() {
-        return getBoolean(c.c_r_i_m_m, false);
     }
 
     public boolean qc() {

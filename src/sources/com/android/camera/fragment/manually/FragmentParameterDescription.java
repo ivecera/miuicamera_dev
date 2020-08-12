@@ -55,7 +55,7 @@ public class FragmentParameterDescription extends BaseDialogFragment {
                 arrayList.add(new ComponentDataItem((int) R.drawable.ic_parameter_peak_focus, -1, (int) R.string.parameter_peak_focus_title, getContext().getString(R.string.parameter_peak_focus_description)));
                 arrayList.add(new ComponentDataItem((int) R.drawable.ic_parameter_exposure_feedback, -1, (int) R.string.parameter_exposure_feecback_title, getContext().getString(R.string.parameter_exposure_feecback_description)));
             }
-            if (DataRepository.dataItemFeature().qb() && capabilitiesByBogusCameraId.isSupportRaw()) {
+            if (DataRepository.dataItemFeature().c_r_i_m_m() && capabilitiesByBogusCameraId.isSupportRaw()) {
                 arrayList.add(new ComponentDataItem((int) R.drawable.ic_parameter_raw, -1, (int) R.string.parameter_peak_raw_title, getContext().getString(R.string.parameter_peak_raw_description)));
             }
         } else if (i == 180) {

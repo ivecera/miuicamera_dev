@@ -320,7 +320,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/mi/config/a;->qb()Z
+    invoke-virtual {v3}, Lcom/mi/config/a;->c_r_i_m_m()Z
 
     move-result v3
 

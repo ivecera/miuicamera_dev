@@ -1284,16 +1284,6 @@
     return-wide v0
 .end method
 
-.method public Kc()Z
-    .locals 0
-
-    invoke-virtual {p0}, Lcom/mi/config/a;->qb()Z
-
-    move-result p0
-
-    return p0
-.end method
-
 .method public Kd()Z
     .locals 2
 
@@ -3656,7 +3646,7 @@
     return p0
 .end method
 
-.method public qb()Z
+.method public c_r_i_m_m()Z
     .locals 2
 
     const-string v0, "c_r_i_m_m"

@@ -2056,7 +2056,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
                     MistatsWrapper.moduleUIClickEvent(MistatsConstants.ModuleName.MANUAL, "raw", "off");
                 } else {
                     componentConfigRaw.setRaw(moduleIndex, true);
-                    if (DataRepository.dataItemFeature().Kc()) {
+                    if (DataRepository.dataItemFeature().c_r_i_m_m()) {
                         closeMutexElement("n", 209);
                     }
                     MistatsWrapper.moduleUIClickEvent(MistatsConstants.ModuleName.MANUAL, "raw", "on");
@@ -2222,14 +2222,14 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
                             }
                             if (!z) {
                                 int[] iArr = {194, 239, 201, 206};
-                                if (DataRepository.dataItemFeature().Kc()) {
+                                if (DataRepository.dataItemFeature().c_r_i_m_m()) {
                                     iArr = Arrays.copyOf(iArr, iArr.length + 1);
                                     iArr[iArr.length - 1] = 237;
                                 }
                                 closeMutexElement(SupportedConfigFactory.CLOSE_BY_ULTRA_PIXEL, iArr);
                             } else if (z) {
                                 closeMutexElement(SupportedConfigFactory.CLOSE_BY_ULTRA_PIXEL, 196, 201, 206);
-                            } else if ((z || z) && DataRepository.dataItemFeature().Kc()) {
+                            } else if ((z || z) && DataRepository.dataItemFeature().c_r_i_m_m()) {
                                 closeMutexElement(SupportedConfigFactory.CLOSE_BY_ULTRA_PIXEL, 237);
                             }
                             DataRepository.dataItemRunning().setRecordingClosedElements(this.mRecordingClosedElements);

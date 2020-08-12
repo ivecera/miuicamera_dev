@@ -193,7 +193,7 @@ public class SupportedConfigFactory {
                         if (dataItemConfig.supportRatio()) {
                             supportedConfigs.add(210);
                         }
-                        if (DataRepository.dataItemFeature().qb() && cameraCapabilities.isSupportRaw()) {
+                        if (DataRepository.dataItemFeature().c_r_i_m_m() && cameraCapabilities.isSupportRaw()) {
                             supportedConfigs.add(237);
                         }
                         supportedConfigs.add(226);
