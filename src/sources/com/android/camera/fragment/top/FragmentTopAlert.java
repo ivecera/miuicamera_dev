@@ -390,7 +390,7 @@ public class FragmentTopAlert extends BaseFragment implements View.OnClickListen
             if (((HybridZoomingSystem.IS_2_SAT || (!HybridZoomingSystem.IS_3_OR_MORE_SAT && !CameraSettings.isSupportedOpticalZoom())) && id == Camera2DataContainer.getInstance().getUltraWideCameraId()) || (i = ((BaseFragment) this).mCurrentMode) == 167 || i == 180 || i == 166 || i == 179) {
                 return null;
             }
-            if (DataRepository.dataItemFeature().Md() && ((BaseFragment) this).mCurrentMode == 172) {
+            if (DataRepository.dataItemFeature().c_19039_0x0002() && ((BaseFragment) this).mCurrentMode == 172) {
                 return null;
             }
             if (id == Camera2DataContainer.getInstance().getUltraWideCameraId()) {

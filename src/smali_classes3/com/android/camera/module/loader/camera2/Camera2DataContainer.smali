@@ -934,7 +934,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->Md()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_19039_0x0002()Z
 
     move-result v2
 

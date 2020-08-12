@@ -266,7 +266,7 @@ public class Camera2DataContainer {
                         }
                         break;
                     case 172:
-                        if (DataRepository.dataItemFeature().Md()) {
+                        if (DataRepository.dataItemFeature().c_19039_0x0002()) {
                             i3 = getUltraWideCameraId();
                             break;
                         }
