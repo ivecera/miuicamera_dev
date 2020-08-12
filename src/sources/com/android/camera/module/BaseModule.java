@@ -996,7 +996,7 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
 
     /* access modifiers changed from: protected */
     public final boolean isPictureUseDualFrontCamera() {
-        return this.mActualCameraId == Camera2DataContainer.getInstance().getBokehFrontCameraId() && !DataRepository.dataItemFeature().mc();
+        return this.mActualCameraId == Camera2DataContainer.getInstance().getBokehFrontCameraId() && !DataRepository.dataItemFeature().c_19086_0x0001();
     }
 
     public boolean isPortraitMode() {

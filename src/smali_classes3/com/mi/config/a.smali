@@ -3297,7 +3297,7 @@
     return p0
 .end method
 
-.method public mc()Z
+.method public c_19086_0x0001()Z
     .locals 2
 
     const-string v0, "c_19086_0x0001"
@@ -3311,7 +3311,7 @@
     return p0
 .end method
 
-.method public md()Z
+.method public c_28196_0x0002()Z
     .locals 2
 
     const-string v0, "c_28196_0x0002"
@@ -3343,7 +3343,7 @@
     return p0
 .end method
 
-.method public mf()Z
+.method public s_m_f()Z
     .locals 2
 
     const-string v0, "s_m_f"

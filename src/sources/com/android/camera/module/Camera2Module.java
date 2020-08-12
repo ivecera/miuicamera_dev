@@ -1116,7 +1116,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         GraphDescriptorBean graphDescriptorBean;
         int cameraCombinationMode = CameraDeviceUtil.getCameraCombinationMode(Camera2DataContainer.getInstance().getRoleIdByActualId(((BaseModule) this).mActualCameraId));
         if (isPortraitMode()) {
-            int i = ((!isDualFrontCamera() || DataRepository.dataItemFeature().mc()) && !isDualCamera() && !isBokehUltraWideBackCamera()) ? 1 : 2;
+            int i = ((!isDualFrontCamera() || DataRepository.dataItemFeature().c_19086_0x0001()) && !isDualCamera() && !isBokehUltraWideBackCamera()) ? 1 : 2;
             String str = TAG;
             Log.d(str, "configParallelSession: inputStreamNum = " + i);
             graphDescriptorBean = new GraphDescriptorBean(32770, i, true, cameraCombinationMode);
@@ -1310,7 +1310,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (this.mOperatingMode == 32773) {
             return true;
         }
-        if (DataRepository.dataItemFeature().md() && ((i = this.mOperatingMode) == 32770 || i == 36864)) {
+        if (DataRepository.dataItemFeature().c_28196_0x0002() && ((i = this.mOperatingMode) == 32770 || i == 36864)) {
             return true;
         }
         if (DataRepository.dataItemFeature().sc()) {
@@ -2047,7 +2047,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         } else if (!CameraSettings.isMfnrSatEnable()) {
             Log.d(TAG, "Mfnr not enabled");
             return false;
-        } else if (!DataRepository.dataItemFeature().mf()) {
+        } else if (!DataRepository.dataItemFeature().s_m_f()) {
             Log.d(TAG, "SwMfnr is not supported");
             return false;
         } else if (!((BaseModule) this).mMutexModePicker.isNormal()) {
@@ -3126,7 +3126,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (!ModuleManager.isPortraitModule() && !"on".equals(componentBokeh.getComponentValue(((BaseModule) this).mModuleIndex))) {
             ((BaseModule) this).mCamera2Device.setMiBokeh(false);
             ((BaseModule) this).mCamera2Device.setRearBokehEnable(false);
-        } else if (isSingleCamera() || (DataRepository.dataItemFeature().mc() && ModuleManager.isPortraitModule() && isFrontCamera())) {
+        } else if (isSingleCamera() || (DataRepository.dataItemFeature().c_19086_0x0001() && ModuleManager.isPortraitModule() && isFrontCamera())) {
             ((BaseModule) this).mCamera2Device.setMiBokeh(true);
             ((BaseModule) this).mCamera2Device.setRearBokehEnable(false);
         } else {

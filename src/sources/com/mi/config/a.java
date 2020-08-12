@@ -440,6 +440,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_19039_0x0021, false);
     }
 
+    public boolean c_19086_0x0001() {
+        return getBoolean(c.c_19086_0x0001, false);
+    }
+
     public boolean c_22367_0x0001() {
         return getBoolean(c.c_22367_0x0001, false);
     }
@@ -546,6 +550,10 @@ public class a extends DataItemBase implements c {
 
     public int c_28041_0x0008_OR_0() {
         return getInt(c.c_28041_0x0008, 0);
+    }
+
+    public boolean c_28196_0x0002() {
+        return getBoolean(c.c_28196_0x0002, false);
     }
 
     public boolean c_28196_0x0003() {
@@ -745,20 +753,8 @@ public class a extends DataItemBase implements c {
         return (tc() && rd()) || c_36658_0x0002();
     }
 
-    public boolean mc() {
-        return getBoolean(c.c_19086_0x0001, false);
-    }
-
-    public boolean md() {
-        return getBoolean(c.c_28196_0x0002, false);
-    }
-
     public boolean me() {
         return getBoolean(c.c_0x42, !vf());
-    }
-
-    public boolean mf() {
-        return getBoolean(c.s_m_f, false);
     }
 
     public String n(String str) {
@@ -952,6 +948,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_m_c_t_f() {
         return getBoolean(c.s_m_c_t_f, false);
+    }
+
+    public boolean s_m_f() {
+        return getBoolean(c.s_m_f, false);
     }
 
     public boolean s_m_l() {
