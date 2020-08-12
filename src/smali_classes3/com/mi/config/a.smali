@@ -1184,7 +1184,7 @@
     return p0
 .end method
 
-.method public Id()Z
+.method public i_s_q_c()Z
     .locals 2
 
     const-string v0, "i_s_q_c"

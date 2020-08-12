@@ -165,10 +165,10 @@ public class CaptureResultParser {
 
     public static boolean isQuadCfaRunning(CaptureResult captureResult) {
         AECFrameControl aECFrameControl;
-        boolean Id = DataRepository.dataItemFeature().Id();
+        boolean i_s_q_c = DataRepository.dataItemFeature().i_s_q_c();
         String str = TAG;
-        Log.d(str, "isQuadCfaRunning: support=" + Id);
-        float linearGain = (!Id || (aECFrameControl = (AECFrameControl) VendorTagHelper.getValueSafely(captureResult, CaptureResultVendorTags.AEC_FRAME_CONTROL)) == null || aECFrameControl.getAecExposureDatas() == null || aECFrameControl.getAecExposureDatas().length <= 0) ? 3.0f : aECFrameControl.getAecExposureDatas()[0].getLinearGain();
+        Log.d(str, "isQuadCfaRunning: support=" + i_s_q_c);
+        float linearGain = (!i_s_q_c || (aECFrameControl = (AECFrameControl) VendorTagHelper.getValueSafely(captureResult, CaptureResultVendorTags.AEC_FRAME_CONTROL)) == null || aECFrameControl.getAecExposureDatas() == null || aECFrameControl.getAecExposureDatas().length <= 0) ? 3.0f : aECFrameControl.getAecExposureDatas()[0].getLinearGain();
         String str2 = TAG;
         Log.d(str2, "isQuadCfaRunning: gain=" + linearGain);
         return linearGain < 2.0f;
