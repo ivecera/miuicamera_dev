@@ -1621,7 +1621,7 @@ public class CameraSettings {
     }
 
     public static boolean isPictureFlawCheckOn() {
-        return DataRepository.dataItemFeature().Gd() && DataRepository.dataItemGlobal().getBoolean("pref_pic_flaw_tip", CameraAppImpl.getAndroidContext().getResources().getBoolean(R.bool.pref_pic_flaw_tip_default));
+        return DataRepository.dataItemFeature().c_19039_0x0008() && DataRepository.dataItemGlobal().getBoolean("pref_pic_flaw_tip", CameraAppImpl.getAndroidContext().getResources().getBoolean(R.bool.pref_pic_flaw_tip_default));
     }
 
     public static boolean isPopupTipBeautyIntroEnable() {

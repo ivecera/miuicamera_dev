@@ -2864,7 +2864,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (!CameraSettings.isGroupShotOn() || isParallelSessionEnable()) {
             ((BaseModule) this).mHandler.sendEmptyMessageDelayed(50, calculateTimeout(((BaseModule) this).mModuleIndex));
             ((BaseModule) this).mCamera2Device.setQuickShotAnimation(this.mQuickShotAnimateEnable);
-            if (DataRepository.dataItemFeature().Gd()) {
+            if (DataRepository.dataItemFeature().c_19039_0x0008()) {
                 if ((getModuleIndex() == 163 || getModuleIndex() == 165) && getZoomRatio() == 1.0f) {
                     ((BaseModule) this).mCamera2Device.setFlawDetectEnable(true);
                 } else {

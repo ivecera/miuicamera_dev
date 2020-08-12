@@ -16,7 +16,7 @@ public class PhotoAssistanceTipsActivity extends BasePreferenceActivity {
     protected PreferenceScreen mPreferenceGroup;
 
     private void filterByFeature() {
-        if (!DataRepository.dataItemFeature().Gd()) {
+        if (!DataRepository.dataItemFeature().c_19039_0x0008()) {
             removePreference(this.mPreferenceGroup, "pref_pic_flaw_tip");
         }
         if (!DataRepository.dataItemFeature().sd()) {
