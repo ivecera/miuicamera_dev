@@ -404,7 +404,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
                         Camera.this.setBrightnessRampRate(-1);
                         Camera.this.setScreenEffect(false);
                         AftersalesManager.getInstance().count(System.currentTimeMillis(), 2);
-                        if (Util.sIsKillCameraService && DataRepository.dataItemFeature().cd() && SystemClock.elapsedRealtime() - CameraSettings.getBroadcastKillServiceTime() > 60000) {
+                        if (Util.sIsKillCameraService && DataRepository.dataItemFeature().c_0x21() && SystemClock.elapsedRealtime() - CameraSettings.getBroadcastKillServiceTime() > 60000) {
                             Util.broadcastKillService(Camera.this, false);
                             return;
                         }
@@ -791,7 +791,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
     private void triggerWatchDog(boolean z) {
         String str = this.TAG;
         Log.d(str, "triggerWatchDog: " + z);
-        if (b.pv && DataRepository.dataItemFeature().cd()) {
+        if (b.pv && DataRepository.dataItemFeature().c_0x21()) {
             if (z) {
                 this.mWatchDog = new WatchDogThread();
                 this.mWatchDog.start();

@@ -320,7 +320,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->ce()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_22367_0x0000_ANDNOT_s_f_9_ANDNOT_ssmt()Z
 
     move-result p1
 

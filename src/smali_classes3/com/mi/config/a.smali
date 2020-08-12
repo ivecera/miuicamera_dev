@@ -2508,7 +2508,7 @@
     return p0
 .end method
 
-.method public cd()Z
+.method public c_0x21()Z
     .locals 2
 
     const-string v0, "c_0x21"
@@ -2522,7 +2522,7 @@
     return p0
 .end method
 
-.method public ce()Z
+.method public c_22367_0x0000_ANDNOT_s_f_9_ANDNOT_ssmt()Z
     .locals 2
 
     invoke-virtual {p0}, Lcom/mi/config/a;->s_f_9()Z
@@ -2553,7 +2553,7 @@
     return v1
 .end method
 
-.method public cf()Z
+.method public c_28041_0x0001()Z
     .locals 2
 
     const-string v0, "c_28041_0x0001"

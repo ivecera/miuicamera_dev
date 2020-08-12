@@ -1851,7 +1851,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private boolean isCurrentRawDomainBasedSuperNight() {
-        return ((BaseModule) this).mModuleIndex == 173 && DataRepository.dataItemFeature().cf();
+        return ((BaseModule) this).mModuleIndex == 173 && DataRepository.dataItemFeature().c_28041_0x0001();
     }
 
     private boolean isEnableQcfaForAlgoUp() {
@@ -2002,7 +2002,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (i != 173) {
             return false;
         }
-        return DataRepository.dataItemFeature().cf();
+        return DataRepository.dataItemFeature().c_28041_0x0001();
     }
 
     private boolean isSuperNightSeEnable() {

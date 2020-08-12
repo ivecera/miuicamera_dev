@@ -72,7 +72,7 @@ public class ComponentModuleList extends ComponentData {
                     if (dataItemFeature.c_0x34_OR_T() && this.mIntentType == 0) {
                         arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.module_name_portrait, String.valueOf(171)));
                     }
-                    if ((dataItemFeature.ee() || dataItemFeature.cf()) && this.mIntentType == 0 && DataRepository.dataItemGlobal().getDisplayMode() == 1) {
+                    if ((dataItemFeature.ee() || dataItemFeature.c_28041_0x0001()) && this.mIntentType == 0 && DataRepository.dataItemGlobal().getDisplayMode() == 1) {
                         arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.pref_camera_scenemode_entry_night, String.valueOf(173)));
                     }
                     if (DataRepository.dataItemFeature().od() && this.mIntentType == 0) {

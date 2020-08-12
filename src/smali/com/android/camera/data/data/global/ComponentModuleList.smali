@@ -384,7 +384,7 @@
 
     if-nez v3, :cond_b
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->cf()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_28041_0x0001()Z
 
     move-result v3
 

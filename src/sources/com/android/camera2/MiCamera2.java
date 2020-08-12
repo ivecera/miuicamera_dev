@@ -1989,7 +1989,7 @@ public class MiCamera2 extends Camera2Proxy {
 
     /* access modifiers changed from: private */
     public void triggerDeviceChecking(boolean z, boolean z2) {
-        if (b.pv && DataRepository.dataItemFeature().cd() && this.mHelperHandler != null) {
+        if (b.pv && DataRepository.dataItemFeature().c_0x21() && this.mHelperHandler != null) {
             String str = TAG;
             Log.d(str, "triggerDeviceChecking " + z);
             if (z) {
