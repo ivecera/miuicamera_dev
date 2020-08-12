@@ -1412,7 +1412,7 @@ public class CameraSettings {
     }
 
     public static boolean isFPS960(int i) {
-        return i == 172 && DataRepository.dataItemFeature().enSlowMotion_960_240_120() && DataRepository.dataItemConfig().getComponentConfigSlowMotion().isSlowMotionFps960();
+        return i == 172 && DataRepository.dataItemFeature().supportSloMo_960_240_120() && DataRepository.dataItemConfig().getComponentConfigSlowMotion().isSlowMotionFps960();
     }
 
     public static boolean isFaceBeautyOn(int i, @Nullable BeautyValues beautyValues) {

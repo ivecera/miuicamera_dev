@@ -77,11 +77,11 @@ public class ComponentConfigSlowMotion extends ComponentData {
 
     public void reInit(int i) {
         if (i == 0) {
-            if (DataRepository.dataItemFeature().enSlowMotion_960_240_120()) {
+            if (DataRepository.dataItemFeature().supportSloMo_960_240_120()) {
                 this.mSlowMotionMode = new String[]{DATA_CONFIG_NEW_SLOW_MOTION_960, DATA_CONFIG_NEW_SLOW_MOTION_120, DATA_CONFIG_NEW_SLOW_MOTION_240};
-            } else if (DataRepository.dataItemFeature().enSlowMotion_240_120_only()) {
+            } else if (DataRepository.dataItemFeature().supportSloMo_240_120_Only()) {
                 this.mSlowMotionMode = new String[]{DATA_CONFIG_NEW_SLOW_MOTION_120, DATA_CONFIG_NEW_SLOW_MOTION_240};
-            } else if (DataRepository.dataItemFeature().enSlowMotion_120_only()) {
+            } else if (DataRepository.dataItemFeature().supportSloMo_120_Only()) {
                 this.mSlowMotionMode = new String[]{DATA_CONFIG_NEW_SLOW_MOTION_120};
             } else {
                 this.mSlowMotionMode = new String[0];

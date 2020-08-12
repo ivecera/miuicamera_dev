@@ -136,7 +136,7 @@ public class ComponentConfigSlowMotionQuality extends ComponentData {
                             arrayList.add(new ComponentDataItem((int) R.drawable.ic_config_slow_720p_120fps, (int) R.drawable.ic_config_slow_720p_120fps, (int) R.string.pref_new_slow_motion_video_quality_entry_720p, "5"));
                         } else {
                             arrayList.add(new ComponentDataItem((int) R.drawable.ic_config_slow_720p_120fps_disable, (int) R.drawable.ic_config_slow_720p_120fps_disable, (int) R.string.pref_new_slow_motion_video_quality_entry_720p, "5"));
-                            if (DataRepository.dataItemFeature().enSlowMotion_120_only()) {
+                            if (DataRepository.dataItemFeature().supportSloMo_120_Only()) {
                                 setComponentValue(i, "5");
                             }
                         }

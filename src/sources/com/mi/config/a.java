@@ -836,18 +836,6 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.e_p_p_l_t, false);
     }
 
-    public boolean enSlowMotion_120_only() {
-        return !enSlowMotion_960_240_120() && !enSlowMotion_240_120_only() && getBoolean(c.c_22367_0x0000, false);
-    }
-
-    public boolean enSlowMotion_240_120_only() {
-        return !enSlowMotion_960_240_120() && getBoolean(c.s_s_m_t, false);
-    }
-
-    public boolean enSlowMotion_960_240_120() {
-        return getBoolean(c.s_f_9, false);
-    }
-
     public boolean f_a_u_u() {
         return getBoolean(c.f_a_u_u, false);
     }
@@ -1137,6 +1125,18 @@ public class a extends DataItemBase implements c {
 
     public boolean supportShortVideo() {
         return getBoolean(c.s_f_9, false) || getBoolean(c.s_s_m_t, false) || getBoolean(c.c_22367_0x0000, false) || getBoolean(c.c_35893_0x0001, false);
+    }
+
+    public boolean supportSloMo_120_Only() {
+        return !supportSloMo_960_240_120() && !supportSloMo_240_120_Only() && getBoolean(c.c_22367_0x0000, false);
+    }
+
+    public boolean supportSloMo_240_120_Only() {
+        return !supportSloMo_960_240_120() && getBoolean(c.s_s_m_t, false);
+    }
+
+    public boolean supportSloMo_960_240_120() {
+        return getBoolean(c.s_f_9, false);
     }
 
     public boolean te() {

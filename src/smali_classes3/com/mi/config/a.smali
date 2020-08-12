@@ -2175,10 +2175,10 @@
     return p0
 .end method
 
-.method public enSlowMotion_240_120_only()Z
+.method public supportSloMo_240_120_Only()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->enSlowMotion_960_240_120()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->supportSloMo_960_240_120()Z
 
     move-result v0
 
@@ -2265,7 +2265,7 @@
     return p0
 .end method
 
-.method public enSlowMotion_960_240_120()Z
+.method public supportSloMo_960_240_120()Z
     .locals 2
 
     const-string v0, "s_f_9"
@@ -2522,10 +2522,10 @@
     return p0
 .end method
 
-.method public enSlowMotion_120_only()Z
+.method public supportSloMo_120_Only()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->enSlowMotion_960_240_120()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->supportSloMo_960_240_120()Z
 
     move-result v0
 
@@ -2533,7 +2533,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->enSlowMotion_240_120_only()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->supportSloMo_240_120_Only()Z
 
     move-result v0
 
