@@ -184,10 +184,6 @@ public class a extends DataItemBase implements c {
         return O(getString(c.c_19039_0x0004, ""));
     }
 
-    public boolean Pc() {
-        return getBoolean(c.c_27810_0x0007, false);
-    }
-
     public boolean Pd() {
         if (Util.isGlobalVersion()) {
             return false;
@@ -526,6 +522,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_27810_0x0006() {
         return getBoolean(c.c_27810_0x0006, false);
+    }
+
+    public boolean c_27810_0x0007() {
+        return getBoolean(c.c_27810_0x0007, false);
     }
 
     public boolean c_27845_0x0001() {

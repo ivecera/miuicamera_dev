@@ -1600,7 +1600,7 @@
     return p0
 .end method
 
-.method public Pc()Z
+.method public c_27810_0x0007()Z
     .locals 2
 
     const-string v0, "c_27810_0x0007"

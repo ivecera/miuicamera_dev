@@ -178,7 +178,7 @@ public class Camera2DataContainer {
                                         i3 = getUltraWideCameraId();
                                         break;
                                     }
-                                } else if (!DataRepository.dataItemFeature().Pc()) {
+                                } else if (!DataRepository.dataItemFeature().c_27810_0x0007()) {
                                     i3 = getUltraWideCameraId();
                                     break;
                                 } else {
