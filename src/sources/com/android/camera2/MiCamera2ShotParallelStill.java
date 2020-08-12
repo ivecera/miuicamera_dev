@@ -201,7 +201,7 @@ public class MiCamera2ShotParallelStill extends MiCamera2ShotParallel<ParallelTa
             MiCameraCompat.applyRemosaicEnabled(createCaptureRequest, this.mShouldDoQcfaCapture);
         }
         CaptureRequestBuilder.applyFlawDetectEnable(((MiCamera2Shot) this).mMiCamera.getCapabilities(), createCaptureRequest, ((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isFlawDetectEnable());
-        if (((MiCamera2Shot) this).mMiCamera.isFixShotTime() && DataRepository.dataItemFeature().Dc() && AlgoConnector.getInstance().getLocalBinder().isAnyRequestIsHWMFNRProcessing()) {
+        if (((MiCamera2Shot) this).mMiCamera.isFixShotTime() && DataRepository.dataItemFeature().e_m_a_u_q_s() && AlgoConnector.getInstance().getLocalBinder().isAnyRequestIsHWMFNRProcessing()) {
             Log.d(TAG, "Do not apply hwmfnr.");
             MiCameraCompat.applyMfnrEnable(createCaptureRequest, false);
             MiCameraCompat.applyMultiFrameInputNum(createCaptureRequest, 1);
