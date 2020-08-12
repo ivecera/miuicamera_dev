@@ -935,7 +935,7 @@
     return p0
 .end method
 
-.method public Fb()I
+.method public c_0x5a_OR_0()I
     .locals 2
 
     const-string v0, "c_0x5a"

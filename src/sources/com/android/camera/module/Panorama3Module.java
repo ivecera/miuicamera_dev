@@ -1625,7 +1625,7 @@ public class Panorama3Module extends BaseModule implements ModeProtocol.CameraAc
     }
 
     private void updatePictureAndPreviewSize() {
-        CameraSize bestPanoPictureSize = getBestPanoPictureSize(((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(256), DataRepository.dataItemFeature().Fb());
+        CameraSize bestPanoPictureSize = getBestPanoPictureSize(((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(256), DataRepository.dataItemFeature().c_0x5a_OR_0());
         ((BaseModule) this).mPreviewSize = Util.getOptimalPreviewSize(false, ((BaseModule) this).mBogusCameraId, ((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(SurfaceTexture.class), (double) CameraSettings.getPreviewAspectRatio(bestPanoPictureSize.width, bestPanoPictureSize.height));
         ((BaseModule) this).mPictureSize = bestPanoPictureSize;
         CameraSize cameraSize = ((BaseModule) this).mPictureSize;
