@@ -255,7 +255,7 @@ public class DataItemGlobal extends DataItemBase {
     public boolean matchCustomWatermarkVersion() {
         String wb = this.mDataItemFeature.wb();
         if (!contains(DATA_COMMON_CUSTOM_WATERMARK_VERSION)) {
-            return !this.mDataItemFeature.q(c.QB);
+            return !this.mDataItemFeature.q(c.c_0x40);
         }
         if (arrayMapContainsKey(DATA_COMMON_CUSTOM_WATERMARK_VERSION)) {
             arrayMapRemove(DATA_COMMON_CUSTOM_WATERMARK_VERSION);

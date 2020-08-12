@@ -207,7 +207,7 @@ public class b {
     }
 
     public static String Uk() {
-        return cl() ? "_l" : ol() ? "_in" : !DataRepository.dataItemFeature().getBoolean(c.XA, false) ? "" : (Build.MODEL.contains("BROWN EDITION") || Build.MODEL.contains("Explorer")) ? "_a" : Build.MODEL.contains("ROY") ? "_b" : dl() ? "_s" : (jl() || il() || kl()) ? "_global" : ul() ? "_premium" : ll() ? vl() ? "_global_pro" : "_global" : "";
+        return cl() ? "_l" : ol() ? "_in" : !DataRepository.dataItemFeature().getBoolean(c.c_0x18, false) ? "" : (Build.MODEL.contains("BROWN EDITION") || Build.MODEL.contains("Explorer")) ? "_a" : Build.MODEL.contains("ROY") ? "_b" : dl() ? "_s" : (jl() || il() || kl()) ? "_global" : ul() ? "_premium" : ll() ? vl() ? "_global_pro" : "_global" : "";
     }
 
     public static boolean Ul() {

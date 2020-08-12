@@ -61,18 +61,18 @@ public class a extends DataItemBase implements c {
     }
 
     private int Qm() {
-        return getInt(c.yD, 0);
+        return getInt(c.c_28041_0x0004, 0);
     }
 
     private boolean Rm() {
         if (b.jl() || b.kl()) {
             return false;
         }
-        return getBoolean(c.UC, false);
+        return getBoolean(c.c_16001_0x0001, false);
     }
 
     private boolean Sm() {
-        return getBoolean(c.wC, false);
+        return getBoolean(c.c_s_a_u_q, false);
     }
 
     private void c(String str, boolean z) throws JSONException {
@@ -150,170 +150,170 @@ public class a extends DataItemBase implements c {
     }
 
     public int Ab() {
-        return N(getString(c.JC, ""));
+        return N(getString(c.c_19040_0x0005, ""));
     }
 
     public boolean Ac() {
-        return getInt(c.MC, -1) == 2;
+        return getInt(c.c_19039_0x0005, -1) == 2;
     }
 
     public boolean Ad() {
-        return getBoolean(c.ED, false);
+        return getBoolean(c.c_36211_0x0001, false);
     }
 
     public boolean Ae() {
-        return Build.VERSION.SDK_INT > 28 ? Sm() : getBoolean(c.fA, false);
+        return Build.VERSION.SDK_INT > 28 ? Sm() : getBoolean(c.s_a_u, false);
     }
 
     public String Bb() {
-        return getString(c.qA, "");
+        return getString(c.h_d_v, "");
     }
 
     public boolean Bc() {
-        return getInt(c.MC, -1) == 1;
+        return getInt(c.c_19039_0x0005, -1) == 1;
     }
 
     public boolean Bd() {
-        return getBoolean(c.NB, false) && !d.d.a.lh;
+        return getBoolean(c.c_33066_0x0004, false) && !d.d.a.lh;
     }
 
     public boolean Be() {
-        return getBoolean(c.GD, false) && !SystemProperties.getBoolean("close.append.yuv", false);
+        return getBoolean(c.c_26813_0x0001, false) && !SystemProperties.getBoolean("close.append.yuv", false);
     }
 
     public String Cb() {
-        return getString(c.fB, null);
+        return getString(c.c_27810_0x0004, null);
     }
 
     public boolean Cc() {
-        return getBoolean(c.cA, false);
+        return getBoolean(c.s_m_c_t_f, false);
     }
 
     public boolean Cd() {
-        return getBoolean(c.kC, false);
+        return getBoolean(c.c_0x54, false);
     }
 
     public boolean Ce() {
-        return getBoolean(c.eA, false);
+        return getBoolean(c.s_b_m, false);
     }
 
     public float Db() {
-        return (float) getDoubleFromValues(c.CA, 0.8766000270843506d);
+        return (float) getDoubleFromValues(c.c_0x02_p_c_r_v, 0.8766000270843506d);
     }
 
     public boolean Dc() {
-        return getBoolean(c.DD, false);
+        return getBoolean(c.e_m_a_u_q_s, false);
     }
 
     public boolean Dd() {
-        return getBoolean(c.TC, false);
+        return getBoolean(c.c_27845_0x0001, false);
     }
 
     public boolean De() {
-        return getBoolean(c.wA, true);
+        return getBoolean(c.s_c_w_b, true);
     }
 
     public int Eb() {
-        return getInt(c.BA, 280);
+        return getInt(c.c_0x01_p_g_a_v, 280);
     }
 
     public boolean Ec() {
-        return getBoolean(c.nA, false);
+        return getBoolean(c.s_m_l, false);
     }
 
     public boolean Ed() {
-        return getBoolean(c.yC, false);
+        return getBoolean(c.c_0x58, false);
     }
 
     public boolean Ee() {
-        return getBoolean(c.pA, false);
+        return getBoolean(c.s_e_l, false);
     }
 
     public int Fb() {
-        return getInt(c.EC, 0);
+        return getInt(c.c_0x5a, 0);
     }
 
     public boolean Fc() {
-        return getBoolean(c.eB, false);
+        return getBoolean(c.c_27810_0x0003, false);
     }
 
     public boolean Fd() {
-        return getBoolean(c.RA, true);
+        return getBoolean(c.c_0x10, true);
     }
 
     public boolean Fe() {
-        return getBoolean(c.Rz, false);
+        return getBoolean(c.s_f_a, false);
     }
 
     public int Gb() {
-        return getInt(c.LC, -1);
+        return getInt(c.s_p_r_n, -1);
     }
 
     public boolean Gc() {
-        return Arrays.asList(getString(c.gA, "").toUpperCase().split(":")).contains("NO_PIXEL");
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("NO_PIXEL");
     }
 
     public boolean Gd() {
-        return getBoolean(c.RC, false);
+        return getBoolean(c.c_19039_0x0008, false);
     }
 
     public boolean Ge() {
-        return getBoolean(c.XD, false);
+        return getBoolean(c.c_35955_0x0004, false);
     }
 
     public int Hb() {
-        return N(getString(c.IC, ""));
+        return N(getString(c.c_19039_0x0004, ""));
     }
 
     public boolean Hc() {
-        return Arrays.asList(getString(c.gA, "").toUpperCase().split(":")).contains("PRO");
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("PRO");
     }
 
     public boolean Hd() {
-        return getBoolean(c.hB, false);
+        return getBoolean(c.c_27810_0x0006, false);
     }
 
     public boolean He() {
-        return getBoolean(c._B, false);
+        return getBoolean(c.c_0x46, false);
     }
 
     public int Ib() {
         if (b.gv) {
             return 6;
         }
-        return getInt(c.tC, 5);
+        return getInt(c.c_9006_0x0001, 5);
     }
 
     public boolean Ic() {
-        return getBoolean(c.qB, false);
+        return getBoolean(c.i_q_a_u_m, false);
     }
 
     public boolean Id() {
-        return getBoolean(c.BB, false);
+        return getBoolean(c.i_s_q_c, false);
     }
 
     public boolean Ie() {
-        return getBoolean(c.ZD, false);
+        return getBoolean(c.c_19039_0x0017, false);
     }
 
     public int Jb() {
-        return getInt(c.AB, -1);
+        return getInt(c.s_b_m_s_c, -1);
     }
 
     public boolean Jc() {
-        return getBoolean(c.jD, false);
+        return getBoolean(c.c_0x5c, false);
     }
 
     public boolean Jd() {
-        return getBoolean(c.gD, false);
+        return getBoolean(c.c_22367_0x0009, false);
     }
 
     public boolean Je() {
-        return getBoolean(c.OD, false);
+        return getBoolean(c.c_19039_0x0013, false);
     }
 
     public long Kb() {
-        return (long) getInt(c.zB, -1);
+        return (long) getInt(c.s_b_m_d_t, -1);
     }
 
     public boolean Kc() {
@@ -321,83 +321,83 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean Kd() {
-        return getBoolean(c.yB, false);
+        return getBoolean(c.i_s_s_b, false);
     }
 
     public boolean Ke() {
-        return getBoolean(c.YD, false);
+        return getBoolean(c.c_9006_0x0007, false);
     }
 
     public int Lb() {
-        return getInt(c.DC, 0);
+        return getInt(c.c_32889_0x0002, 0);
     }
 
     public boolean Lc() {
-        return getBoolean(c.sA, false);
+        return getBoolean(c.s_s_s, false);
     }
 
     public boolean Ld() {
-        return getBoolean(c.FC, false);
+        return getBoolean(c.c_19039_0x0001, false);
     }
 
     public boolean Le() {
-        return getBoolean(c.uD, false);
+        return getBoolean(c.c_19039_0x0012, false);
     }
 
     public int Mb() {
-        return getInt(c.Kz, 20);
+        return getInt(c.c_t_r, 20);
     }
 
     public boolean Mc() {
-        return getBoolean(c.nB, false);
+        return getBoolean(c.i_s_e_r, false);
     }
 
     public boolean Md() {
-        return getBoolean(c.GC, false);
+        return getBoolean(c.c_19039_0x0002, false);
     }
 
     public boolean Me() {
-        return getBoolean(c.Lz, false) && tc();
+        return getBoolean(c.s_i_a, false) && tc();
     }
 
     public Size Nb() {
-        return O(getString(c.JC, ""));
+        return O(getString(c.c_19040_0x0005, ""));
     }
 
     public boolean Nc() {
-        return getBoolean(c.rA, true);
+        return getBoolean(c.s_s_v, true);
     }
 
     public boolean Nd() {
-        return getBoolean(c.xC, false);
+        return getBoolean(c.c_22367_0x0001, false);
     }
 
     public boolean Ne() {
-        return getBoolean(c.OA, false) && tc();
+        return getBoolean(c.c_0x0c, false) && tc();
     }
 
     public Size Ob() {
-        return O(getString(c.IC, ""));
+        return O(getString(c.c_19039_0x0004, ""));
     }
 
     public boolean Oc() {
-        return Arrays.asList(getString(c.gA, "").toUpperCase().split(":")).contains("MACRO");
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("MACRO");
     }
 
     public boolean Od() {
-        return getBoolean(c.rB, false);
+        return getBoolean(c.c_0x25, false);
     }
 
     public boolean Oe() {
-        return getBoolean(c.UD, false);
+        return getBoolean(c.c_9006_0x0003, false);
     }
 
     public int Pb() {
-        return getInt(c.hD, 0);
+        return getInt(c.c_22367_0x000A, 0);
     }
 
     public boolean Pc() {
-        return getBoolean(c.iB, false);
+        return getBoolean(c.c_27810_0x0007, false);
     }
 
     public boolean Pd() {
@@ -405,53 +405,53 @@ public class a extends DataItemBase implements c {
             return false;
         }
         if (!b.bv || Build.VERSION.SDK_INT != 28) {
-            return getBoolean(c.AC, false);
+            return getBoolean(c.c_0x60, false);
         }
         return false;
     }
 
     public boolean Pe() {
-        return getBoolean(c.cC, false);
+        return getBoolean(c.c_0x48, false);
     }
 
     public String Qb() {
-        return getString(c.cD, null);
+        return getString(c.c_22367_0x0006, null);
     }
 
     public boolean Qc() {
-        return getBoolean(c.OC, false);
+        return getBoolean(c.c_19039_0x0006, false);
     }
 
     public boolean Qd() {
-        return getBoolean(c.eD, false);
+        return getBoolean(c.c_22367_0x0007, false);
     }
 
     public boolean Qe() {
-        return getBoolean(c.zD, true);
+        return getBoolean(c.c_28196_0x0003, true);
     }
 
     public int Rb() {
-        return getInt(c.QD, 1);
+        return getInt(c.c_35955_0x0002, 1);
     }
 
     public boolean Rc() {
-        return getBoolean(c.wB, true);
+        return getBoolean(c.c_0x27, true);
     }
 
     public boolean Rd() {
-        return getBoolean(c.QC, false);
+        return getBoolean(c.c_22367_0x0003, false);
     }
 
     public boolean Re() {
-        return getBoolean(c.BD, false);
+        return getBoolean(c.c_27845_0x0002, false);
     }
 
     public int Sb() {
-        return getInt(c.vC, 0);
+        return getInt(c.c_0x57, 0);
     }
 
     public boolean Sc() {
-        return getBoolean(c.xB, false);
+        return getBoolean(c.c_19039_0x0016, false);
     }
 
     public boolean Sd() {
@@ -459,154 +459,154 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean Se() {
-        return getBoolean(c.jC, false);
+        return getBoolean(c.c_19039_0x0000, false);
     }
 
     public int Tb() {
-        return getInt(c.JD, 0);
+        return getInt(c.c_26813_0x0002, 0);
     }
 
     public boolean Tc() {
-        return getBoolean(c.ZC, false);
+        return getBoolean(c.c_19039_0x0010, false);
     }
 
     public boolean Td() {
-        return getBoolean(c.LA, false);
+        return getBoolean(c.c_0x0a, false);
     }
 
     public boolean Te() {
         if (!Util.isGlobalVersion()) {
             return false;
         }
-        return getBoolean(c.ZA, false);
+        return getBoolean(c.c_0x1a, false);
     }
 
     public int Ub() {
-        return getInt(c.VD, 0);
+        return getInt(c.c_28041_0x0008, 0);
     }
 
     public boolean Uc() {
-        return getBoolean(c.GB, false);
+        return getBoolean(c.c_0x31, false);
     }
 
     public boolean Ud() {
-        return getBoolean(c.KC, true);
+        return getBoolean(c.c_22367_0x0002, true);
     }
 
     public boolean Ue() {
-        return getBoolean(c.CD, false);
+        return getBoolean(c.c_27845_0x0003, false);
     }
 
     public boolean Vb() {
-        return Hb() < 0 || getBoolean(c.QA, false);
+        return Hb() < 0 || getBoolean(c.c_0x0f, false);
     }
 
     public boolean Vc() {
-        return getBoolean(c.zC, false);
+        return getBoolean(c.c_0x59, false);
     }
 
     public boolean Vd() {
-        return getBoolean(c.CC, false);
+        return getBoolean(c.c_32889_0x0001, false);
     }
 
     public boolean Ve() {
-        return getBoolean(c.Vz, false);
+        return getBoolean(c.s_o_a_w, false);
     }
 
     public boolean Wb() {
-        return getBoolean(c.YB, false);
+        return getBoolean(c.c_0x44, false);
     }
 
     public boolean Wc() {
-        return getBoolean(c.Sz, true);
+        return getBoolean(c.s_b_a, true);
     }
 
     public boolean Wd() {
-        return getBoolean(c.tB, false);
+        return getBoolean(c.c_d_e_f_w, false);
     }
 
     public boolean We() {
-        return getBoolean(c.Xz, false);
+        return getBoolean(c.c_0x4a_1, false);
     }
 
     public boolean Xb() {
-        return getBoolean(c.dD, false);
+        return getBoolean(c.c_19039_0x0011, false);
     }
 
     public boolean Xc() {
-        return getBoolean(c._v, false);
+        return getBoolean(c.s_a, false);
     }
 
     public boolean Xd() {
-        return getBoolean(c.JB, true);
+        return getBoolean(c.c_0x34, true);
     }
 
     public boolean Xe() {
-        return getBoolean(c.Tz, false);
+        return getBoolean(c.s_p_a, false);
     }
 
     public boolean Yb() {
-        return getInt(c.fD, 0) == 1;
+        return getInt(c.c_22367_0x0008, 0) == 1;
     }
 
     public boolean Yc() {
-        return getBoolean(c.WA, false);
+        return getBoolean(c.c_0x17, false);
     }
 
     public boolean Yd() {
-        return !Zd() && getBoolean(c.iA, false);
+        return !Zd() && getBoolean(c.s_s_m_t, false);
     }
 
     public boolean Ye() {
-        return (tc() || uc()) && getBoolean(c.Qz, false);
+        return (tc() || uc()) && getBoolean(c.s_p_l_i_e, false);
     }
 
     public boolean Zb() {
-        return getInt(c.fD, 0) == 0;
+        return getInt(c.c_22367_0x0008, 0) == 0;
     }
 
     public boolean Zc() {
-        return getBoolean(c.LD, false);
+        return getBoolean(c.c_36658_0x0002, false);
     }
 
     public boolean Zd() {
-        return getBoolean(c.hA, false);
+        return getBoolean(c.s_f_9, false);
     }
 
     public boolean Ze() {
-        return getBoolean(c.Oz, false);
+        return getBoolean(c.s_p_l_b, false);
     }
 
     public boolean _b() {
-        return getBoolean(c.uC, false);
+        return getBoolean(c.c_9006_0x0002, false);
     }
 
     public boolean _c() {
-        return getBoolean(c.xA, false);
+        return getBoolean(c.s_c_w_m, false);
     }
 
     public boolean _d() {
-        return getBoolean(c.kA, false);
+        return getBoolean(c.s_f_z_i, false);
     }
 
     public boolean _e() {
-        return getBoolean(c.Pz, false);
+        return getBoolean(c.s_p_l_f, false);
     }
 
     public boolean ac() {
-        return getBoolean(c.ND, false);
+        return getBoolean(c.c_9006_0x0006, false);
     }
 
     public boolean ad() {
-        return getBoolean(c.YA, true);
+        return getBoolean(c.c_0x19, true);
     }
 
     public boolean ae() {
-        return getBoolean(c.oC, false);
+        return getBoolean(c.c_35893_0x0001, false);
     }
 
     public boolean af() {
-        return getBoolean(c.WD, false);
+        return getBoolean(c.c_19039_0x0015, false);
     }
 
     public boolean bc() {
@@ -617,135 +617,135 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean bd() {
-        return getBoolean(c.bD, false);
+        return getBoolean(c.c_22367_0x0005, false);
     }
 
     public boolean be() {
-        return getBoolean(c.KB, true);
+        return getBoolean(c.c_0x35, true);
     }
 
     public boolean bf() {
-        return getBoolean(c.vD, false);
+        return getBoolean(c.c_0x5e, false);
     }
 
     public boolean cc() {
-        return Arrays.asList(getString(c.gA, "").toUpperCase().split(":")).contains("CAPTURE_INTENT");
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("CAPTURE_INTENT");
     }
 
     public boolean cd() {
-        return getBoolean(c.jB, false);
+        return getBoolean(c.c_0x21, false);
     }
 
     public boolean ce() {
-        return !Zd() && !Yd() && getBoolean(c.nC, false);
+        return !Zd() && !Yd() && getBoolean(c.c_22367_0x0000, false);
     }
 
     public boolean cf() {
-        return getBoolean(c.iC, false);
+        return getBoolean(c.c_28041_0x0001, false);
     }
 
     public boolean dc() {
         if (Build.VERSION.SDK_INT < 28) {
             return false;
         }
-        return getBoolean(c.lB, false);
+        return getBoolean(c.c_0x23, false);
     }
 
     public boolean dd() {
-        return getBoolean(c.HC, false);
+        return getBoolean(c.c_19039_0x0003, false);
     }
 
     public boolean de() {
         if (b.cl()) {
             return false;
         }
-        return getBoolean(c.RB, true);
+        return getBoolean(c.c_0x41, true);
     }
 
     public boolean df() {
-        return getBoolean(c.dE, false);
+        return getBoolean(c.c_26813_0x0003, false);
     }
 
     public boolean ec() {
-        return getBoolean(c.nD, false);
+        return getBoolean(c.c_13254_0x01, false);
     }
 
     public boolean ed() {
-        return getBoolean(c.pC, false);
+        return getBoolean(c.c_35893_0x0002, false);
     }
 
     public boolean ee() {
-        return Build.VERSION.SDK_INT >= 28 && getBoolean(c.lA, false);
+        return Build.VERSION.SDK_INT >= 28 && getBoolean(c.s_s_n, false);
     }
 
     public boolean ef() {
-        return getBoolean(c.bE, false);
+        return getBoolean(c.c_19039_0x0019, false);
     }
 
     public boolean fc() {
-        return getBoolean(c.lC, true);
+        return getBoolean(c.c_0x55, true);
     }
 
     public boolean fd() {
-        return getBoolean(c.mD, false);
+        return getBoolean(c.c_35905_0x0001, false);
     }
 
     public boolean fe() {
-        return getBoolean(c.YC, false);
+        return getBoolean(c.c_33066_0x0003, false);
     }
 
     public boolean ff() {
-        return getBoolean(c.bB, false);
+        return getBoolean(c.c_0x1c, false);
     }
 
     public boolean gd() {
-        return getBoolean(c.LB, true);
+        return getBoolean(c.c_0x36, true);
     }
 
     public boolean ge() {
-        return getBoolean(c.jA, false);
+        return getBoolean(c.s_v_f_m, false);
     }
 
     public boolean gf() {
-        return getBoolean(c.cE, false);
+        return getBoolean(c.c_19039_0x0020, false);
     }
 
     public boolean hc() {
-        return getBoolean(c.sB, true);
+        return getBoolean(c.c_e_f_a_l, true);
     }
 
     public boolean hd() {
-        return getBoolean(c.WC, false);
+        return getBoolean(c.c_33066_0x0001, false);
     }
 
     public boolean he() {
-        return Arrays.asList(getString(c.gA, "").toUpperCase().split(":")).contains("ULTRA_WIDE");
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("ULTRA_WIDE");
     }
 
     public boolean hf() {
-        return getBoolean(c._D, false);
+        return getBoolean(c.c_19039_0x0018, false);
     }
 
     public boolean ic() {
-        return getBoolean(c.oA, false);
+        return getBoolean(c.s_f_s_c, false);
     }
 
     public boolean ie() {
-        return getBoolean(c.SA, false);
+        return getBoolean(c.c_0x11, false);
     }
 
     /* renamed from: if  reason: not valid java name */
     public boolean m1if() {
-        return getBoolean(c.eC, false);
+        return getBoolean(c.c_0x50, false);
     }
 
     public boolean is4K30FpsEISSupported() {
-        return getBoolean(c.HA, false);
+        return getBoolean(c.c_0x07, false);
     }
 
     public boolean isCinematicPhotoSupported() {
         if (!b.bv || Build.VERSION.SDK_INT != 28) {
-            return getBoolean(c.XC, false);
+            return getBoolean(c.c_33066_0x0002, false);
         }
         return false;
     }
@@ -757,39 +757,39 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean isSRRequireReprocess() {
-        return getBoolean(c.oD, false);
+        return getBoolean(c.c_9006_0x0004, false);
     }
 
     public boolean isSupport960VideoEditor() {
-        return getBoolean(c.iD, true);
+        return getBoolean(c.c_0x5b, true);
     }
 
     public boolean isSupportBeautyBody() {
-        return getBoolean(c.vA, false);
+        return getBoolean(c.s_b_b, false);
     }
 
     public boolean isSupportBokehAdjust() {
-        return getBoolean(c.kB, false);
+        return getBoolean(c.c_0x22, false);
     }
 
     public boolean isSupportMacroMode() {
-        return getBoolean(c.HB, false);
+        return getBoolean(c.c_0x32, false);
     }
 
     public boolean isSupportNormalWideLDC() {
-        return getBoolean(c.FA, false);
+        return getBoolean(c.c_0x05, false);
     }
 
     public boolean isSupportShortVideoBeautyBody() {
-        return getBoolean(c.DB, false);
+        return getBoolean(c.c_0x28, false);
     }
 
     public boolean isSupportUltraWide() {
-        return getBoolean(c.tA, false);
+        return getBoolean(c.s_u_w, false);
     }
 
     public boolean isSupportUltraWideLDC() {
-        return getBoolean(c.GA, false);
+        return getBoolean(c.c_0x06, false);
     }
 
     @Override // com.android.camera.data.provider.DataProvider.ProviderEvent
@@ -798,27 +798,27 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean jc() {
-        return getBoolean(c.cB, true);
+        return getBoolean(c.c_0x20, true);
     }
 
     public boolean jd() {
-        return getBoolean(c.VA, false);
+        return getBoolean(c.c_0x16, false);
     }
 
     public boolean je() {
-        return getBoolean(c.yA, false);
+        return getBoolean(c.i_v_b_c_f_d, false);
     }
 
     public boolean jf() {
-        return getBoolean(c.hC, false);
+        return getBoolean(c.c_0x53, false);
     }
 
     public boolean kc() {
-        return getBoolean(c.dB, false);
+        return getBoolean(c.c_27810_0x0001, false);
     }
 
     public boolean kd() {
-        return getBoolean(c.OB, false);
+        return getBoolean(c.c_0x38, false);
     }
 
     public boolean ke() {
@@ -826,83 +826,83 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean kf() {
-        return getBoolean(c.fC, false);
+        return getBoolean(c.c_0x51, false);
     }
 
     public boolean lc() {
-        return getBoolean(c.xD, false);
+        return getBoolean(c.f_a_u_u, false);
     }
 
     public boolean ld() {
-        return getBoolean(c.SC, false);
+        return getBoolean(c.c_19039_0x0009, false);
     }
 
     public boolean le() {
-        return getBoolean(c.UB, false);
+        return getBoolean(c.c_0x42_m, false);
     }
 
     public boolean lf() {
-        return getBoolean(c.eE, false);
+        return getBoolean(c.c_19039_0x0021, false);
     }
 
     public boolean mc() {
-        return getBoolean(c.pD, false);
+        return getBoolean(c.c_19086_0x0001, false);
     }
 
     public boolean md() {
-        return getBoolean(c.pB, false);
+        return getBoolean(c.c_28196_0x0002, false);
     }
 
     public boolean me() {
-        return getBoolean(c.SB, !vf());
+        return getBoolean(c.c_0x42, !vf());
     }
 
     public boolean mf() {
-        return getBoolean(c.Nz, false);
+        return getBoolean(c.s_m_f, false);
     }
 
     public String n(String str) {
-        return getString(c.WB, str);
+        return getString(c.c_22756_0x0001, str);
     }
 
     public boolean nb() {
-        return getBoolean(c.FD, false);
+        return getBoolean(c.c_28041_0x0005, false);
     }
 
     public boolean nc() {
-        return getBoolean(c.PB, false);
+        return getBoolean(c.c_0x39, false);
     }
 
     public boolean nd() {
-        return getBoolean(c.gB, false);
+        return getBoolean(c.c_27810_0x0005, false);
     }
 
     public boolean ne() {
-        return getBoolean(c.PA, false);
+        return getBoolean(c.c_0x0e, false);
     }
 
     public boolean nf() {
-        return getBoolean(c.sC, false);
+        return getBoolean(c.c_9006_0x0000, false);
     }
 
     public String o(String str) {
-        return getString(c.VB, str);
+        return getString(c.c_28041_0x0000, str);
     }
 
     public boolean ob() {
-        return getBoolean(c.uB, false);
+        return getBoolean(c.c_0x26, false);
     }
 
     public boolean oc() {
-        return getBoolean(c._A, false);
+        return getBoolean(c.c_0x1b, false);
     }
 
     public boolean od() {
-        return getBoolean(c.MB, false) && !d.d.a.lh;
+        return getBoolean(c.c_0x37, false) && !d.d.a.lh;
     }
 
     public boolean oe() {
-        return getBoolean(c.TD, false);
+        return getBoolean(c.c_28041_0x0007, false);
     }
 
     public boolean of() {
@@ -914,26 +914,26 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean pb() {
-        return getBoolean(c.RD, false);
+        return getBoolean(c.c_19039_0x0014, false);
     }
 
     public boolean pc() {
-        return getBoolean(c.kD, false);
+        return getBoolean(c.c_0x5d, false);
     }
 
     public boolean pd() {
-        return getBoolean(c.UA, false);
+        return getBoolean(c.c_0x14, false);
     }
 
     public int pe() {
-        return getInt(c.MA, 180);
+        return getInt(c.c_0x0b, 180);
     }
 
     public boolean pf() {
         if (!HybridZoomingSystem.IS_3_OR_MORE_SAT) {
             return false;
         }
-        return getBoolean(c.dC, false);
+        return getBoolean(c.c_0x49, false);
     }
 
     @Override // com.android.camera.data.provider.DataProvider.ProviderEvent
@@ -946,57 +946,57 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean qb() {
-        return getBoolean(c.rC, false);
+        return getBoolean(c.c_r_i_m_m, false);
     }
 
     public boolean qc() {
-        return getBoolean(c.ZB, false);
+        return getBoolean(c.c_0x45, false);
     }
 
     public boolean qd() {
         if (Util.isGlobalVersion() || !DataRepository.dataItemGlobal().isNormalIntent()) {
             return false;
         }
-        return getBoolean(c.qC, false);
+        return getBoolean(c.c_35893_0x0003, false);
     }
 
     public boolean qe() {
-        return getBoolean(c.wD, false);
+        return getBoolean(c.c_28041_0x0003, false);
     }
 
     public boolean qf() {
-        return getBoolean(c.Wz, false);
+        return getBoolean(c.c_0x4a, false);
     }
 
     public boolean r(boolean z) {
-        return z && getBoolean(c.XB, false);
+        return z && getBoolean(c.c_0x43, false);
     }
 
     public boolean rb() {
-        return getBoolean(c.vB, false);
+        return getBoolean(c.e_p_p_l_t, false);
     }
 
     public boolean rc() {
-        if (getBoolean(c.qD, false)) {
+        if (getBoolean(c.c_13254_0x02, false)) {
             return tc() || xc();
         }
         return false;
     }
 
     public boolean rd() {
-        return getBoolean(c.KD, false);
+        return getBoolean(c.c_36658_0x0001, false);
     }
 
     public boolean re() {
-        return getBoolean(c.IB, true);
+        return getBoolean(c.c_0x33, true);
     }
 
     public boolean rf() {
-        return getBoolean(c.Uz, false);
+        return getBoolean(c.s_v_b, false);
     }
 
     public String s(boolean z) {
-        return z ? getString(c.EB, "4.5") : getString(c.FB, "4");
+        return z ? getString(c.c_0x29, "4.5") : getString(c.c_0x30, "4");
     }
 
     public int sb() {
@@ -1004,32 +1004,32 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean sc() {
-        return getBoolean(c.oB, false);
+        return getBoolean(c.c_0x24, false);
     }
 
     public boolean sd() {
-        return getBoolean(c.JA, false);
+        return getBoolean(c.c_0x08, false);
     }
 
     public boolean se() {
-        return ((double) Math.abs((((float) Util.sWindowHeight) / ((float) Util.sWindowWidth)) - 2.0833333f)) < 0.02d && getBoolean(c._z, false);
+        return ((double) Math.abs((((float) Util.sWindowHeight) / ((float) Util.sWindowWidth)) - 2.0833333f)) < 0.02d && getBoolean(c.s_18_7_5_9_s, false);
     }
 
     public boolean sf() {
         boolean z = SystemProperties.getBoolean("miuicamera.sat.video", false);
         if (!z) {
-            return getBoolean(c.HD, false);
+            return getBoolean(c.c_28041_0x0006, false);
         }
         Log.d(TAG, "sat video debug prop:" + z);
         return z;
     }
 
     public boolean shouldCheckSatFallbackState() {
-        return getBoolean(c.tD, false);
+        return getBoolean(c.c_9006_0x0005, false);
     }
 
     public boolean supportColorEnhance() {
-        return getBoolean(c.SD, false) && tc();
+        return getBoolean(c.c_35955_0x0003, false) && tc();
     }
 
     public int tb() {
@@ -1047,19 +1047,19 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean td() {
-        return getBoolean(c.KA, false);
+        return getBoolean(c.c_0x09, false);
     }
 
     public boolean te() {
-        return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.1666667f && getBoolean(c.Yz, false);
+        return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.1666667f && getBoolean(c.s_f_s, false);
     }
 
     public boolean tf() {
-        return getBoolean(c.ox, false);
+        return getBoolean(c.s_z_m, false);
     }
 
     public boolean ub() {
-        return getBoolean(c.Mz, false);
+        return getBoolean(c.a_e_d, false);
     }
 
     public boolean uc() {
@@ -1067,46 +1067,46 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean ud() {
-        return getBoolean(c.DA, false);
+        return getBoolean(c.c_0x03, false);
     }
 
     public boolean ue() {
-        return ((double) Math.abs((((float) Util.sWindowHeight) / ((float) Util.sWindowWidth)) - 2.1111112f)) <= 0.02d && getBoolean(c.Zz, false);
+        return ((double) Math.abs((((float) Util.sWindowHeight) / ((float) Util.sWindowWidth)) - 2.1111112f)) <= 0.02d && getBoolean(c.s_19_9_s, false);
     }
 
     public boolean uf() {
-        return getBoolean(c.gC, true);
+        return getBoolean(c.c_0x52, true);
     }
 
     public int vb() {
-        return getInt(c._C, 0);
+        return getInt(c.c_22367_0x0004, 0);
     }
 
     public boolean vc() {
-        return getBoolean(c.EA, false);
+        return getBoolean(c.c_0x04_i_l_h_d, false);
     }
 
     public boolean vd() {
         if (Util.isGlobalVersion()) {
             return false;
         }
-        return getBoolean(c.zA, false);
+        return getBoolean(c.c_0x00_s_l_s, false);
     }
 
     public boolean ve() {
-        return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.2222223f && getBoolean(c.bA, false);
+        return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.2222223f && getBoolean(c.s_20_9_s, false);
     }
 
     public boolean vf() {
-        return getBoolean(c.mC, false);
+        return getBoolean(c.c_0x56, false);
     }
 
     public String wb() {
-        return getString(c.QB, "common");
+        return getString(c.c_0x40, "common");
     }
 
     public boolean wc() {
-        return getBoolean(c.uA, false);
+        return getBoolean(c.i_l_m_d, false);
     }
 
     public boolean wd() {
@@ -1114,22 +1114,22 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean we() {
-        if (getBoolean(c.PD, false)) {
+        if (getBoolean(c.c_35955_0x0001, false)) {
             return tc() || bc();
         }
         return false;
     }
 
     public boolean wf() {
-        return getBoolean(c.hA, false) || getBoolean(c.iA, false) || getBoolean(c.nC, false) || getBoolean(c.oC, false);
+        return getBoolean(c.s_f_9, false) || getBoolean(c.s_s_m_t, false) || getBoolean(c.c_22367_0x0000, false) || getBoolean(c.c_35893_0x0001, false);
     }
 
     public int xb() {
-        return getInt(c.TA, 0);
+        return getInt(c.c_0x13, 0);
     }
 
     public boolean xc() {
-        return getBoolean(c.rD, false);
+        return getBoolean(c.c_28041_0x0002, false);
     }
 
     public boolean xd() {
@@ -1137,26 +1137,26 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean xe() {
-        return getBoolean(c.dA, false);
+        return getBoolean(c.s_a_3, false);
     }
 
     public String yb() {
-        return getString(c.bC, "v0");
+        return getString(c.c_0x47, "v0");
     }
 
     public boolean yc() {
-        return getBoolean(c.lD, false);
+        return getBoolean(c.c_190920, false);
     }
 
     public boolean yd() {
-        return getBoolean(c.VC, true);
+        return getBoolean(c.c_16001_0x0002, true);
     }
 
     public boolean ye() {
-        if (!getBoolean(c.MD, false)) {
+        if (!getBoolean(c.s_a_u_e_f_m, false)) {
             return Ae();
         }
-        if (!getBoolean(c.fA, false) || !getBoolean(c.MD, false) || (!(163 == DataRepository.dataItemGlobal().getCurrentMode() || 165 == DataRepository.dataItemGlobal().getCurrentMode()) || CameraSettings.getCameraId() != 0 || CameraSettings.isUltraPixelOn() || ((double) CameraSettings.readZoom()) < 1.0d)) {
+        if (!getBoolean(c.s_a_u, false) || !getBoolean(c.s_a_u_e_f_m, false) || (!(163 == DataRepository.dataItemGlobal().getCurrentMode() || 165 == DataRepository.dataItemGlobal().getCurrentMode()) || CameraSettings.getCameraId() != 0 || CameraSettings.isUltraPixelOn() || ((double) CameraSettings.readZoom()) < 1.0d)) {
             Log.i(TAG, "Algo up disabled for mm-camera");
             return false;
         }
@@ -1165,18 +1165,18 @@ public class a extends DataItemBase implements c {
     }
 
     public int zb() {
-        return getInt(c.sD, -1);
+        return getInt(c.s_f_s_2_s_t, -1);
     }
 
     public boolean zc() {
-        return getInt(c.MC, -1) == 0;
+        return getInt(c.c_19039_0x0005, -1) == 0;
     }
 
     public boolean zd() {
-        return getBoolean(c.PC, false);
+        return getBoolean(c.c_19039_0x0007, false);
     }
 
     public boolean ze() {
-        return getBoolean(c.MD, false);
+        return getBoolean(c.s_a_u_e_f_m, false);
     }
 }
