@@ -1177,7 +1177,7 @@ public class FragmentBottomPopupTips extends BaseFragment implements View.OnClic
         boolean z;
         boolean z2;
         int i3;
-        int i4 = (i == 161 ? !DataRepository.dataItemFeature().pc() : i != 174) ? -1 : 33;
+        int i4 = (i == 161 ? !DataRepository.dataItemFeature().c_0x5d() : i != 174) ? -1 : 33;
         boolean z3 = false;
         if (i4 == -1) {
             z = true;

@@ -214,6 +214,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x0a, false);
     }
 
+    public int c_0x0b_OR_180() {
+        return getInt(c.c_0x0b, 180);
+    }
+
     public boolean c_0x0c() {
         return getBoolean(c.c_0x0c, false) && tc();
     }
@@ -228,6 +232,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x11() {
         return getBoolean(c.c_0x11, false);
+    }
+
+    public boolean c_0x14() {
+        return getBoolean(c.c_0x14, false);
     }
 
     public boolean c_0x16() {
@@ -324,6 +332,13 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x48, false);
     }
 
+    public boolean c_0x49_IF_3P_SAT() {
+        if (!HybridZoomingSystem.IS_3_OR_MORE_SAT) {
+            return false;
+        }
+        return getBoolean(c.c_0x49, false);
+    }
+
     public boolean c_0x4a_1() {
         return getBoolean(c.c_0x4a_1, false);
     }
@@ -366,6 +381,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x5c() {
         return getBoolean(c.c_0x5c, false);
+    }
+
+    public boolean c_0x5d() {
+        return getBoolean(c.c_0x5d, false);
     }
 
     public boolean c_0x5e() {
@@ -426,6 +445,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19039_0x0013() {
         return getBoolean(c.c_19039_0x0013, false);
+    }
+
+    public boolean c_19039_0x0014() {
+        return getBoolean(c.c_19039_0x0014, false);
     }
 
     public boolean c_19039_0x0015() {
@@ -807,29 +830,6 @@ public class a extends DataItemBase implements c {
             return re();
         }
         return false;
-    }
-
-    public boolean pb() {
-        return getBoolean(c.c_19039_0x0014, false);
-    }
-
-    public boolean pc() {
-        return getBoolean(c.c_0x5d, false);
-    }
-
-    public boolean pd() {
-        return getBoolean(c.c_0x14, false);
-    }
-
-    public int pe() {
-        return getInt(c.c_0x0b, 180);
-    }
-
-    public boolean pf() {
-        if (!HybridZoomingSystem.IS_3_OR_MORE_SAT) {
-            return false;
-        }
-        return getBoolean(c.c_0x49, false);
     }
 
     @Override // com.android.camera.data.provider.DataProvider.ProviderEvent

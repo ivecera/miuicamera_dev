@@ -3018,7 +3018,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             if (isDeviceAlive()) {
                 ((BaseModule) this).mCamera2Device.unlockExposure();
             }
-            if (!DataRepository.dataItemFeature().pf() && this.mUltraWideAELocked) {
+            if (!DataRepository.dataItemFeature().c_0x49_IF_3P_SAT() && this.mUltraWideAELocked) {
                 String focusMode = CameraSettings.getFocusMode();
                 String str = TAG;
                 Log.d(str, "unlockAEAF: focusMode = " + focusMode);
@@ -5324,7 +5324,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 this.mFocusManager.onFocusResult(focusTask);
                 ((BaseModule) this).mActivity.getSensorStateManager().reset();
                 if (focusTask.isSuccess() && this.m3ALocked) {
-                    if (!DataRepository.dataItemFeature().pf() && isZoomRatioBetweenUltraAndWide() && (cameraCapabilities = ((BaseModule) this).mUltraCameraCapabilities) != null) {
+                    if (!DataRepository.dataItemFeature().c_0x49_IF_3P_SAT() && isZoomRatioBetweenUltraAndWide() && (cameraCapabilities = ((BaseModule) this).mUltraCameraCapabilities) != null) {
                         boolean isAFRegionSupported = cameraCapabilities.isAFRegionSupported();
                         Log.d(TAG, "onFocusStateChanged: isUltraFocusAreaSupported = " + isAFRegionSupported);
                         if (!isAFRegionSupported) {
@@ -5435,7 +5435,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (f3 < 1.0f && (miAsdDetect = (ModeProtocol.MiAsdDetect) ModeCoordinatorImpl.getInstance().getAttachProtocol(235)) != null) {
             miAsdDetect.updateUltraWide(false, -1);
         }
-        if (DataRepository.dataItemFeature().pf() && !this.mIsMoonMode) {
+        if (DataRepository.dataItemFeature().c_0x49_IF_3P_SAT() && !this.mIsMoonMode) {
             if (this.m3ALocked) {
                 unlockAEAF();
                 FocusManager2 focusManager2 = this.mFocusManager;

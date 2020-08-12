@@ -3623,7 +3623,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->pc()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_0x5d()Z
 
     move-result p1
 

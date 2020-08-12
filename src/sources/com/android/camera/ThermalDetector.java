@@ -61,7 +61,7 @@ public class ThermalDetector {
                     String access$200 = ThermalDetector.TAG;
                     Log.d(access$200, "onReceive stage = " + intExtra);
                     int i2 = intExtra % 10;
-                    if (!DataRepository.dataItemFeature().pb() || !(((currentMode = DataRepository.dataItemGlobal().getCurrentMode()) == 163 || currentMode == 165 || currentMode == 167 || currentMode == 175 || currentMode == 177 || currentMode == 182 || currentMode == 184) && i2 == 4)) {
+                    if (!DataRepository.dataItemFeature().c_19039_0x0014() || !(((currentMode = DataRepository.dataItemGlobal().getCurrentMode()) == 163 || currentMode == 165 || currentMode == 167 || currentMode == 175 || currentMode == 177 || currentMode == 182 || currentMode == 184) && i2 == 4)) {
                         i = i2;
                     }
                     if (ThermalDetector.this.mTempStage != i) {

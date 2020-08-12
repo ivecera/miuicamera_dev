@@ -962,7 +962,7 @@ public class CameraSettings {
 
     public static int getScreenLightBrightness() {
         int screenLightBrightness = Camera2DataContainer.getInstance().getCapabilities(getCameraId()).getScreenLightBrightness();
-        return screenLightBrightness <= 0 ? SystemProperties.getInt("camera_screen_light_brightness", DataRepository.dataItemFeature().pe()) : screenLightBrightness;
+        return screenLightBrightness <= 0 ? SystemProperties.getInt("camera_screen_light_brightness", DataRepository.dataItemFeature().c_0x0b_OR_180()) : screenLightBrightness;
     }
 
     public static int getShaderEffect() {

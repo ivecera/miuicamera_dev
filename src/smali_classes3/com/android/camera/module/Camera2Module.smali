@@ -11260,7 +11260,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/mi/config/a;->pf()Z
+    invoke-virtual {v1}, Lcom/mi/config/a;->c_0x49_IF_3P_SAT()Z
 
     move-result v1
 
@@ -22398,7 +22398,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->pf()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_0x49_IF_3P_SAT()Z
 
     move-result p1
 
@@ -22739,7 +22739,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->pf()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x49_IF_3P_SAT()Z
 
     move-result v0
 

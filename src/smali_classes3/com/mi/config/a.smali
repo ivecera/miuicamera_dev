@@ -3547,7 +3547,7 @@
     return p0
 .end method
 
-.method public pb()Z
+.method public c_19039_0x0014()Z
     .locals 2
 
     const-string v0, "c_19039_0x0014"
@@ -3561,7 +3561,7 @@
     return p0
 .end method
 
-.method public pc()Z
+.method public c_0x5d()Z
     .locals 2
 
     const-string v0, "c_0x5d"
@@ -3575,7 +3575,7 @@
     return p0
 .end method
 
-.method public pd()Z
+.method public c_0x14()Z
     .locals 2
 
     const-string v0, "c_0x14"
@@ -3589,7 +3589,7 @@
     return p0
 .end method
 
-.method public pe()I
+.method public c_0x0b_OR_180()I
     .locals 2
 
     const-string v0, "c_0x0b"
@@ -3603,7 +3603,7 @@
     return p0
 .end method
 
-.method public pf()Z
+.method public c_0x49_IF_3P_SAT()Z
     .locals 2
 
     sget-boolean v0, Lcom/android/camera/HybridZoomingSystem;->IS_3_OR_MORE_SAT:Z
