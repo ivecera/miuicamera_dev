@@ -176,10 +176,6 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_9006_0x0001, 5);
     }
 
-    public int Mb() {
-        return getInt(c.c_t_r, 20);
-    }
-
     public boolean Mc() {
         return getBoolean(c.i_s_e_r, false);
     }
@@ -574,6 +570,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_s_a_u_q_OR_s_a_u() {
         return Build.VERSION.SDK_INT > 28 ? c_s_a_u_q() : getBoolean(c.s_a_u, false);
+    }
+
+    public int c_t_r_OR_20() {
+        return getInt(c.c_t_r, 20);
     }
 
     public boolean cd() {

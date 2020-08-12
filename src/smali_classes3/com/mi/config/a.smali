@@ -1368,7 +1368,7 @@
     return p0
 .end method
 
-.method public Mb()I
+.method public c_t_r_OR_20()I
     .locals 2
 
     const-string v0, "c_t_r"
