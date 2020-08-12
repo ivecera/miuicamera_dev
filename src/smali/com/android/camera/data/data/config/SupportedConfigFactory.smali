@@ -719,7 +719,7 @@
 
     if-eqz v0, :cond_10
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->zc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_19039_0x0005_EQ_0()Z
 
     move-result v0
 
@@ -852,7 +852,7 @@
 
     invoke-virtual {v2, v0}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->zd()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_19039_0x0007()Z
 
     move-result v0
 
@@ -1113,7 +1113,7 @@
 
     if-eqz v0, :cond_2d
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->zc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_19039_0x0005_EQ_0()Z
 
     move-result v0
 

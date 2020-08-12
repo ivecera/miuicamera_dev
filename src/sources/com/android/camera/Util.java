@@ -375,7 +375,7 @@ public final class Util {
      */
     public static byte[] appendCaptureResultToExif(byte[] bArr, int i, int i2, int i3, long j, Location location, CameraMetadataNative cameraMetadataNative) {
         Integer num;
-        if ((!b.isMTKPlatform() && !DataRepository.dataItemFeature().ze()) || cameraMetadataNative == null) {
+        if ((!b.isMTKPlatform() && !DataRepository.dataItemFeature().s_a_u_e_f_m()) || cameraMetadataNative == null) {
             return bArr;
         }
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
@@ -402,7 +402,7 @@ public final class Util {
             setTagValue(exif, ExifInterface.TAG_F_NUMBER, doubleToRational((double) f3.floatValue(), F_NUMBER_PRECISION.longValue()));
             setTagValue(exif, ExifInterface.TAG_APERTURE_VALUE, doubleToRational(log2((double) f3.floatValue()) * 2.0d, APERTURE_VALUE_PRECISION.longValue()));
         }
-        if (DataRepository.dataItemFeature().ze()) {
+        if (DataRepository.dataItemFeature().s_a_u_e_f_m()) {
             num = (Integer) cameraMetadataNative.get(CaptureResultVendorTags.ISO_VALUE);
             Log.d(TAG, "[ALGOUP|MMCAMERA] SENSOR_SENSITIVITY: " + num);
         } else {

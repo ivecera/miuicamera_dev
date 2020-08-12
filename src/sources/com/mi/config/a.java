@@ -486,6 +486,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_19039_0x0003, false);
     }
 
+    public boolean c_19039_0x0005_EQ_0() {
+        return getInt(c.c_19039_0x0005, -1) == 0;
+    }
+
     public boolean c_19039_0x0005_EQ_1() {
         return getInt(c.c_19039_0x0005, -1) == 1;
     }
@@ -496,6 +500,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19039_0x0006() {
         return getBoolean(c.c_19039_0x0006, false);
+    }
+
+    public boolean c_19039_0x0007() {
+        return getBoolean(c.c_19039_0x0007, false);
     }
 
     public boolean c_19039_0x0008() {
@@ -1007,6 +1015,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.s_a_3, false);
     }
 
+    public boolean s_a_u_e_f_m() {
+        return getBoolean(c.s_a_u_e_f_m, false);
+    }
+
     public boolean s_b_a_OR_T() {
         return getBoolean(c.s_b_a, true);
     }
@@ -1037,6 +1049,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_f_a() {
         return getBoolean(c.s_f_a, false);
+    }
+
+    public int s_f_s_2_s_t_OR_M1() {
+        return getInt(c.s_f_s_2_s_t, -1);
     }
 
     public boolean s_f_s_c() {
@@ -1157,21 +1173,5 @@ public class a extends DataItemBase implements c {
         }
         Log.i(TAG, "Algo up enabled for mm-camera");
         return true;
-    }
-
-    public int zb() {
-        return getInt(c.s_f_s_2_s_t, -1);
-    }
-
-    public boolean zc() {
-        return getInt(c.c_19039_0x0005, -1) == 0;
-    }
-
-    public boolean zd() {
-        return getBoolean(c.c_19039_0x0007, false);
-    }
-
-    public boolean ze() {
-        return getBoolean(c.s_a_u_e_f_m, false);
     }
 }

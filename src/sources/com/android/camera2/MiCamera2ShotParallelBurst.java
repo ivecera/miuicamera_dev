@@ -106,14 +106,14 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
     private void applyHdrParameter(CaptureRequest.Builder builder, int i) {
         CameraCapabilities capabilities;
         if (i <= this.mSequenceNum) {
-            if (!DataRepository.dataItemFeature().ze()) {
+            if (!DataRepository.dataItemFeature().s_a_u_e_f_m()) {
                 if (this.mIsHdrBokeh) {
                     MiCameraCompat.applyHdrBracketMode(builder, (byte) (this.mHdrCheckerEvValue[i] < 0 ? 1 : 0));
                 } else {
                     MiCameraCompat.applyHdrBracketMode(builder, (byte) 1);
                 }
             }
-            if (!DataRepository.dataItemFeature().ze() || !((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isHDREnabled()) {
+            if (!DataRepository.dataItemFeature().s_a_u_e_f_m() || !((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isHDREnabled()) {
                 MiCameraCompat.applyMultiFrameInputNum(builder, this.mSequenceNum);
             } else {
                 Log.e(TAG, "[ALGOUP|MMCAMERA] Algo Up HDR!!!!");
@@ -253,13 +253,13 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
 
             public void onCaptureCompleted(@NonNull CameraCaptureSession cameraCaptureSession, @NonNull CaptureRequest captureRequest, @NonNull TotalCaptureResult totalCaptureResult) {
                 MiCamera2ShotParallelBurst.access$308(MiCamera2ShotParallelBurst.this);
-                if (!DataRepository.dataItemFeature().ze() || !((MiCamera2Shot) MiCamera2ShotParallelBurst.this).mMiCamera.getCameraConfigs().isHDREnabled()) {
+                if (!DataRepository.dataItemFeature().s_a_u_e_f_m() || !((MiCamera2Shot) MiCamera2ShotParallelBurst.this).mMiCamera.getCameraConfigs().isHDREnabled()) {
                     Log.d(MiCamera2ShotParallelBurst.TAG, "onCaptureCompleted: " + MiCamera2ShotParallelBurst.this.mCompletedNum + "/" + MiCamera2ShotParallelBurst.this.mSequenceNum);
                 } else {
                     Log.d(MiCamera2ShotParallelBurst.TAG, "onCaptureCompleted: " + MiCamera2ShotParallelBurst.this.mCompletedNum + "/" + (MiCamera2ShotParallelBurst.this.mSequenceNum * 2));
                 }
                 AlgoConnector.getInstance().getLocalBinder().onCaptureCompleted(CameraDeviceUtil.getCustomCaptureResult(totalCaptureResult), MiCamera2ShotParallelBurst.this.mCompletedNum == 1);
-                if (!DataRepository.dataItemFeature().ze() || !((MiCamera2Shot) MiCamera2ShotParallelBurst.this).mMiCamera.getCameraConfigs().isHDREnabled()) {
+                if (!DataRepository.dataItemFeature().s_a_u_e_f_m() || !((MiCamera2Shot) MiCamera2ShotParallelBurst.this).mMiCamera.getCameraConfigs().isHDREnabled()) {
                     if (MiCamera2ShotParallelBurst.this.mSequenceNum == MiCamera2ShotParallelBurst.this.mCompletedNum) {
                         MiCamera2ShotParallelBurst miCamera2ShotParallelBurst = MiCamera2ShotParallelBurst.this;
                         ((MiCamera2Shot) miCamera2ShotParallelBurst).mMiCamera.onCapturePictureFinished(true, miCamera2ShotParallelBurst);
@@ -295,7 +295,7 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
                         ParallelTaskData onCaptureStart = pictureCallback.onCaptureStart(parallelTaskData, ((MiCamera2ShotParallel) miCamera2ShotParallelBurst).mCapturedImageSize, miCamera2ShotParallelBurst.isQuickShotAnimation());
                         if (onCaptureStart != null) {
                             onCaptureStart.setAlgoType(MiCamera2ShotParallelBurst.this.mAlgoType);
-                            if (!DataRepository.dataItemFeature().ze() || !((MiCamera2Shot) MiCamera2ShotParallelBurst.this).mMiCamera.getCameraConfigs().isHDREnabled()) {
+                            if (!DataRepository.dataItemFeature().s_a_u_e_f_m() || !((MiCamera2Shot) MiCamera2ShotParallelBurst.this).mMiCamera.getCameraConfigs().isHDREnabled()) {
                                 onCaptureStart.setBurstNum(MiCamera2ShotParallelBurst.this.mSequenceNum);
                             } else {
                                 onCaptureStart.setBurstNum(MiCamera2ShotParallelBurst.this.mSequenceNum * 2);
@@ -424,12 +424,12 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
                 if (b.isMTKPlatform() && ((MiCamera2Shot) this).mMiCamera.getCapabilities().getCameraId() == Camera2DataContainer.getInstance().getUltraWideCameraId()) {
                     MiCameraCompat.copyFpcDataFromCaptureResultToRequest(((MiCamera2ShotParallel) this).mPreviewCaptureResult, generateRequestBuilder);
                 }
-                if (DataRepository.dataItemFeature().ze()) {
+                if (DataRepository.dataItemFeature().s_a_u_e_f_m()) {
                     MiCameraCompat.applyAlgoUpEnabled(generateRequestBuilder, true);
                 }
                 applyAlgoParameter(generateRequestBuilder, i2, this.mAlgoType);
                 arrayList.add(generateRequestBuilder.build());
-                if (DataRepository.dataItemFeature().ze() && ((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isHDREnabled()) {
+                if (DataRepository.dataItemFeature().s_a_u_e_f_m() && ((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isHDREnabled()) {
                     CaptureRequest.Builder generateRequestBuilder2 = generateRequestBuilder();
                     MiCameraCompat.applyAlgoUpEnabled(generateRequestBuilder2, true);
                     applyAlgoParameter(generateRequestBuilder2, i2, this.mAlgoType);

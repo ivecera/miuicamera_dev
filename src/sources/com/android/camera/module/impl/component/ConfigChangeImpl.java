@@ -630,7 +630,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
                 bottomPopupTips.reInitTipImage();
             }
             if (dualController != null && !z2 && !DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) {
-                if (!CameraSettings.isUltraWideConfigOpen(moduleIndex) && (moduleIndex != 172 || !DataRepository.dataItemFeature().zd())) {
+                if (!CameraSettings.isUltraWideConfigOpen(moduleIndex) && (moduleIndex != 172 || !DataRepository.dataItemFeature().c_19039_0x0007())) {
                     dualController.showZoomButton();
                 }
                 if (topAlert != null) {

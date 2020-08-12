@@ -1939,7 +1939,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
 
     private boolean isNeedFixedShotTime() {
         int i;
-        boolean z = isParallelSessionEnable() && ((i = ((BaseModule) this).mModuleIndex) == 163 || i == 165) && !isFrontCamera() && ((double) getZoomRatio()) == 1.0d && !isInCountDown() && !((BaseModule) this).mCamera2Device.isNeedFlashOn() && !this.mIsImageCaptureIntent && !CameraSettings.isLiveShotOn() && !this.mIsISORight4HWMFNR && (DataRepository.dataItemFeature().zb() != 0 || DEBUG_ENABLE_DYNAMIC_HHT_FAST_SHOT);
+        boolean z = isParallelSessionEnable() && ((i = ((BaseModule) this).mModuleIndex) == 163 || i == 165) && !isFrontCamera() && ((double) getZoomRatio()) == 1.0d && !isInCountDown() && !((BaseModule) this).mCamera2Device.isNeedFlashOn() && !this.mIsImageCaptureIntent && !CameraSettings.isLiveShotOn() && !this.mIsISORight4HWMFNR && (DataRepository.dataItemFeature().s_f_s_2_s_t_OR_M1() != 0 || DEBUG_ENABLE_DYNAMIC_HHT_FAST_SHOT);
         String str = TAG;
         Log.d(str, "isNeedFixedShotTime nfst:" + z + ", mIsISORight4HWMFNR:" + this.mIsISORight4HWMFNR);
         return z;
@@ -4736,7 +4736,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         Camera2Proxy camera2Proxy;
         Camera2Proxy camera2Proxy2;
         LocalParallelService.LocalBinder localBinder;
-        if (!DataRepository.dataItemFeature().ze() || (localBinder = AlgoConnector.getInstance().getLocalBinder()) == null || localBinder.isIdle()) {
+        if (!DataRepository.dataItemFeature().s_a_u_e_f_m() || (localBinder = AlgoConnector.getInstance().getLocalBinder()) == null || localBinder.isIdle()) {
             return ((BaseModule) this).mPaused || ((BaseModule) this).isZooming || isKeptBitmapTexture() || this.mMultiSnapStatus || getCameraState() == 0 || (!isParallelCameraSessionMode() ? getCameraState() == 3 || ((camera2Proxy = ((BaseModule) this).mCamera2Device) != null && camera2Proxy.isCaptureBusy(true)) : getCameraState() == 3 || (((camera2Proxy2 = ((BaseModule) this).mCamera2Device) != null && camera2Proxy2.isParallelBusy(true)) || AlgoConnector.getInstance().getLocalBinder().isAnyRequestBlocked())) || isQueueFull() || this.mWaitSaveFinish || isInCountDown();
         }
         Log.i(TAG, "[ALGOUP|MMCAMERA] Doing action");
@@ -5651,7 +5651,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             super.onPreviewMetaDataUpdate(captureResult);
             Integer num = (Integer) captureResult.get(CaptureResult.SENSOR_SENSITIVITY);
             this.mIsISORight4HWMFNR = num != null && num.intValue() >= 800;
-            if ((DataRepository.dataItemFeature().c_0x24() || !isFrontCamera()) && !DataRepository.dataItemFeature().ze()) {
+            if ((DataRepository.dataItemFeature().c_0x24() || !isFrontCamera()) && !DataRepository.dataItemFeature().s_a_u_e_f_m()) {
                 this.mShouldDoMFNR = false;
             } else if (b.fl() || b.Zk()) {
                 this.mShouldDoMFNR = true;
@@ -5871,7 +5871,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         }
         if (checkShutterCondition()) {
             if (isNeedFixedShotTime()) {
-                this.mFixedShot2ShotTime = DataRepository.dataItemFeature().zb();
+                this.mFixedShot2ShotTime = DataRepository.dataItemFeature().s_f_s_2_s_t_OR_M1();
             } else {
                 this.mFixedShot2ShotTime = -1;
             }

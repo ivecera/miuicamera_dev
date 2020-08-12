@@ -243,7 +243,7 @@ public class SupportedConfigFactory {
                                     case 172:
                                         supportedConfigs.add(225);
                                         supportedConfigs.add(213);
-                                        if (dataItemFeature.zd() && i2 == 0) {
+                                        if (dataItemFeature.c_19039_0x0007() && i2 == 0) {
                                             supportedConfigs.add(createConfigItem(255));
                                         }
                                         supportedConfigs.add(219);
@@ -294,7 +294,7 @@ public class SupportedConfigFactory {
                                                 if (z && dataItemRunning.supportUltraPixel()) {
                                                     supportedConfigs.add(209);
                                                 }
-                                                if (z && dataItemRunning.supportMacroMode() && dataItemFeature.zc()) {
+                                                if (z && dataItemRunning.supportMacroMode() && dataItemFeature.c_19039_0x0005_EQ_0()) {
                                                     supportedConfigs.add(255);
                                                 }
                                                 if (z) {
@@ -368,7 +368,7 @@ public class SupportedConfigFactory {
                 if (cameraCapabilities.isSupportedVideoMiMovie()) {
                     supportedConfigs.add(251);
                 }
-                if (dataItemRunning.supportMacroMode() && dataItemFeature.zc()) {
+                if (dataItemRunning.supportMacroMode() && dataItemFeature.c_19039_0x0005_EQ_0()) {
                     supportedConfigs.add(255);
                 }
                 if (z && dataItemFeature.c_0x17() && dataItemFeature.c_22367_0x0008_OR_0_EQ_1()) {

@@ -122,7 +122,7 @@ public class PostProcessor {
                                 onOriginalImageClosed(subImage);
                                 ImagePool.getInstance().releaseImage(subImage);
                             }
-                        } else if (DataRepository.dataItemFeature().ze()) {
+                        } else if (DataRepository.dataItemFeature().s_a_u_e_f_m()) {
                             int burstNum = captureData.getBurstNum() - 1;
                             parallelTaskData3.setCaptureResult(captureData.getCaptureDataBeanList().get(burstNum).getResult());
                             Log.i(PostProcessor.TAG, "[ALGOUP|MMCAMERA]: Add last metadata, index = " + burstNum);

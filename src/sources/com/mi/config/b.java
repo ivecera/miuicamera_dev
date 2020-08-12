@@ -256,7 +256,7 @@ public class b {
     }
 
     public static boolean Zk() {
-        return DataRepository.dataItemFeature().ze() || Yu;
+        return DataRepository.dataItemFeature().s_a_u_e_f_m() || Yu;
     }
 
     public static boolean Zl() {
@@ -323,7 +323,7 @@ public class b {
     }
 
     public static boolean fl() {
-        return hl() || bv || Wu || DataRepository.dataItemFeature().ze();
+        return hl() || bv || Wu || DataRepository.dataItemFeature().s_a_u_e_f_m();
     }
 
     public static boolean fm() {

@@ -4728,7 +4728,7 @@
     return v1
 .end method
 
-.method public zb()I
+.method public s_f_s_2_s_t_OR_M1()I
     .locals 2
 
     const-string v0, "s_f_s_2_s_t"
@@ -4742,7 +4742,7 @@
     return p0
 .end method
 
-.method public zc()Z
+.method public c_19039_0x0005_EQ_0()Z
     .locals 2
 
     const-string v0, "c_19039_0x0005"
@@ -4766,7 +4766,7 @@
     return p0
 .end method
 
-.method public zd()Z
+.method public c_19039_0x0007()Z
     .locals 2
 
     const-string v0, "c_19039_0x0007"
@@ -4780,7 +4780,7 @@
     return p0
 .end method
 
-.method public ze()Z
+.method public s_a_u_e_f_m()Z
     .locals 2
 
     const-string v0, "s_a_u_e_f_m"
