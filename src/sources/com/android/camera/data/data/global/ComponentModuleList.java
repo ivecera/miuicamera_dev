@@ -109,7 +109,7 @@ public class ComponentModuleList extends ComponentData {
     @Override // com.android.camera.data.data.ComponentData
     public List<ComponentDataItem> getItems() {
         int currentCameraId = DataRepository.dataItemGlobal().getCurrentCameraId();
-        if (DataRepository.dataItemFeature().Ld() && this.mLastCameraId != currentCameraId) {
+        if (DataRepository.dataItemFeature().c_19039_0x0001() && this.mLastCameraId != currentCameraId) {
             this.mLastCameraId = currentCameraId;
             ((ComponentData) this).mItems = initItems();
         }
