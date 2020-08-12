@@ -1284,7 +1284,7 @@
     return-wide v0
 .end method
 
-.method public Kd()Z
+.method public i_s_s_b()Z
     .locals 2
 
     const-string v0, "i_s_s_b"

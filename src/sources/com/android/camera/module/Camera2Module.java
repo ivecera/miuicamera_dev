@@ -2237,8 +2237,8 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         int i2 = ((BaseModule) this).mModuleIndex;
         if (i2 == 163 || i2 == 165 || i2 == 171 || i2 == 175) {
             boolean z3 = CameraSettings.isCameraQuickShotEnable() || CameraSettings.isCameraQuickShotAnimateEnable();
-            boolean Kd = DataRepository.dataItemFeature().Kd();
-            if (z3 || Kd) {
+            boolean i_s_s_b = DataRepository.dataItemFeature().i_s_s_b();
+            if (z3 || i_s_s_b) {
                 z = true;
                 ((BaseModule) this).mCamera2Device.setNeedSequence(z);
                 if (enablePreviewAsThumbnail() || ((BaseModule) this).mMutexModePicker.isHdr()) {
@@ -2881,7 +2881,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 setCameraState(1);
                 enableCameraControls(true);
             }
-            if (isFrontCamera() && DataRepository.dataItemFeature().Kd() && 32775 != this.mOperatingMode) {
+            if (isFrontCamera() && DataRepository.dataItemFeature().i_s_s_b() && 32775 != this.mOperatingMode) {
                 ((BaseModule) this).mCamera2Device.registerCaptureCallback(new c(this));
                 return;
             }
@@ -6641,7 +6641,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     public /* synthetic */ void u(boolean z) {
         String str = TAG;
         Log.d(str, "onCaptureCompleted and enable shot = " + z);
-        if (DataRepository.dataItemFeature().Kd()) {
+        if (DataRepository.dataItemFeature().i_s_s_b()) {
             if (!isKeptBitmapTexture() && !this.mMultiSnapStatus && z) {
                 setCameraState(1);
                 enableCameraControls(true);
