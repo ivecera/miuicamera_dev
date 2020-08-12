@@ -765,7 +765,7 @@
     return v0
 .end method
 
-.method public Cb()Ljava/lang/String;
+.method public c_27810_0x0004()Ljava/lang/String;
     .locals 2
 
     const-string v0, "c_27810_0x0004"

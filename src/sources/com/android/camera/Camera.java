@@ -1898,7 +1898,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
     }
 
     public void showNewNotification() {
-        if (startFromSecureKeyguard() || Util.isGlobalVersion() || this.mIsLunchFromAutoTest || TextUtils.isEmpty(DataRepository.dataItemFeature().Cb()) || DataRepository.dataItemGlobal().getBoolean(CameraSettings.KEY_CAMERA_FIRST_NOTIFICATION_SHOWN, false)) {
+        if (startFromSecureKeyguard() || Util.isGlobalVersion() || this.mIsLunchFromAutoTest || TextUtils.isEmpty(DataRepository.dataItemFeature().c_27810_0x0004()) || DataRepository.dataItemGlobal().getBoolean(CameraSettings.KEY_CAMERA_FIRST_NOTIFICATION_SHOWN, false)) {
             Log.w(this.TAG, "showNewNotification: return...");
             return;
         }
@@ -1909,7 +1909,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
                 DataRepository.dataItemGlobal().editor().putBoolean(CameraSettings.KEY_CAMERA_FIRST_NOTIFICATION_SHOWN, true).apply();
                 Intent intent = new Intent("com.miui.miservice.MISERVICE_NOTIFICATION");
                 intent.putExtra("intent_extra_key_flag", "2");
-                intent.putExtra("intent_extra_key_label", DataRepository.dataItemFeature().Cb());
+                intent.putExtra("intent_extra_key_label", DataRepository.dataItemFeature().c_27810_0x0004());
                 intent.putExtra("intent_extra_key_title", getString(R.string.miservice_notification_title));
                 intent.putExtra("intent_extra_key_content", getString(R.string.miservice_notification_content));
                 intent.putExtra("intent_extra_key_is_to_main", true);
