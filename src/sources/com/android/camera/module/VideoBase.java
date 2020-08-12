@@ -341,7 +341,7 @@ public abstract class VideoBase extends BaseModule implements Camera2Proxy.FaceD
         if (bitmap == null) {
             return bitmap;
         }
-        return Util.rotateAndMirror(bitmap, -this.mOrientationCompensationAtRecordStart, isFrontCamera() && !b.hl() && (!DataRepository.dataItemFeature().ge() || !CameraSettings.isFrontMirror()));
+        return Util.rotateAndMirror(bitmap, -this.mOrientationCompensationAtRecordStart, isFrontCamera() && !b.hl() && (!DataRepository.dataItemFeature().s_v_f_m() || !CameraSettings.isFrontMirror()));
     }
 
     /* access modifiers changed from: private */

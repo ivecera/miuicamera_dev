@@ -1339,7 +1339,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
     }
 
     private void updateFrontMirror() {
-        ((BaseModule) this).mCamera2Device.setFrontMirror(isFrontCamera() && !b.hl() && DataRepository.dataItemFeature().ge() && CameraSettings.isFrontMirror());
+        ((BaseModule) this).mCamera2Device.setFrontMirror(isFrontCamera() && !b.hl() && DataRepository.dataItemFeature().s_v_f_m() && CameraSettings.isFrontMirror());
     }
 
     private void updateHFRDeflicker() {

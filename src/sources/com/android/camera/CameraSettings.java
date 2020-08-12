@@ -811,9 +811,9 @@ public class CameraSettings {
         if (!z || b.pm() || i == 161 || i == 174 || i == 183 || i == 179 || i == 169 || i == 172 || i == 184 || i == 177) {
             return true;
         }
-        boolean ge = DataRepository.dataItemFeature().ge();
-        Log.d(TAG, "filterByConfig: isSupportVideoFrontMirror = " + ge);
-        if (i != 162 || ge) {
+        boolean s_v_f_m = DataRepository.dataItemFeature().s_v_f_m();
+        Log.d(TAG, "filterByConfig: isSupportVideoFrontMirror = " + s_v_f_m);
+        if (i != 162 || s_v_f_m) {
             return b.hl() && i == 162;
         }
         return true;

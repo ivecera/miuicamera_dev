@@ -248,7 +248,7 @@ public class b {
     }
 
     public static boolean Yk() {
-        return !lo() && DataRepository.dataItemFeature().gd() && Tk() != null && !Tk().isEmpty();
+        return !lo() && DataRepository.dataItemFeature().c_0x36() && Tk() != null && !Tk().isEmpty();
     }
 
     public static boolean Yl() {

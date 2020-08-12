@@ -1176,7 +1176,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
             showDebug();
             this.mCurrentDisplayMode = DataRepository.dataItemGlobal().getDisplayMode();
             ThermalDetector.getInstance().onCreate(CameraAppImpl.getAndroidContext());
-            ViberatorContext.getInstance(getBaseContext()).setSnapClickVibratorEnable(DataRepository.dataItemFeature().gf());
+            ViberatorContext.getInstance(getBaseContext()).setSnapClickVibratorEnable(DataRepository.dataItemFeature().c_19039_0x0020());
             Log.d(this.TAG, "onCreate end");
         } else {
             String str = this.TAG;

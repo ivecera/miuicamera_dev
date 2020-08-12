@@ -2766,7 +2766,7 @@
     return p0
 .end method
 
-.method public gd()Z
+.method public c_0x36()Z
     .locals 2
 
     const-string v0, "c_0x36"
@@ -2780,7 +2780,7 @@
     return p0
 .end method
 
-.method public ge()Z
+.method public s_v_f_m()Z
     .locals 2
 
     const-string v0, "s_v_f_m"
@@ -2794,7 +2794,7 @@
     return p0
 .end method
 
-.method public gf()Z
+.method public c_19039_0x0020()Z
     .locals 2
 
     const-string v0, "c_19039_0x0020"
