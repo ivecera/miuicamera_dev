@@ -438,7 +438,7 @@ public class CameraSettings {
     }
 
     public static boolean checkLensAvailability(Context context) {
-        return !Util.isGlobalVersion() ? DataRepository.dataItemFeature().Ec() && Util.isPackageAvailable(context, AI_LENS_PACKAGE) : DataRepository.dataItemGlobal().getBoolean(KEY_AI_DETECT_ENABLE, Boolean.valueOf(getString(R.bool.pref_ai_detect_enable)).booleanValue()) && Util.isPackageAvailable(context, "com.google.ar.lens") && sGoolgeLensAvilability;
+        return !Util.isGlobalVersion() ? DataRepository.dataItemFeature().s_m_l() && Util.isPackageAvailable(context, AI_LENS_PACKAGE) : DataRepository.dataItemGlobal().getBoolean(KEY_AI_DETECT_ENABLE, Boolean.valueOf(getString(R.bool.pref_ai_detect_enable)).booleanValue()) && Util.isPackageAvailable(context, "com.google.ar.lens") && sGoolgeLensAvilability;
     }
 
     public static int dealVideoQuality(String str, int i, int i2) {

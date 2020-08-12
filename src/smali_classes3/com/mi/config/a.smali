@@ -893,7 +893,7 @@
     return p0
 .end method
 
-.method public Ec()Z
+.method public s_m_l()Z
     .locals 2
 
     const-string v0, "s_m_l"
