@@ -6285,7 +6285,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
 
     public boolean scanQRCodeEnabled() {
         int i;
-        return CameraSettings.isScanQRCode(((BaseModule) this).mActivity) && ((i = ((BaseModule) this).mModuleIndex) == 163 || i == 165) && !this.mIsImageCaptureIntent && CameraSettings.isBackCamera() && !this.mMultiSnapStatus && !CameraSettings.isPortraitModeBackOn() && ((!DataRepository.dataItemFeature().Ic() || !CameraSettings.isUltraPixelOn()) && !CameraSettings.isUltraWideConfigOpen(((BaseModule) this).mModuleIndex) && !CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex));
+        return CameraSettings.isScanQRCode(((BaseModule) this).mActivity) && ((i = ((BaseModule) this).mModuleIndex) == 163 || i == 165) && !this.mIsImageCaptureIntent && CameraSettings.isBackCamera() && !this.mMultiSnapStatus && !CameraSettings.isPortraitModeBackOn() && ((!DataRepository.dataItemFeature().i_q_a_u_m() || !CameraSettings.isUltraPixelOn()) && !CameraSettings.isUltraWideConfigOpen(((BaseModule) this).mModuleIndex) && !CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex));
     }
 
     /* access modifiers changed from: protected */

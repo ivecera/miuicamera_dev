@@ -1170,7 +1170,7 @@
     return p0
 .end method
 
-.method public Ic()Z
+.method public i_q_a_u_m()Z
     .locals 2
 
     const-string v0, "i_q_a_u_m"
