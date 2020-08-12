@@ -483,7 +483,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
     /* JADX WARNING: Removed duplicated region for block: B:25:0x0085  */
     private void configDocumentMode(int i) {
         ModeProtocol.TopAlert topAlert;
-        if (DataRepository.dataItemFeature().ed()) {
+        if (DataRepository.dataItemFeature().c_35893_0x0002()) {
             Optional<BaseModule> baseModule = getBaseModule();
             if (baseModule.isPresent() && (topAlert = (ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172)) != null) {
                 int moduleIndex = baseModule.get().getModuleIndex();
@@ -2667,7 +2667,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
 
     @Override // com.android.camera.protocol.ModeProtocol.ConfigChanges
     public void reCheckDocumentMode() {
-        if (DataRepository.dataItemFeature().ed()) {
+        if (DataRepository.dataItemFeature().c_35893_0x0002()) {
             ModeProtocol.TopAlert topAlert = (ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172);
             ModeProtocol.ActionProcessing actionProcessing = (ModeProtocol.ActionProcessing) ModeCoordinatorImpl.getInstance().getAttachProtocol(162);
             if (topAlert != null) {

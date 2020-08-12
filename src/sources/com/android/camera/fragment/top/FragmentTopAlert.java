@@ -311,7 +311,7 @@ public class FragmentTopAlert extends BaseFragment implements View.OnClickListen
     }
 
     private void checkChildMargin() {
-        if (DataRepository.dataItemFeature().ed() && this.mTopTipLayout != null && this.mDocumentStateButton != null && this.mToastTopTipLayout != null) {
+        if (DataRepository.dataItemFeature().c_35893_0x0002() && this.mTopTipLayout != null && this.mDocumentStateButton != null && this.mToastTopTipLayout != null) {
             int dimensionPixelSize = getResources().getDimensionPixelSize(R.dimen.top_tip_vertical_divider);
             int dimensionPixelSize2 = getResources().getDimensionPixelSize(R.dimen.top_tip_margin_top);
             boolean z = true;

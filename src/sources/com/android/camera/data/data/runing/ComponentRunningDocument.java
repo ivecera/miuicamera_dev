@@ -50,7 +50,7 @@ public class ComponentRunningDocument extends ComponentData {
     }
 
     public boolean isEnabled(int i) {
-        if (!DataRepository.dataItemFeature().ed()) {
+        if (!DataRepository.dataItemFeature().c_35893_0x0002()) {
             return false;
         }
         if ((i == 165 || i == 163) && this.mCameraId == 0 && this.mIsNormalIntent) {

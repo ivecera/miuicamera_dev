@@ -2963,7 +2963,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 str = "off";
             }
             map.put(MistatsConstants.Setting.PARAM_GRADIENTER, str);
-            if (DataRepository.dataItemFeature().ed()) {
+            if (DataRepository.dataItemFeature().c_35893_0x0002()) {
                 map.put(MistatsConstants.Setting.PARAM_DOCUMENT_MODE, CameraStatUtils.getDocumentModeValue(((BaseModule) this).mModuleIndex));
             }
         }

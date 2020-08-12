@@ -312,6 +312,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x5e, false);
     }
 
+    public boolean c_13254_0x01() {
+        return getBoolean(c.c_13254_0x01, false);
+    }
+
     public boolean c_19039_0x0000() {
         return getBoolean(c.c_19039_0x0000, false);
     }
@@ -370,6 +374,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19039_0x0017() {
         return getBoolean(c.c_19039_0x0017, false);
+    }
+
+    public boolean c_19039_0x0019() {
+        return getBoolean(c.c_19039_0x0019, false);
     }
 
     public boolean c_22367_0x0001() {
@@ -492,6 +500,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_35893_0x0001, false);
     }
 
+    public boolean c_35893_0x0002() {
+        return getBoolean(c.c_35893_0x0002, false);
+    }
+
     public int c_35955_0x0002_OR_1() {
         return getInt(c.c_35955_0x0002, 1);
     }
@@ -549,22 +561,6 @@ public class a extends DataItemBase implements c {
 
     public boolean e_m_a_u_q_s() {
         return getBoolean(c.e_m_a_u_q_s, false);
-    }
-
-    public boolean ec() {
-        return getBoolean(c.c_13254_0x01, false);
-    }
-
-    public boolean ed() {
-        return getBoolean(c.c_35893_0x0002, false);
-    }
-
-    public boolean ee() {
-        return Build.VERSION.SDK_INT >= 28 && getBoolean(c.s_s_n, false);
-    }
-
-    public boolean ef() {
-        return getBoolean(c.c_19039_0x0019, false);
     }
 
     public boolean enSlowMotion_120_only() {
@@ -985,6 +981,10 @@ public class a extends DataItemBase implements c {
 
     public int s_p_r_n_OR_M1() {
         return getInt(c.s_p_r_n, -1);
+    }
+
+    public boolean s_s_n() {
+        return Build.VERSION.SDK_INT >= 28 && getBoolean(c.s_s_n, false);
     }
 
     public boolean s_s_s() {

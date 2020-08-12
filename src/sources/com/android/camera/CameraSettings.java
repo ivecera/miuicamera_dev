@@ -1432,7 +1432,7 @@ public class CameraSettings {
     }
 
     public static boolean isFlashSupportedInManualMode() {
-        if (!DataRepository.dataItemFeature().ec()) {
+        if (!DataRepository.dataItemFeature().c_13254_0x01()) {
             return true;
         }
         CameraSettingPreferences instance = CameraSettingPreferences.instance();

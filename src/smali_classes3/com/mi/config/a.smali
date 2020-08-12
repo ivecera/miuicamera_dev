@@ -2643,7 +2643,7 @@
     return p0
 .end method
 
-.method public ec()Z
+.method public c_13254_0x01()Z
     .locals 2
 
     const-string v0, "c_13254_0x01"
@@ -2657,7 +2657,7 @@
     return p0
 .end method
 
-.method public ed()Z
+.method public c_35893_0x0002()Z
     .locals 2
 
     const-string v0, "c_35893_0x0002"
@@ -2671,7 +2671,7 @@
     return p0
 .end method
 
-.method public ee()Z
+.method public s_s_n()Z
     .locals 3
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -2696,7 +2696,7 @@
     return v1
 .end method
 
-.method public ef()Z
+.method public c_19039_0x0019()Z
     .locals 2
 
     const-string v0, "c_19039_0x0019"

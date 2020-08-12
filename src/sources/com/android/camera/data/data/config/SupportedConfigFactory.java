@@ -307,7 +307,7 @@ public class SupportedConfigFactory {
                                                         if (z2) {
                                                             supportedConfigs.add(242);
                                                         }
-                                                        if (z && dataItemFeature.ed()) {
+                                                        if (z && dataItemFeature.c_35893_0x0002()) {
                                                             supportedConfigs.add(221);
                                                         }
                                                     } else if (dataItemFeature.vd()) {

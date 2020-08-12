@@ -1482,7 +1482,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->ef()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_19039_0x0019()Z
 
     move-result v0
 

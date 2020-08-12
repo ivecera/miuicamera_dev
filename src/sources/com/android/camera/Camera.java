@@ -1788,7 +1788,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
                 boolean c_22367_0x0001 = DataRepository.dataItemFeature().c_22367_0x0001();
                 boolean z = DataRepository.dataItemFeature().m1if();
                 boolean isSupportUltraWide = DataRepository.dataItemFeature().isSupportUltraWide();
-                if (DataRepository.dataItemFeature().ed()) {
+                if (DataRepository.dataItemFeature().c_35893_0x0002()) {
                     if (!isNewBieAlive(9) && dataItemGlobal.getBoolean(DataItemGlobal.DATA_COMMON_DOCUMENT_MODE_USE_HINT_SHOWN, true)) {
                         showNewBie(9);
                     }

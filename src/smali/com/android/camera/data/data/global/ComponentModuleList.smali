@@ -378,7 +378,7 @@
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_a
-    invoke-virtual {v2}, Lcom/mi/config/a;->ee()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->s_s_n()Z
 
     move-result v3
 

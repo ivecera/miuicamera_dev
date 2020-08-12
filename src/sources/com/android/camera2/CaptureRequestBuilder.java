@@ -345,7 +345,7 @@ public class CaptureRequestBuilder {
     }
 
     public static void applyFlashMode(CaptureRequest.Builder builder, CameraCapabilities cameraCapabilities, CameraConfigs cameraConfigs) {
-        if (DataRepository.dataItemFeature().ef() && builder != null && cameraCapabilities.isTagDefined(CaptureRequestVendorTags.FLASH_MODE.getName())) {
+        if (DataRepository.dataItemFeature().c_19039_0x0019() && builder != null && cameraCapabilities.isTagDefined(CaptureRequestVendorTags.FLASH_MODE.getName())) {
             MiCameraCompat.applyFlashMode(builder, cameraConfigs.getFlashMode());
         }
     }

@@ -794,7 +794,7 @@
     :cond_14
     if-eqz p4, :cond_15
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->ed()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_35893_0x0002()Z
 
     move-result v0
 
