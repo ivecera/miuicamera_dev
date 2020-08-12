@@ -4676,7 +4676,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             } else if (!this.mIsImageCaptureIntent || !((BaseModule) this).mCameraCapabilities.isSupportLightTripartite()) {
                 if (!CameraSettings.isUltraPixelOn()) {
                     if (CameraSettings.isDualCameraSatEnable()) {
-                        if (!DataRepository.dataItemFeature().kc()) {
+                        if (!DataRepository.dataItemFeature().c_27810_0x0001()) {
                             if (componentRunningMacroMode.isSwitchOn(moduleIndex)) {
                             }
                             i3 = 32769;

@@ -20,7 +20,7 @@ public class ComponentConfigBokeh extends ComponentData {
     private static List<ComponentDataItem> createItems(int i, int i2) {
         ArrayList arrayList = new ArrayList();
         boolean z = true;
-        if (i2 != 1 || !DataRepository.dataItemFeature().kd()) {
+        if (i2 != 1 || !DataRepository.dataItemFeature().c_0x38()) {
             z = false;
         }
         if (z) {

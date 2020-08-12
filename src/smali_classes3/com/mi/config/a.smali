@@ -3165,7 +3165,7 @@
     return p0
 .end method
 
-.method public kc()Z
+.method public c_27810_0x0001()Z
     .locals 2
 
     const-string v0, "c_27810_0x0001"
@@ -3179,7 +3179,7 @@
     return p0
 .end method
 
-.method public kd()Z
+.method public c_0x38()Z
     .locals 2
 
     const-string v0, "c_0x38"
@@ -3227,7 +3227,7 @@
     return p0
 .end method
 
-.method public kf()Z
+.method public c_0x51()Z
     .locals 2
 
     const-string v0, "c_0x51"

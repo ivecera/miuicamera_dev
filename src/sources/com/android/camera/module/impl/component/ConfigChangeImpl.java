@@ -2703,7 +2703,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
 
     @Override // com.android.camera.protocol.ModeProtocol.ConfigChanges
     public void reCheckFrontBokenTip() {
-        if (DataRepository.dataItemFeature().kd() && ((ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172)) != null) {
+        if (DataRepository.dataItemFeature().c_0x38() && ((ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172)) != null) {
             Optional<BaseModule> baseModule = getBaseModule();
             if (baseModule.isPresent() && "on".equals(DataRepository.dataItemConfig().getComponentBokeh().getComponentValue(baseModule.get().getModuleIndex()))) {
                 updateTipMessage(4, R.string.bokeh_use_hint, 2);
