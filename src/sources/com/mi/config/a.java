@@ -165,10 +165,6 @@ public class a extends DataItemBase implements c {
         return (float) getDoubleFromValues(c.c_0x02_p_c_r_v, 0.8766000270843506d);
     }
 
-    public int Gb() {
-        return getInt(c.s_p_r_n, -1);
-    }
-
     public boolean Gc() {
         return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("NO_PIXEL");
     }
@@ -997,6 +993,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_m_l() {
         return getBoolean(c.s_m_l, false);
+    }
+
+    public int s_p_r_n_OR_M1() {
+        return getInt(c.s_p_r_n, -1);
     }
 
     public int sb() {

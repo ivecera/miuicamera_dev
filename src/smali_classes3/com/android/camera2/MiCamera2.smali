@@ -3288,7 +3288,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Gb()I
+    invoke-virtual {v0}, Lcom/mi/config/a;->s_p_r_n_OR_M1()I
 
     move-result v0
 
@@ -3299,7 +3299,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Gb()I
+    invoke-virtual {v0}, Lcom/mi/config/a;->s_p_r_n_OR_M1()I
 
     move-result v0
 

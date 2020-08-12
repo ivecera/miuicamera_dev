@@ -991,7 +991,7 @@
     return p0
 .end method
 
-.method public Gb()I
+.method public s_p_r_n_OR_M1()I
     .locals 2
 
     const-string v0, "s_p_r_n"

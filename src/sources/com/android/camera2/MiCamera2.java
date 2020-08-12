@@ -1257,11 +1257,11 @@ public class MiCamera2 extends Camera2Proxy {
     private void configMaxParallelRequestNumberLock() {
         LocalParallelService.LocalBinder localBinder = AlgoConnector.getInstance().getLocalBinder(true);
         if (localBinder != null) {
-            int Gb = b.bv ? DataRepository.dataItemGlobal().getCurrentCameraId() == 1 ? 3 : DataRepository.dataItemFeature().Gb() : DataRepository.dataItemFeature().Gb();
-            if (Gb <= 0) {
-                Gb = 5;
+            int s_p_r_n_OR_M1 = b.bv ? DataRepository.dataItemGlobal().getCurrentCameraId() == 1 ? 3 : DataRepository.dataItemFeature().s_p_r_n_OR_M1() : DataRepository.dataItemFeature().s_p_r_n_OR_M1();
+            if (s_p_r_n_OR_M1 <= 0) {
+                s_p_r_n_OR_M1 = 5;
             }
-            localBinder.configMaxParallelRequestNumber(Gb);
+            localBinder.configMaxParallelRequestNumber(s_p_r_n_OR_M1);
         }
     }
 
