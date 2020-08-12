@@ -426,7 +426,7 @@ public class SnapCamera implements MediaRecorder.OnErrorListener, MediaRecorder.
             this.mContentValues.put("longitude", Double.valueOf(currentLocation.getLongitude()));
         }
         long availableSpace = Storage.getAvailableSpace() - Storage.LOW_STORAGE_THRESHOLD;
-        if (VideoModule.VIDEO_MAX_SINGLE_FILE_SIZE < availableSpace && DataRepository.dataItemFeature().Nc()) {
+        if (VideoModule.VIDEO_MAX_SINGLE_FILE_SIZE < availableSpace && DataRepository.dataItemFeature().s_s_v_OR_T()) {
             Log.d(TAG, "need reduce , now maxFileSize = " + availableSpace);
             availableSpace = 3670016000L;
         }

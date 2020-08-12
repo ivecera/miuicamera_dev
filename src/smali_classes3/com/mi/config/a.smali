@@ -1453,7 +1453,7 @@
     return-object p0
 .end method
 
-.method public Nc()Z
+.method public s_s_v_OR_T()Z
     .locals 2
 
     const-string v0, "s_s_v"

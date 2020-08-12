@@ -180,10 +180,6 @@ public class a extends DataItemBase implements c {
         return O(getString(c.c_19040_0x0005, ""));
     }
 
-    public boolean Nc() {
-        return getBoolean(c.s_s_v, true);
-    }
-
     public boolean Nd() {
         return getBoolean(c.c_22367_0x0001, false);
     }
@@ -993,6 +989,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_s_s() {
         return getBoolean(c.s_s_s, false);
+    }
+
+    public boolean s_s_v_OR_T() {
+        return getBoolean(c.s_s_v, true);
     }
 
     public int sb() {

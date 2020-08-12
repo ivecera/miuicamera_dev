@@ -295,7 +295,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
             }
         }
         long j2 = VIDEO_MAX_SINGLE_FILE_SIZE;
-        if (leftSpace <= VIDEO_MAX_SINGLE_FILE_SIZE || !DataRepository.dataItemFeature().Nc()) {
+        if (leftSpace <= VIDEO_MAX_SINGLE_FILE_SIZE || !DataRepository.dataItemFeature().s_s_v_OR_T()) {
             j2 = VIDEO_MIN_SINGLE_FILE_SIZE;
             if (leftSpace >= j2) {
                 j2 = leftSpace;
@@ -1030,7 +1030,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
                 setParameterExtra(mediaRecorder, "param-use-64bit-offset=1");
             }
         }
-        if (!DataRepository.dataItemFeature().Nc() || (i2 <= 0 && recorderMaxFileSize != VIDEO_MAX_SINGLE_FILE_SIZE)) {
+        if (!DataRepository.dataItemFeature().s_s_v_OR_T() || (i2 <= 0 && recorderMaxFileSize != VIDEO_MAX_SINGLE_FILE_SIZE)) {
             setSplitWhenReachMaxSize(false);
         } else {
             setSplitWhenReachMaxSize(true);
