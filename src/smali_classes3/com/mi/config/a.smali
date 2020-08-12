@@ -779,7 +779,7 @@
     return-object p0
 .end method
 
-.method public Cc()Z
+.method public s_m_c_t_f()Z
     .locals 2
 
     const-string v0, "s_m_c_t_f"

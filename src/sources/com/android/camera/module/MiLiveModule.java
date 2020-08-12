@@ -884,7 +884,7 @@ public class MiLiveModule extends BaseModule implements ILiveModule, Camera2Prox
     /* access modifiers changed from: protected */
     @Override // com.android.camera.module.BaseModule
     public int getOperatingMode() {
-        int i = isEisOn() ? 32772 : (!CameraSettings.isVideoBokehOn() || !isFrontCamera()) ? ((BaseModule) this).mCameraCapabilities.isSupportVideoBeauty() ? CameraCapabilities.SESSION_OPERATION_MODE_VIDEO_BEAUTY : DataRepository.dataItemFeature().Cc() ? CameraCapabilities.SESSION_OPERATION_MODE_MCTF : 0 : 32770;
+        int i = isEisOn() ? 32772 : (!CameraSettings.isVideoBokehOn() || !isFrontCamera()) ? ((BaseModule) this).mCameraCapabilities.isSupportVideoBeauty() ? CameraCapabilities.SESSION_OPERATION_MODE_VIDEO_BEAUTY : DataRepository.dataItemFeature().s_m_c_t_f() ? CameraCapabilities.SESSION_OPERATION_MODE_MCTF : 0 : 32770;
         String str = this.TAG;
         Log.d(str, "getOperatingMode: " + Integer.toHexString(i));
         return i;

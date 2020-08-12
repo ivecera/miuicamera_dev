@@ -919,7 +919,7 @@ public class LiveModule extends BaseModule implements ILiveModule, Camera2Proxy.
     /* access modifiers changed from: protected */
     @Override // com.android.camera.module.BaseModule
     public int getOperatingMode() {
-        return ((BaseModule) this).mModuleIndex == 177 ? CameraCapabilities.SESSION_OPERATION_MODE_MIMOJI : isPreviewEisOn() ? 32772 : DataRepository.dataItemFeature().Cc() ? CameraCapabilities.SESSION_OPERATION_MODE_MCTF : 0;
+        return ((BaseModule) this).mModuleIndex == 177 ? CameraCapabilities.SESSION_OPERATION_MODE_MIMOJI : isPreviewEisOn() ? 32772 : DataRepository.dataItemFeature().s_m_c_t_f() ? CameraCapabilities.SESSION_OPERATION_MODE_MCTF : 0;
     }
 
     @Override // com.android.camera.module.BaseModule
