@@ -153,10 +153,6 @@ public class a extends DataItemBase implements c {
         return N(getString(c.c_19040_0x0005, ""));
     }
 
-    public String Bb() {
-        return getString(c.h_d_v, "");
-    }
-
     public boolean Bc() {
         return getInt(c.c_19039_0x0005, -1) == 1;
     }
@@ -708,6 +704,10 @@ public class a extends DataItemBase implements c {
 
     public boolean gf() {
         return getBoolean(c.c_19039_0x0020, false);
+    }
+
+    public String h_d_v() {
+        return getString(c.h_d_v, "");
     }
 
     public boolean hc() {

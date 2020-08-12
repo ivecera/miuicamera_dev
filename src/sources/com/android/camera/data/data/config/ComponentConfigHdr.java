@@ -72,23 +72,23 @@ public class ComponentConfigHdr extends ComponentData {
         if (171 == i && CameraSettings.isBackCamera() && DataRepository.dataItemFeature().Ke()) {
             return "auto";
         }
-        String Bb = DataRepository.dataItemFeature().Bb();
+        String h_d_v = DataRepository.dataItemFeature().h_d_v();
         String string = CameraAppImpl.getAndroidContext().getResources().getString(R.string.pref_hdr_value_default);
-        if (TextUtils.isEmpty(Bb)) {
-            Bb = string;
+        if (TextUtils.isEmpty(h_d_v)) {
+            h_d_v = string;
         }
-        if (!TextUtils.isEmpty(Bb)) {
+        if (!TextUtils.isEmpty(h_d_v)) {
             char c2 = 65535;
-            int hashCode = Bb.hashCode();
+            int hashCode = h_d_v.hashCode();
             if (hashCode != 3551) {
                 if (hashCode != 109935) {
-                    if (hashCode == 3005871 && Bb.equals("auto")) {
+                    if (hashCode == 3005871 && h_d_v.equals("auto")) {
                         c2 = 0;
                     }
-                } else if (Bb.equals("off")) {
+                } else if (h_d_v.equals("off")) {
                     c2 = 2;
                 }
-            } else if (Bb.equals("on")) {
+            } else if (h_d_v.equals("on")) {
                 c2 = 1;
             }
             if (c2 == 0) {
