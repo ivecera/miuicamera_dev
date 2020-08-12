@@ -4697,7 +4697,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lcom/mi/config/a;->xc()Z
+    invoke-virtual {p2}, Lcom/mi/config/a;->c_28041_0x0002()Z
 
     move-result p2
 

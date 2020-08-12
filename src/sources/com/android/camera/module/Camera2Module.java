@@ -2510,7 +2510,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     private void setAiSceneEffect(int i) {
         String str = TAG;
         Log.d(str, "setAiSceneEffect: " + i);
-        if (EffectController.getInstance().getAiColorCorrectionVersion() != 0 || !DataRepository.dataItemFeature().xe() || !CameraSettings.isBackCamera() || i != 25) {
+        if (EffectController.getInstance().getAiColorCorrectionVersion() != 0 || !DataRepository.dataItemFeature().s_a_3() || !CameraSettings.isBackCamera() || i != 25) {
             if (CameraSettings.isFrontCamera() || isPortraitMode()) {
                 if (i != 0) {
                     Log.d(TAG, "setAiSceneEffect: front camera or portrait mode nonsupport!");
@@ -3094,7 +3094,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private void updateAlgorithmName() {
-        this.mAlgorithmName = !b.Rk() ? ((BaseModule) this).mCamera2Device.isBokehEnabled() ? DataRepository.dataItemFeature().xb() > 0 ? Util.ALGORITHM_NAME_SOFT_PORTRAIT_ENCRYPTED : Util.ALGORITHM_NAME_SOFT_PORTRAIT : isPortraitMode() ? Util.ALGORITHM_NAME_PORTRAIT : ((BaseModule) this).mMutexModePicker.getAlgorithmName() : null;
+        this.mAlgorithmName = !b.Rk() ? ((BaseModule) this).mCamera2Device.isBokehEnabled() ? DataRepository.dataItemFeature().c_0x13_OR_0() > 0 ? Util.ALGORITHM_NAME_SOFT_PORTRAIT_ENCRYPTED : Util.ALGORITHM_NAME_SOFT_PORTRAIT : isPortraitMode() ? Util.ALGORITHM_NAME_PORTRAIT : ((BaseModule) this).mMutexModePicker.getAlgorithmName() : null;
     }
 
     private void updateBeauty() {

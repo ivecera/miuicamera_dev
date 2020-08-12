@@ -2099,7 +2099,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->xb()I
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x13_OR_0()I
 
     move-result v12
 

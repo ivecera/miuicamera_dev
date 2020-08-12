@@ -3793,7 +3793,7 @@
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->xc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_28041_0x0002()Z
 
     move-result p0
 
@@ -4517,7 +4517,7 @@
     return v0
 .end method
 
-.method public xb()I
+.method public c_0x13_OR_0()I
     .locals 2
 
     const-string v0, "c_0x13"
@@ -4531,7 +4531,7 @@
     return p0
 .end method
 
-.method public xc()Z
+.method public c_28041_0x0002()Z
     .locals 2
 
     const-string v0, "c_28041_0x0002"
@@ -4571,7 +4571,7 @@
     return p0
 .end method
 
-.method public xe()Z
+.method public s_a_3()Z
     .locals 2
 
     const-string v0, "s_a_3"

@@ -261,6 +261,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x11, false);
     }
 
+    public int c_0x13_OR_0() {
+        return getInt(c.c_0x13, 0);
+    }
+
     public boolean c_0x14() {
         return getBoolean(c.c_0x14, false);
     }
@@ -658,6 +662,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_28041_0x0001, false);
     }
 
+    public boolean c_28041_0x0002() {
+        return getBoolean(c.c_28041_0x0002, false);
+    }
+
     public boolean c_28041_0x0003() {
         return getBoolean(c.c_28041_0x0003, false);
     }
@@ -957,7 +965,7 @@ public class a extends DataItemBase implements c {
 
     public boolean rc() {
         if (getBoolean(c.c_13254_0x02, false)) {
-            return ro_boot_hwc_EQ_india() || xc();
+            return ro_boot_hwc_EQ_india() || c_28041_0x0002();
         }
         return false;
     }
@@ -981,6 +989,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_a() {
         return getBoolean(c.s_a, false);
+    }
+
+    public boolean s_a_3() {
+        return getBoolean(c.s_a_3, false);
     }
 
     public boolean s_b_a_OR_T() {
@@ -1119,20 +1131,8 @@ public class a extends DataItemBase implements c {
         return Rm() && c_28041_0x0004_or_0() == 1;
     }
 
-    public int xb() {
-        return getInt(c.c_0x13, 0);
-    }
-
-    public boolean xc() {
-        return getBoolean(c.c_28041_0x0002, false);
-    }
-
     public boolean xd() {
         return Rm() && c_28041_0x0004_or_0() == 0;
-    }
-
-    public boolean xe() {
-        return getBoolean(c.s_a_3, false);
     }
 
     public String yb() {

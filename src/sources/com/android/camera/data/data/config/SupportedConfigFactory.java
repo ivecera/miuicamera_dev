@@ -300,7 +300,7 @@ public class SupportedConfigFactory {
                                                 if (z) {
                                                     if (!dataItemFeature.rc()) {
                                                         if (!CameraSettings.checkLensAvailability(CameraAppImpl.getAndroidContext())) {
-                                                            if (dataItemFeature.c_0x00_s_l_s_IFNOT_global() && dataItemFeature.xc()) {
+                                                            if (dataItemFeature.c_0x00_s_l_s_IFNOT_global() && dataItemFeature.c_28041_0x0002()) {
                                                                 supportedConfigs.add(206);
                                                             }
                                                         }
@@ -505,7 +505,7 @@ public class SupportedConfigFactory {
                     }
                     if (z) {
                         if (!dataItemFeature.rc() || i2 != 0) {
-                            if ((!dataItemFeature.xc() || i2 == 1) && dataItemFeature.c_0x00_s_l_s_IFNOT_global()) {
+                            if ((!dataItemFeature.c_28041_0x0002() || i2 == 1) && dataItemFeature.c_0x00_s_l_s_IFNOT_global()) {
                                 arrayList.add(createConfigItem(206));
                             }
                         } else if (CameraSettings.checkLensAvailability(CameraAppImpl.getAndroidContext())) {
@@ -551,7 +551,7 @@ public class SupportedConfigFactory {
                     if (dataItemRunning.supportMacroMode() && dataItemFeature.c_19039_0x0005_EQ_1()) {
                         arrayList.add(createConfigItem(255));
                     }
-                    if (z && dataItemFeature.c_0x00_s_l_s_IFNOT_global() && !dataItemFeature.xc()) {
+                    if (z && dataItemFeature.c_0x00_s_l_s_IFNOT_global() && !dataItemFeature.c_28041_0x0002()) {
                         arrayList.add(createConfigItem(206));
                     }
                     if (dataItemRunning.supportTopShineEntry()) {

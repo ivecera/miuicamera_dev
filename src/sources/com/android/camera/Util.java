@@ -617,7 +617,7 @@ public final class Util {
                 bArr6 = null;
             }
             byte[] depthMapData = arcsoftDepthMap.getDepthMapData();
-            byte[] writePortraitExif = arcsoftDepthMap.writePortraitExif(DataRepository.dataItemFeature().xb(), bArr, bArr5, iArr2, bArr6, iArr3, bArr4, iArr, i, z3, z4, deviceWatermarkParam.isCinematicAspectRatio(), pictureInfo, bArr3.length, depthMapData.length, j);
+            byte[] writePortraitExif = arcsoftDepthMap.writePortraitExif(DataRepository.dataItemFeature().c_0x13_OR_0(), bArr, bArr5, iArr2, bArr6, iArr3, bArr4, iArr, i, z3, z4, deviceWatermarkParam.isCinematicAspectRatio(), pictureInfo, bArr3.length, depthMapData.length, j);
             byte[] bArr7 = new byte[(writePortraitExif.length + bArr3.length + depthMapData.length)];
             System.arraycopy(writePortraitExif, 0, bArr7, 0, writePortraitExif.length);
             System.arraycopy(bArr3, 0, bArr7, writePortraitExif.length, bArr3.length);
@@ -630,7 +630,7 @@ public final class Util {
         if (str == null) {
         }
         byte[] depthMapData2 = arcsoftDepthMap.getDepthMapData();
-        byte[] writePortraitExif2 = arcsoftDepthMap.writePortraitExif(DataRepository.dataItemFeature().xb(), bArr, bArr5, iArr2, bArr6, iArr32, bArr4, iArr, i, z3, z4, deviceWatermarkParam.isCinematicAspectRatio(), pictureInfo, bArr3.length, depthMapData2.length, j);
+        byte[] writePortraitExif2 = arcsoftDepthMap.writePortraitExif(DataRepository.dataItemFeature().c_0x13_OR_0(), bArr, bArr5, iArr2, bArr6, iArr32, bArr4, iArr, i, z3, z4, deviceWatermarkParam.isCinematicAspectRatio(), pictureInfo, bArr3.length, depthMapData2.length, j);
         byte[] bArr72 = new byte[(writePortraitExif2.length + bArr3.length + depthMapData2.length)];
         System.arraycopy(writePortraitExif2, 0, bArr72, 0, writePortraitExif2.length);
         System.arraycopy(bArr3, 0, bArr72, writePortraitExif2.length, bArr3.length);

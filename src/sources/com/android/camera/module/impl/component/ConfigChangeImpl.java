@@ -1161,7 +1161,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
     }
 
     private void showLiveShotTip(ModeProtocol.TopAlert topAlert, int i) {
-        if (i != 0 || !DataRepository.dataItemFeature().xc()) {
+        if (i != 0 || !DataRepository.dataItemFeature().c_28041_0x0002()) {
             topAlert.alertLiveShotHint(1, R.string.camera_liveshot_on_tip, 3000);
         } else {
             topAlert.alertLiveShotHint(1, R.string.camera_liveshot_on_tip, 0);

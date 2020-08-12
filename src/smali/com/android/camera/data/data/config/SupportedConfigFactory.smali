@@ -770,7 +770,7 @@
 
     if-eqz v1, :cond_13
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->xc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_28041_0x0002()Z
 
     move-result v1
 
@@ -1889,7 +1889,7 @@
 
     if-eqz v0, :cond_16
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->xc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_28041_0x0002()Z
 
     move-result v0
 
@@ -2320,7 +2320,7 @@
     goto :goto_1
 
     :cond_2d
-    invoke-virtual {v4}, Lcom/mi/config/a;->xc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_28041_0x0002()Z
 
     move-result v0
 
