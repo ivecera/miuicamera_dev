@@ -3037,7 +3037,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             ((BaseModule) this).mActivity.getSensorStateManager().setGradienterEnabled(false);
         }
         ((BaseModule) this).mActivity.getSensorStateManager().setLieIndicatorEnabled(false);
-        if (DataRepository.dataItemFeature().Je()) {
+        if (DataRepository.dataItemFeature().c_19039_0x0013()) {
             ((BaseModule) this).mActivity.getSensorStateManager().setMagneticFieldUncalibratedEnable(false);
         }
         this.mIsShowLyingDirectHintStatus = -1;
@@ -6226,7 +6226,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         ModeCoordinatorImpl.getInstance().attachProtocol(195, this);
         getActivity().getImplFactory().initAdditional(getActivity(), 164, 174, 234, 227, 235, 254);
         boolean z = false;
-        if (DataRepository.dataItemFeature().Je()) {
+        if (DataRepository.dataItemFeature().c_19039_0x0013()) {
             getActivity().getImplFactory().initAdditional(getActivity(), 2576);
             this.mMagneticSensorDetect = (ModeProtocol.MagneticSensorDetect) ModeCoordinatorImpl.getInstance().getAttachProtocol(2576);
         }
@@ -6735,12 +6735,12 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 resetAsdSceneInHdrOrFlashChange();
                 if (isHdrOnWithChecker || "auto".equals(componentValue)) {
                     this.mHdrCheckEnabled = true;
-                    if (DataRepository.dataItemFeature().Je()) {
+                    if (DataRepository.dataItemFeature().c_19039_0x0013()) {
                         ((BaseModule) this).mActivity.getSensorStateManager().setMagneticFieldUncalibratedEnable(true);
                     }
                 } else {
                     this.mHdrCheckEnabled = false;
-                    if (DataRepository.dataItemFeature().Je()) {
+                    if (DataRepository.dataItemFeature().c_19039_0x0013()) {
                         ((BaseModule) this).mActivity.getSensorStateManager().setMagneticFieldUncalibratedEnable(false);
                     }
                 }
@@ -6748,7 +6748,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             } else {
                 ((BaseModule) this).mCamera2Device.setHDRCheckerEnable(false);
                 this.mHdrCheckEnabled = false;
-                if (DataRepository.dataItemFeature().Je()) {
+                if (DataRepository.dataItemFeature().c_19039_0x0013()) {
                     ((BaseModule) this).mActivity.getSensorStateManager().setMagneticFieldUncalibratedEnable(false);
                 }
             }
