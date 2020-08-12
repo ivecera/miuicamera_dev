@@ -176,10 +176,6 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_9006_0x0001, 5);
     }
 
-    public long Kb() {
-        return (long) getInt(c.s_b_m_d_t, -1);
-    }
-
     public boolean Kc() {
         return qb();
     }
@@ -969,6 +965,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_b_m() {
         return getBoolean(c.s_b_m, false);
+    }
+
+    public long s_b_m_d_t_OR_M1() {
+        return (long) getInt(c.s_b_m_d_t, -1);
     }
 
     public int s_b_m_s_c_OR_M1() {

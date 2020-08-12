@@ -3654,7 +3654,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Kb()J
+    invoke-virtual {v0}, Lcom/mi/config/a;->s_b_m_d_t_OR_M1()J
 
     move-result-wide v0
 

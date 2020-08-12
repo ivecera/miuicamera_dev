@@ -1335,20 +1335,20 @@ public class MiCamera2 extends Camera2Proxy {
     }
 
     private long getCaptureInterval() {
-        long Kb = DataRepository.dataItemFeature().Kb() - (System.currentTimeMillis() - this.mCaptureTime);
+        long s_b_m_d_t_OR_M1 = DataRepository.dataItemFeature().s_b_m_d_t_OR_M1() - (System.currentTimeMillis() - this.mCaptureTime);
         if (this.mConfigs.isHDREnabled() || this.mConfigs.isHDRCheckerEnabled()) {
-            Kb += 800;
+            s_b_m_d_t_OR_M1 += 800;
         }
         if (CameraSettings.isUltraPixelFront32MPOn()) {
-            Kb += 600;
+            s_b_m_d_t_OR_M1 += 600;
         }
         if (this.mConfigs.isMiBokehEnabled()) {
-            Kb += 800;
+            s_b_m_d_t_OR_M1 += 800;
         }
         String str = TAG;
-        Log.d(str, "getCaptureInterval: return " + Kb);
-        if (Kb > 0) {
-            return Kb;
+        Log.d(str, "getCaptureInterval: return " + s_b_m_d_t_OR_M1);
+        if (s_b_m_d_t_OR_M1 > 0) {
+            return s_b_m_d_t_OR_M1;
         }
         return 0;
     }

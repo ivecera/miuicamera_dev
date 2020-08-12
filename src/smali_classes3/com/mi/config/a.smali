@@ -1268,7 +1268,7 @@
     return p0
 .end method
 
-.method public Kb()J
+.method public s_b_m_d_t_OR_M1()J
     .locals 2
 
     const-string v0, "s_b_m_d_t"
