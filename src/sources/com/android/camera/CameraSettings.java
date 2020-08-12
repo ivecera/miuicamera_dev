@@ -606,7 +606,7 @@ public class CameraSettings {
         if (i == 177 || i == 184) {
             return true;
         }
-        return (z && !DataRepository.dataItemFeature().c_0x46()) || !DataRepository.dataItemFeature()._c();
+        return (z && !DataRepository.dataItemFeature().c_0x46()) || !DataRepository.dataItemFeature().s_c_w_m();
     }
 
     public static String getCustomWatermark() {

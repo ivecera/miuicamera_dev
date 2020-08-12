@@ -883,7 +883,7 @@ public class FragmentBottomPopupTips extends BaseFragment implements View.OnClic
                 }
             } else if (i2 == 171) {
                 if (isNormalIntent) {
-                    i6 = (currentCameraId == 0 ? !DataRepository.dataItemFeature().s_p_l_b() : currentCameraId != 1 || !DataRepository.dataItemFeature()._e()) ? -1 : 19;
+                    i6 = (currentCameraId == 0 ? !DataRepository.dataItemFeature().s_p_l_b() : currentCameraId != 1 || !DataRepository.dataItemFeature().s_p_l_f()) ? -1 : 19;
                     i7 = i6;
                     if (i7 != -1) {
                     }

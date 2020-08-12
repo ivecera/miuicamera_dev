@@ -496,12 +496,12 @@ public final class Util {
 
     public static int[] calcDualCameraWatermarkLocation(int i, int i2, int i3, int i4, float f2, float f3, float f4) {
         float min = ((float) Math.min(i, i2)) / 1080.0f;
-        boolean _c = DataRepository.dataItemFeature()._c();
+        boolean s_c_w_m = DataRepository.dataItemFeature().s_c_w_m();
         float f5 = 1.0f;
-        int round = Math.round(f2 * min * (_c ? CameraSettings.getResourceFloat(R.dimen.custom_watermark_height_scale, 1.0f) : 1.0f)) & -2;
+        int round = Math.round(f2 * min * (s_c_w_m ? CameraSettings.getResourceFloat(R.dimen.custom_watermark_height_scale, 1.0f) : 1.0f)) & -2;
         int i5 = ((i3 * round) / i4) & -2;
         int round2 = Math.round(f3 * min) & -2;
-        if (_c) {
+        if (s_c_w_m) {
             f5 = CameraSettings.getResourceFloat(R.dimen.custom_watermark_pandingY_scale, 1.0f);
         }
         return new int[]{i5, round, round2, Math.round(f4 * min * f5) & -2};
@@ -1556,7 +1556,7 @@ public final class Util {
         options.inScaled = false;
         options.inPurgeable = true;
         options.inPremultiplied = true;
-        if (DataRepository.dataItemFeature()._c()) {
+        if (DataRepository.dataItemFeature().s_c_w_m()) {
             Bitmap loadAppCameraWatermark = loadAppCameraWatermark(CameraAppImpl.getAndroidContext(), options, Build.DEVICE);
             if (loadAppCameraWatermark == null) {
                 loadAppCameraWatermark = loadAppCameraWatermark(CameraAppImpl.getAndroidContext(), options, "common");
@@ -1595,7 +1595,7 @@ public final class Util {
         if (loadAppCameraWatermark == null) {
             loadAppCameraWatermark = loadAppCameraWatermark(CameraAppImpl.getAndroidContext(), options, "common");
         }
-        if (DataRepository.dataItemFeature()._c()) {
+        if (DataRepository.dataItemFeature().s_c_w_m()) {
             int integer = CameraAppImpl.getAndroidContext().getResources().getInteger(R.integer.global_custom_watermark_startx);
             if (!isGlobalVersion() || integer == 0) {
                 integer = CameraAppImpl.getAndroidContext().getResources().getInteger(R.integer.custom_watermark_startx);
@@ -1928,7 +1928,7 @@ public final class Util {
     }
 
     public static String getDefaultWatermarkFileName() {
-        if (!DataRepository.dataItemFeature()._c() || !DataRepository.dataItemFeature().qf()) {
+        if (!DataRepository.dataItemFeature().s_c_w_m() || !DataRepository.dataItemFeature().qf()) {
             return WATERMARK_DEFAULT_FILE_NAME;
         }
         return Build.DEVICE + "_" + WATERMARK_SPACE + "_custom_watermark.png";
@@ -3447,7 +3447,7 @@ public final class Util {
     }
 
     public static boolean isZoomAnimationEnabled() {
-        return SystemProperties.getBoolean(ZOOM_ANIMATION_PROPERTY, !DataRepository.dataItemFeature()._d());
+        return SystemProperties.getBoolean(ZOOM_ANIMATION_PROPERTY, !DataRepository.dataItemFeature().s_f_z_i());
     }
 
     public static String join(String str, List<String> list) {
@@ -3494,7 +3494,7 @@ public final class Util {
         }
         if (str.equalsIgnoreCase("common")) {
             str2 = "common.webp";
-        } else if (DataRepository.dataItemFeature()._c() || !DataRepository.dataItemFeature().qf()) {
+        } else if (DataRepository.dataItemFeature().s_c_w_m() || !DataRepository.dataItemFeature().qf()) {
             str2 = str + b.Uk() + ".webp";
         } else {
             str2 = "dualcamera.webp";

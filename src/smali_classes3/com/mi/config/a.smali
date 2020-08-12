@@ -2293,7 +2293,7 @@
     return p0
 .end method
 
-.method public _b()Z
+.method public c_9006_0x0002()Z
     .locals 2
 
     const-string v0, "c_9006_0x0002"
@@ -2307,7 +2307,7 @@
     return p0
 .end method
 
-.method public _c()Z
+.method public s_c_w_m()Z
     .locals 2
 
     const-string v0, "s_c_w_m"
@@ -2321,7 +2321,7 @@
     return p0
 .end method
 
-.method public _d()Z
+.method public s_f_z_i()Z
     .locals 2
 
     const-string v0, "s_f_z_i"
@@ -2335,7 +2335,7 @@
     return p0
 .end method
 
-.method public _e()Z
+.method public s_p_l_f()Z
     .locals 2
 
     const-string v0, "s_p_l_f"

@@ -3708,7 +3708,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         boolean z;
         boolean z2;
         if (!isFrontCamera()) {
-            z2 = DataRepository.dataItemFeature()._b();
+            z2 = DataRepository.dataItemFeature().c_9006_0x0002();
             z = DataRepository.dataItemRunning().isSwitchOn("pref_ultra_wide_bokeh_enabled");
             i2 = z ? Camera2DataContainer.getInstance().getUltraWideCameraId() : b.Bl() ? ((BaseModule) this).mCamera2Device.getBokehAuxCameraId() : Camera2DataContainer.getInstance().getAuxCameraId();
         } else if (isDualFrontCamera()) {
@@ -3829,7 +3829,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     private void updateShotDetermine() {
         int i;
         int i2 = 1;
-        boolean z = ((BaseModule) this).mModuleIndex == 171 && (!isBackCamera() ? DataRepository.dataItemFeature()._e() || DataRepository.dataItemFeature().c_35955_0x0004() : b.Cl() || DataRepository.dataItemFeature().s_p_l_b());
+        boolean z = ((BaseModule) this).mModuleIndex == 171 && (!isBackCamera() ? DataRepository.dataItemFeature().s_p_l_f() || DataRepository.dataItemFeature().c_35955_0x0004() : b.Cl() || DataRepository.dataItemFeature().s_p_l_b());
         this.mEnableParallelSession = isParallelSessionEnable();
         if (!this.mIsImageCaptureIntent) {
             this.mEnableShot2Gallery = !this.mEnableParallelSession && DataRepository.dataItemFeature().ff() && enablePreviewAsThumbnail() && !CameraSettings.isLiveShotOn();
@@ -4640,7 +4640,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         int i3 = 32775;
         if (isFrontCamera()) {
             mIsBeautyFrontOn = true;
-            if (!isPortraitMode() || !DataRepository.dataItemFeature()._e()) {
+            if (!isPortraitMode() || !DataRepository.dataItemFeature().s_p_l_f()) {
                 if (!isPortraitMode() || !isBokehFrontCamera()) {
                     i = (!((BaseModule) this).mCameraCapabilities.isSupportedQcfa() || mIsBeautyFrontOn || !"off".equals(DataRepository.dataItemConfig().getComponentHdr().getComponentValue(((BaseModule) this).mModuleIndex)) || DataRepository.dataItemFeature().Ab() >= 0) ? 32773 : 32775;
                     if (((BaseModule) this).mModuleIndex != 163 || !CameraSettings.isUltraPixelOn()) {

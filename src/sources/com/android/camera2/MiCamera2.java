@@ -3754,7 +3754,7 @@ public class MiCamera2 extends Camera2Proxy {
 
     @Override // com.android.camera2.Camera2Proxy
     public void setOpticalZoomToTele(boolean z) {
-        if (DataRepository.dataItemFeature()._d() && this.mCapabilities.isSupportFastZoomIn()) {
+        if (DataRepository.dataItemFeature().s_f_z_i() && this.mCapabilities.isSupportFastZoomIn()) {
             String str = TAG;
             Log.d(str, "setOpticalZoomToTele: toTele = " + z);
             this.mToTele = z;

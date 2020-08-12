@@ -154,7 +154,7 @@ public class WatermarkActivity extends BasePreferenceActivity implements TextWat
         if (!CameraSettings.isSupportedDualCameraWaterMark()) {
             return;
         }
-        if (!DataRepository.dataItemFeature()._c() || (i = ((BasePreferenceActivity) this).mFromWhere) == 177 || i == 184 || DataRepository.dataItemGlobal().getCurrentCameraId() == 1) {
+        if (!DataRepository.dataItemFeature().s_c_w_m() || (i = ((BasePreferenceActivity) this).mFromWhere) == 177 || i == 184 || DataRepository.dataItemGlobal().getCurrentCameraId() == 1) {
             removePreference(this.mPreferenceGroup, "user_define_watermark_key");
         }
     }
@@ -394,7 +394,7 @@ public class WatermarkActivity extends BasePreferenceActivity implements TextWat
                     if (c2 == 1) {
                         return false;
                     }
-                } else if (!(!DataRepository.dataItemFeature()._c() || (i = ((BasePreferenceActivity) this).mFromWhere) == 177 || i == 184 || DataRepository.dataItemGlobal().getCurrentCameraId() == 1)) {
+                } else if (!(!DataRepository.dataItemFeature().s_c_w_m() || (i = ((BasePreferenceActivity) this).mFromWhere) == 177 || i == 184 || DataRepository.dataItemGlobal().getCurrentCameraId() == 1)) {
                     if (((Boolean) obj).booleanValue()) {
                         this.mUserDefineWatermark.setEnabled(true);
                     } else {
