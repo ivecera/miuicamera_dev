@@ -885,7 +885,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
 
     public boolean handleScreenSlideKeyEvent(int i, KeyEvent keyEvent) {
         Log.d(this.TAG, "handleScreenSlideKeyEvent " + i);
-        if (DataRepository.dataItemFeature().dd()) {
+        if (DataRepository.dataItemFeature().c_19039_0x0003()) {
             return true;
         }
         if (i == 701 && getCameraIntentManager().isFromScreenSlide().booleanValue() && !isModeSwitched()) {
@@ -1111,7 +1111,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
             if (((ActivityBase) this).mCameraIntentManager.checkCallerLegality()) {
                 CameraStatUtils.trackCallerControl(getIntent(), caller);
             }
-            if (DataRepository.dataItemFeature().dd()) {
+            if (DataRepository.dataItemFeature().c_19039_0x0003()) {
                 Util.initialize(getApplicationContext());
             }
             Util.initStatusBarHeight(getApplicationContext());

@@ -2567,7 +2567,7 @@
     return p0
 .end method
 
-.method public dc()Z
+.method public c_0x23()Z
     .locals 3
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -2590,7 +2590,7 @@
     return p0
 .end method
 
-.method public dd()Z
+.method public c_19039_0x0003()Z
     .locals 2
 
     const-string v0, "c_19039_0x0003"
@@ -2629,7 +2629,7 @@
     return p0
 .end method
 
-.method public df()Z
+.method public c_26813_0x0003()Z
     .locals 2
 
     const-string v0, "c_26813_0x0003"

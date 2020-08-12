@@ -496,7 +496,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
                         intent.putParcelableArrayListExtra(Util.KEY_SECURE_ITEMS, this.mSecureUriList);
                     }
                 }
-                if (DataRepository.dataItemFeature().dd() == 1) {
+                if (DataRepository.dataItemFeature().c_19039_0x0003() == 1) {
                     intent.putExtra("using_deputy_screen", DataRepository.dataItemGlobal().getDisplayMode() == 2 ? true : false);
                 }
                 intent.putExtra("device_orientation", this.mOrientation);

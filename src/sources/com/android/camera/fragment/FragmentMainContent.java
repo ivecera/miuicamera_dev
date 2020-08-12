@@ -465,7 +465,7 @@ public class FragmentMainContent extends BaseFragment implements ModeProtocol.Ma
 
     private boolean needShowZoomView(int i) {
         if (i != 180) {
-            return i == 162 && this.mIsRecording && DataRepository.dataItemFeature().df() && !isAutoZoomEnabled() && !CameraSettings.isSuperEISEnabled(162) && DataRepository.dataItemGlobal().getCurrentCameraId() != 1;
+            return i == 162 && this.mIsRecording && DataRepository.dataItemFeature().c_26813_0x0003() && !isAutoZoomEnabled() && !CameraSettings.isSuperEISEnabled(162) && DataRepository.dataItemGlobal().getCurrentCameraId() != 1;
         }
         return true;
     }
@@ -1341,7 +1341,7 @@ public class FragmentMainContent extends BaseFragment implements ModeProtocol.Ma
             if (i3 == 2) {
             }
         }
-        if (DataRepository.dataItemFeature().df() || ((BaseFragment) this).mCurrentMode == 180) {
+        if (DataRepository.dataItemFeature().c_26813_0x0003() || ((BaseFragment) this).mCurrentMode == 180) {
             this.mZoomViewHorizontal.init();
             this.mZoomView.init();
         }

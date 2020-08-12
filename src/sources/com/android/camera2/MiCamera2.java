@@ -1750,7 +1750,7 @@ public class MiCamera2 extends Camera2Proxy {
                     Log.d(TAG, String.format(Locale.ENGLISH, "[3SAT]prepareRemoteImageReader:uwSize = %s wideSize = %s teleSize = %s", cameraSize, cameraSize2, cameraSize3));
                 }
             } else {
-                if (Camera2DataContainer.getInstance().isFrontCameraId(getId()) && DataRepository.dataItemFeature().dd()) {
+                if (Camera2DataContainer.getInstance().isFrontCameraId(getId()) && DataRepository.dataItemFeature().c_19039_0x0003()) {
                     CameraSize photoSize = this.mConfigs.getPhotoSize();
                     arrayList.add(new IImageReaderParameterSets(photoSize.getWidth(), photoSize.getHeight(), 35, MAX_IMAGE_BUFFER_SIZE, 0));
                 } else if (!this.mCapabilities.isQcfaMode() || !DataRepository.dataItemFeature().c_0x5c()) {
@@ -4162,7 +4162,7 @@ public class MiCamera2 extends Camera2Proxy {
                         arrayList3.add(new OutputConfiguration(surface5));
                     }
                     this.mCameraDevice.createCustomCaptureSession(null, arrayList3, 32888, new HighSpeedCaptureSessionStateCallback(this.mSessionId, cameraPreviewCallback), this.mCameraHandler);
-                } else if (DataRepository.dataItemFeature().dc()) {
+                } else if (DataRepository.dataItemFeature().c_0x23()) {
                     ArrayList arrayList4 = new ArrayList();
                     for (Surface surface6 : asList) {
                         arrayList4.add(new OutputConfiguration(surface6));

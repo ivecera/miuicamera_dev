@@ -4626,7 +4626,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 Log.d(TAG, "getOperatingMode: SESSION_OPERATION_MODE_ALGO_UP_NORMAL");
             } else if (!CameraSettings.isSupportedOpticalZoom() || (this.mIsImageCaptureIntent && ((BaseModule) this).mCameraCapabilities.isSupportLightTripartite())) {
                 Log.d(TAG, "getOperatingMode: SESSION_OPERATION_MODE_ALGO_UP_NORMAL");
-            } else if (isFrontCamera() && DataRepository.dataItemFeature().dd()) {
+            } else if (isFrontCamera() && DataRepository.dataItemFeature().c_19039_0x0003()) {
                 Log.d(TAG, "getOperatingMode: SESSION_OPERATION_MODE_ALGO_UP_NORMAL");
             } else if (DataRepository.dataItemRunning().getComponentRunningMacroMode().isSwitchOn(getModuleIndex())) {
                 Log.d(TAG, "getOperatingMode: SESSION_OPERATION_MODE_ALGO_UP_NORMAL");

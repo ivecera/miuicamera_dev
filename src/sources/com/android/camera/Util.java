@@ -1262,7 +1262,7 @@ public final class Util {
     }
 
     public static void displayMode(int i) {
-        if (DataRepository.dataItemFeature().dd()) {
+        if (DataRepository.dataItemFeature().c_19039_0x0003()) {
             Intent intent = new Intent();
             intent.setAction("android.intent.action.DISPLAY_MODE_CHANGED");
             if (i == 1) {

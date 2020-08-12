@@ -195,7 +195,7 @@ public class DataItemGlobal extends DataItemBase {
     }
 
     public int getDisplayMode() {
-        return (!DataRepository.dataItemFeature().dd() || DataRepository.dataItemGlobal().getCurrentCameraId() != 1) ? 1 : 2;
+        return (!DataRepository.dataItemFeature().c_19039_0x0003() || DataRepository.dataItemGlobal().getCurrentCameraId() != 1) ? 1 : 2;
     }
 
     public int getIntentType() {

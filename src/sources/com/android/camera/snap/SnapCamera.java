@@ -723,7 +723,7 @@ public class SnapCamera implements MediaRecorder.OnErrorListener, MediaRecorder.
                 this.mPreviewRequestBuilder = this.mCameraDevice.createCaptureRequest(1);
                 this.mPreviewRequestBuilder.addTarget(this.mPreviewSurface);
                 applySettingsForPreview(this.mPreviewRequestBuilder);
-                if (DataRepository.dataItemFeature().dc()) {
+                if (DataRepository.dataItemFeature().c_0x23()) {
                     ArrayList arrayList = new ArrayList();
                     arrayList.add(new OutputConfiguration(this.mPreviewSurface));
                     arrayList.add(new OutputConfiguration(this.mPhotoImageReader.getSurface()));
