@@ -49,7 +49,7 @@ public class HibernationFragment extends DialogFragment implements DialogInterfa
     @Override // android.support.v4.app.Fragment, android.support.v4.app.DialogFragment
     public void onActivityCreated(Bundle bundle) {
         Window window = getDialog().getWindow();
-        if (DataRepository.dataItemFeature().Wb()) {
+        if (DataRepository.dataItemFeature().c_0x44()) {
             window.requestFeature(1);
         }
         super.onActivityCreated(bundle);

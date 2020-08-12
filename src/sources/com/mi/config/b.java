@@ -134,7 +134,7 @@ public class b {
     }
 
     public static boolean Kl() {
-        return !DataRepository.dataItemFeature().Wc() && Pu;
+        return !DataRepository.dataItemFeature().s_b_a_OR_T() && Pu;
     }
 
     public static boolean Ll() {

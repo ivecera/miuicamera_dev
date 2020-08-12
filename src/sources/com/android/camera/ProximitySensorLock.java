@@ -54,7 +54,7 @@ public class ProximitySensorLock implements SensorEventListener {
         if ((context instanceof Activity) == 1) {
             Intent intent = ((Activity) context).getIntent();
             int flags = intent.getFlags();
-            if (DataRepository.dataItemFeature().Wb() == 1) {
+            if (DataRepository.dataItemFeature().c_0x44() == 1) {
                 this.mFromVolumeKey = TextUtils.equals(intent.getStringExtra(CameraIntentManager.EXTRA_LAUNCH_SOURCE), "power_double_tap");
             } else {
                 this.mFromVolumeKey = (8388608 & flags) == 0 ? true : false;

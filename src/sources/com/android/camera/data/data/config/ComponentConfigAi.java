@@ -58,7 +58,7 @@ public class ComponentConfigAi extends ComponentData {
         if (i == 163 || i == 165) {
             if (!cameraCapabilities.isSupportLightTripartite() || i3 == 0) {
                 if (i2 == 0) {
-                    if (DataRepository.dataItemFeature().Wc()) {
+                    if (DataRepository.dataItemFeature().s_b_a_OR_T()) {
                         arrayList.add(new ComponentDataItem((int) R.drawable.ic_new_ai_scene_off, (int) R.drawable.ic_new_ai_scene_on, (int) R.string.accessibility_ai_scene_on, "on"));
                     }
                 } else if (DataRepository.dataItemFeature().s_f_a()) {

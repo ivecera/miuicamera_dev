@@ -2622,7 +2622,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private void setWaterMark() {
-        if (this.mMultiSnapStatus || DataRepository.dataItemFeature().s_o_a_w() || ((!this.mEnableParallelSession && (((BaseModule) this).mModuleIndex == 165 || CameraSettings.getShaderEffect() != FilterInfo.FILTER_ID_NONE || this.mHasAiSceneFilterEffect || CameraSettings.isTiltShiftOn())) || (this.mEnableParallelSession && (!DataRepository.dataItemFeature().We() || ((BaseModule) this).mModuleIndex == 171)))) {
+        if (this.mMultiSnapStatus || DataRepository.dataItemFeature().s_o_a_w() || ((!this.mEnableParallelSession && (((BaseModule) this).mModuleIndex == 165 || CameraSettings.getShaderEffect() != FilterInfo.FILTER_ID_NONE || this.mHasAiSceneFilterEffect || CameraSettings.isTiltShiftOn())) || (this.mEnableParallelSession && (!DataRepository.dataItemFeature().c_0x4a_1() || ((BaseModule) this).mModuleIndex == 171)))) {
             ((BaseModule) this).mCamera2Device.setDualCamWaterMarkEnable(false);
             ((BaseModule) this).mCamera2Device.setTimeWaterMarkEnable(false);
             return;
@@ -5106,7 +5106,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             startPreview();
         }
         initMetaParser();
-        if (DataRepository.dataItemFeature().Wc()) {
+        if (DataRepository.dataItemFeature().s_b_a_OR_T()) {
             initAiSceneParser();
         }
         this.mOnResumeTime = SystemClock.uptimeMillis();
@@ -5199,7 +5199,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             CameraSize cameraSize3 = ((BaseModule) this).mSensorRawImageSize;
             builder.setRawSize(cameraSize3.width, cameraSize3.height);
         }
-        boolean z3 = DataRepository.dataItemFeature().We() && (Util.isStringValueContained("device", ((BaseModule) this).mCamera2Device.getCameraConfigs().getWaterMarkAppliedList()) || Util.isStringValueContained(WatermarkConstant.ITEM_TAG, ((BaseModule) this).mCamera2Device.getCameraConfigs().getWaterMarkAppliedList()));
+        boolean z3 = DataRepository.dataItemFeature().c_0x4a_1() && (Util.isStringValueContained("device", ((BaseModule) this).mCamera2Device.getCameraConfigs().getWaterMarkAppliedList()) || Util.isStringValueContained(WatermarkConstant.ITEM_TAG, ((BaseModule) this).mCamera2Device.getCameraConfigs().getWaterMarkAppliedList()));
         WatermarkItem watermarkItem = CameraSettings.isAIWatermarkOn(((BaseModule) this).mModuleIndex) ? DataRepository.dataItemRunning().getComponentRunningAIWatermark().getWatermarkItem() : null;
         Location location = ((BaseModule) this).mActivity.getCameraIntentManager().checkIntentLocationPermission(((BaseModule) this).mActivity) ? this.mLocation : null;
         ParallelTaskDataParameter.Builder filterId = builder.setHasDualWaterMark(CameraSettings.isDualCameraWaterMarkOpen()).setVendorWaterMark(z3).setMirror(isFrontMirror()).setLightingPattern(CameraSettings.getPortraitLightingPattern()).setFilterId(EffectController.getInstance().getEffectForSaving(false));

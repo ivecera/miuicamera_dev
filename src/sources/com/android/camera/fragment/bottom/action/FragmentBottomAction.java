@@ -848,7 +848,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
     @Override // com.android.camera.protocol.ModeProtocol.ModeChangeController
     public void changeModeByNewMode(int i, int i2) {
         ModeProtocol.ConfigChanges configChanges;
-        if (i == 166 && CameraSettings.isFrontCamera() && DataRepository.dataItemFeature().Wd()) {
+        if (i == 166 && CameraSettings.isFrontCamera() && DataRepository.dataItemFeature().c_d_e_f_w()) {
             i = 176;
         }
         if (i == 163 || i == 165) {
@@ -1828,7 +1828,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
                 i4 = 1;
                 break;
             case 166:
-                if (!DataRepository.dataItemFeature().Wd()) {
+                if (!DataRepository.dataItemFeature().c_d_e_f_w()) {
                     this.mCameraPickEnable = false;
                     i3 = -1;
                     i4 = 1;

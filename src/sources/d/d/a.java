@@ -50,7 +50,7 @@ public class a extends Build {
     public static final boolean kg = ("aries".equals(Build.DEVICE) || "taurus".equals(Build.DEVICE) || "taurus_td".equals(Build.DEVICE));
     public static final boolean kh = "1".equals(SystemProperties.get("persist.sys.func_limit_switch"));
     public static final boolean lg = kg;
-    public static final boolean lh = (SystemProperties.get("ro.boot.hwc", "").contains("GLOBAL") || DataRepository.dataItemFeature().Wb());
+    public static final boolean lh = (SystemProperties.get("ro.boot.hwc", "").contains("GLOBAL") || DataRepository.dataItemFeature().c_0x44());
     public static final boolean mg = "lte26007".equals(Build.DEVICE);
     public static final boolean mh = SystemProperties.get("ro.product.mod_device", "").endsWith("_global");
     public static final boolean ng = ("MI 1S".equals(Build.MODEL) || "MI 1SC".equals(Build.MODEL));

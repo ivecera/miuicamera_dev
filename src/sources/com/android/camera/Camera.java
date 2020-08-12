@@ -1804,7 +1804,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
                     if (!isNewBieAlive(4) && dataItemGlobal.getBoolean("pref_camera_first_ultra_wide_use_hint_shown_key", true)) {
                         showNewBie(4);
                     }
-                } else if (!isNewBieAlive(3) && dataItemGlobal.getBoolean("pref_camera_first_ai_scene_use_hint_shown_key", true) && DataRepository.dataItemFeature().Wc()) {
+                } else if (!isNewBieAlive(3) && dataItemGlobal.getBoolean("pref_camera_first_ai_scene_use_hint_shown_key", true) && DataRepository.dataItemFeature().s_b_a_OR_T()) {
                     showNewBie(3);
                 }
             } else if (i == 182 && DataRepository.dataItemFeature().qd() && !isNewBieAlive(8) && dataItemGlobal.getBoolean("pref_camera_first_id_card_mode_use_hint_shown_key", true)) {

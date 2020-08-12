@@ -2862,7 +2862,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/mi/config/a;->Wd()Z
+    invoke-virtual {v3}, Lcom/mi/config/a;->c_d_e_f_w()Z
 
     move-result v3
 

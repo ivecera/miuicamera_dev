@@ -469,7 +469,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
             }
             try {
                 Intent intent = new Intent(Util.REVIEW_ACTION, uri);
-                intent.setPackage(DataRepository.dataItemFeature().Wb() ? Util.ANDROID_ONE_REVIEW_ACTIVITY_PACKAGE : Util.REVIEW_ACTIVITY_PACKAGE);
+                intent.setPackage(DataRepository.dataItemFeature().c_0x44() ? Util.ANDROID_ONE_REVIEW_ACTIVITY_PACKAGE : Util.REVIEW_ACTIVITY_PACKAGE);
                 intent.putExtra(Util.KEY_REVIEW_FROM_MIUICAMERA, true);
                 if (b.Qk() == 1) {
                     if (this.mCameraBrightness.getCurrentBrightnessAuto() != 0.0f) {
@@ -480,7 +480,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
                     }
                 }
                 if (startFromKeyguard() == 1) {
-                    if (DataRepository.dataItemFeature().Wb() == 1) {
+                    if (DataRepository.dataItemFeature().c_0x44() == 1) {
                         intent.putExtra(Util.ANDROID_ONE_EXTRA_IS_SECURE_MODE, true);
                     } else {
                         intent.putExtra(a.mf, true);
@@ -490,7 +490,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
                     intent.putExtra(Util.EXTRAS_SKIP_LOCK, true);
                 }
                 if (this.mSecureUriList != null) {
-                    if (DataRepository.dataItemFeature().Wb() == 1) {
+                    if (DataRepository.dataItemFeature().c_0x44() == 1) {
                         intent.putExtra(Util.ANDROID_ONE_EXTRA_SECURE_MODE_MEDIA_STORE_IDS, getSecureStoreIds());
                     } else {
                         intent.putParcelableArrayListExtra(Util.KEY_SECURE_ITEMS, this.mSecureUriList);

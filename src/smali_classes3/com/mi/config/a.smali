@@ -2028,7 +2028,7 @@
     return p0
 .end method
 
-.method public Wb()Z
+.method public c_0x44()Z
     .locals 2
 
     const-string v0, "c_0x44"
@@ -2042,7 +2042,7 @@
     return p0
 .end method
 
-.method public Wc()Z
+.method public s_b_a_OR_T()Z
     .locals 2
 
     const-string v0, "s_b_a"
@@ -2056,7 +2056,7 @@
     return p0
 .end method
 
-.method public Wd()Z
+.method public c_d_e_f_w()Z
     .locals 2
 
     const-string v0, "c_d_e_f_w"
@@ -2070,7 +2070,7 @@
     return p0
 .end method
 
-.method public We()Z
+.method public c_0x4a_1()Z
     .locals 2
 
     const-string v0, "c_0x4a_1"

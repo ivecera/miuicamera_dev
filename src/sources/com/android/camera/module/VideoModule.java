@@ -964,7 +964,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
     private void setupRecorder(MediaRecorder mediaRecorder) throws FileNotFoundException {
         int i;
         boolean isNormalMode = isNormalMode();
-        boolean z = isNormalMode || ((isFPS120() || isFPS240()) && !DataRepository.dataItemFeature().Wb());
+        boolean z = isNormalMode || ((isFPS120() || isFPS240()) && !DataRepository.dataItemFeature().c_0x44());
         mediaRecorder.setVideoSource(2);
         if (z) {
             mediaRecorder.setAudioSource(5);
@@ -1003,7 +1003,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
         if (this.mCaptureTimeLapse) {
             mediaRecorder.setCaptureRate(1000.0d / ((double) this.mTimeBetweenTimeLapseFrameCaptureMs));
         } else if (!isNormalMode) {
-            if (ModuleManager.isVideoNewSlowMotion() && !DataRepository.dataItemFeature().Wb()) {
+            if (ModuleManager.isVideoNewSlowMotion() && !DataRepository.dataItemFeature().c_0x44()) {
                 mediaRecorder.setVideoFrameRate(this.mFrameRate);
                 mediaRecorder.setVideoEncodingBitRate(Build.VERSION.SDK_INT < 28 ? (int) ((((long) i) * ((long) this.mFrameRate)) / ((long) getNormalVideoFrameRate())) : ((this.mFrameRate / getNormalVideoFrameRate()) / 2) * i);
             }
@@ -1035,7 +1035,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
         } else {
             setSplitWhenReachMaxSize(true);
         }
-        if ((isFPS240() || isFPS960()) && !DataRepository.dataItemFeature().Wb()) {
+        if ((isFPS240() || isFPS960()) && !DataRepository.dataItemFeature().c_0x44()) {
             try {
                 setParameterExtra(mediaRecorder, "video-param-i-frames-interval=0.033");
             } catch (Exception e2) {
@@ -1565,7 +1565,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
                     updateWhiteBalance();
                     break;
                 case 9:
-                    updateAntiBanding(DataRepository.dataItemFeature().Wb() ? "0" : CameraSettings.getAntiBanding());
+                    updateAntiBanding(DataRepository.dataItemFeature().c_0x44() ? "0" : CameraSettings.getAntiBanding());
                     break;
                 case 10:
                     updateFlashPreference();
@@ -1704,7 +1704,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
     /* access modifiers changed from: protected */
     public int getNormalVideoFrameRate() {
         CamcorderProfile camcorderProfile;
-        if (DataRepository.dataItemFeature().Wb() || (camcorderProfile = this.mProfile) == null) {
+        if (DataRepository.dataItemFeature().c_0x44() || (camcorderProfile = this.mProfile) == null) {
             return 30;
         }
         return camcorderProfile.videoFrameRate;

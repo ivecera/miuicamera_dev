@@ -202,22 +202,6 @@ public class a extends DataItemBase implements c {
         return Hb() < 0 || getBoolean(c.c_0x0f, false);
     }
 
-    public boolean Wb() {
-        return getBoolean(c.c_0x44, false);
-    }
-
-    public boolean Wc() {
-        return getBoolean(c.s_b_a, true);
-    }
-
-    public boolean Wd() {
-        return getBoolean(c.c_d_e_f_w, false);
-    }
-
-    public boolean We() {
-        return getBoolean(c.c_0x4a_1, false);
-    }
-
     public boolean Xb() {
         return getBoolean(c.c_19039_0x0011, false);
     }
@@ -352,12 +336,20 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x31, false);
     }
 
+    public boolean c_0x44() {
+        return getBoolean(c.c_0x44, false);
+    }
+
     public boolean c_0x46() {
         return getBoolean(c.c_0x46, false);
     }
 
     public boolean c_0x48() {
         return getBoolean(c.c_0x48, false);
+    }
+
+    public boolean c_0x4a_1() {
+        return getBoolean(c.c_0x4a_1, false);
     }
 
     public boolean c_0x54() {
@@ -546,6 +538,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_9006_0x0007() {
         return getBoolean(c.c_9006_0x0007, false);
+    }
+
+    public boolean c_d_e_f_w() {
+        return getBoolean(c.c_d_e_f_w, false);
     }
 
     public boolean c_r_i_m_m() {
@@ -941,6 +937,10 @@ public class a extends DataItemBase implements c {
 
     public String s(boolean z) {
         return z ? getString(c.c_0x29, "4.5") : getString(c.c_0x30, "4");
+    }
+
+    public boolean s_b_a_OR_T() {
+        return getBoolean(c.s_b_a, true);
     }
 
     public boolean s_b_m() {

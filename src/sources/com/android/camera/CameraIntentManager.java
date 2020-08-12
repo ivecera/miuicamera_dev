@@ -528,7 +528,7 @@ public class CameraIntentManager {
     }
 
     public boolean isQuickLaunch() {
-        if (!DataRepository.dataItemFeature().Wb()) {
+        if (!DataRepository.dataItemFeature().c_0x44()) {
             return this.mIntent.getBooleanExtra(a.mf, false);
         }
         String action = this.mIntent.getAction();

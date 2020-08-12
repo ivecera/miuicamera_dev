@@ -2645,7 +2645,7 @@ public final class Util {
 
     public static int getStatusBarHeight(Context context) {
         int i;
-        if (DataRepository.dataItemFeature().Wb()) {
+        if (DataRepository.dataItemFeature().c_0x44()) {
             i = context.getResources().getDimensionPixelSize(R.dimen.camera_status_bar_height);
         } else {
             int identifier = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
@@ -3229,7 +3229,7 @@ public final class Util {
     }
 
     public static boolean isGlobalVersion() {
-        return SystemProperties.get("ro.boot.hwc", "").contains("GLOBAL") || DataRepository.dataItemFeature().Wb();
+        return SystemProperties.get("ro.boot.hwc", "").contains("GLOBAL") || DataRepository.dataItemFeature().c_0x44();
     }
 
     private static boolean isGyroscopeStable(float[] fArr) {

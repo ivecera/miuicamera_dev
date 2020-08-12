@@ -957,7 +957,7 @@ public class CameraSettings {
     }
 
     public static boolean getScanQrcodeSettingNeedRemove(int i, boolean z) {
-        return z || b.cv || DataRepository.dataItemFeature().Wb() || b.Te() || isInAllRecordModeSet(i);
+        return z || b.cv || DataRepository.dataItemFeature().c_0x44() || b.Te() || isInAllRecordModeSet(i);
     }
 
     public static int getScreenLightBrightness() {
