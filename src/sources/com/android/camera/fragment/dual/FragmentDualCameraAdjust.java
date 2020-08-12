@@ -190,7 +190,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
         int i5 = -1;
         boolean z8 = true;
         if (DataRepository.dataItemGlobal().getCurrentCameraId() != 1 && ((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isAutoZoomEnabled(i) && !CameraSettings.isSuperEISEnabled(i) && HybridZoomingSystem.IS_2_OR_MORE_SAT)) {
-            if (i != 175 || !DataRepository.dataItemFeature().Hd()) {
+            if (i != 175 || !DataRepository.dataItemFeature().c_27810_0x0006()) {
                 if (i == 161) {
                     i3 = (!HybridZoomingSystem.IS_2_SAT && !CameraSettings.isUltraWideConfigOpen(i)) ? 1 : -1;
                     z2 = i3 == -1;

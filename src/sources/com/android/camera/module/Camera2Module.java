@@ -3416,7 +3416,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 }
             } else {
                 if (i == 175) {
-                    if (DataRepository.dataItemFeature().Hd()) {
+                    if (DataRepository.dataItemFeature().c_27810_0x0006()) {
                     }
                 }
                 if (b.Qu) {
@@ -3962,7 +3962,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             Log.d(TAG, "HAL doesn't support SR in macro mode.");
         } else if ((isStandaloneMacroCamera() && ((BaseModule) this).mCameraCapabilities.isMfnrMacroZoomSupported()) || !CameraSettings.isSREnable()) {
         } else {
-            if (((BaseModule) this).mModuleIndex == 175 && DataRepository.dataItemFeature().Hd() && DataRepository.dataItemRunning().getComponentUltraPixel().isRearSwitchOn()) {
+            if (((BaseModule) this).mModuleIndex == 175 && DataRepository.dataItemFeature().c_27810_0x0006() && DataRepository.dataItemRunning().getComponentUltraPixel().isRearSwitchOn()) {
                 Log.d(TAG, "108MP or 64MP doesn't support SR");
             } else if (((BaseModule) this).mModuleIndex == 167) {
                 boolean Sd = DataRepository.dataItemFeature().Sd();
@@ -4895,7 +4895,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     @Override // com.android.camera.module.BaseModule
     public boolean isZoomEnabled() {
         Camera2Proxy camera2Proxy;
-        return getCameraState() != 3 && !((BaseModule) this).mMutexModePicker.isUbiFocus() && !CameraSettings.isPortraitModeBackOn() && !isFrontCamera() && (camera2Proxy = ((BaseModule) this).mCamera2Device) != null && !camera2Proxy.isCaptureBusy(true) && (!CameraSettings.isUltraPixelOn() || DataRepository.dataItemFeature().Hd()) && ((BaseModule) this).mModuleIndex != 182 && isFrameAvailable();
+        return getCameraState() != 3 && !((BaseModule) this).mMutexModePicker.isUbiFocus() && !CameraSettings.isPortraitModeBackOn() && !isFrontCamera() && (camera2Proxy = ((BaseModule) this).mCamera2Device) != null && !camera2Proxy.isCaptureBusy(true) && (!CameraSettings.isUltraPixelOn() || DataRepository.dataItemFeature().c_27810_0x0006()) && ((BaseModule) this).mModuleIndex != 182 && isFrameAvailable();
     }
 
     /* access modifiers changed from: protected */
@@ -6121,7 +6121,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             topAlert.hideExtraMenu();
         }
         if (!isZoomEnabled()) {
-            if (CameraSettings.isUltraPixelOn() && !DataRepository.dataItemFeature().Hd() && (bottomPopupTips = (ModeProtocol.BottomPopupTips) ModeCoordinatorImpl.getInstance().getAttachProtocol(175)) != null) {
+            if (CameraSettings.isUltraPixelOn() && !DataRepository.dataItemFeature().c_27810_0x0006() && (bottomPopupTips = (ModeProtocol.BottomPopupTips) ModeCoordinatorImpl.getInstance().getAttachProtocol(175)) != null) {
                 bottomPopupTips.showTips(15, ComponentRunningUltraPixel.getNoSupportZoomTip(), 1);
             }
             Log.d(TAG, "onZoomingActionStart(): zoom is currently disallowed");

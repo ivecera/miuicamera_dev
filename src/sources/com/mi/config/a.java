@@ -169,10 +169,6 @@ public class a extends DataItemBase implements c {
         return N(getString(c.c_19039_0x0004, ""));
     }
 
-    public boolean Hd() {
-        return getBoolean(c.c_27810_0x0006, false);
-    }
-
     public boolean He() {
         return getBoolean(c.c_0x46, false);
     }
@@ -582,6 +578,10 @@ public class a extends DataItemBase implements c {
 
     public String c_27810_0x0004() {
         return getString(c.c_27810_0x0004, null);
+    }
+
+    public boolean c_27810_0x0006() {
+        return getBoolean(c.c_27810_0x0006, false);
     }
 
     public boolean c_27845_0x0001() {

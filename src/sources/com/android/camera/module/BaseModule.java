@@ -682,7 +682,7 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
                                             case 174:
                                                 break;
                                             case 175:
-                                                if (DataRepository.dataItemFeature().Hd()) {
+                                                if (DataRepository.dataItemFeature().c_27810_0x0006()) {
                                                     setMinZoomRatio(1.0f);
                                                     setMaxZoomRatio(2.0f);
                                                     return;
@@ -737,7 +737,7 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
                     }
                 }
                 setMinZoomRatio(1.0f);
-                if (DataRepository.dataItemFeature().Hd() && DataRepository.dataItemRunning().getComponentUltraPixel().isRearSwitchOn()) {
+                if (DataRepository.dataItemFeature().c_27810_0x0006() && DataRepository.dataItemRunning().getComponentUltraPixel().isRearSwitchOn()) {
                     setMaxZoomRatio(2.0f);
                     return;
                 } else if (CameraSettings.isUltraWideConfigOpen(this.mModuleIndex) || CameraSettings.isMacroModeEnabled(this.mModuleIndex) || "macro".equals(DataRepository.dataItemConfig().getManuallyDualLens().getComponentValue(this.mModuleIndex))) {

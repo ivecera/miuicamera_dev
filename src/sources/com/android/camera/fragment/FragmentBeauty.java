@@ -694,7 +694,7 @@ public class FragmentBeauty extends BaseFragment implements ModeProtocol.HandleB
         }
         ModeProtocol.DualController dualController = (ModeProtocol.DualController) ModeCoordinatorImpl.getInstance().getAttachProtocol(182);
         if (dualController != null && !CameraSettings.isFrontCamera() && !CameraSettings.isUltraWideConfigOpen(((BaseFragment) this).mCurrentMode)) {
-            if (CameraSettings.isUltraPixelOn() && !DataRepository.dataItemFeature().Hd()) {
+            if (CameraSettings.isUltraPixelOn() && !DataRepository.dataItemFeature().c_27810_0x0006()) {
                 return;
             }
             if (!CameraSettings.isMacroModeEnabled(((BaseFragment) this).mCurrentMode) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) {
