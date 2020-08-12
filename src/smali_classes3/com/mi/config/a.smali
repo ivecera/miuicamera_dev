@@ -650,7 +650,7 @@
     return p0
 .end method
 
-.method public Ae()Z
+.method public c_s_a_u_q_OR_s_a_u()Z
     .locals 2
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -4650,7 +4650,7 @@
 
     if-nez v2, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Ae()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_s_a_u_q_OR_s_a_u()Z
 
     move-result p0
 

@@ -153,10 +153,6 @@ public class a extends DataItemBase implements c {
         return N(getString(c.c_19040_0x0005, ""));
     }
 
-    public boolean Ae() {
-        return Build.VERSION.SDK_INT > 28 ? c_s_a_u_q() : getBoolean(c.s_a_u, false);
-    }
-
     public String Bb() {
         return getString(c.h_d_v, "");
     }
@@ -626,6 +622,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_36211_0x0001() {
         return getBoolean(c.c_36211_0x0001, false);
+    }
+
+    public boolean c_s_a_u_q_OR_s_a_u() {
+        return Build.VERSION.SDK_INT > 28 ? c_s_a_u_q() : getBoolean(c.s_a_u, false);
     }
 
     public boolean cc() {
@@ -1154,7 +1154,7 @@ public class a extends DataItemBase implements c {
 
     public boolean ye() {
         if (!getBoolean(c.s_a_u_e_f_m, false)) {
-            return Ae();
+            return c_s_a_u_q_OR_s_a_u();
         }
         if (!getBoolean(c.s_a_u, false) || !getBoolean(c.s_a_u_e_f_m, false) || (!(163 == DataRepository.dataItemGlobal().getCurrentMode() || 165 == DataRepository.dataItemGlobal().getCurrentMode()) || CameraSettings.getCameraId() != 0 || CameraSettings.isUltraPixelOn() || ((double) CameraSettings.readZoom()) < 1.0d)) {
             Log.i(TAG, "Algo up disabled for mm-camera");

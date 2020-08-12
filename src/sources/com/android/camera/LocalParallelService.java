@@ -282,7 +282,7 @@ public class LocalParallelService extends Service {
 
     public void onCreate() {
         Log.d(TAG, "onCreate: start");
-        if (!DataRepository.dataItemFeature().Ae()) {
+        if (!DataRepository.dataItemFeature().c_s_a_u_q_OR_s_a_u()) {
             Log.d(TAG, "This device does not support Algo up, do nothing.");
             stopSelf();
             return;
