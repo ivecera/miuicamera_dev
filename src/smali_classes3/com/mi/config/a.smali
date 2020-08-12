@@ -4585,7 +4585,7 @@
     return p0
 .end method
 
-.method public yb()Ljava/lang/String;
+.method public c_0x47_OR_v0()Ljava/lang/String;
     .locals 2
 
     const-string v0, "c_0x47"
@@ -4599,7 +4599,7 @@
     return-object p0
 .end method
 
-.method public yc()Z
+.method public c_190920()Z
     .locals 2
 
     const-string v0, "c_190920"
@@ -4613,7 +4613,7 @@
     return p0
 .end method
 
-.method public yd()Z
+.method public c_16001_0x0002_OR_T()Z
     .locals 2
 
     const-string v0, "c_16001_0x0002"

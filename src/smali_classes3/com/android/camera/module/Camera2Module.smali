@@ -28169,7 +28169,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/mi/config/a;->yc()Z
+    invoke-virtual {v1}, Lcom/mi/config/a;->c_190920()Z
 
     move-result v1
 

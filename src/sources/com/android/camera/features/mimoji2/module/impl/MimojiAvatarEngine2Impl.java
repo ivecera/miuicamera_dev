@@ -452,8 +452,8 @@ public class MimojiAvatarEngine2Impl implements MimojiModeProtocol.MimojiAvatarE
     }
 
     private void initMimojiResource() {
-        String yb = DataRepository.dataItemFeature().yb();
-        if (!yb.equals(CameraSettings.getMimojiModleVersion()) || !FileUtils.checkFileDirectoryConsist(MimojiHelper2.DATA_DIR) || !FileUtils.checkFileDirectoryConsist(MimojiHelper2.MODEL_PATH)) {
+        String c_0x47_OR_v0 = DataRepository.dataItemFeature().c_0x47_OR_v0();
+        if (!c_0x47_OR_v0.equals(CameraSettings.getMimojiModleVersion()) || !FileUtils.checkFileDirectoryConsist(MimojiHelper2.DATA_DIR) || !FileUtils.checkFileDirectoryConsist(MimojiHelper2.MODEL_PATH)) {
             Log.w(TAG, "MimojiAvatarEngine2Impl: initMimojiResource unzip...");
             boolean z = true;
             DataRepository.dataItemLive().getMimojiStatusManager2().setIsLoading(true);
@@ -471,7 +471,7 @@ public class MimojiAvatarEngine2Impl implements MimojiModeProtocol.MimojiAvatarE
                     return;
                 }
             }
-            this.mLoadResourceHandler.post(new d(this, yb));
+            this.mLoadResourceHandler.post(new d(this, c_0x47_OR_v0));
         }
     }
 

@@ -3402,7 +3402,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->yc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_190920()Z
 
     move-result p0
 

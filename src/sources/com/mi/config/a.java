@@ -383,6 +383,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x46, false);
     }
 
+    public String c_0x47_OR_v0() {
+        return getString(c.c_0x47, "v0");
+    }
+
     public boolean c_0x48() {
         return getBoolean(c.c_0x48, false);
     }
@@ -460,6 +464,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_13254_0x01() {
         return getBoolean(c.c_13254_0x01, false);
+    }
+
+    public boolean c_16001_0x0002_OR_T() {
+        return getBoolean(c.c_16001_0x0002, true);
     }
 
     public boolean c_19039_0x0000() {
@@ -548,6 +556,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19086_0x0001() {
         return getBoolean(c.c_19086_0x0001, false);
+    }
+
+    public boolean c_190920() {
+        return getBoolean(c.c_190920, false);
     }
 
     public boolean c_22367_0x0001() {
@@ -1133,18 +1145,6 @@ public class a extends DataItemBase implements c {
 
     public boolean xd() {
         return Rm() && c_28041_0x0004_or_0() == 0;
-    }
-
-    public String yb() {
-        return getString(c.c_0x47, "v0");
-    }
-
-    public boolean yc() {
-        return getBoolean(c.c_190920, false);
-    }
-
-    public boolean yd() {
-        return getBoolean(c.c_16001_0x0002, true);
     }
 
     public boolean ye() {

@@ -422,10 +422,10 @@ public class MimojiAvatarEngineImpl implements ModeProtocol.MimojiAvatarEngine, 
     }
 
     private void initMimojiResource() {
-        final String yb = DataRepository.dataItemFeature().yb();
-        if (!yb.equals(CameraSettings.getMimojiModleVersion()) || ((CameraAppImpl) this.mActivityBase.getApplication()).isMimojiNeedUpdate()) {
+        final String c_0x47_OR_v0 = DataRepository.dataItemFeature().c_0x47_OR_v0();
+        if (!c_0x47_OR_v0.equals(CameraSettings.getMimojiModleVersion()) || ((CameraAppImpl) this.mActivityBase.getApplication()).isMimojiNeedUpdate()) {
             Log.w(TAG, "MimojiAvatarEngineImpl: initMimojiResource unzip...");
-            if (!yb.equals(CameraSettings.getMimojiModleVersion())) {
+            if (!c_0x47_OR_v0.equals(CameraSettings.getMimojiModleVersion())) {
                 if (FileUtils.hasDir(MimojiHelper.MIMOJI_DIR)) {
                     FileUtils.delDir(MimojiHelper.MIMOJI_DIR);
                 }
@@ -452,7 +452,7 @@ public class MimojiAvatarEngineImpl implements ModeProtocol.MimojiAvatarEngine, 
                     String access$100 = MimojiAvatarEngineImpl.TAG;
                     Log.d(access$100, "init model spend time = " + (System.currentTimeMillis() - currentTimeMillis));
                     DataRepository.dataItemLive().getMimojiStatusManager().setIsLoading(false);
-                    CameraSettings.setMimojiModleVersion(yb);
+                    CameraSettings.setMimojiModleVersion(c_0x47_OR_v0);
                     String access$1002 = MimojiAvatarEngineImpl.TAG;
                     Log.i(access$1002, "mAvatarTemplatePath = " + MimojiAvatarEngineImpl.this.mAvatarTemplatePath);
                     MimojiAvatarEngineImpl.this.mUiHandler.post(new Runnable() {

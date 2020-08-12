@@ -6512,7 +6512,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             }
             this.mConfigRawStream = z;
             int operatingMode = getOperatingMode();
-            if (CameraSettings.isMacro2Sat() && 36866 == operatingMode && DataRepository.dataItemFeature().yc()) {
+            if (CameraSettings.isMacro2Sat() && 36866 == operatingMode && DataRepository.dataItemFeature().c_190920()) {
                 int lensIndex = CameraSettings.getLensIndex();
                 operatingMode |= lensIndex << 8;
                 Log.d(TAG, "getOperatingMode = " + operatingMode);

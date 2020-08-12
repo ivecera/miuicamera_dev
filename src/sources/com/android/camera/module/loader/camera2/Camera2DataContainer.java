@@ -300,7 +300,7 @@ public class Camera2DataContainer {
                         i3 = getMainBackCameraId();
                         break;
                     case 179:
-                        if (!DataRepository.dataItemFeature().yd()) {
+                        if (!DataRepository.dataItemFeature().c_16001_0x0002_OR_T()) {
                             i3 = getMainBackCameraId();
                             break;
                         } else {

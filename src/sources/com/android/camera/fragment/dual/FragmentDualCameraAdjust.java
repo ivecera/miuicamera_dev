@@ -778,7 +778,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
                         HybridZoomingSystem.setZoomRatioHistory(((BaseFragment) this).mCurrentMode, String.valueOf(opticalZoomRatioAt));
                         CameraStatUtils.trackDualZoomChanged(((BaseFragment) this).mCurrentMode, HybridZoomingSystem.toString(opticalZoomRatioAt));
                         configChanges.onConfigChanged(255);
-                        if (DataRepository.dataItemFeature().yc()) {
+                        if (DataRepository.dataItemFeature().c_190920()) {
                             CameraSettings.setMacro2Sat(true);
                             CameraSettings.setLensIndex(zoomRatioIndex);
                             return;
