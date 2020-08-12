@@ -366,7 +366,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
                 /* class com.android.camera.ActivityBase.AnonymousClass4 */
 
                 public void run() {
-                    ActivityBase.this.mGLCoverView.animate().alpha(0.0f).setDuration(DataRepository.dataItemFeature().Od() ? 100 : 200).withEndAction(new Runnable() {
+                    ActivityBase.this.mGLCoverView.animate().alpha(0.0f).setDuration(DataRepository.dataItemFeature().c_0x25() ? 100 : 200).withEndAction(new Runnable() {
                         /* class com.android.camera.ActivityBase.AnonymousClass4.AnonymousClass1 */
 
                         public void run() {
@@ -673,7 +673,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
     public void onDestroy() {
         CameraScreenNail cameraScreenNail;
         Bitmap lastFrameGaussianBitmap;
-        if (!(DataRepository.dataItemFeature().Od() || (cameraScreenNail = this.mCameraScreenNail) == null || (lastFrameGaussianBitmap = cameraScreenNail.getLastFrameGaussianBitmap()) == null)) {
+        if (!(DataRepository.dataItemFeature().c_0x25() || (cameraScreenNail = this.mCameraScreenNail) == null || (lastFrameGaussianBitmap = cameraScreenNail.getLastFrameGaussianBitmap()) == null)) {
             Schedulers.io().scheduleDirect(new SaveGaussian2File(lastFrameGaussianBitmap));
         }
         PopupManager.removeInstance(this);
@@ -734,7 +734,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
         if (this.mCameraScreenNail != null && !isShowBottomIntentDone()) {
             if ((DataRepository.dataItemFeature().ff() == 1 || CameraSettings.isCameraParallelProcessEnable() == 1) && this.mJumpFlag == 1) {
                 this.mCameraScreenNail.doPreviewGaussianForever();
-            } else if (!DataRepository.dataItemFeature().Od()) {
+            } else if (!DataRepository.dataItemFeature().c_0x25()) {
                 Log.d(TAG, "onPause: readLastFrameGaussian...");
                 this.mCameraScreenNail.readLastFrameGaussian();
             }
@@ -888,7 +888,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
     /* access modifiers changed from: protected */
     public void showBlurCover() {
         if (!isShowBottomIntentDone() && !isCameraAliveWhenResume() && !isPostProcessing() && !getCameraIntentManager().isFromScreenSlide().booleanValue() && !Util.isHasBackLightSensor()) {
-            if (!DataRepository.dataItemFeature().Od()) {
+            if (!DataRepository.dataItemFeature().c_0x25()) {
                 final long currentTimeMillis = System.currentTimeMillis();
                 Bitmap bitmap = null;
                 CameraScreenNail cameraScreenNail = this.mCameraScreenNail;

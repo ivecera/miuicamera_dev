@@ -184,10 +184,6 @@ public class a extends DataItemBase implements c {
         return O(getString(c.c_19039_0x0004, ""));
     }
 
-    public boolean Od() {
-        return getBoolean(c.c_0x25, false);
-    }
-
     public boolean Oe() {
         return getBoolean(c.c_9006_0x0003, false);
     }
@@ -438,6 +434,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x10_OR_T() {
         return getBoolean(c.c_0x10, true);
+    }
+
+    public boolean c_0x25() {
+        return getBoolean(c.c_0x25, false);
     }
 
     public boolean c_0x46() {
