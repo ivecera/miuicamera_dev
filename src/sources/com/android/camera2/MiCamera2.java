@@ -1133,7 +1133,7 @@ public class MiCamera2 extends Camera2Proxy {
                     if (this.mSuperNightReprocessHandler == null) {
                         HandlerThread handlerThread = new HandlerThread("SNReprocessThread");
                         handlerThread.start();
-                        this.mSuperNightReprocessHandler = new SuperNightReprocessHandler(handlerThread.getLooper(), this, DataRepository.dataItemFeature().Lb());
+                        this.mSuperNightReprocessHandler = new SuperNightReprocessHandler(handlerThread.getLooper(), this, DataRepository.dataItemFeature().c_32889_0x0002_OR_0());
                     }
                     String str = TAG;
                     Log.d(str, "SuperNightReprocessHandler@" + this.mSuperNightReprocessHandler.hashCode());

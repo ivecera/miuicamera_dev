@@ -1312,7 +1312,7 @@
     return p0
 .end method
 
-.method public Lb()I
+.method public c_32889_0x0002_OR_0()I
     .locals 2
 
     const-string v0, "c_32889_0x0002"

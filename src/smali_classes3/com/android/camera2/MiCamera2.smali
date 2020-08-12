@@ -2679,7 +2679,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->Lb()I
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_32889_0x0002_OR_0()I
 
     move-result v2
 
