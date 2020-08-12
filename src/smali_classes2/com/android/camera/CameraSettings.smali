@@ -2252,7 +2252,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/mi/config/a;->s(Z)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lcom/mi/config/a;->c_0x29_OR_4_5_OR_c_0x30_OR_4(Z)Ljava/lang/String;
 
     move-result-object v0
 

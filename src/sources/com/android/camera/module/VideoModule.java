@@ -737,7 +737,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
             } else if (isAuxCamera()) {
                 setMinZoomRatio(HybridZoomingSystem.FLOAT_ZOOM_RATIO_TELE);
                 setMaxZoomRatio(Math.min(6.0f, ((BaseModule) this).mCameraCapabilities.getMaxZoomRatio()));
-            } else if (!DataRepository.dataItemFeature().sf()) {
+            } else if (!DataRepository.dataItemFeature().c_28041_0x0006()) {
                 setMinZoomRatio(1.0f);
                 setMaxZoomRatio(Math.min(6.0f, ((BaseModule) this).mCameraCapabilities.getMaxZoomRatio()));
             } else if (isInVideoSAT()) {
@@ -1956,7 +1956,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
     @Override // com.android.camera.module.BaseModule
     public boolean onInterceptZoomingEvent(float f2, float f3, int i) {
         int i2;
-        if (!DataRepository.dataItemFeature().sf() || !DataRepository.dataItemConfig().getComponentConfigVideoQuality().supportVideoSATForVideoQuality(getModuleIndex()) || CameraSettings.isVideoQuality8KOpen(getModuleIndex()) || !HybridZoomingSystem.IS_3_OR_MORE_SAT || (((i2 = ((BaseModule) this).mModuleIndex) != 162 && i2 != 169) || CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex) || CameraSettings.isSuperEISEnabled(((BaseModule) this).mModuleIndex) || !isBackCamera())) {
+        if (!DataRepository.dataItemFeature().c_28041_0x0006() || !DataRepository.dataItemConfig().getComponentConfigVideoQuality().supportVideoSATForVideoQuality(getModuleIndex()) || CameraSettings.isVideoQuality8KOpen(getModuleIndex()) || !HybridZoomingSystem.IS_3_OR_MORE_SAT || (((i2 = ((BaseModule) this).mModuleIndex) != 162 && i2 != 169) || CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex) || CameraSettings.isSuperEISEnabled(((BaseModule) this).mModuleIndex) || !isBackCamera())) {
             return super.onInterceptZoomingEvent(f2, f3, i);
         }
         return false;
@@ -2636,7 +2636,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
                 } else if (!DataRepository.dataItemGlobal().isNormalIntent() && ((BaseModule) this).mCameraCapabilities.isSupportLightTripartite()) {
                     setMinZoomRatio(1.0f);
                     setMaxZoomRatio(Math.min(6.0f, ((BaseModule) this).mCameraCapabilities.getMaxZoomRatio()));
-                } else if (DataRepository.dataItemFeature().sf()) {
+                } else if (DataRepository.dataItemFeature().c_28041_0x0006()) {
                     setMinZoomRatio(0.6f);
                     if (isInVideoSAT()) {
                         setMaxZoomRatio(12.0f);
@@ -2825,7 +2825,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
 
     @Override // com.android.camera.module.BaseModule
     public void updateSATZooming(boolean z) {
-        if (DataRepository.dataItemFeature().c_19039_0x0006() && HybridZoomingSystem.IS_3_OR_MORE_SAT && ((BaseModule) this).mCamera2Device != null && DataRepository.dataItemFeature().sf() && isInVideoSAT()) {
+        if (DataRepository.dataItemFeature().c_19039_0x0006() && HybridZoomingSystem.IS_3_OR_MORE_SAT && ((BaseModule) this).mCamera2Device != null && DataRepository.dataItemFeature().c_28041_0x0006() && isInVideoSAT()) {
             ((BaseModule) this).mCamera2Device.setSatIsZooming(z);
             resumePreview();
         }

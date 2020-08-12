@@ -85,7 +85,7 @@ public class Camera2DataContainer {
     }
 
     private int getVideoModeCameraId(int i, int i2) {
-        if (!CameraSettings.isDualCameraSatEnable() || !DataRepository.dataItemFeature().sf()) {
+        if (!CameraSettings.isDualCameraSatEnable() || !DataRepository.dataItemFeature().c_28041_0x0006()) {
             return i;
         }
         if (CameraSettings.isVideoQuality8KOpen(i2)) {

@@ -386,7 +386,7 @@ public class ComponentConfigVideoQuality extends ComponentData {
     }
 
     public boolean supportVideoSATForVideoQuality(int i) {
-        if (!DataRepository.dataItemFeature().sf() || !CameraSettings.isSettingsVideoSATEnable() || i != 162) {
+        if (!DataRepository.dataItemFeature().c_28041_0x0006() || !CameraSettings.isSettingsVideoSATEnable() || i != 162) {
             return false;
         }
         String componentValue = getComponentValue(i);

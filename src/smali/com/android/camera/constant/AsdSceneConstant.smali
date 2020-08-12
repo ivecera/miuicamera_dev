@@ -71,7 +71,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->sb()I
+    invoke-virtual {v0}, Lcom/mi/config/a;->getAECLuxHeightLight()I
 
     move-result v0
 

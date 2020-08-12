@@ -365,7 +365,7 @@
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Lcom/mi/config/a;->s(Z)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lcom/mi/config/a;->c_0x29_OR_4_5_OR_c_0x30_OR_4(Z)Ljava/lang/String;
 
     move-result-object v1
 

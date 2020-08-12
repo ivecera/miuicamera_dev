@@ -384,7 +384,7 @@ public class FragmentTopAlert extends BaseFragment implements View.OnClickListen
             if (id == Camera2DataContainer.getInstance().getMainBackCameraId() || id == Camera2DataContainer.getInstance().getSATCameraId() || id == Camera2DataContainer.getInstance().getBokehCameraId() || id == Camera2DataContainer.getInstance().getUltraWideBokehCameraId() || id == Camera2DataContainer.getInstance().getFrontCameraId() || id == Camera2DataContainer.getInstance().getBokehFrontCameraId() || id == Camera2DataContainer.getInstance().getStandaloneMacroCameraId()) {
                 return null;
             }
-            if (DataRepository.dataItemFeature().sf() && id == Camera2DataContainer.getInstance().getVideoSATCameraId()) {
+            if (DataRepository.dataItemFeature().c_28041_0x0006() && id == Camera2DataContainer.getInstance().getVideoSATCameraId()) {
                 return null;
             }
             if (((HybridZoomingSystem.IS_2_SAT || (!HybridZoomingSystem.IS_3_OR_MORE_SAT && !CameraSettings.isSupportedOpticalZoom())) && id == Camera2DataContainer.getInstance().getUltraWideCameraId()) || (i = ((BaseFragment) this).mCurrentMode) == 167 || i == 180 || i == 166 || i == 179) {

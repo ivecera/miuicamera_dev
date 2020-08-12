@@ -3848,7 +3848,7 @@
     return p0
 .end method
 
-.method public s(Z)Ljava/lang/String;
+.method public c_0x29_OR_4_5_OR_c_0x30_OR_4(Z)Ljava/lang/String;
     .locals 1
 
     if-eqz p1, :cond_0
@@ -3875,7 +3875,7 @@
     return-object p0
 .end method
 
-.method public sb()I
+.method public getAECLuxHeightLight()I
     .locals 2
 
     const-string v0, "a_l_h_l"
@@ -3889,7 +3889,7 @@
     return p0
 .end method
 
-.method public sc()Z
+.method public c_0x24()Z
     .locals 2
 
     const-string v0, "c_0x24"
@@ -3903,7 +3903,7 @@
     return p0
 .end method
 
-.method public sd()Z
+.method public c_0x08()Z
     .locals 2
 
     const-string v0, "c_0x08"
@@ -3962,7 +3962,7 @@
     return v1
 .end method
 
-.method public sf()Z
+.method public c_28041_0x0006()Z
     .locals 2
 
     const/4 v0, 0x0

@@ -73,7 +73,7 @@ public class ExtraSlideFNumberAdapter extends BaseHorizontalZoomView.HorizontalD
         if (i % 3 == 0) {
             i2 = this.mLineColorDivider;
         }
-        if (F_NUMBERS[i].equals(DataRepository.dataItemFeature().s(CameraSettings.isFrontCamera())) && !z) {
+        if (F_NUMBERS[i].equals(DataRepository.dataItemFeature().c_0x29_OR_4_5_OR_c_0x30_OR_4(CameraSettings.isFrontCamera())) && !z) {
             this.mPaint.setColor(this.mLineColorDefaultCircle);
             canvas.drawCircle(0.0f, (float) (-this.mLineDefaultCircleGap), (float) this.mLineCircleRadius, this.mPaint);
         }

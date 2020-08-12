@@ -19,7 +19,7 @@ public class PhotoAssistanceTipsActivity extends BasePreferenceActivity {
         if (!DataRepository.dataItemFeature().c_19039_0x0008()) {
             removePreference(this.mPreferenceGroup, "pref_pic_flaw_tip");
         }
-        if (!DataRepository.dataItemFeature().sd()) {
+        if (!DataRepository.dataItemFeature().c_0x08()) {
             removePreference(this.mPreferenceGroup, "pref_lens_dirty_tip");
         }
         if (!DataRepository.dataItemFeature().c_0x48()) {

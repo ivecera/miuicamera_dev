@@ -1302,7 +1302,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     private boolean enableFrontMFNR() {
         int i;
         if (b.isMTKPlatform()) {
-            return b.Dl() && DataRepository.dataItemFeature().sc();
+            return b.Dl() && DataRepository.dataItemFeature().c_0x24();
         }
         if (!b.Dl()) {
             return false;
@@ -1313,7 +1313,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (DataRepository.dataItemFeature().c_28196_0x0002() && ((i = this.mOperatingMode) == 32770 || i == 36864)) {
             return true;
         }
-        if (DataRepository.dataItemFeature().sc()) {
+        if (DataRepository.dataItemFeature().c_0x24()) {
             int i2 = this.mOperatingMode;
             if (i2 == 36865) {
                 return true;
@@ -5651,7 +5651,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             super.onPreviewMetaDataUpdate(captureResult);
             Integer num = (Integer) captureResult.get(CaptureResult.SENSOR_SENSITIVITY);
             this.mIsISORight4HWMFNR = num != null && num.intValue() >= 800;
-            if ((DataRepository.dataItemFeature().sc() || !isFrontCamera()) && !DataRepository.dataItemFeature().ze()) {
+            if ((DataRepository.dataItemFeature().c_0x24() || !isFrontCamera()) && !DataRepository.dataItemFeature().ze()) {
                 this.mShouldDoMFNR = false;
             } else if (b.fl() || b.Zk()) {
                 this.mShouldDoMFNR = true;

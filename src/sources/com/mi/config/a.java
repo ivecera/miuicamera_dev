@@ -210,6 +210,10 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_0x01_p_g_a_v, 280);
     }
 
+    public boolean c_0x08() {
+        return getBoolean(c.c_0x08, false);
+    }
+
     public boolean c_0x0a() {
         return getBoolean(c.c_0x0a, false);
     }
@@ -280,6 +284,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x23, false);
     }
 
+    public boolean c_0x24() {
+        return getBoolean(c.c_0x24, false);
+    }
+
     public boolean c_0x25() {
         return getBoolean(c.c_0x25, false);
     }
@@ -290,6 +298,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x27_OR_T() {
         return getBoolean(c.c_0x27, true);
+    }
+
+    public String c_0x29_OR_4_5_OR_c_0x30_OR_4(boolean z) {
+        return z ? getString(c.c_0x29, "4.5") : getString(c.c_0x30, "4");
     }
 
     public boolean c_0x31() {
@@ -615,6 +627,15 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_28041_0x0005, false);
     }
 
+    public boolean c_28041_0x0006() {
+        boolean z = SystemProperties.getBoolean("miuicamera.sat.video", false);
+        if (!z) {
+            return getBoolean(c.c_28041_0x0006, false);
+        }
+        Log.d(TAG, "sat video debug prop:" + z);
+        return z;
+    }
+
     public boolean c_28041_0x0007() {
         return getBoolean(c.c_28041_0x0007, false);
     }
@@ -757,6 +778,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.f_a_u_u, false);
     }
 
+    public int getAECLuxHeightLight() {
+        return getInt(c.AEC_LUX_HEIGHT_LIGHT, 300);
+    }
+
     public String h_d_v() {
         return getString(c.h_d_v, "");
     }
@@ -890,10 +915,6 @@ public class a extends DataItemBase implements c {
         return "cn".equalsIgnoreCase(this.Ii);
     }
 
-    public String s(boolean z) {
-        return z ? getString(c.c_0x29, "4.5") : getString(c.c_0x30, "4");
-    }
-
     public boolean s_a() {
         return getBoolean(c.s_a, false);
     }
@@ -994,29 +1015,8 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.s_v_f_m, false);
     }
 
-    public int sb() {
-        return getInt(c.AEC_LUX_HEIGHT_LIGHT, 300);
-    }
-
-    public boolean sc() {
-        return getBoolean(c.c_0x24, false);
-    }
-
-    public boolean sd() {
-        return getBoolean(c.c_0x08, false);
-    }
-
     public boolean se() {
         return ((double) Math.abs((((float) Util.sWindowHeight) / ((float) Util.sWindowWidth)) - 2.0833333f)) < 0.02d && getBoolean(c.s_18_7_5_9_s, false);
-    }
-
-    public boolean sf() {
-        boolean z = SystemProperties.getBoolean("miuicamera.sat.video", false);
-        if (!z) {
-            return getBoolean(c.c_28041_0x0006, false);
-        }
-        Log.d(TAG, "sat video debug prop:" + z);
-        return z;
     }
 
     public boolean shouldCheckSatFallbackState() {

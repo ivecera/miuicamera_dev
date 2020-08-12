@@ -245,9 +245,9 @@ public class FunctionCameraPrepare extends Func1Base<Camera, BaseModule> {
                 z = false;
                 break;
         }
-        boolean sd = DataRepository.dataItemFeature().sd();
+        boolean c_0x08 = DataRepository.dataItemFeature().c_0x08();
         if (!(this.mResetType == 4 && lastCameraId == dataItemGlobal.getCurrentCameraId())) {
-            z = sd;
+            z = c_0x08;
         }
         if (z) {
             editor.putBoolean(CameraSettings.KEY_LENS_DIRTY_DETECT_ENABLED, true);

@@ -256,7 +256,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
         if (DataRepository.dataItemFeature().c_0x48() == 1) {
             i++;
         }
-        if (DataRepository.dataItemFeature().sd() == 1) {
+        if (DataRepository.dataItemFeature().c_0x08() == 1) {
             i++;
         }
         if (i <= 1) {
@@ -264,7 +264,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
             if (!DataRepository.dataItemFeature().c_19039_0x0008()) {
                 removePreference(this.mPreferenceGroup, "pref_pic_flaw_tip");
             }
-            if (!DataRepository.dataItemFeature().sd()) {
+            if (!DataRepository.dataItemFeature().c_0x08()) {
                 removePreference(this.mPreferenceGroup, "pref_lens_dirty_tip");
             }
             if (!DataRepository.dataItemFeature().c_0x48()) {
@@ -275,7 +275,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
             removePreference(this.mPreferenceGroup, "pref_lens_dirty_tip");
             removePreference(this.mPreferenceGroup, "pref_camera_lying_tip_switch_key");
         }
-        if (!DataRepository.dataItemFeature().sf()) {
+        if (!DataRepository.dataItemFeature().c_28041_0x0006()) {
             removePreference(this.mPreferenceGroup, CameraSettings.KEY_CAMERA_VIDEO_SAT_ENABLE);
         }
     }
@@ -587,7 +587,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
                 valuePreference.setValue(getString(R.string.pref_photo_assistance_tips_on));
             } else if (DataRepository.dataItemFeature().c_19039_0x0008() && sharedPreferences.getBoolean("pref_pic_flaw_tip", getResources().getBoolean(R.bool.pref_pic_flaw_tip_default))) {
                 valuePreference.setValue(getString(R.string.pref_photo_assistance_tips_on));
-            } else if (!DataRepository.dataItemFeature().sd() || !sharedPreferences.getBoolean("pref_lens_dirty_tip", getResources().getBoolean(R.bool.pref_lens_dirty_tip_default))) {
+            } else if (!DataRepository.dataItemFeature().c_0x08() || !sharedPreferences.getBoolean("pref_lens_dirty_tip", getResources().getBoolean(R.bool.pref_lens_dirty_tip_default))) {
                 valuePreference.setValue(getString(R.string.pref_photo_assistance_tips_off));
             } else {
                 valuePreference.setValue(getString(R.string.pref_photo_assistance_tips_on));

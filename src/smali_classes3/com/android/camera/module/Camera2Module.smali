@@ -2720,7 +2720,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->sc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_0x24()Z
 
     move-result p0
 
@@ -2780,7 +2780,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->sc()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x24()Z
 
     move-result v0
 
@@ -23704,7 +23704,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/mi/config/a;->sc()Z
+    invoke-virtual {v3}, Lcom/mi/config/a;->c_0x24()Z
 
     move-result v3
 

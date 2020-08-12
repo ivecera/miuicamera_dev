@@ -1032,7 +1032,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->sd()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x08()Z
 
     move-result v12
 

@@ -645,7 +645,7 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
                                             setMinZoomRatio(HybridZoomingSystem.getMinimumMacroOpticalZoomRatio());
                                             setMaxZoomRatio(HybridZoomingSystem.getMaximumMacroOpticalZoomRatio());
                                             return;
-                                        } else if (DataRepository.dataItemFeature().sf()) {
+                                        } else if (DataRepository.dataItemFeature().c_28041_0x0006()) {
                                             setMinZoomRatio(HybridZoomingSystem.getMinimumOpticalZoomRatio(this.mModuleIndex));
                                             if (isInVideoSAT()) {
                                                 setMaxZoomRatio(12.0f);
@@ -1284,7 +1284,7 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
             }
         }).observeOn(GlobalConstant.sCameraSetupScheduler).subscribe(this);
         Log.d(TAG, "create disposable " + this + " " + this.mUpdateWorkThreadDisposable);
-        if (getModuleIndex() == 163 && DataRepository.dataItemFeature().sd() && CameraSettings.isLensDirtyDetectEnabled() && DataRepository.dataItemGlobal().getBoolean("pref_lens_dirty_tip", getResources().getBoolean(R.bool.pref_lens_dirty_tip_default))) {
+        if (getModuleIndex() == 163 && DataRepository.dataItemFeature().c_0x08() && CameraSettings.isLensDirtyDetectEnabled() && DataRepository.dataItemGlobal().getBoolean("pref_lens_dirty_tip", getResources().getBoolean(R.bool.pref_lens_dirty_tip_default))) {
             if (this.mCameraCapabilities.getMiAlgoASDVersion() >= 2.0f) {
                 this.mDetectLensDirty = false;
             } else {
