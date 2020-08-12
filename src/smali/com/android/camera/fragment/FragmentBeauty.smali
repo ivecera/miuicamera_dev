@@ -2008,7 +2008,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Fd()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x10_OR_T()Z
 
     move-result v0
 

@@ -220,7 +220,7 @@ public class RecordingStateChangeImpl implements ModeProtocol.RecordState {
         if (currentModuleIndex == 166) {
             actionProcessing.processingFinish();
             actionProcessing.updateLoading(false);
-            if (DataRepository.dataItemFeature().Fd() && (dualController = (ModeProtocol.DualController) ModeCoordinatorImpl.getInstance().getAttachProtocol(182)) != null) {
+            if (DataRepository.dataItemFeature().c_0x10_OR_T() && (dualController = (ModeProtocol.DualController) ModeCoordinatorImpl.getInstance().getAttachProtocol(182)) != null) {
                 dualController.showZoomButton();
                 if (topAlert != null) {
                     topAlert.clearAlertStatus();
@@ -291,7 +291,7 @@ public class RecordingStateChangeImpl implements ModeProtocol.RecordState {
         int currentModuleIndex = getCurrentModuleIndex();
         if (currentModuleIndex == 166) {
             ((ModeProtocol.PanoramaProtocol) ModeCoordinatorImpl.getInstance().getAttachProtocol(176)).setShootUI();
-            if (DataRepository.dataItemFeature().Fd() && (dualController = (ModeProtocol.DualController) ModeCoordinatorImpl.getInstance().getAttachProtocol(182)) != null) {
+            if (DataRepository.dataItemFeature().c_0x10_OR_T() && (dualController = (ModeProtocol.DualController) ModeCoordinatorImpl.getInstance().getAttachProtocol(182)) != null) {
                 dualController.hideZoomButton();
                 if (topAlert != null) {
                     topAlert.alertUpdateValue(2);

@@ -685,7 +685,7 @@ public class FragmentBeauty extends BaseFragment implements ModeProtocol.HandleB
                             }
                     }
                 }
-            } else if (!DataRepository.dataItemFeature().Fd()) {
+            } else if (!DataRepository.dataItemFeature().c_0x10_OR_T()) {
                 return;
             }
             if (!HybridZoomingSystem.IS_3_OR_MORE_SAT) {

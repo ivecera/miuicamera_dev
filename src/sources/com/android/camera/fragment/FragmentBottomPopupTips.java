@@ -263,7 +263,7 @@ public class FragmentBottomPopupTips extends BaseFragment implements View.OnClic
                         }
                     }
                 }
-            } else if (!DataRepository.dataItemFeature().Fd()) {
+            } else if (!DataRepository.dataItemFeature().c_0x10_OR_T()) {
                 return;
             }
             if (!HybridZoomingSystem.IS_3_OR_MORE_SAT) {

@@ -268,7 +268,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
                                 i2 = i4;
                                 z8 = false;
                                 z2 = z3;
-                            } else if (DataRepository.dataItemFeature().Fd()) {
+                            } else if (DataRepository.dataItemFeature().c_0x10_OR_T()) {
                                 i5 = 1;
                             }
                             if (CameraSettings.isSupportedOpticalZoom()) {
