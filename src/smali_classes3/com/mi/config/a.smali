@@ -1481,7 +1481,7 @@
     return p0
 .end method
 
-.method public Ne()Z
+.method public c_0x0c()Z
     .locals 2
 
     const/4 v0, 0x0

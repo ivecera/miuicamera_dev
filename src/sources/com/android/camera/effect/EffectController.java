@@ -1184,7 +1184,7 @@ public class EffectController {
     /* JADX WARNING: Removed duplicated region for block: B:14:? A[RETURN, SYNTHETIC] */
     private static boolean isIndiaColorLookupTableAvailable() {
         int i;
-        if (!DataRepository.dataItemFeature().Ne()) {
+        if (!DataRepository.dataItemFeature().c_0x0c()) {
             return false;
         }
         try {

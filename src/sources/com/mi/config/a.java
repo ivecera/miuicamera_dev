@@ -180,10 +180,6 @@ public class a extends DataItemBase implements c {
         return O(getString(c.c_19040_0x0005, ""));
     }
 
-    public boolean Ne() {
-        return getBoolean(c.c_0x0c, false) && tc();
-    }
-
     public Size Ob() {
         return O(getString(c.c_19039_0x0004, ""));
     }
@@ -434,6 +430,10 @@ public class a extends DataItemBase implements c {
 
     public int c_0x01_p_g_a_v_OR_280() {
         return getInt(c.c_0x01_p_g_a_v, 280);
+    }
+
+    public boolean c_0x0c() {
+        return getBoolean(c.c_0x0c, false) && tc();
     }
 
     public boolean c_0x10_OR_T() {
