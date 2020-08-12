@@ -2365,7 +2365,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                         ((BaseModule) this).mCamera2Device.setSharpness(parseInt);
                     } else if (i == 10) {
                         String componentValue = DataRepository.dataItemConfig().getComponentFlash().getComponentValue(((BaseModule) this).mModuleIndex);
-                        if (DataRepository.dataItemFeature().vf() && (componentValue.equals("3") || componentValue.equals("1"))) {
+                        if (DataRepository.dataItemFeature().c_0x56() && (componentValue.equals("3") || componentValue.equals("1"))) {
                             configChanges.closeMutexElement("e", 193);
                             setFlashMode("0");
                         }
@@ -3376,7 +3376,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private void updateLiveShot() {
-        if (DataRepository.dataItemFeature().vd() && ((BaseModule) this).mModuleIndex == 163) {
+        if (DataRepository.dataItemFeature().c_0x00_s_l_s_IFNOT_global() && ((BaseModule) this).mModuleIndex == 163) {
             if (CameraSettings.isLiveShotOn()) {
                 startLiveShot();
             } else {
@@ -3721,7 +3721,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             z = false;
         }
         Log.d(TAG, "BS = " + z2 + " UW = " + z + " id = " + i2);
-        PictureSizeManager.initializeLimitWidth(((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(i), isBackCamera() ? DataRepository.dataItemFeature().vb() : 0, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
+        PictureSizeManager.initializeLimitWidth(((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(i), isBackCamera() ? DataRepository.dataItemFeature().c_22367_0x0004() : 0, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
         CameraSize bestPictureSize = PictureSizeManager.getBestPictureSize();
         if (b.Wu && getOperatingMode() == 36867) {
             bestPictureSize = new CameraSize(bestPictureSize.width / 2, bestPictureSize.height / 2);

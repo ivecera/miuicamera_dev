@@ -1382,7 +1382,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
     }
 
     private void updateLiveShot(boolean z) {
-        if (DataRepository.dataItemFeature().vd()) {
+        if (DataRepository.dataItemFeature().c_0x00_s_l_s_IFNOT_global()) {
             int currentMode = DataRepository.dataItemGlobal().getCurrentMode();
             if (currentMode == 163 || currentMode == 165) {
                 ComponentRunningLiveShot componentRunningLiveShot = DataRepository.dataItemRunning().getComponentRunningLiveShot();
@@ -1782,7 +1782,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
             if (baseModule.isPresent()) {
                 BaseModule baseModule2 = baseModule.get();
                 if (baseModule2.isFrameAvailable()) {
-                    if ((baseModule2.getModuleIndex() == 163 || baseModule2.getModuleIndex() == 165) && DataRepository.dataItemFeature().vd() && (topAlert = (ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172)) != null) {
+                    if ((baseModule2.getModuleIndex() == 163 || baseModule2.getModuleIndex() == 165) && DataRepository.dataItemFeature().c_0x00_s_l_s_IFNOT_global() && (topAlert = (ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172)) != null) {
                         Camera2Module camera2Module = (Camera2Module) baseModule2;
                         if (i == 1) {
                             boolean isLiveShotOn = CameraSettings.isLiveShotOn();
@@ -2753,7 +2753,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
         Optional<BaseModule> baseModule = getBaseModule();
         if (baseModule.isPresent()) {
             BaseModule baseModule2 = baseModule.get();
-            if ((baseModule2.getModuleIndex() == 163 || baseModule2.getModuleIndex() == 165) && DataRepository.dataItemFeature().vd() && (topAlert = (ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172)) != null && CameraSettings.isLiveShotOn()) {
+            if ((baseModule2.getModuleIndex() == 163 || baseModule2.getModuleIndex() == 165) && DataRepository.dataItemFeature().c_0x00_s_l_s_IFNOT_global() && (topAlert = (ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172)) != null && CameraSettings.isLiveShotOn()) {
                 showLiveShotTip(topAlert, baseModule2.getBogusCameraId());
             }
         }

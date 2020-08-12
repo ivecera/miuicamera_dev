@@ -3328,7 +3328,7 @@
 .method public me()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->vf()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_0x56()Z
 
     move-result v0
 
@@ -4287,7 +4287,7 @@
     return p0
 .end method
 
-.method public vb()I
+.method public c_22367_0x0004()I
     .locals 2
 
     const-string v0, "c_22367_0x0004"
@@ -4301,7 +4301,7 @@
     return p0
 .end method
 
-.method public vc()Z
+.method public c_0x04_i_l_h_d()Z
     .locals 2
 
     const-string v0, "c_0x04_i_l_h_d"
@@ -4315,7 +4315,7 @@
     return p0
 .end method
 
-.method public vd()Z
+.method public c_0x00_s_l_s_IFNOT_global()Z
     .locals 2
 
     invoke-static {}, Lcom/android/camera/Util;->isGlobalVersion()Z
@@ -4373,7 +4373,7 @@
     return v1
 .end method
 
-.method public vf()Z
+.method public c_0x56()Z
     .locals 2
 
     const-string v0, "c_0x56"

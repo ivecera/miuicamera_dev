@@ -1916,7 +1916,7 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
             if ((ThermalDetector.getInstance().thermalCloseFlash() && DataRepository.dataItemConfig().getComponentFlash().isHardwareSupported()) || (isFrontCamera() && this.mActivity.isScreenSlideOff())) {
                 parseInt = 0;
             }
-            this.mUseLegacyFlashMode = DataRepository.dataItemFeature().vf();
+            this.mUseLegacyFlashMode = DataRepository.dataItemFeature().c_0x56();
             this.mCamera2Device.setUseLegacyFlashMode(this.mUseLegacyFlashMode);
             this.mCamera2Device.setFlashMode(parseInt);
         }

@@ -253,7 +253,7 @@ public class ComponentConfigRatio extends ComponentData {
                         arrayList.add(new ComponentDataItem((int) R.drawable.ic_config_fullscreen, (int) R.drawable.ic_config_fullscreen, (int) R.string.pref_camera_picturesize_entry_fullscreen, RATIO_FULL_20X9));
                     }
                 }
-            } else if (i2 != 0 || !DataRepository.dataItemFeature().vc()) {
+            } else if (i2 != 0 || !DataRepository.dataItemFeature().c_0x04_i_l_h_d()) {
                 if (DataRepository.dataItemGlobal().getDisplayMode() == 1) {
                     arrayList.add(new ComponentDataItem((int) R.drawable.ic_config_4_3, (int) R.drawable.ic_config_4_3, (int) R.string.pref_camera_picturesize_entry_3_4, RATIO_4X3));
                 }

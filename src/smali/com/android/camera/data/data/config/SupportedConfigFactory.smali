@@ -738,7 +738,7 @@
 
     if-eqz v1, :cond_11
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->vd()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_0x00_s_l_s_IFNOT_global()Z
 
     move-result v1
 
@@ -764,7 +764,7 @@
     goto :goto_1
 
     :cond_12
-    invoke-virtual {v5}, Lcom/mi/config/a;->vd()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_0x00_s_l_s_IFNOT_global()Z
 
     move-result v1
 
@@ -1883,7 +1883,7 @@
     :cond_15
     if-eqz p2, :cond_16
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->vd()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_0x00_s_l_s_IFNOT_global()Z
 
     move-result v0
 
@@ -2329,7 +2329,7 @@
     if-ne v1, v11, :cond_2f
 
     :cond_2e
-    invoke-virtual {v4}, Lcom/mi/config/a;->vd()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_0x00_s_l_s_IFNOT_global()Z
 
     move-result v0
 

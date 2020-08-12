@@ -210,12 +210,23 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.a_e_d, false);
     }
 
+    public boolean c_0x00_s_l_s_IFNOT_global() {
+        if (Util.isGlobalVersion()) {
+            return false;
+        }
+        return getBoolean(c.c_0x00_s_l_s, false);
+    }
+
     public int c_0x01_p_g_a_v_OR_280() {
         return getInt(c.c_0x01_p_g_a_v, 280);
     }
 
     public boolean c_0x03() {
         return getBoolean(c.c_0x03, false);
+    }
+
+    public boolean c_0x04_i_l_h_d() {
+        return getBoolean(c.c_0x04_i_l_h_d, false);
     }
 
     public boolean c_0x08() {
@@ -407,6 +418,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x55, true);
     }
 
+    public boolean c_0x56() {
+        return getBoolean(c.c_0x56, false);
+    }
+
     public int c_0x57_OR_0() {
         return getInt(c.c_0x57, 0);
     }
@@ -537,6 +552,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_22367_0x0003() {
         return getBoolean(c.c_22367_0x0003, false);
+    }
+
+    public int c_22367_0x0004() {
+        return getInt(c.c_22367_0x0004, 0);
     }
 
     public boolean c_22367_0x0005() {
@@ -889,7 +908,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean me() {
-        return getBoolean(c.c_0x42, !vf());
+        return getBoolean(c.c_0x42, !c_0x56());
     }
 
     public String n(String str) {
@@ -1073,27 +1092,8 @@ public class a extends DataItemBase implements c {
         return ((double) Math.abs((((float) Util.sWindowHeight) / ((float) Util.sWindowWidth)) - 2.1111112f)) <= 0.02d && getBoolean(c.s_19_9_s, false);
     }
 
-    public int vb() {
-        return getInt(c.c_22367_0x0004, 0);
-    }
-
-    public boolean vc() {
-        return getBoolean(c.c_0x04_i_l_h_d, false);
-    }
-
-    public boolean vd() {
-        if (Util.isGlobalVersion()) {
-            return false;
-        }
-        return getBoolean(c.c_0x00_s_l_s, false);
-    }
-
     public boolean ve() {
         return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.2222223f && getBoolean(c.s_20_9_s, false);
-    }
-
-    public boolean vf() {
-        return getBoolean(c.c_0x56, false);
     }
 
     public String wb() {

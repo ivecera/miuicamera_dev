@@ -1533,7 +1533,7 @@ public class CameraSettings {
     }
 
     public static boolean isLiveShotOn() {
-        if (!DataRepository.dataItemFeature().vd()) {
+        if (!DataRepository.dataItemFeature().c_0x00_s_l_s_IFNOT_global()) {
             return false;
         }
         return DataRepository.dataItemRunning().getComponentRunningLiveShot().isLiveShotOn();
@@ -2102,7 +2102,7 @@ public class CameraSettings {
     }
 
     public static void setLiveShotOn(boolean z) {
-        if (DataRepository.dataItemFeature().vd()) {
+        if (DataRepository.dataItemFeature().c_0x00_s_l_s_IFNOT_global()) {
             DataRepository.dataItemRunning().getComponentRunningLiveShot().setLiveShotOn(z);
         }
     }
