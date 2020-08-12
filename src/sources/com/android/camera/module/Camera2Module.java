@@ -2622,7 +2622,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private void setWaterMark() {
-        if (this.mMultiSnapStatus || DataRepository.dataItemFeature().Ve() || ((!this.mEnableParallelSession && (((BaseModule) this).mModuleIndex == 165 || CameraSettings.getShaderEffect() != FilterInfo.FILTER_ID_NONE || this.mHasAiSceneFilterEffect || CameraSettings.isTiltShiftOn())) || (this.mEnableParallelSession && (!DataRepository.dataItemFeature().We() || ((BaseModule) this).mModuleIndex == 171)))) {
+        if (this.mMultiSnapStatus || DataRepository.dataItemFeature().s_o_a_w() || ((!this.mEnableParallelSession && (((BaseModule) this).mModuleIndex == 165 || CameraSettings.getShaderEffect() != FilterInfo.FILTER_ID_NONE || this.mHasAiSceneFilterEffect || CameraSettings.isTiltShiftOn())) || (this.mEnableParallelSession && (!DataRepository.dataItemFeature().We() || ((BaseModule) this).mModuleIndex == 171)))) {
             ((BaseModule) this).mCamera2Device.setDualCamWaterMarkEnable(false);
             ((BaseModule) this).mCamera2Device.setTimeWaterMarkEnable(false);
             return;

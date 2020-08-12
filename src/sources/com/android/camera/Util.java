@@ -1588,7 +1588,7 @@ public final class Util {
         options.inScaled = false;
         options.inPurgeable = true;
         options.inPremultiplied = true;
-        if (!DataRepository.dataItemFeature().Ve() && !DataRepository.dataItemFeature().qf()) {
+        if (!DataRepository.dataItemFeature().s_o_a_w() && !DataRepository.dataItemFeature().qf()) {
             return null;
         }
         Bitmap loadAppCameraWatermark = loadAppCameraWatermark(CameraAppImpl.getAndroidContext(), options, Build.DEVICE);
@@ -1998,7 +1998,7 @@ public final class Util {
         String str;
         byte[] bArr;
         Bitmap decodeByteArray;
-        if (DataRepository.dataItemFeature().Ve() || DataRepository.dataItemFeature().qf()) {
+        if (DataRepository.dataItemFeature().s_o_a_w() || DataRepository.dataItemFeature().qf()) {
             str = new File(CameraAppImpl.getAndroidContext().getFilesDir(), getDefaultWatermarkFileName()).getPath();
             if (!new File(str).exists()) {
                 generateWatermark2File();

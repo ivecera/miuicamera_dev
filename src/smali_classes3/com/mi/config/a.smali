@@ -1986,7 +1986,7 @@
     return v1
 .end method
 
-.method public Vc()Z
+.method public c_0x59()Z
     .locals 2
 
     const-string v0, "c_0x59"
@@ -2000,7 +2000,7 @@
     return p0
 .end method
 
-.method public Vd()Z
+.method public c_32889_0x0001()Z
     .locals 2
 
     const-string v0, "c_32889_0x0001"
@@ -2014,7 +2014,7 @@
     return p0
 .end method
 
-.method public Ve()Z
+.method public s_o_a_w()Z
     .locals 2
 
     const-string v0, "s_o_a_w"

@@ -1420,14 +1420,14 @@ public class EffectController {
         boolean gm = b.gm();
         boolean isSquareModule = ModuleManager.isSquareModule();
         boolean isTiltShiftOn = CameraSettings.isTiltShiftOn();
-        boolean Ve = DataRepository.dataItemFeature().Ve();
+        boolean s_o_a_w = DataRepository.dataItemFeature().s_o_a_w();
         boolean isDualCameraWaterMarkOpen = CameraSettings.isDualCameraWaterMarkOpen();
         boolean isFrontCameraWaterMarkOpen = CameraSettings.isFrontCameraWaterMarkOpen();
         boolean isTimeWaterMarkOpen = CameraSettings.isTimeWaterMarkOpen();
         boolean showGenderAge = CameraSettings.showGenderAge();
         boolean isMagicMirrorOn = CameraSettings.isMagicMirrorOn();
         boolean isCinematicAspectRatioEnabled = CameraSettings.isCinematicAspectRatioEnabled(DataRepository.dataItemGlobal().getCurrentMode());
-        boolean z3 = (!Ve || !(isDualCameraWaterMarkOpen || isFrontCameraWaterMarkOpen || isTimeWaterMarkOpen || showGenderAge || isMagicMirrorOn)) ? false : true;
+        boolean z3 = (!s_o_a_w || !(isDualCameraWaterMarkOpen || isFrontCameraWaterMarkOpen || isTimeWaterMarkOpen || showGenderAge || isMagicMirrorOn)) ? false : true;
         if (z) {
             synchronized (this) {
                 z2 = (this.mEffectId == FilterInfo.FILTER_ID_NONE || FilterInfo.getCategory(this.mEffectId) == 6) ? false : true;

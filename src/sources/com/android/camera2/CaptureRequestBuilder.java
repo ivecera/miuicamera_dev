@@ -726,7 +726,7 @@ public class CaptureRequestBuilder {
             if (i == 4) {
                 MiCameraCompat.applyWaterMarkAppliedList(builder, "");
             }
-        } else if (!DataRepository.dataItemFeature().Ve()) {
+        } else if (!DataRepository.dataItemFeature().s_o_a_w()) {
             String join = Util.join(",", cameraConfigs.getWaterMarkAppliedList());
             String str = TAG;
             Log.d(str, "applyWaterMark appliedList:" + join);

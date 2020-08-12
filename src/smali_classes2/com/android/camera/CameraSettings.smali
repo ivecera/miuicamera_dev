@@ -5269,7 +5269,7 @@
     goto :goto_0
 
     :cond_2
-    invoke-virtual {p1}, Lcom/mi/config/a;->Vd()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_32889_0x0001()Z
 
     move-result p1
 
@@ -6164,7 +6164,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Ve()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->s_o_a_w()Z
 
     move-result v0
 
@@ -10489,7 +10489,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Vd()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_32889_0x0001()Z
 
     move-result v0
 

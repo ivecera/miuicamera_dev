@@ -920,7 +920,7 @@ public class Storage {
 
     public static boolean isUseDocumentMode() {
         if (Build.VERSION.SDK_INT >= 28 && !isUsePhoneStorage()) {
-            return !DataRepository.dataItemFeature().Vc() || !isDirectoryExistsAndCanWrite(sCurrentStoragePath);
+            return !DataRepository.dataItemFeature().c_0x59() || !isDirectoryExistsAndCanWrite(sCurrentStoragePath);
         }
         return false;
     }

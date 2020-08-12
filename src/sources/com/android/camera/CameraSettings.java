@@ -1102,7 +1102,7 @@ public class CameraSettings {
             return true;
         }
         com.mi.config.a dataItemFeature = DataRepository.dataItemFeature();
-        if (isInAllCaptureModeSet(i) || i == 172 || i == 168 || i == 161 || i == 179 || i == 169 || !dataItemFeature.Vd() || isSubtitleEnabled(i)) {
+        if (isInAllCaptureModeSet(i) || i == 172 || i == 168 || i == 161 || i == 179 || i == 169 || !dataItemFeature.c_32889_0x0001() || isSubtitleEnabled(i)) {
             return true;
         }
         return (isVideoQuality8KOpen(i) && Camera2OpenManager.getInstance().getPendingCameraId() == 0) || ComponentConfigVideoQuality.QUALITY_8K.equals(DataRepository.dataItemConfig().getComponentConfigVideoQuality().getComponentValue(i));
@@ -1235,7 +1235,7 @@ public class CameraSettings {
     }
 
     public static boolean isAgeGenderAndMagicMirrorWaterOpen() {
-        return DataRepository.dataItemFeature().Ve() && isFrontCamera() && (showGenderAge() || isMagicMirrorOn());
+        return DataRepository.dataItemFeature().s_o_a_w() && isFrontCamera() && (showGenderAge() || isMagicMirrorOn());
     }
 
     public static boolean isAsdMotionEnable() {
@@ -1823,7 +1823,7 @@ public class CameraSettings {
     }
 
     public static boolean isVideoTagOn() {
-        return DataRepository.dataItemFeature().Vd() && DataRepository.dataItemGlobal().getBoolean("pref_camera_video_tag_key", true);
+        return DataRepository.dataItemFeature().c_32889_0x0001() && DataRepository.dataItemGlobal().getBoolean("pref_camera_video_tag_key", true);
     }
 
     public static boolean isZoomByCameraSwitchingSupported() {
