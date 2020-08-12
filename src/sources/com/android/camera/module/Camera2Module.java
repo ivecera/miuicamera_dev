@@ -3958,7 +3958,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         }
         if (isUltraWideBackCamera()) {
             Log.d(TAG, "SR force off for ultra wide camera");
-        } else if (isStandaloneMacroCamera() && !DataRepository.dataItemFeature().Qe()) {
+        } else if (isStandaloneMacroCamera() && !DataRepository.dataItemFeature().c_28196_0x0003()) {
             Log.d(TAG, "HAL doesn't support SR in macro mode.");
         } else if ((isStandaloneMacroCamera() && ((BaseModule) this).mCameraCapabilities.isMfnrMacroZoomSupported()) || !CameraSettings.isSREnable()) {
         } else {
