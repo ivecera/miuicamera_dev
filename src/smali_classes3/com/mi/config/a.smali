@@ -2175,7 +2175,7 @@
     return p0
 .end method
 
-.method public Yd()Z
+.method public s_s_m_t_ANDNOT_s_f_9()Z
     .locals 2
 
     invoke-virtual {p0}, Lcom/mi/config/a;->s_f_9()Z
@@ -2533,7 +2533,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Yd()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->s_s_m_t_ANDNOT_s_f_9()Z
 
     move-result v0
 

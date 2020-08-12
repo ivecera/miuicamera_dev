@@ -202,10 +202,6 @@ public class a extends DataItemBase implements c {
         return Hb() < 0 || getBoolean(c.c_0x0f, false);
     }
 
-    public boolean Yd() {
-        return !s_f_9() && getBoolean(c.s_s_m_t, false);
-    }
-
     public boolean Ye() {
         return (tc() || uc()) && getBoolean(c.s_p_l_i_e, false);
     }
@@ -526,7 +522,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean ce() {
-        return !s_f_9() && !Yd() && getBoolean(c.c_22367_0x0000, false);
+        return !s_f_9() && !s_s_m_t_ANDNOT_s_f_9() && getBoolean(c.c_22367_0x0000, false);
     }
 
     public boolean cf() {
@@ -985,6 +981,10 @@ public class a extends DataItemBase implements c {
 
     public int s_p_r_n_OR_M1() {
         return getInt(c.s_p_r_n, -1);
+    }
+
+    public boolean s_s_m_t_ANDNOT_s_f_9() {
+        return !s_f_9() && getBoolean(c.s_s_m_t, false);
     }
 
     public boolean s_s_s() {
