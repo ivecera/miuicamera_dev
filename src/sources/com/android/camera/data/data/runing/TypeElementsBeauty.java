@@ -271,7 +271,7 @@ public class TypeElementsBeauty extends TypeElements {
             }
             if (c2 != 0) {
                 typeItem = createTypeItem("5", str, true, cameraCapabilities);
-            } else if (i == 1 && DataRepository.dataItemFeature().Ee()) {
+            } else if (i == 1 && DataRepository.dataItemFeature().s_e_l()) {
                 typeItem = createTypeItem("5", str, false, cameraCapabilities);
             }
             if (typeItem != null) {

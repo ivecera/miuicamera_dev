@@ -3197,7 +3197,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private void updateEyeLight() {
-        if (isFrontCamera() && DataRepository.dataItemFeature().Ee()) {
+        if (isFrontCamera() && DataRepository.dataItemFeature().s_e_l()) {
             ((BaseModule) this).mCamera2Device.setEyeLight(Integer.parseInt(CameraSettings.getEyeLightType()));
         }
     }

@@ -921,7 +921,7 @@
     return p0
 .end method
 
-.method public Ee()Z
+.method public s_e_l()Z
     .locals 2
 
     const-string v0, "s_e_l"
