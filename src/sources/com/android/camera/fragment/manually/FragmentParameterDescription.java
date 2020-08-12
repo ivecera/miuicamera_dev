@@ -69,13 +69,13 @@ public class FragmentParameterDescription extends BaseDialogFragment {
             str = str + getContext().getString(R.string.parameter_lens_marco);
         }
         if (CameraSettings.isSupportedOpticalZoom()) {
-            if (DataRepository.dataItemFeature().Nd()) {
+            if (DataRepository.dataItemFeature().c_22367_0x0001()) {
                 str = str + getContext().getString(R.string.parameter_lens_tele_2x);
             } else if (Camera2DataContainer.getInstance().getAuxCameraId() >= 0) {
                 str = str + getContext().getString(R.string.parameter_lens_t);
             }
         }
-        if (DataRepository.dataItemFeature().Nd()) {
+        if (DataRepository.dataItemFeature().c_22367_0x0001()) {
             str = str + getContext().getString(R.string.parameter_lens_tele_5x);
         }
         arrayList.addAll(Arrays.asList(new ComponentDataItem((int) R.drawable.ic_parameter_ef_split, -1, (int) R.string.parameter_ef_split_title, getContext().getString(R.string.parameter_ef_split_description)), new ComponentDataItem((int) R.drawable.ic_parameter_wb, -1, (int) R.string.parameter_wb_title, getContext().getString(R.string.parameter_wb_description)), new ComponentDataItem((int) R.drawable.ic_parameter_focus, -1, (int) R.string.parameter_focus_title, getContext().getString(R.string.parameter_focus_description)), new ComponentDataItem((int) R.drawable.ic_parameter_et, -1, (int) R.string.parameter_et_title, getContext().getString(R.string.parameter_et_description)), new ComponentDataItem((int) R.drawable.ic_parameter_ev, -1, (int) R.string.parameter_exposure_title, getContext().getString(R.string.parameter_exposure_description)), new ComponentDataItem((int) R.drawable.ic_parameter_iso, -1, (int) R.string.parameter_iso_title, getContext().getString(R.string.parameter_iso_description))));

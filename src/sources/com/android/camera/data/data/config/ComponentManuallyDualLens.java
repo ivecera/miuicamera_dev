@@ -46,13 +46,13 @@ public class ComponentManuallyDualLens extends ComponentData {
         }
         arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.pref_camera_zoom_mode_entry_wide_abbr, LENS_WIDE));
         if (CameraSettings.isSupportedOpticalZoom()) {
-            if (DataRepository.dataItemFeature().Nd()) {
+            if (DataRepository.dataItemFeature().c_22367_0x0001()) {
                 arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.pref_camera_zoom_mode_entry_tele_2X_abbr, LENS_TELE));
             } else if (Camera2DataContainer.getInstance().getAuxCameraId() >= 0) {
                 arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.pref_camera_zoom_mode_entry_tele_abbr, LENS_TELE));
             }
         }
-        if (DataRepository.dataItemFeature().Nd() && i != 180) {
+        if (DataRepository.dataItemFeature().c_22367_0x0001() && i != 180) {
             arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.pref_camera_zoom_mode_entry_tele_5X_abbr, LENS_STANDALONE));
         }
         return arrayList;

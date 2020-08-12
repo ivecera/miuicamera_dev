@@ -1785,14 +1785,14 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
                     showNewBie(6);
                 }
             } else if (i == 163) {
-                boolean Nd = DataRepository.dataItemFeature().Nd();
+                boolean c_22367_0x0001 = DataRepository.dataItemFeature().c_22367_0x0001();
                 boolean z = DataRepository.dataItemFeature().m1if();
                 boolean isSupportUltraWide = DataRepository.dataItemFeature().isSupportUltraWide();
                 if (DataRepository.dataItemFeature().ed()) {
                     if (!isNewBieAlive(9) && dataItemGlobal.getBoolean(DataItemGlobal.DATA_COMMON_DOCUMENT_MODE_USE_HINT_SHOWN, true)) {
                         showNewBie(9);
                     }
-                } else if (Nd) {
+                } else if (c_22367_0x0001) {
                     if (!isNewBieAlive(7) && dataItemGlobal.getBoolean("pref_camera_first_ultra_tele_use_hint_shown_key", true)) {
                         showNewBie(7);
                     }

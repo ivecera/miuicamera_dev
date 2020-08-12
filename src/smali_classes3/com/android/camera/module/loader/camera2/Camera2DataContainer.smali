@@ -544,7 +544,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Lcom/mi/config/a;->Nd()Z
+    invoke-virtual {v7}, Lcom/mi/config/a;->c_22367_0x0001()Z
 
     move-result v7
 

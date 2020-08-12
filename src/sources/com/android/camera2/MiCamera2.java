@@ -1744,7 +1744,7 @@ public class MiCamera2 extends Camera2Proxy {
                     i2++;
                     z = true;
                 }
-                if (DataRepository.dataItemFeature().Nd()) {
+                if (DataRepository.dataItemFeature().c_22367_0x0001()) {
                     Log.d(TAG, String.format(Locale.ENGLISH, "[4SAT]prepareRemoteImageReader:uwSize = %s wideSize = %s teleSize = %s ultraTeleSize =%s", cameraSize, cameraSize2, cameraSize3, cameraSize4));
                 } else {
                     Log.d(TAG, String.format(Locale.ENGLISH, "[3SAT]prepareRemoteImageReader:uwSize = %s wideSize = %s teleSize = %s", cameraSize, cameraSize2, cameraSize3));
@@ -2578,7 +2578,7 @@ public class MiCamera2 extends Camera2Proxy {
             }
         } else if (!isIn3OrMoreSatMode()) {
             iArr = null;
-        } else if (DataRepository.dataItemFeature().Nd()) {
+        } else if (DataRepository.dataItemFeature().c_22367_0x0001()) {
             return new int[]{Camera2DataContainer.getInstance().getUltraWideCameraId(), Camera2DataContainer.getInstance().getMainBackCameraId(), Camera2DataContainer.getInstance().getAuxCameraId(), Camera2DataContainer.getInstance().getUltraTeleCameraId()};
         } else {
             return new int[]{Camera2DataContainer.getInstance().getUltraWideCameraId(), Camera2DataContainer.getInstance().getMainBackCameraId(), Camera2DataContainer.getInstance().getAuxCameraId()};

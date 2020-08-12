@@ -112,7 +112,7 @@ public class Camera2DataContainer {
                     int parseInt = Integer.parseInt(str);
                     CameraCharacteristics cameraCharacteristics = cameraManager.getCameraCharacteristics(str);
                     this.mCapabilities.put(parseInt, new CameraCapabilities(cameraCharacteristics, parseInt));
-                    if ((!DataRepository.dataItemFeature().isSupportUltraWide() || ((21 != parseInt || b._u) && 63 != parseInt)) && ((!DataRepository.dataItemFeature().isSupportMacroMode() || 22 != parseInt) && (!DataRepository.dataItemFeature().Nd() || 23 != parseInt))) {
+                    if ((!DataRepository.dataItemFeature().isSupportUltraWide() || ((21 != parseInt || b._u) && 63 != parseInt)) && ((!DataRepository.dataItemFeature().isSupportMacroMode() || 22 != parseInt) && (!DataRepository.dataItemFeature().c_22367_0x0001() || 23 != parseInt))) {
                         Integer num = (Integer) cameraCharacteristics.get(CameraCharacteristics.LENS_FACING);
                         if (num == null) {
                             Log.d(TAG, "Unknown facing direction of camera " + parseInt);

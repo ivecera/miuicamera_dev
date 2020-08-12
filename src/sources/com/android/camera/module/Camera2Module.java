@@ -3546,7 +3546,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                     ((BaseModule) this).mCamera2Device.setMarcroPictureSize(((BaseModule) this).mMacroPitureSize);
                 }
             }
-            if (DataRepository.dataItemFeature().Nd()) {
+            if (DataRepository.dataItemFeature().c_22367_0x0001()) {
                 Log.d(TAG, String.format(Locale.ENGLISH, "ultraWideSize: %s, wideSize: %s, teleSize: %s, ultraTeleSize:%s", ((BaseModule) this).mUltraWidePictureSize, ((BaseModule) this).mWidePictureSize, ((BaseModule) this).mTelePictureSize, ((BaseModule) this).mUltraTelePictureSize));
             } else {
                 Log.d(TAG, String.format(Locale.ENGLISH, "ultraWideSize: %s, wideSize: %s, teleSize: %s", ((BaseModule) this).mUltraWidePictureSize, ((BaseModule) this).mWidePictureSize, ((BaseModule) this).mTelePictureSize));
