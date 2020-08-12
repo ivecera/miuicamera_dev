@@ -2108,7 +2108,7 @@ public class Panorama3Module extends BaseModule implements ModeProtocol.CameraAc
             if (((BaseModule) this).mAeLockSupported) {
                 ((BaseModule) this).mCamera2Device.setAELock(true);
             }
-            if (((BaseModule) this).mAwbLockSupported && DataRepository.dataItemFeature().fc()) {
+            if (((BaseModule) this).mAwbLockSupported && DataRepository.dataItemFeature().c_0x55_OR_T()) {
                 ((BaseModule) this).mCamera2Device.setAWBLock(true);
             }
             this.mLocation = LocationManager.instance().getCurrentLocation();

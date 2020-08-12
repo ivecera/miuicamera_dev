@@ -113,7 +113,7 @@ public class ComponentConfigUltraWide extends ComponentData {
         if (!"OFF".equals(getComponentValue(162))) {
             providerEditor.putString(getKey(162), "OFF");
         }
-        if (!DataRepository.dataItemFeature().fe() && !"OFF".equals(getComponentValue(173))) {
+        if (!DataRepository.dataItemFeature().c_33066_0x0003() && !"OFF".equals(getComponentValue(173))) {
             providerEditor.putString(getKey(173), "OFF");
         }
         if (!"OFF".equals(getComponentValue(165))) {

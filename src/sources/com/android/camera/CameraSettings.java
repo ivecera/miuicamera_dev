@@ -1696,7 +1696,7 @@ public class CameraSettings {
     }
 
     public static boolean isSuperNightUWOpen(int i) {
-        return DataRepository.dataItemFeature().fe() && i == 173;
+        return DataRepository.dataItemFeature().c_33066_0x0003() && i == 173;
     }
 
     public static boolean isSupport960VideoEditor() {

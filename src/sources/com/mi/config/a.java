@@ -237,6 +237,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x1a, false);
     }
 
+    public boolean c_0x1c() {
+        return getBoolean(c.c_0x1c, false);
+    }
+
     public boolean c_0x21() {
         return getBoolean(c.c_0x21, false);
     }
@@ -286,6 +290,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x54() {
         return getBoolean(c.c_0x54, false);
+    }
+
+    public boolean c_0x55_OR_T() {
+        return getBoolean(c.c_0x55, true);
     }
 
     public int c_0x57_OR_0() {
@@ -496,12 +504,20 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_32889_0x0002, 0);
     }
 
+    public boolean c_33066_0x0003() {
+        return getBoolean(c.c_33066_0x0003, false);
+    }
+
     public boolean c_35893_0x0001() {
         return getBoolean(c.c_35893_0x0001, false);
     }
 
     public boolean c_35893_0x0002() {
         return getBoolean(c.c_35893_0x0002, false);
+    }
+
+    public boolean c_35905_0x0001() {
+        return getBoolean(c.c_35905_0x0001, false);
     }
 
     public int c_35955_0x0002_OR_1() {
@@ -573,22 +589,6 @@ public class a extends DataItemBase implements c {
 
     public boolean enSlowMotion_960_240_120() {
         return getBoolean(c.s_f_9, false);
-    }
-
-    public boolean fc() {
-        return getBoolean(c.c_0x55, true);
-    }
-
-    public boolean fd() {
-        return getBoolean(c.c_35905_0x0001, false);
-    }
-
-    public boolean fe() {
-        return getBoolean(c.c_33066_0x0003, false);
-    }
-
-    public boolean ff() {
-        return getBoolean(c.c_0x1c, false);
     }
 
     public boolean gd() {

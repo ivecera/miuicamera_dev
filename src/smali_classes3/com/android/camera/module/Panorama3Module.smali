@@ -5630,7 +5630,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->fc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_0x55_OR_T()Z
 
     move-result v4
 

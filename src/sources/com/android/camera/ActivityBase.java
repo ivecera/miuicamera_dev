@@ -732,7 +732,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
         super.onPause();
         getWindow().clearFlags(1024);
         if (this.mCameraScreenNail != null && !isShowBottomIntentDone()) {
-            if ((DataRepository.dataItemFeature().ff() == 1 || CameraSettings.isCameraParallelProcessEnable() == 1) && this.mJumpFlag == 1) {
+            if ((DataRepository.dataItemFeature().c_0x1c() == 1 || CameraSettings.isCameraParallelProcessEnable() == 1) && this.mJumpFlag == 1) {
                 this.mCameraScreenNail.doPreviewGaussianForever();
             } else if (!DataRepository.dataItemFeature().c_0x25()) {
                 Log.d(TAG, "onPause: readLastFrameGaussian...");

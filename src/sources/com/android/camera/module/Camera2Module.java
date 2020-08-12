@@ -1328,7 +1328,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             return false;
         }
         if (((BaseModule) this).mModuleIndex == 175) {
-            return DataRepository.dataItemFeature().ff();
+            return DataRepository.dataItemFeature().c_0x1c();
         }
         if (CameraSettings.isUltraPixelOn()) {
             return false;
@@ -3832,7 +3832,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         boolean z = ((BaseModule) this).mModuleIndex == 171 && (!isBackCamera() ? DataRepository.dataItemFeature().s_p_l_f() || DataRepository.dataItemFeature().c_35955_0x0004() : b.Cl() || DataRepository.dataItemFeature().s_p_l_b());
         this.mEnableParallelSession = isParallelSessionEnable();
         if (!this.mIsImageCaptureIntent) {
-            this.mEnableShot2Gallery = !this.mEnableParallelSession && DataRepository.dataItemFeature().ff() && enablePreviewAsThumbnail() && !CameraSettings.isLiveShotOn();
+            this.mEnableShot2Gallery = !this.mEnableParallelSession && DataRepository.dataItemFeature().c_0x1c() && enablePreviewAsThumbnail() && !CameraSettings.isLiveShotOn();
             int i3 = ((BaseModule) this).mModuleIndex;
             if (!(i3 == 163 || i3 == 165 || i3 == 167)) {
                 if (i3 != 171) {

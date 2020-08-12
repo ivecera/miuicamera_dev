@@ -377,7 +377,7 @@ public class SupportedConfigFactory {
                 if (z && dataItemFeature.wd()) {
                     supportedConfigs.add(216);
                 }
-                if (z && dataItemFeature.fd()) {
+                if (z && dataItemFeature.c_35905_0x0001()) {
                     supportedConfigs.add(222);
                 }
                 supportedConfigs.add(219);

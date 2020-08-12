@@ -2710,7 +2710,7 @@
     return p0
 .end method
 
-.method public fc()Z
+.method public c_0x55_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x55"
@@ -2724,7 +2724,7 @@
     return p0
 .end method
 
-.method public fd()Z
+.method public c_35905_0x0001()Z
     .locals 2
 
     const-string v0, "c_35905_0x0001"
@@ -2738,7 +2738,7 @@
     return p0
 .end method
 
-.method public fe()Z
+.method public c_33066_0x0003()Z
     .locals 2
 
     const-string v0, "c_33066_0x0003"
@@ -2752,7 +2752,7 @@
     return p0
 .end method
 
-.method public ff()Z
+.method public c_0x1c()Z
     .locals 2
 
     const-string v0, "c_0x1c"

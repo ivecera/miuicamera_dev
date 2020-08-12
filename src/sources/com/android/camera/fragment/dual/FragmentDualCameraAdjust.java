@@ -254,7 +254,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
                             return new ZoomRatioToggleView.ViewSpec(i2, z2, z, z7);
                         } else {
                             if (i == 173) {
-                                if (DataRepository.dataItemFeature().fe()) {
+                                if (DataRepository.dataItemFeature().c_33066_0x0003()) {
                                     z2 = false;
                                     z = false;
                                     i2 = 1;

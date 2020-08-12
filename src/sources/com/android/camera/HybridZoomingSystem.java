@@ -160,7 +160,7 @@ public class HybridZoomingSystem {
                 throw new IllegalStateException("The supported optical zoom ratios are probably not configured correctly");
             }
         }
-        if (DataRepository.dataItemFeature().fe() == 1) {
+        if (DataRepository.dataItemFeature().c_33066_0x0003() == 1) {
             sNightSupportedOpticalZoomRatios = new float[]{0.6f, 1.0f, 2.0f};
             if (b.lv == 1) {
                 sNightSupportedOpticalZoomRatios = sSupportedOpticalZoomRatios;
