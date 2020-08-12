@@ -509,7 +509,7 @@ public class WideSelfieModule extends BaseModule implements ModeProtocol.CameraA
     }
 
     private void updatePictureAndPreviewSize() {
-        PictureSizeManager.initialize(((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(35), DataRepository.dataItemFeature().Sb(), 176, ((BaseModule) this).mBogusCameraId);
+        PictureSizeManager.initialize(((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(35), DataRepository.dataItemFeature().c_0x57_OR_0(), 176, ((BaseModule) this).mBogusCameraId);
         CameraSize bestPictureSize = PictureSizeManager.getBestPictureSize();
         if (b.Wu) {
             bestPictureSize = new CameraSize(bestPictureSize.width / 2, bestPictureSize.height / 2);

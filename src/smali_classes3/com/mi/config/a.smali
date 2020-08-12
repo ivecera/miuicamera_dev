@@ -1776,7 +1776,7 @@
     return p0
 .end method
 
-.method public Sb()I
+.method public c_0x57_OR_0()I
     .locals 2
 
     const-string v0, "c_0x57"
@@ -1790,7 +1790,7 @@
     return p0
 .end method
 
-.method public Sc()Z
+.method public c_19039_0x0016()Z
     .locals 2
 
     const-string v0, "c_19039_0x0016"
@@ -1825,7 +1825,7 @@
     return p0
 .end method
 
-.method public Se()Z
+.method public c_19039_0x0000()Z
     .locals 2
 
     const-string v0, "c_19039_0x0000"

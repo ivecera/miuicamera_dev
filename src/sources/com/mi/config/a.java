@@ -194,20 +194,8 @@ public class a extends DataItemBase implements c {
         return false;
     }
 
-    public int Sb() {
-        return getInt(c.c_0x57, 0);
-    }
-
-    public boolean Sc() {
-        return getBoolean(c.c_19039_0x0016, false);
-    }
-
     public boolean Sd() {
         return 3 == Hb();
-    }
-
-    public boolean Se() {
-        return getBoolean(c.c_19039_0x0000, false);
     }
 
     public int Tb() {
@@ -408,6 +396,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x54, false);
     }
 
+    public int c_0x57_OR_0() {
+        return getInt(c.c_0x57, 0);
+    }
+
     public boolean c_0x58() {
         return getBoolean(c.c_0x58, false);
     }
@@ -418,6 +410,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x5c() {
         return getBoolean(c.c_0x5c, false);
+    }
+
+    public boolean c_19039_0x0000() {
+        return getBoolean(c.c_19039_0x0000, false);
     }
 
     public boolean c_19039_0x0001() {
@@ -450,6 +446,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19039_0x0013() {
         return getBoolean(c.c_19039_0x0013, false);
+    }
+
+    public boolean c_19039_0x0016() {
+        return getBoolean(c.c_19039_0x0016, false);
     }
 
     public boolean c_19039_0x0017() {

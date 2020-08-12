@@ -1028,7 +1028,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     private void checkMoreFrameCaptureLockAFAE(boolean z) {
         if (((BaseModule) this).mCamera2Device == null) {
             Log.w(TAG, "mCamera2Device == null, return");
-        } else if (DataRepository.dataItemFeature().Se()) {
+        } else if (DataRepository.dataItemFeature().c_19039_0x0000()) {
             if (!ModuleManager.isSuperNightScene() && !this.mShowSuperNightHint && !((BaseModule) this).mMutexModePicker.isHdr() && !this.mIsLLSNeeded && !((BaseModule) this).mCamera2Device.getCameraConfigs().isSuperResolutionEnabled()) {
                 return;
             }
@@ -2677,7 +2677,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private boolean shouldCheckLLS() {
-        return ((BaseModule) this).mCameraCapabilities.isLLSSupported() && DataRepository.dataItemFeature().Se();
+        return ((BaseModule) this).mCameraCapabilities.isLLSSupported() && DataRepository.dataItemFeature().c_19039_0x0000();
     }
 
     private boolean shouldDoMultiFrameCapture() {

@@ -2403,7 +2403,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
                 ((VideoBase) this).mMaxVideoDurationInMs = 0;
             } else {
                 boolean c_0x27_OR_T = DataRepository.dataItemFeature().c_0x27_OR_T();
-                if (DataRepository.dataItemFeature().Sc() && is8KCamcorder()) {
+                if (DataRepository.dataItemFeature().c_19039_0x0016() && is8KCamcorder()) {
                     ((VideoBase) this).mMaxVideoDurationInMs = MAX_DURATION_8K;
                 } else if (c_0x27_OR_T && is4KCamcorder()) {
                     ((VideoBase) this).mMaxVideoDurationInMs = MAX_DURATION_4K;
