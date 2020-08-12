@@ -88,7 +88,7 @@ public class DataItemRunning extends DataItemBase {
         ArrayList<ComponentDataItem> arrayList = new ArrayList<>();
         arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.watermark_tab_general, String.valueOf(0)));
         arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.watermark_tab_spots, String.valueOf(1)));
-        if (DataRepository.dataItemFeature().Rb() == 1) {
+        if (DataRepository.dataItemFeature().c_35955_0x0002_OR_1() == 1) {
             arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.watermark_tab_city, String.valueOf(4)));
         }
         arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.watermark_tab_festival, String.valueOf(2)));

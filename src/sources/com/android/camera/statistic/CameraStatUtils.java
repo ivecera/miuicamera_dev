@@ -1677,7 +1677,7 @@ public class CameraStatUtils {
     }
 
     public static void trackSuperNightInCaptureMode(Map map, boolean z) {
-        if (DataRepository.dataItemFeature().Rd()) {
+        if (DataRepository.dataItemFeature().c_22367_0x0003()) {
             if (map == null) {
                 map = new HashMap();
             }

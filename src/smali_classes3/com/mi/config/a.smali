@@ -1720,7 +1720,7 @@
     return p0
 .end method
 
-.method public Rb()I
+.method public c_35955_0x0002_OR_1()I
     .locals 2
 
     const-string v0, "c_35955_0x0002"
@@ -1734,7 +1734,7 @@
     return p0
 .end method
 
-.method public Rc()Z
+.method public c_0x27_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x27"
@@ -1748,7 +1748,7 @@
     return p0
 .end method
 
-.method public Rd()Z
+.method public c_22367_0x0003()Z
     .locals 2
 
     const-string v0, "c_22367_0x0003"
@@ -1762,7 +1762,7 @@
     return p0
 .end method
 
-.method public Re()Z
+.method public c_27845_0x0002()Z
     .locals 2
 
     const-string v0, "c_27845_0x0002"

@@ -46,7 +46,7 @@ public class ASDParser extends AbstractParser {
             InputStream openRawResource = androidContext.getResources().openRawResource(R.raw.watermark);
             XmlPullParser newPullParser = XmlPullParserFactory.newInstance().newPullParser();
             newPullParser.setInput(new InputStreamReader(openRawResource));
-            int Rb = DataRepository.dataItemFeature().Rb();
+            int c_35955_0x0002_OR_1 = DataRepository.dataItemFeature().c_35955_0x0002_OR_1();
             int eventType = newPullParser.getEventType();
             Log.d(TAG, "start ... type =" + eventType);
             WatermarkItem watermarkItem = null;
@@ -71,7 +71,7 @@ public class ASDParser extends AbstractParser {
                             if (identifier2 != -1) {
                                 ((AbstractParser) this).markItem.setResRvItem(identifier2);
                             }
-                            if (Rb == ((AbstractParser) this).markItem.getCountry()) {
+                            if (c_35955_0x0002_OR_1 == ((AbstractParser) this).markItem.getCountry()) {
                                 ((AbstractParser) this).watermarkItems.add(((AbstractParser) this).markItem);
                             }
                             ((AbstractParser) this).markItem = watermarkItem;

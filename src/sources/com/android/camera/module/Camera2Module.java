@@ -3411,7 +3411,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             int i = ((BaseModule) this).mModuleIndex;
             if (i == 167) {
                 boolean z4 = DataRepository.dataItemFeature().Sd() && (isSingleCamera() || isStandaloneMacroCamera() || isUltraWideBackCamera());
-                if (isSensorRawStreamRequired() || ((!z4 && !DataRepository.dataItemFeature().Re()) || ((BaseModule) this).mCamera2Device == null || Long.parseLong(getManualValue(CameraSettings.KEY_QC_EXPOSURETIME, getString(R.string.pref_camera_exposuretime_default))) >= 250000000)) {
+                if (isSensorRawStreamRequired() || ((!z4 && !DataRepository.dataItemFeature().c_27845_0x0002()) || ((BaseModule) this).mCamera2Device == null || Long.parseLong(getManualValue(CameraSettings.KEY_QC_EXPOSURETIME, getString(R.string.pref_camera_exposuretime_default))) >= 250000000)) {
                     z2 = false;
                 }
             } else {
@@ -4870,7 +4870,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
 
     @Override // com.android.camera2.Camera2Proxy.SuperNightCallback
     public boolean isSupportSuperNight() {
-        if (!DataRepository.dataItemFeature().Rd() || (b.gv && !Util.sSuperNightDefaultModeEnable)) {
+        if (!DataRepository.dataItemFeature().c_22367_0x0003() || (b.gv && !Util.sSuperNightDefaultModeEnable)) {
             return false;
         }
         return (163 == getModuleIndex() || 165 == getModuleIndex()) && isBackCamera() && 1.0f == CameraSettings.readZoom() && !this.mIsMacroModeEnable && isSuperNightSeEnable();

@@ -1007,7 +1007,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
 
     private WatermarkItem getAIWatermarkItem() {
         if (this.mChain == null) {
-            this.mChain = this.factory.createPriorityChain(DataRepository.dataItemFeature().Rb());
+            this.mChain = this.factory.createPriorityChain(DataRepository.dataItemFeature().c_35955_0x0002_OR_1());
         }
         return this.mChain.createChain(this.mActivity).handleRequest();
     }
