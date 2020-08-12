@@ -272,7 +272,7 @@ public class SnapshotEffectRender {
                     }
                     i6 = i10;
                     drawTimeWaterMark(drawJPEGAttribute, i9, i7, i10, i2, drawJPEGAttribute.mJpegOrientation, null);
-                    if (!DataRepository.dataItemFeature().He() || (pictureInfo = drawJPEGAttribute.mInfo) == null || !pictureInfo.isFrontCamera()) {
+                    if (!DataRepository.dataItemFeature().c_0x46() || (pictureInfo = drawJPEGAttribute.mInfo) == null || !pictureInfo.isFrontCamera()) {
                         drawDoubleShotWaterMark(drawJPEGAttribute, i9, i7, i6, i2, drawJPEGAttribute.mJpegOrientation, null);
                     } else {
                         drawFrontCameraWaterMark(drawJPEGAttribute, i9, i7, i6, i2, drawJPEGAttribute.mJpegOrientation, null);
@@ -381,7 +381,7 @@ public class SnapshotEffectRender {
             int i12 = -watermarkRange[0];
             int i13 = -watermarkRange[1];
             drawTimeWaterMark(drawJPEGAttribute, i12, i13, i3, i2, drawJPEGAttribute.mJpegOrientation, null);
-            if (!DataRepository.dataItemFeature().He() || (pictureInfo = drawJPEGAttribute.mInfo) == null || !pictureInfo.isFrontCamera()) {
+            if (!DataRepository.dataItemFeature().c_0x46() || (pictureInfo = drawJPEGAttribute.mInfo) == null || !pictureInfo.isFrontCamera()) {
                 drawDoubleShotWaterMark(drawJPEGAttribute, i12, i13, i3, i2, drawJPEGAttribute.mJpegOrientation, null);
             } else {
                 drawFrontCameraWaterMark(drawJPEGAttribute, i12, i13, i3, i2, drawJPEGAttribute.mJpegOrientation, null);
@@ -569,7 +569,7 @@ public class SnapshotEffectRender {
                         float[] intersectRect = getIntersectRect(rectF3.left, rectF3.top, rectF3.right, rectF3.bottom, rectF.left, rectF.top, rectF.right, rectF.bottom);
                         ShaderNativeUtil.mergeWaterMarkRange((int) intersectRect[0], (int) intersectRect[1], (int) (intersectRect[2] - intersectRect[0]), (int) (intersectRect[3] - intersectRect[1]), offset[0], offset[1], 3);
                         waterMark = drawTimeWaterMark(drawJPEGAttribute, i19, i20, i7, i6, drawJPEGAttribute2.mJpegOrientation, waterMark);
-                        if (!DataRepository.dataItemFeature().He() || (pictureInfo = drawJPEGAttribute2.mInfo) == null || !pictureInfo.isFrontCamera()) {
+                        if (!DataRepository.dataItemFeature().c_0x46() || (pictureInfo = drawJPEGAttribute2.mInfo) == null || !pictureInfo.isFrontCamera()) {
                             waterMark2 = drawDoubleShotWaterMark(drawJPEGAttribute, i19, i20, i7, i6, drawJPEGAttribute2.mJpegOrientation, waterMark2);
                         } else {
                             waterMark3 = drawFrontCameraWaterMark(drawJPEGAttribute, i19, i20, i7, i6, drawJPEGAttribute2.mJpegOrientation, waterMark3);
@@ -1131,7 +1131,7 @@ public class SnapshotEffectRender {
             this.mDualCameraWaterMarkPaddingXRatio = getResourceFloat(R.dimen.dualcamera_watermark_padding_x_ratio, 0.0f);
             this.mDualCameraWaterMarkPaddingYRatio = getResourceFloat(R.dimen.dualcamera_watermark_padding_y_ratio, 0.0f);
         }
-        if (DataRepository.dataItemFeature().He()) {
+        if (DataRepository.dataItemFeature().c_0x46()) {
             this.mFrontCameraWaterMarkBitmap = loadFrontCameraWatermark(this.mContext);
             this.mFrontCameraWaterMarkSizeRatio = getResourceFloat(R.dimen.frontcamera_watermark_size_ratio, 0.0f);
             this.mFrontCameraWaterMarkPaddingXRatio = getResourceFloat(R.dimen.frontcamera_watermark_padding_x_ratio, 0.0f);

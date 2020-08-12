@@ -606,7 +606,7 @@ public class CameraSettings {
         if (i == 177 || i == 184) {
             return true;
         }
-        return (z && !DataRepository.dataItemFeature().He()) || !DataRepository.dataItemFeature()._c();
+        return (z && !DataRepository.dataItemFeature().c_0x46()) || !DataRepository.dataItemFeature()._c();
     }
 
     public static String getCustomWatermark() {
@@ -663,7 +663,7 @@ public class CameraSettings {
     }
 
     public static boolean getDualCameraWaterMarkState(int i, boolean z) {
-        return (z && !DataRepository.dataItemFeature().He()) || !b.rm();
+        return (z && !DataRepository.dataItemFeature().c_0x46()) || !b.rm();
     }
 
     public static EncodingQuality getEncodingQuality(boolean z) {
@@ -1452,7 +1452,7 @@ public class CameraSettings {
     }
 
     public static boolean isFrontCameraWaterMarkOpen() {
-        if (!DataRepository.dataItemFeature().He() || !isFrontCamera()) {
+        if (!DataRepository.dataItemFeature().c_0x46() || !isFrontCamera()) {
             return false;
         }
         return DataRepository.dataItemGlobal().getBoolean("pref_dualcamera_watermark_key", b.G(getBool(R.bool.pref_device_watermark_default)));

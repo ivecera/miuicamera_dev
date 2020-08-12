@@ -169,10 +169,6 @@ public class a extends DataItemBase implements c {
         return N(getString(c.c_19039_0x0004, ""));
     }
 
-    public boolean He() {
-        return getBoolean(c.c_0x46, false);
-    }
-
     public int Ib() {
         if (b.gv) {
             return 6;
@@ -526,6 +522,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x10_OR_T() {
         return getBoolean(c.c_0x10, true);
+    }
+
+    public boolean c_0x46() {
+        return getBoolean(c.c_0x46, false);
     }
 
     public boolean c_0x54() {

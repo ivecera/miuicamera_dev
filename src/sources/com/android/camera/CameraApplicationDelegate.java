@@ -94,7 +94,7 @@ public class CameraApplicationDelegate extends ApplicationDelegate {
                 if (WatermarkMiSysUtils.isFileExist(Util.getDefaultWatermarkFileName()) == 0) {
                     Util.generateWatermark2File();
                 }
-                if (DataRepository.dataItemFeature().He() == 1 && WatermarkMiSysUtils.isFileExist(Util.WATERMARK_FRONT_FILE_NAME) == 0) {
+                if (DataRepository.dataItemFeature().c_0x46() == 1 && WatermarkMiSysUtils.isFileExist(Util.WATERMARK_FRONT_FILE_NAME) == 0) {
                     Util.generateFrontWatermark2File();
                 }
                 if (WatermarkMiSysUtils.isFileExist(Util.WATERMARK_ULTRA_PIXEL_FILE_NAME) == 0) {
