@@ -1839,7 +1839,7 @@
     return p0
 .end method
 
-.method public Tb()I
+.method public c_26813_0x0002_OR_0()I
     .locals 2
 
     const-string v0, "c_26813_0x0002"
@@ -1853,7 +1853,7 @@
     return p0
 .end method
 
-.method public Tc()Z
+.method public c_19039_0x0010()Z
     .locals 2
 
     const-string v0, "c_19039_0x0010"
@@ -1867,7 +1867,7 @@
     return p0
 .end method
 
-.method public Td()Z
+.method public c_0x0a()Z
     .locals 2
 
     const-string v0, "c_0x0a"
@@ -1881,7 +1881,7 @@
     return p0
 .end method
 
-.method public Te()Z
+.method public c_0x1a_ANDNOT_global()Z
     .locals 2
 
     invoke-static {}, Lcom/android/camera/Util;->isGlobalVersion()Z

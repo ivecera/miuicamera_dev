@@ -1154,7 +1154,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Te()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x1a_ANDNOT_global()Z
 
     move-result v0
 

@@ -13795,7 +13795,7 @@
 
     move-result-object v14
 
-    invoke-virtual {v14}, Lcom/mi/config/a;->Tb()I
+    invoke-virtual {v14}, Lcom/mi/config/a;->c_26813_0x0002_OR_0()I
 
     move-result v14
 
@@ -14348,7 +14348,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/mi/config/a;->Tb()I
+    invoke-virtual {v3}, Lcom/mi/config/a;->c_26813_0x0002_OR_0()I
 
     move-result v3
 

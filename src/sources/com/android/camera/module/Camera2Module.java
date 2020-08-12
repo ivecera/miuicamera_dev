@@ -3480,7 +3480,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
 
     private void updatePictureAndPreviewSize() {
         CameraSize cameraSize;
-        int Tb;
+        int c_26813_0x0002_OR_0;
         int i = this.mEnableParallelSession ? 35 : 256;
         int[] sATSubCameraIds = ((BaseModule) this).mCamera2Device.getSATSubCameraIds();
         boolean z = sATSubCameraIds != null;
@@ -3507,9 +3507,9 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                     if (cameraCapabilities2 != null) {
                         cameraCapabilities2.setOperatingMode(this.mOperatingMode);
                         List<CameraSize> supportedOutputSizeWithAssignedMode = ((BaseModule) this).mWideCameraCapabilities.getSupportedOutputSizeWithAssignedMode(i);
-                        int Tb2 = DataRepository.dataItemFeature().Tb();
-                        if (Tb2 != 0) {
-                            PictureSizeManager.initializeLimitWidth(supportedOutputSizeWithAssignedMode, Tb2, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
+                        int c_26813_0x0002_OR_02 = DataRepository.dataItemFeature().c_26813_0x0002_OR_0();
+                        if (c_26813_0x0002_OR_02 != 0) {
+                            PictureSizeManager.initializeLimitWidth(supportedOutputSizeWithAssignedMode, c_26813_0x0002_OR_02, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
                             ((BaseModule) this).mWidePictureSize = PictureSizeManager.getBestPictureSize();
                         } else {
                             ((BaseModule) this).mWidePictureSize = getBestPictureSize(supportedOutputSizeWithAssignedMode);
@@ -3588,8 +3588,8 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 if (isLimitSize()) {
                     bestPictureSize = getLimitSize(supportedOutputSizeWithAssignedMode3);
                 }
-                if (((BaseModule) this).mModuleIndex == 173 && (Tb = DataRepository.dataItemFeature().Tb()) != 0) {
-                    PictureSizeManager.initializeLimitWidth(supportedOutputSizeWithAssignedMode3, Tb, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
+                if (((BaseModule) this).mModuleIndex == 173 && (c_26813_0x0002_OR_0 = DataRepository.dataItemFeature().c_26813_0x0002_OR_0()) != 0) {
+                    PictureSizeManager.initializeLimitWidth(supportedOutputSizeWithAssignedMode3, c_26813_0x0002_OR_0, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
                     bestPictureSize = PictureSizeManager.getBestPictureSize();
                 }
                 ((BaseModule) this).mPictureSize = bestPictureSize;

@@ -6029,7 +6029,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_19039_0x0010()Z
 
     move-result p0
 

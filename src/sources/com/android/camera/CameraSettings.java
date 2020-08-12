@@ -1216,7 +1216,7 @@ public class CameraSettings {
     }
 
     public static boolean is960WatermarkOn(int i) {
-        return DataRepository.dataItemFeature().Tc() && DataRepository.dataItemGlobal().getBoolean("pref_960_watermark_status", CameraAppImpl.getAndroidContext().getResources().getBoolean(R.bool.pref_960_watermark_default));
+        return DataRepository.dataItemFeature().c_19039_0x0010() && DataRepository.dataItemGlobal().getBoolean("pref_960_watermark_status", CameraAppImpl.getAndroidContext().getResources().getBoolean(R.bool.pref_960_watermark_default));
     }
 
     public static boolean isAEAFLockSupport() {

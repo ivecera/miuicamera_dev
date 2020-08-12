@@ -198,25 +198,6 @@ public class a extends DataItemBase implements c {
         return 3 == Hb();
     }
 
-    public int Tb() {
-        return getInt(c.c_26813_0x0002, 0);
-    }
-
-    public boolean Tc() {
-        return getBoolean(c.c_19039_0x0010, false);
-    }
-
-    public boolean Td() {
-        return getBoolean(c.c_0x0a, false);
-    }
-
-    public boolean Te() {
-        if (!Util.isGlobalVersion()) {
-            return false;
-        }
-        return getBoolean(c.c_0x1a, false);
-    }
-
     public int Ub() {
         return getInt(c.c_28041_0x0008, 0);
     }
@@ -368,12 +349,23 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_0x01_p_g_a_v, 280);
     }
 
+    public boolean c_0x0a() {
+        return getBoolean(c.c_0x0a, false);
+    }
+
     public boolean c_0x0c() {
         return getBoolean(c.c_0x0c, false) && tc();
     }
 
     public boolean c_0x10_OR_T() {
         return getBoolean(c.c_0x10, true);
+    }
+
+    public boolean c_0x1a_ANDNOT_global() {
+        if (!Util.isGlobalVersion()) {
+            return false;
+        }
+        return getBoolean(c.c_0x1a, false);
     }
 
     public boolean c_0x25() {
@@ -440,6 +432,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_19039_0x0008, false);
     }
 
+    public boolean c_19039_0x0010() {
+        return getBoolean(c.c_19039_0x0010, false);
+    }
+
     public boolean c_19039_0x0012() {
         return getBoolean(c.c_19039_0x0012, false);
     }
@@ -478,6 +474,10 @@ public class a extends DataItemBase implements c {
 
     public int c_22367_0x000A_OR_0() {
         return getInt(c.c_22367_0x000A, 0);
+    }
+
+    public int c_26813_0x0002_OR_0() {
+        return getInt(c.c_26813_0x0002, 0);
     }
 
     public boolean c_27810_0x0002_HAS_CAPTURE_INTENT() {

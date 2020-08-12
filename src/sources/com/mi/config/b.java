@@ -188,7 +188,7 @@ public class b {
     }
 
     public static boolean Te() {
-        return DataRepository.dataItemFeature().Te();
+        return DataRepository.dataItemFeature().c_0x1a_ANDNOT_global();
     }
 
     public static ArrayList<String> Tk() {
