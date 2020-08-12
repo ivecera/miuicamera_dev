@@ -2041,7 +2041,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         if (CameraSettings.isGroupShotOn()) {
             Log.d(TAG, "GroupShot is on");
             return false;
-        } else if (!DataRepository.dataItemFeature().wc() && (isUltraWideBackCamera() || isZoomRatioBetweenUltraAndWide())) {
+        } else if (!DataRepository.dataItemFeature().i_l_m_d() && (isUltraWideBackCamera() || isZoomRatioBetweenUltraAndWide())) {
             Log.d(TAG, "SwMfnr force off for ultra wide camera");
             return false;
         } else if (!CameraSettings.isMfnrSatEnable()) {
@@ -2053,7 +2053,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         } else if (!((BaseModule) this).mMutexModePicker.isNormal()) {
             Log.d(TAG, "Mutex mode is not normal");
             return false;
-        } else if (DataRepository.dataItemFeature().wc() && (i = ((BaseModule) this).mModuleIndex) != 167 && i != 173 && !CameraSettings.isSuperNightOn()) {
+        } else if (DataRepository.dataItemFeature().i_l_m_d() && (i = ((BaseModule) this).mModuleIndex) != 167 && i != 173 && !CameraSettings.isSuperNightOn()) {
             Log.d(TAG, "For the devices does not have hardware MFNR, use software MFNR");
             return true;
         } else if (!isFrontCamera() || isDualFrontCamera()) {

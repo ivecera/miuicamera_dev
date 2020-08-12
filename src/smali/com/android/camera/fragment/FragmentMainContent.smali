@@ -2653,7 +2653,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->we()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_35955_0x0001_IF_india_OR_china()Z
 
     move-result v0
 

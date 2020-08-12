@@ -2568,7 +2568,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
     @Override // com.android.camera.protocol.ModeProtocol.ConfigChanges
     public void reCheckAIWatermark(boolean z) {
         ModeProtocol.TopAlert topAlert;
-        if (DataRepository.dataItemFeature().we()) {
+        if (DataRepository.dataItemFeature().c_35955_0x0001_IF_india_OR_china()) {
             Optional<BaseModule> baseModule = getBaseModule();
             if (baseModule.isPresent()) {
                 int moduleIndex = baseModule.get().getModuleIndex();

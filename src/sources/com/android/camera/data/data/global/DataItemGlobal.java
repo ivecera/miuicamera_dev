@@ -253,7 +253,7 @@ public class DataItemGlobal extends DataItemBase {
     }
 
     public boolean matchCustomWatermarkVersion() {
-        String wb = this.mDataItemFeature.wb();
+        String c_0x40_OR_common = this.mDataItemFeature.c_0x40_OR_common();
         if (!contains(DATA_COMMON_CUSTOM_WATERMARK_VERSION)) {
             return !this.mDataItemFeature.q(c.c_0x40);
         }
@@ -265,7 +265,7 @@ public class DataItemGlobal extends DataItemBase {
         if (indexOf > 0) {
             String substring = string.substring(0, indexOf);
             String substring2 = string.substring(indexOf + 1);
-            if (substring.equals(b.vu + b.Uk()) && substring2.equals(wb)) {
+            if (substring.equals(b.vu + b.Uk()) && substring2.equals(c_0x40_OR_common)) {
                 return true;
             }
         }
@@ -394,7 +394,7 @@ public class DataItemGlobal extends DataItemBase {
                         i2 = getCurrentCameraId(i3);
                     }
                     if (i3 != 168 || i3 == 170) {
-                        if (DataRepository.dataItemFeature().wf()) {
+                        if (DataRepository.dataItemFeature().supportShortVideo()) {
                             i5 = 172;
                         }
                     } else if ((!isActualTimeOut() && !z5) || i3 != 179) {
@@ -422,7 +422,7 @@ public class DataItemGlobal extends DataItemBase {
                 i3 = 163;
                 if (i3 != 168) {
                 }
-                if (DataRepository.dataItemFeature().wf()) {
+                if (DataRepository.dataItemFeature().supportShortVideo()) {
                 }
                 Log.d(TAG, String.format("parseIntent timeOut = %s, intentChanged = %s, action = %s, pendingOpenId = %s, pendingOpenModule = %s, intentCameraId = %s", Boolean.valueOf(z4), Boolean.valueOf(z5), action, Integer.valueOf(i2), Integer.valueOf(i5), Integer.valueOf(cameraFacing)));
                 if (!z2) {
@@ -447,7 +447,7 @@ public class DataItemGlobal extends DataItemBase {
                 i3 = 163;
                 if (i3 != 168) {
                 }
-                if (DataRepository.dataItemFeature().wf()) {
+                if (DataRepository.dataItemFeature().supportShortVideo()) {
                 }
                 Log.d(TAG, String.format("parseIntent timeOut = %s, intentChanged = %s, action = %s, pendingOpenId = %s, pendingOpenModule = %s, intentCameraId = %s", Boolean.valueOf(z4), Boolean.valueOf(z5), action, Integer.valueOf(i2), Integer.valueOf(i52), Integer.valueOf(cameraFacing)));
                 if (!z2) {
@@ -471,7 +471,7 @@ public class DataItemGlobal extends DataItemBase {
                 i3 = 163;
                 if (i3 != 168) {
                 }
-                if (DataRepository.dataItemFeature().wf()) {
+                if (DataRepository.dataItemFeature().supportShortVideo()) {
                 }
                 Log.d(TAG, String.format("parseIntent timeOut = %s, intentChanged = %s, action = %s, pendingOpenId = %s, pendingOpenModule = %s, intentCameraId = %s", Boolean.valueOf(z4), Boolean.valueOf(z5), action, Integer.valueOf(i2), Integer.valueOf(i522), Integer.valueOf(cameraFacing)));
                 if (!z2) {
@@ -536,7 +536,7 @@ public class DataItemGlobal extends DataItemBase {
                 i3 = 163;
                 if (i3 != 168) {
                 }
-                if (DataRepository.dataItemFeature().wf()) {
+                if (DataRepository.dataItemFeature().supportShortVideo()) {
                 }
                 Log.d(TAG, String.format("parseIntent timeOut = %s, intentChanged = %s, action = %s, pendingOpenId = %s, pendingOpenModule = %s, intentCameraId = %s", Boolean.valueOf(z4), Boolean.valueOf(z5), action, Integer.valueOf(i2), Integer.valueOf(i5222), Integer.valueOf(cameraFacing)));
                 if (!z2) {
@@ -611,7 +611,7 @@ public class DataItemGlobal extends DataItemBase {
     }
 
     public void updateCustomWatermarkVersion() {
-        String str = b.vu + b.Uk() + ":" + this.mDataItemFeature.wb();
+        String str = b.vu + b.Uk() + ":" + this.mDataItemFeature.c_0x40_OR_common();
         editor().putString(DATA_COMMON_CUSTOM_WATERMARK_VERSION, str).apply();
         Log.i(TAG, "custom watermark version updated: " + str);
     }

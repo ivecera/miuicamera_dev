@@ -682,7 +682,7 @@ public class FragmentMainContent extends BaseFragment implements ModeProtocol.Ma
         this.mLyingDirectHint = (TextView) view.findViewById(R.id.main_lying_direct_hint_text);
         this.mMimojiLightingView.setCircleRatio(1.18f);
         this.mMimojiLightingView.setCircleHeightRatio(1.12f);
-        if (DataRepository.dataItemFeature().we()) {
+        if (DataRepository.dataItemFeature().c_35955_0x0001_IF_india_OR_china()) {
             this.mWatermarkViewStub = (ViewStub) view.findViewById(R.id.watermark_viewstub);
             initWatermarkLayout(this.mWatermarkViewStub);
         }

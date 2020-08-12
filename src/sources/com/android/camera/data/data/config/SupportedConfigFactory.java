@@ -338,7 +338,7 @@ public class SupportedConfigFactory {
                                                     supportedConfigs.add(219);
                                                 }
                                             }
-                                            if (dataItemFeature.we()) {
+                                            if (dataItemFeature.c_35955_0x0001_IF_india_OR_china()) {
                                                 supportedConfigs.add(223);
                                                 break;
                                             }

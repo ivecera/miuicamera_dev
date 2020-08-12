@@ -130,7 +130,7 @@
 
     if-nez v3, :cond_1
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->wf()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->supportShortVideo()Z
 
     move-result v3
 

@@ -908,7 +908,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->wf()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->supportShortVideo()Z
 
     move-result p0
 

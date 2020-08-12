@@ -355,6 +355,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x39, false);
     }
 
+    public String c_0x40_OR_common() {
+        return getString(c.c_0x40, "common");
+    }
+
     public boolean c_0x42_m() {
         return getBoolean(c.c_0x42_m, false);
     }
@@ -722,6 +726,13 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_35905_0x0001, false);
     }
 
+    public boolean c_35955_0x0001_IF_india_OR_china() {
+        if (getBoolean(c.c_35955_0x0001, false)) {
+            return ro_boot_hwc_EQ_india() || ro_boot_hwc_EQ_cn();
+        }
+        return false;
+    }
+
     public int c_35955_0x0002_OR_1() {
         return getInt(c.c_35955_0x0002, 1);
     }
@@ -823,6 +834,10 @@ public class a extends DataItemBase implements c {
 
     public String h_d_v() {
         return getString(c.h_d_v, "");
+    }
+
+    public boolean i_l_m_d() {
+        return getBoolean(c.i_l_m_d, false);
     }
 
     public boolean i_q_a_u_m() {
@@ -1080,6 +1095,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_35955_0x0003, false) && ro_boot_hwc_EQ_india();
     }
 
+    public boolean supportShortVideo() {
+        return getBoolean(c.s_f_9, false) || getBoolean(c.s_s_m_t, false) || getBoolean(c.c_22367_0x0000, false) || getBoolean(c.c_35893_0x0001, false);
+    }
+
     public boolean te() {
         return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.1666667f && getBoolean(c.s_f_s, false);
     }
@@ -1096,27 +1115,8 @@ public class a extends DataItemBase implements c {
         return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.2222223f && getBoolean(c.s_20_9_s, false);
     }
 
-    public String wb() {
-        return getString(c.c_0x40, "common");
-    }
-
-    public boolean wc() {
-        return getBoolean(c.i_l_m_d, false);
-    }
-
     public boolean wd() {
         return Rm() && c_28041_0x0004_or_0() == 1;
-    }
-
-    public boolean we() {
-        if (getBoolean(c.c_35955_0x0001, false)) {
-            return ro_boot_hwc_EQ_india() || ro_boot_hwc_EQ_cn();
-        }
-        return false;
-    }
-
-    public boolean wf() {
-        return getBoolean(c.s_f_9, false) || getBoolean(c.s_s_m_t, false) || getBoolean(c.c_22367_0x0000, false) || getBoolean(c.c_35893_0x0001, false);
     }
 
     public int xb() {

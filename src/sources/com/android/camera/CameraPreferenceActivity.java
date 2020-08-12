@@ -302,7 +302,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
         if (!(i == 167 || i == 180)) {
             removePreference(this.mPreferenceGroup, CameraSettings.KEY_CAMERA_MANUALLY_DESCRIPTION_TIP);
         }
-        if (DataRepository.dataItemFeature().wf() == 1) {
+        if (DataRepository.dataItemFeature().supportShortVideo() == 1) {
             String componentValue = DataRepository.dataItemConfig().getComponentConfigSlowMotion().getComponentValue(172);
             if (!DataRepository.dataItemFeature().c_19039_0x0010() || !ComponentConfigSlowMotion.DATA_CONFIG_NEW_SLOW_MOTION_960.equals(componentValue) || this.mFromWhere != 172) {
                 removePreference(this.mPreferenceGroup, "pref_960_watermark_status");

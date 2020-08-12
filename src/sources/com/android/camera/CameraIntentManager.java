@@ -378,7 +378,7 @@ public class CameraIntentManager {
             case '\t':
                 return 169;
             case '\n':
-                return DataRepository.dataItemFeature().wf() ? 172 : 160;
+                return DataRepository.dataItemFeature().supportShortVideo() ? 172 : 160;
             case 11:
                 return 173;
             case '\f':
