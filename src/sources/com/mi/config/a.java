@@ -165,10 +165,6 @@ public class a extends DataItemBase implements c {
         return (float) getDoubleFromValues(c.c_0x02_p_c_r_v, 0.8766000270843506d);
     }
 
-    public boolean Gc() {
-        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("NO_PIXEL");
-    }
-
     public boolean Gd() {
         return getBoolean(c.c_19039_0x0008, false);
     }
@@ -179,10 +175,6 @@ public class a extends DataItemBase implements c {
 
     public int Hb() {
         return N(getString(c.c_19039_0x0004, ""));
-    }
-
-    public boolean Hc() {
-        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("PRO");
     }
 
     public boolean Hd() {
@@ -294,10 +286,6 @@ public class a extends DataItemBase implements c {
 
     public Size Ob() {
         return O(getString(c.c_19039_0x0004, ""));
-    }
-
-    public boolean Oc() {
-        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("MACRO");
     }
 
     public boolean Od() {
@@ -572,6 +560,26 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_19039_0x0005, -1) == 2;
     }
 
+    public boolean c_27810_0x0002_HAS_CAPTURE_INTENT() {
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("CAPTURE_INTENT");
+    }
+
+    public boolean c_27810_0x0002_HAS_MACRO() {
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("MACRO");
+    }
+
+    public boolean c_27810_0x0002_HAS_NO_PIXEL() {
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("NO_PIXEL");
+    }
+
+    public boolean c_27810_0x0002_HAS_PRO() {
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("PRO");
+    }
+
+    public boolean c_27810_0x0002_HAS_ULTRA_WIDE() {
+        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("ULTRA_WIDE");
+    }
+
     public boolean c_27810_0x0003() {
         return getBoolean(c.c_27810_0x0003, false);
     }
@@ -590,10 +598,6 @@ public class a extends DataItemBase implements c {
 
     public boolean c_s_a_u_q_OR_s_a_u() {
         return Build.VERSION.SDK_INT > 28 ? c_s_a_u_q() : getBoolean(c.s_a_u, false);
-    }
-
-    public boolean cc() {
-        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("CAPTURE_INTENT");
     }
 
     public boolean cd() {
@@ -688,10 +692,6 @@ public class a extends DataItemBase implements c {
 
     public boolean hd() {
         return getBoolean(c.c_33066_0x0001, false);
-    }
-
-    public boolean he() {
-        return Arrays.asList(getString(c.c_27810_0x0002, "").toUpperCase().split(":")).contains("ULTRA_WIDE");
     }
 
     public boolean hf() {

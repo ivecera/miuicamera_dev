@@ -1005,7 +1005,7 @@
     return p0
 .end method
 
-.method public Gc()Z
+.method public c_27810_0x0002_HAS_NO_PIXEL()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"
@@ -1085,7 +1085,7 @@
     return p0
 .end method
 
-.method public Hc()Z
+.method public c_27810_0x0002_HAS_PRO()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"
@@ -1534,7 +1534,7 @@
     return-object p0
 .end method
 
-.method public Oc()Z
+.method public c_27810_0x0002_HAS_MACRO()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"
@@ -2484,7 +2484,7 @@
     return p0
 .end method
 
-.method public cc()Z
+.method public c_27810_0x0002_HAS_CAPTURE_INTENT()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"
@@ -2846,7 +2846,7 @@
     return p0
 .end method
 
-.method public he()Z
+.method public c_27810_0x0002_HAS_ULTRA_WIDE()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"

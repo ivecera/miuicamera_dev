@@ -4808,17 +4808,17 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             return false;
         }
         boolean isSwitchOn = DataRepository.dataItemConfig().getComponentConfigRaw().isSwitchOn(getModuleIndex());
-        if (getModuleIndex() == 167 && (!DataRepository.dataItemFeature().Hc() || isSwitchOn)) {
+        if (getModuleIndex() == 167 && (!DataRepository.dataItemFeature().c_27810_0x0002_HAS_PRO() || isSwitchOn)) {
             return false;
         }
-        if (getModuleIndex() == 175 && DataRepository.dataItemFeature().Gc()) {
+        if (getModuleIndex() == 175 && DataRepository.dataItemFeature().c_27810_0x0002_HAS_NO_PIXEL()) {
             return false;
         }
-        if (isStandaloneMacroCamera() && !DataRepository.dataItemFeature().Oc()) {
+        if (isStandaloneMacroCamera() && !DataRepository.dataItemFeature().c_27810_0x0002_HAS_MACRO()) {
             return false;
         }
-        if (!isUltraWideBackCamera() || DataRepository.dataItemFeature().he()) {
-            return (!this.mIsImageCaptureIntent || DataRepository.dataItemFeature().cc()) && !DataRepository.dataItemGlobal().isForceMainBackCamera();
+        if (!isUltraWideBackCamera() || DataRepository.dataItemFeature().c_27810_0x0002_HAS_ULTRA_WIDE()) {
+            return (!this.mIsImageCaptureIntent || DataRepository.dataItemFeature().c_27810_0x0002_HAS_CAPTURE_INTENT()) && !DataRepository.dataItemGlobal().isForceMainBackCamera();
         }
         return false;
     }

@@ -19646,7 +19646,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->Hc()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_27810_0x0002_HAS_PRO()Z
 
     move-result v2
 
@@ -19670,7 +19670,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Gc()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_27810_0x0002_HAS_NO_PIXEL()Z
 
     move-result v0
 
@@ -19689,7 +19689,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Oc()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_27810_0x0002_HAS_MACRO()Z
 
     move-result v0
 
@@ -19708,7 +19708,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->he()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_27810_0x0002_HAS_ULTRA_WIDE()Z
 
     move-result v0
 
@@ -19725,7 +19725,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->cc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_27810_0x0002_HAS_CAPTURE_INTENT()Z
 
     move-result p0
 
