@@ -1318,7 +1318,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             if (i2 == 36865) {
                 return true;
             }
-            return i2 == 36867 ? DataRepository.dataItemFeature().qe() : isFrontCamera() && this.mOperatingMode == 36869;
+            return i2 == 36867 ? DataRepository.dataItemFeature().c_28041_0x0003() : isFrontCamera() && this.mOperatingMode == 36869;
         }
     }
 
@@ -1796,7 +1796,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             public void subscribe(FlowableEmitter<CaptureResult> flowableEmitter) throws Exception {
                 FlowableEmitter unused = Camera2Module.this.mAiSceneFlowableEmitter = flowableEmitter;
             }
-        }, BackpressureStrategy.DROP).observeOn(GlobalConstant.sCameraSetupScheduler).map(this.mFunctionParseAiScene).filter(new PredicateFilterAiScene(this, DataRepository.dataItemFeature().qd())).observeOn(AndroidSchedulers.mainThread()).subscribe(new Consumer<Integer>() {
+        }, BackpressureStrategy.DROP).observeOn(GlobalConstant.sCameraSetupScheduler).map(this.mFunctionParseAiScene).filter(new PredicateFilterAiScene(this, DataRepository.dataItemFeature().c_35893_0x0003_IFNOT_global())).observeOn(AndroidSchedulers.mainThread()).subscribe(new Consumer<Integer>() {
             /* class com.android.camera.module.Camera2Module.AnonymousClass16 */
 
             public void accept(Integer num) {
@@ -2431,7 +2431,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                                                 updatePreferenceInWorkThread(UpdateConstant.AI_SCENE_CONFIG);
                                                 break;
                                         }
-                                    } else if (DataRepository.dataItemFeature().qd() && (((i2 = ((BaseModule) this).mModuleIndex) == 163 || i2 == 165) && !CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex) && !CameraSettings.isUltraPixelPortraitFrontOn())) {
+                                    } else if (DataRepository.dataItemFeature().c_35893_0x0003_IFNOT_global() && (((i2 = ((BaseModule) this).mModuleIndex) == 163 || i2 == 165) && !CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex) && !CameraSettings.isUltraPixelPortraitFrontOn())) {
                                         trackAISceneChanged(((BaseModule) this).mModuleIndex, i);
                                         topAlert2.setAiSceneImageLevel(i);
                                         this.mCurrentAiScene = i;

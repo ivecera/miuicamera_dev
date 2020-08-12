@@ -3660,7 +3660,7 @@
     return p0
 .end method
 
-.method public qc()Z
+.method public c_0x45()Z
     .locals 2
 
     const-string v0, "c_0x45"
@@ -3674,7 +3674,7 @@
     return p0
 .end method
 
-.method public qd()Z
+.method public c_35893_0x0003_IFNOT_global()Z
     .locals 2
 
     invoke-static {}, Lcom/android/camera/Util;->isGlobalVersion()Z
@@ -3711,7 +3711,7 @@
     return v1
 .end method
 
-.method public qe()Z
+.method public c_28041_0x0003()Z
     .locals 2
 
     const-string v0, "c_28041_0x0003"
@@ -3725,7 +3725,7 @@
     return p0
 .end method
 
-.method public qf()Z
+.method public c_0x4a()Z
     .locals 2
 
     const-string v0, "c_0x4a"

@@ -1588,7 +1588,7 @@ public final class Util {
         options.inScaled = false;
         options.inPurgeable = true;
         options.inPremultiplied = true;
-        if (!DataRepository.dataItemFeature().s_o_a_w() && !DataRepository.dataItemFeature().qf()) {
+        if (!DataRepository.dataItemFeature().s_o_a_w() && !DataRepository.dataItemFeature().c_0x4a()) {
             return null;
         }
         Bitmap loadAppCameraWatermark = loadAppCameraWatermark(CameraAppImpl.getAndroidContext(), options, Build.DEVICE);
@@ -1928,7 +1928,7 @@ public final class Util {
     }
 
     public static String getDefaultWatermarkFileName() {
-        if (!DataRepository.dataItemFeature().s_c_w_m() || !DataRepository.dataItemFeature().qf()) {
+        if (!DataRepository.dataItemFeature().s_c_w_m() || !DataRepository.dataItemFeature().c_0x4a()) {
             return WATERMARK_DEFAULT_FILE_NAME;
         }
         return Build.DEVICE + "_" + WATERMARK_SPACE + "_custom_watermark.png";
@@ -1998,7 +1998,7 @@ public final class Util {
         String str;
         byte[] bArr;
         Bitmap decodeByteArray;
-        if (DataRepository.dataItemFeature().s_o_a_w() || DataRepository.dataItemFeature().qf()) {
+        if (DataRepository.dataItemFeature().s_o_a_w() || DataRepository.dataItemFeature().c_0x4a()) {
             str = new File(CameraAppImpl.getAndroidContext().getFilesDir(), getDefaultWatermarkFileName()).getPath();
             if (!new File(str).exists()) {
                 generateWatermark2File();
@@ -3494,7 +3494,7 @@ public final class Util {
         }
         if (str.equalsIgnoreCase("common")) {
             str2 = "common.webp";
-        } else if (DataRepository.dataItemFeature().s_c_w_m() || !DataRepository.dataItemFeature().qf()) {
+        } else if (DataRepository.dataItemFeature().s_c_w_m() || !DataRepository.dataItemFeature().c_0x4a()) {
             str2 = str + b.Uk() + ".webp";
         } else {
             str2 = "dualcamera.webp";
@@ -3707,7 +3707,7 @@ public final class Util {
     }
 
     public static void removeCustomWatermark() {
-        if (DataRepository.dataItemFeature().qf()) {
+        if (DataRepository.dataItemFeature().c_0x4a()) {
             WatermarkMiSysUtils.eraseFile(getDefaultWatermarkFileName());
             WatermarkMiSysUtils.eraseFile(WATERMARK_FRONT_FILE_NAME);
             WatermarkMiSysUtils.eraseFile(WATERMARK_ULTRA_PIXEL_FILE_NAME);
@@ -3964,7 +3964,7 @@ public final class Util {
         String defaultWatermarkFileName = z2 ? WATERMARK_FRONT_FILE_NAME : z ? WATERMARK_ULTRA_PIXEL_FILE_NAME : getDefaultWatermarkFileName();
         if (bitmap != 0 && !bitmap.isRecycled()) {
             boolean z4 = true;
-            if (DataRepository.dataItemFeature().qf()) {
+            if (DataRepository.dataItemFeature().c_0x4a()) {
                 ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                 bitmap.compress(Bitmap.CompressFormat.PNG, 90, byteArrayOutputStream);
                 z4 = WatermarkMiSysUtils.writeFileToPersist(byteArrayOutputStream.toByteArray(), defaultWatermarkFileName);

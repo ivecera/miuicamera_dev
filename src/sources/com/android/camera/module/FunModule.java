@@ -174,7 +174,7 @@ public class FunModule extends VideoBase implements ModeProtocol.StickerProtocol
     }
 
     private boolean isEisOn() {
-        return isBackCamera() && DataRepository.dataItemFeature().qc() && CameraSettings.isMovieSolidOn();
+        return isBackCamera() && DataRepository.dataItemFeature().c_0x45() && CameraSettings.isMovieSolidOn();
     }
 
     private boolean isSupportShortVideoBeautyBody() {

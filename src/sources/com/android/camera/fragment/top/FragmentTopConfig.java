@@ -140,7 +140,7 @@ public class FragmentTopConfig extends BaseFragment implements View.OnClickListe
 
     private void configBottomPopupTips(boolean z) {
         ModeProtocol.BottomPopupTips bottomPopupTips;
-        if (DataRepository.dataItemFeature().qd() && (bottomPopupTips = (ModeProtocol.BottomPopupTips) ModeCoordinatorImpl.getInstance().getAttachProtocol(175)) != null) {
+        if (DataRepository.dataItemFeature().c_35893_0x0003_IFNOT_global() && (bottomPopupTips = (ModeProtocol.BottomPopupTips) ModeCoordinatorImpl.getInstance().getAttachProtocol(175)) != null) {
             bottomPopupTips.showIDCardTip(z);
         }
     }

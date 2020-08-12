@@ -731,7 +731,7 @@ public class CaptureRequestBuilder {
             String str = TAG;
             Log.d(str, "applyWaterMark appliedList:" + join);
             MiCameraCompat.applyWaterMarkAppliedList(builder, join);
-            if (DataRepository.dataItemFeature().qf() && cameraCapabilities.isSupportCustomWatermark() && join.contains("device")) {
+            if (DataRepository.dataItemFeature().c_0x4a() && cameraCapabilities.isSupportCustomWatermark() && join.contains("device")) {
                 String watermarkFileName = Util.getWatermarkFileName();
                 MiCameraCompat.applyCustomWaterMark(builder, Util.WATERMARK_STORAGE_DIRECTORY + watermarkFileName);
             }

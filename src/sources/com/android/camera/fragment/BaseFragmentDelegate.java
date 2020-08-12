@@ -694,7 +694,7 @@ public class BaseFragmentDelegate implements ModeProtocol.BaseDelegate {
         beginTransaction.replace(R.id.main_vertical, constructFragment7, constructFragment7.getFragmentTag());
         beginTransaction.replace(R.id.main_subtitle, constructFragment8, constructFragment8.getFragmentTag());
         beginTransaction.replace(R.id.mimoji_full_screen, constructFragment9, constructFragment9.getFragmentTag());
-        if (DataRepository.dataItemFeature().qd()) {
+        if (DataRepository.dataItemFeature().c_35893_0x0003_IFNOT_global()) {
             BaseFragment constructFragment10 = constructFragment(true, FRAGMENT_ID_CARD, 240, baseLifecycleListener);
             beginTransaction.replace(R.id.id_card_content, constructFragment10, constructFragment10.getFragmentTag());
             this.animationComposite.put(constructFragment10.getFragmentInto(), constructFragment10);

@@ -2803,7 +2803,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->qe()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_28041_0x0003()Z
 
     move-result p0
 
@@ -5151,7 +5151,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->qd()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_35893_0x0003_IFNOT_global()Z
 
     move-result v2
 
@@ -8368,7 +8368,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->qd()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_35893_0x0003_IFNOT_global()Z
 
     move-result v2
 

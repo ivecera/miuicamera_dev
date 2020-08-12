@@ -1128,7 +1128,7 @@ public class SnapshotRender {
         options.inScaled = false;
         options.inPurgeable = true;
         options.inPremultiplied = false;
-        if (!DataRepository.dataItemFeature().s_o_a_w() && !DataRepository.dataItemFeature().qf()) {
+        if (!DataRepository.dataItemFeature().s_o_a_w() && !DataRepository.dataItemFeature().c_0x4a()) {
             return BitmapFactory.decodeFile(CameraSettings.getDualCameraWaterMarkFilePathVendor(), options);
         }
         File file = new File(context.getFilesDir(), Util.getDefaultWatermarkFileName());
@@ -1161,7 +1161,7 @@ public class SnapshotRender {
         options.inScaled = false;
         options.inPurgeable = true;
         options.inPremultiplied = false;
-        if (DataRepository.dataItemFeature().s_o_a_w() || DataRepository.dataItemFeature().qf()) {
+        if (DataRepository.dataItemFeature().s_o_a_w() || DataRepository.dataItemFeature().c_0x4a()) {
             File file = new File(context.getFilesDir(), Util.WATERMARK_ULTRA_PIXEL_FILE_NAME);
             if (!file.exists()) {
                 return Util.generateUltraPixelWatermark2File();

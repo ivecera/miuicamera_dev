@@ -324,6 +324,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_0x44, false);
     }
 
+    public boolean c_0x45() {
+        return getBoolean(c.c_0x45, false);
+    }
+
     public boolean c_0x46() {
         return getBoolean(c.c_0x46, false);
     }
@@ -337,6 +341,10 @@ public class a extends DataItemBase implements c {
             return false;
         }
         return getBoolean(c.c_0x49, false);
+    }
+
+    public boolean c_0x4a() {
+        return getBoolean(c.c_0x4a, false);
     }
 
     public boolean c_0x4a_1() {
@@ -591,6 +599,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_28041_0x0001, false);
     }
 
+    public boolean c_28041_0x0003() {
+        return getBoolean(c.c_28041_0x0003, false);
+    }
+
     public boolean c_28041_0x0005() {
         return getBoolean(c.c_28041_0x0005, false);
     }
@@ -633,6 +645,13 @@ public class a extends DataItemBase implements c {
 
     public boolean c_35893_0x0002() {
         return getBoolean(c.c_35893_0x0002, false);
+    }
+
+    public boolean c_35893_0x0003_IFNOT_global() {
+        if (Util.isGlobalVersion() || !DataRepository.dataItemGlobal().isNormalIntent()) {
+            return false;
+        }
+        return getBoolean(c.c_35893_0x0003, false);
     }
 
     public boolean c_35905_0x0001() {
@@ -839,25 +858,6 @@ public class a extends DataItemBase implements c {
 
     public boolean q(String str) {
         return getValues().containsKey(str);
-    }
-
-    public boolean qc() {
-        return getBoolean(c.c_0x45, false);
-    }
-
-    public boolean qd() {
-        if (Util.isGlobalVersion() || !DataRepository.dataItemGlobal().isNormalIntent()) {
-            return false;
-        }
-        return getBoolean(c.c_35893_0x0003, false);
-    }
-
-    public boolean qe() {
-        return getBoolean(c.c_28041_0x0003, false);
-    }
-
-    public boolean qf() {
-        return getBoolean(c.c_0x4a, false);
     }
 
     public boolean r(boolean z) {

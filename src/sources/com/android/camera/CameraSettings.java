@@ -653,7 +653,7 @@ public class CameraSettings {
         if (b.Nu && "india".equalsIgnoreCase(SystemProperties.get("ro.boot.hwc"))) {
             return DUAL_CAMERA_WATER_MARK_FILE_FROM_VENDOR_INDIA;
         }
-        if (!DataRepository.dataItemFeature().qf()) {
+        if (!DataRepository.dataItemFeature().c_0x4a()) {
             return DUAL_CAMERA_WATER_MARK_FILE;
         }
         if (z) {

@@ -6906,7 +6906,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->qd()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_35893_0x0003_IFNOT_global()Z
 
     move-result p1
 
