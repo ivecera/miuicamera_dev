@@ -1382,7 +1382,7 @@
     return p0
 .end method
 
-.method public Mc()Z
+.method public i_s_e_r()Z
     .locals 2
 
     const-string v0, "i_s_e_r"

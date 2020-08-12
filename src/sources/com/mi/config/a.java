@@ -176,10 +176,6 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_9006_0x0001, 5);
     }
 
-    public boolean Mc() {
-        return getBoolean(c.i_s_e_r, false);
-    }
-
     public boolean Md() {
         return getBoolean(c.c_19039_0x0002, false);
     }
@@ -676,6 +672,10 @@ public class a extends DataItemBase implements c {
 
     public boolean i_q_a_u_m() {
         return getBoolean(c.i_q_a_u_m, false);
+    }
+
+    public boolean i_s_e_r() {
+        return getBoolean(c.i_s_e_r, false);
     }
 
     public boolean i_s_q_c() {

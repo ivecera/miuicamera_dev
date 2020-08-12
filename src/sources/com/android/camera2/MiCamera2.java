@@ -168,7 +168,7 @@ public class MiCamera2 extends Camera2Proxy {
     /* access modifiers changed from: private */
     public final Object mSessionLock = new Object();
     /* access modifiers changed from: private */
-    public boolean mSetRepeatingEarly = DataRepository.dataItemFeature().Mc();
+    public boolean mSetRepeatingEarly = DataRepository.dataItemFeature().i_s_e_r();
     /* access modifiers changed from: private */
     public final Object mShotQueueLock = new Object();
     private int mSubParallelSurfaceIndex = -1;
