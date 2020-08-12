@@ -2405,7 +2405,7 @@
     return p0
 .end method
 
-.method public bc()Z
+.method public ro_boot_hwc_EQ_cn()Z
     .locals 1
 
     iget-object v0, p0, Lcom/mi/config/a;->Ii:Ljava/lang/String;
@@ -4460,7 +4460,7 @@
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->bc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_cn()Z
 
     move-result p0
 

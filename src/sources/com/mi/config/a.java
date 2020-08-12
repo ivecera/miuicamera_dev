@@ -210,13 +210,6 @@ public class a extends DataItemBase implements c {
         return (tc() || uc()) && getBoolean(c.s_p_l_i_e, false);
     }
 
-    public boolean bc() {
-        if (this.Ii == null) {
-            this.Ii = SystemProperties.get("ro.boot.hwc");
-        }
-        return "cn".equalsIgnoreCase(this.Ii);
-    }
-
     public boolean bd() {
         return getBoolean(c.c_22367_0x0005, false);
     }
@@ -907,6 +900,13 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.s_v_b, false);
     }
 
+    public boolean ro_boot_hwc_EQ_cn() {
+        if (this.Ii == null) {
+            this.Ii = SystemProperties.get("ro.boot.hwc");
+        }
+        return "cn".equalsIgnoreCase(this.Ii);
+    }
+
     public String s(boolean z) {
         return z ? getString(c.c_0x29, "4.5") : getString(c.c_0x30, "4");
     }
@@ -1111,7 +1111,7 @@ public class a extends DataItemBase implements c {
 
     public boolean we() {
         if (getBoolean(c.c_35955_0x0001, false)) {
-            return tc() || bc();
+            return tc() || ro_boot_hwc_EQ_cn();
         }
         return false;
     }
