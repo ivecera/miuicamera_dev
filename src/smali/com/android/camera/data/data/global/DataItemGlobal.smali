@@ -179,7 +179,7 @@
 
     iget-object p1, p0, Lcom/android/camera/data/data/global/DataItemGlobal;->mDataItemFeature:Lcom/mi/config/a;
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Ed()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_0x58()Z
 
     move-result p1
 

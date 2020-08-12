@@ -82,7 +82,7 @@ public class DataItemGlobal extends DataItemBase {
 
     public DataItemGlobal(a aVar) {
         this.mDataItemFeature = aVar;
-        this.mMimojiStandAlone = this.mDataItemFeature.Ed();
+        this.mMimojiStandAlone = this.mDataItemFeature.c_0x58();
         this.mLastCameraId = getCurrentCameraId();
         this.mModuleList = new ComponentModuleList(this);
     }

@@ -44,7 +44,7 @@ public class ComponentModuleList extends ComponentData {
         if (this.mIntentType != -1) {
             ArrayList arrayList = new ArrayList();
             a dataItemFeature = DataRepository.dataItemFeature();
-            if (!DataRepository.dataItemFeature().Ed() || this.mIntentType != 0) {
+            if (!DataRepository.dataItemFeature().c_0x58() || this.mIntentType != 0) {
                 if (this.mIntentType == 0 && dataItemFeature.wf() && DataRepository.dataItemGlobal().getDisplayMode() == 1) {
                     arrayList.add(new ComponentDataItem(-1, -1, (int) R.string.module_name_new_slow_motion, String.valueOf(172)));
                 }

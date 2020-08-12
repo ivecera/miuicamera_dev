@@ -910,7 +910,7 @@ public class FragmentFullScreen extends BaseFragment implements ModeProtocol.Ful
                 this.mShareProgress.setVisibility(8);
             }
         }
-        if (this.mFragmentMimojiEdit == null && DataRepository.dataItemFeature().Ed()) {
+        if (this.mFragmentMimojiEdit == null && DataRepository.dataItemFeature().c_0x58()) {
             this.mFragmentMimojiEdit = new FragmentMimojiEdit();
             this.mFragmentMimojiEdit.registerProtocol();
             this.mFragmentMimojiEdit.setDegree(((BaseFragment) this).mDegree);

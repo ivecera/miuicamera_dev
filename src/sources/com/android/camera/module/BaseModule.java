@@ -1821,7 +1821,7 @@ public abstract class BaseModule implements Module, FocusView.ExposureViewListen
         this.mCameraCapabilities = camera2Proxy.getCapabilities();
         this.mZoomSupported = this.mCameraCapabilities.isZoomSupported();
         this.mActualCameraId = camera2Proxy.getId();
-        if (HybridZoomingSystem.IS_3_OR_MORE_SAT && !DataRepository.dataItemFeature().Ed()) {
+        if (HybridZoomingSystem.IS_3_OR_MORE_SAT && !DataRepository.dataItemFeature().c_0x58()) {
             this.mUltraCameraCapabilities = Camera2DataContainer.getInstance().getCapabilities(Camera2DataContainer.getInstance().getUltraWideCameraId());
             CameraCapabilities cameraCapabilities = this.mUltraCameraCapabilities;
             if (cameraCapabilities != null) {
