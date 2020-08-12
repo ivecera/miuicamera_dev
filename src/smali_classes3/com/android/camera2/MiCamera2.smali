@@ -7012,7 +7012,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lcom/mi/config/a;->bd()Z
+    invoke-virtual {p2}, Lcom/mi/config/a;->c_22367_0x0005()Z
 
     move-result p2
 

@@ -102,7 +102,7 @@ public class DataItemGlobal extends DataItemBase {
             if (i != 180) {
                 switch (i) {
                     case 171:
-                        if (this.mDataItemFeature.be()) {
+                        if (this.mDataItemFeature.c_0x35_OR_T()) {
                             return Integer.valueOf(getString("pref_camera_id_key", String.valueOf(getDefaultCameraId(i)))).intValue();
                         }
                         return 0;
@@ -143,7 +143,7 @@ public class DataItemGlobal extends DataItemBase {
             case 172:
                 return 162;
             case 171:
-                if (this.mDataItemFeature.be()) {
+                if (this.mDataItemFeature.c_0x35_OR_T()) {
                     return currentMode;
                 }
                 break;

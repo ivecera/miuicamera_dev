@@ -2432,7 +2432,7 @@
     return p0
 .end method
 
-.method public bd()Z
+.method public c_22367_0x0005()Z
     .locals 2
 
     const-string v0, "c_22367_0x0005"
@@ -2446,7 +2446,7 @@
     return p0
 .end method
 
-.method public be()Z
+.method public c_0x35_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x35"
@@ -2460,7 +2460,7 @@
     return p0
 .end method
 
-.method public bf()Z
+.method public c_0x5e()Z
     .locals 2
 
     const-string v0, "c_0x5e"

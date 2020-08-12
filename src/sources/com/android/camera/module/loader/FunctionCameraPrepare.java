@@ -133,7 +133,7 @@ public class FunctionCameraPrepare extends Func1Base<Camera, BaseModule> {
             }
         }
         if (((Func1Base) this).mTargetMode == 167) {
-            if (!Util.isStringValueContained(dataItemConfig2.getString(CameraSettings.KEY_QC_ISO, CameraAppImpl.getAndroidContext().getString(R.string.pref_camera_iso_default)), (DataRepository.dataItemFeature().bf() || DataRepository.dataItemFeature().c_27845_0x0003()) ? R.array.pref_camera_iso_entryvalues_new : R.array.pref_camera_iso_entryvalues)) {
+            if (!Util.isStringValueContained(dataItemConfig2.getString(CameraSettings.KEY_QC_ISO, CameraAppImpl.getAndroidContext().getString(R.string.pref_camera_iso_default)), (DataRepository.dataItemFeature().c_0x5e() || DataRepository.dataItemFeature().c_27845_0x0003()) ? R.array.pref_camera_iso_entryvalues_new : R.array.pref_camera_iso_entryvalues)) {
                 editor.remove(CameraSettings.KEY_QC_ISO);
             }
         }
@@ -207,7 +207,7 @@ public class FunctionCameraPrepare extends Func1Base<Camera, BaseModule> {
                 if (DataRepository.dataItemFeature().od()) {
                     editor3.remove(CameraSettings.KEY_MIMOJI_INDEX).remove(CameraSettings.KEY_MIMOJI_PANNEL_STATE);
                 }
-                if (DataRepository.dataItemFeature().bf()) {
+                if (DataRepository.dataItemFeature().c_0x5e()) {
                     editor2.remove(CameraSettings.KEY_CAMERA_PRO_VIDEO_LOG_FROMAT).remove(CameraSettings.KEY_CAMERA_PRO_VIDEO_HISTOGRAM);
                     break;
                 }
@@ -224,7 +224,7 @@ public class FunctionCameraPrepare extends Func1Base<Camera, BaseModule> {
                                 if (!(i5 == 174 || i5 == 183)) {
                                     i = dataItemGlobal.getCurrentCameraId();
                                 }
-                            } else if (DataRepository.dataItemFeature().be()) {
+                            } else if (DataRepository.dataItemFeature().c_0x35_OR_T()) {
                                 i = dataItemGlobal.getCurrentCameraId();
                             }
                         }

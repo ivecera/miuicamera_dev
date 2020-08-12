@@ -309,7 +309,7 @@
     :pswitch_1
     iget-object v2, p0, Lcom/android/camera/data/data/global/DataItemGlobal;->mDataItemFeature:Lcom/mi/config/a;
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->be()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x35_OR_T()Z
 
     move-result v2
 
@@ -402,7 +402,7 @@
     :pswitch_1
     iget-object p0, p0, Lcom/android/camera/data/data/global/DataItemGlobal;->mDataItemFeature:Lcom/mi/config/a;
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->be()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_0x35_OR_T()Z
 
     move-result p0
 

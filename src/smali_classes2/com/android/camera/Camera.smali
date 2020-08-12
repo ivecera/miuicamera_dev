@@ -2714,7 +2714,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v6}, Lcom/mi/config/a;->be()Z
+    invoke-virtual {v6}, Lcom/mi/config/a;->c_0x35_OR_T()Z
 
     move-result v6
 

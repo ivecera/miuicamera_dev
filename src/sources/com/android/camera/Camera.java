@@ -900,7 +900,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
             boolean z = false;
             int i2 = i == 700 ? 1 : 0;
             int currentMode = dataItemGlobal.getCurrentMode();
-            if ((currentMode == 171 && !DataRepository.dataItemFeature().be()) || currentMode == 166 || currentMode == 167 || currentMode == 173 || currentMode == 175) {
+            if ((currentMode == 171 && !DataRepository.dataItemFeature().c_0x35_OR_T()) || currentMode == 166 || currentMode == 167 || currentMode == 173 || currentMode == 175) {
                 currentMode = 163;
             } else if (currentMode == 169 || currentMode == 172) {
                 currentMode = 162;

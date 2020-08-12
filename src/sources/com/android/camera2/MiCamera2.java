@@ -2094,7 +2094,7 @@ public class MiCamera2 extends Camera2Proxy {
             CaptureRequestBuilder.applyZsl(builder, this.mConfigs);
             CaptureRequestBuilder.applyAntiShake(builder, this.mCapabilities, this.mConfigs);
             CaptureRequestBuilder.applyFpsRange(builder, this.mConfigs);
-            boolean z = i != 4 && ((DataRepository.dataItemFeature().bd() && getZoomRatio() >= 0.6f && getZoomRatio() < HybridZoomingSystem.FLOAT_ZOOM_RATIO_TELE && getId() == Camera2DataContainer.getInstance().getSATCameraId()) || !this.mConfigs.isHDREnabled() || b.ql());
+            boolean z = i != 4 && ((DataRepository.dataItemFeature().c_22367_0x0005() && getZoomRatio() >= 0.6f && getZoomRatio() < HybridZoomingSystem.FLOAT_ZOOM_RATIO_TELE && getId() == Camera2DataContainer.getInstance().getSATCameraId()) || !this.mConfigs.isHDREnabled() || b.ql());
             if (this.mMiCamera2ShotQueue.size() > 1) {
                 z = false;
             } else if (b.isMTKPlatform()) {

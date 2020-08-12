@@ -1735,7 +1735,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
     }
 
     /* JADX WARNING: Code restructure failed: missing block: B:107:0x01aa, code lost:
-        if (com.android.camera.data.DataRepository.dataItemFeature().bf() != false) goto L_0x01ac;
+        if (com.android.camera.data.DataRepository.dataItemFeature().c_0x5e() != false) goto L_0x01ac;
      */
     @Override // com.android.camera.fragment.BaseFragment, com.android.camera.animation.AnimationDelegate.AnimationResource
     public void provideAnimateElement(int i, List<Completable> list, int i2) {
@@ -1845,7 +1845,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
                 this.mCameraPickEnable = false;
                 break;
             case 171:
-                if (!DataRepository.dataItemFeature().be()) {
+                if (!DataRepository.dataItemFeature().c_0x35_OR_T()) {
                     this.mCameraPickEnable = false;
                     i3 = -1;
                     i4 = 1;

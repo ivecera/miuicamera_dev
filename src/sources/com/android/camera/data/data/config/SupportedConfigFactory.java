@@ -227,7 +227,7 @@ public class SupportedConfigFactory {
                                             supportedConfigs.add(210);
                                         }
                                         supportedConfigs.add(226);
-                                        if (i2 == 1 && dataItemFeature.be()) {
+                                        if (i2 == 1 && dataItemFeature.c_0x35_OR_T()) {
                                             if (b.Nl() && b.hm()) {
                                                 supportedConfigs.add(238);
                                             }

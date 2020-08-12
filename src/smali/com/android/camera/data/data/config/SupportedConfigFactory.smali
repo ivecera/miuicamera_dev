@@ -887,7 +887,7 @@
 
     if-ne v1, v13, :cond_1b
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->be()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_0x35_OR_T()Z
 
     move-result v0
 
