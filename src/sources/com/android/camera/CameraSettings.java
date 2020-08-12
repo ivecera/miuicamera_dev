@@ -1327,7 +1327,7 @@ public class CameraSettings {
     }
 
     public static boolean isCameraLyingHintOn() {
-        return DataRepository.dataItemFeature().Pe() && DataRepository.dataItemGlobal().getBoolean("pref_camera_lying_tip_switch_key", true);
+        return DataRepository.dataItemFeature().c_0x48() && DataRepository.dataItemGlobal().getBoolean("pref_camera_lying_tip_switch_key", true);
     }
 
     public static boolean isCameraParallelProcessEnable() {

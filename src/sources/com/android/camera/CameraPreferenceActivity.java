@@ -253,7 +253,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
         if (DataRepository.dataItemFeature().c_19039_0x0008() == 1) {
             i = 1;
         }
-        if (DataRepository.dataItemFeature().Pe() == 1) {
+        if (DataRepository.dataItemFeature().c_0x48() == 1) {
             i++;
         }
         if (DataRepository.dataItemFeature().sd() == 1) {
@@ -267,7 +267,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
             if (!DataRepository.dataItemFeature().sd()) {
                 removePreference(this.mPreferenceGroup, "pref_lens_dirty_tip");
             }
-            if (!DataRepository.dataItemFeature().Pe()) {
+            if (!DataRepository.dataItemFeature().c_0x48()) {
                 removePreference(this.mPreferenceGroup, "pref_camera_lying_tip_switch_key");
             }
         } else {
@@ -583,7 +583,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
 
     private void updatePhotoAssistanceTips(SharedPreferences sharedPreferences, ValuePreference valuePreference) {
         if (sharedPreferences != null && valuePreference != null) {
-            if (DataRepository.dataItemFeature().Pe() && sharedPreferences.getBoolean("pref_camera_lying_tip_switch_key", true)) {
+            if (DataRepository.dataItemFeature().c_0x48() && sharedPreferences.getBoolean("pref_camera_lying_tip_switch_key", true)) {
                 valuePreference.setValue(getString(R.string.pref_photo_assistance_tips_on));
             } else if (DataRepository.dataItemFeature().c_19039_0x0008() && sharedPreferences.getBoolean("pref_pic_flaw_tip", getResources().getBoolean(R.bool.pref_pic_flaw_tip_default))) {
                 valuePreference.setValue(getString(R.string.pref_photo_assistance_tips_on));
