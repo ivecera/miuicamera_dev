@@ -112,7 +112,7 @@ public class ModeSelectView extends LinearLayout implements View.OnClickListener
                 CameraSettings.setTTLiveStickerNeedRedDot(true);
             }
             colorActivateTextView.setActivateColor(ColorConstant.COLOR_COMMON_SELECTED);
-            if (!b.cv && !DataRepository.dataItemFeature().c_0x58()) {
+            if (!b.deviceIsMiCC9 && !DataRepository.dataItemFeature().c_0x58()) {
                 if (!TextUtils.isEmpty(next.mDisplayNameStr)) {
                     colorActivateTextView.setText(next.mDisplayNameStr);
                 } else {

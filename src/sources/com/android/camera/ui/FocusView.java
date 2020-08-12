@@ -954,7 +954,7 @@ public class FocusView extends View implements FocusIndicator, V6FunctionUI, Rot
             Range<Integer> exposureCompensationRange = currentCameraCapabilities.getExposureCompensationRange();
             int intValue = exposureCompensationRange.getLower().intValue();
             int intValue2 = exposureCompensationRange.getUpper().intValue();
-            if (b.cv) {
+            if (b.deviceIsMiCC9) {
                 intValue = -3;
                 intValue2 = 4;
             }

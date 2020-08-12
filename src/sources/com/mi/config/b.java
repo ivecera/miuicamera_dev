@@ -15,68 +15,67 @@ import java.util.concurrent.atomic.AtomicReference;
 
 /* compiled from: Device */
 public class b {
-    public static final boolean Au = ("cancro".equals(vu) && Build.MODEL.startsWith("MI 3"));
-    public static final boolean Bu = Au;
-    public static final boolean Cu = (a.device_is_HM201302x && !a.device_is_armani && !a.device_is_HM201401x);
-    public static final boolean Du = a.device_is_HM201401x;
-    public static final boolean Eu = a.device_is_HM2014501;
-    public static final boolean Fu = a.device_is_armani;
-    public static final boolean Gu = a.device_is_lcsh92_wet_x;
-    public static final boolean Hu = a.device_is_lte26007;
-    public static final boolean Iu = a.device_is_cancro_mi4;
-    public static final boolean Ju = a.device_is_virgo;
-    public static final boolean Ku = "leo".equals(vu);
-    public static final boolean Lu = "lithium".equals(vu);
-    public static final boolean Mu = "chiron".equals(vu);
-    public static final boolean Nu = "beryllium".equals(vu);
-    public static final boolean Ou = "violet".equals(vu);
-    public static final boolean Pu = d.getBoolean(d.is_hongmi, false);
-    public static final boolean Qu = "polaris".equals(vu);
-    public static final boolean Ru = "sirius".equals(vu);
-    public static final boolean Su = "dipper".equals(vu);
-    public static final boolean Tu = "andromeda".equals(vu);
-    public static final boolean Uu = "perseus".equals(vu);
-    public static final boolean Vu = "cepheus".equals(vu);
-    public static final boolean Wu = "grus".equals(vu);
-    public static final boolean Xu = "begonia".equals(vu);
-    public static final boolean Yu = ("phoenix".equals(vu) || "phoenixin".equals(vu));
-    public static final boolean Zu = "begoniain".equals(vu);
-    public static final boolean _u = "ginkgo".equals(vu);
-    public static final boolean bv = "pyxis".equals(vu);
-    public static final boolean cv = "vela".equals(vu);
-    public static final boolean dv = "laurus".equals(vu);
-    public static final boolean ev = "laurel_sprout".equals(vu);
-    public static final boolean fv = "tucana".equals(vu);
-    public static final boolean gv = ("tucana".equals(vu) && SystemProperties.get("persist.camera.rearMain.vendorID", "03").equals("03"));
-    public static final boolean hv = "umi".equals(vu);
-    public static final boolean jv = "cmi".equals(vu);
-    public static final boolean kv = ("lmi".equals(vu) || "lmiin".equals(vu));
-    public static final boolean lg = a.device_is_aries_or_taurus;
-    public static final boolean lv = ("lmipro".equals(vu) || "lmiinpro".equals(vu));
-    public static final boolean mv = "draco".equals(vu);
+    public static final String buildDevice = Build.DEVICE;
+    public static final String buildModel = Build.MODEL;
+    public static final boolean devFeatIsHongmi = d.getBoolean(d.is_hongmi, false);
+    public static final boolean devFeatIsXiaomi = d.getBoolean(d.is_xiaomi, false);
+    public static final boolean deviceIsMi10 = "umi".equals(buildDevice);
+    public static final boolean deviceIsMi10Pro = "cmi".equals(buildDevice);
+    public static final boolean deviceIsMi2Ax = a.model_is_m2ax;
+    public static final boolean deviceIsMi2SA = a.device_is_aries_or_taurus;
+    public static final boolean deviceIsMi3W = ("cancro".equals(buildDevice) && Build.MODEL.startsWith("MI 3"));
+    public static final boolean deviceIsMi4W = a.device_is_cancro_mi4;
+    public static final boolean deviceIsMi8 = "dipper".equals(buildDevice);
+    public static final boolean deviceIsMi8SE = "sirius".equals(buildDevice);
+    public static final boolean deviceIsMi9 = "cepheus".equals(buildDevice);
+    public static final boolean deviceIsMi9Lite = "pyxis".equals(buildDevice);
+    public static final boolean deviceIsMi9Pro5G = "crux".equals(buildDevice);
+    public static final boolean deviceIsMi9SE = "grus".equals(buildDevice);
+    public static final boolean deviceIsMiA3 = "laurel_sprout".equals(buildDevice);
+    public static final boolean deviceIsMiCC9 = "vela".equals(buildDevice);
+    public static final boolean deviceIsMiCC9e = "laurus".equals(buildDevice);
+    public static final boolean deviceIsMiMix = "lithium".equals(buildDevice);
+    public static final boolean deviceIsMiMix2 = "chiron".equals(buildDevice);
+    public static final boolean deviceIsMiMix2S = "polaris".equals(buildDevice);
+    public static final boolean deviceIsMiMix3 = "perseus".equals(buildDevice);
+    public static final boolean deviceIsMiMix35G = "andromeda".equals(buildDevice);
+    public static final boolean deviceIsMiMixAlpha = "draco".equals(buildDevice);
+    public static final boolean deviceIsMiNote = a.device_is_virgo;
+    public static final boolean deviceIsMiNote10 = "tucana".equals(buildDevice);
+    public static final boolean deviceIsMiNote10WithCamVendor03 = ("tucana".equals(buildDevice) && SystemProperties.get("persist.camera.rearMain.vendorID", "03").equals("03"));
+    public static final boolean deviceIsMiNotePro = "leo".equals(buildDevice);
+    public static final boolean deviceIsPocoF1 = "beryllium".equals(buildDevice);
+    public static final boolean deviceIsPocoXx = ("phoenix".equals(buildDevice) || "phoenixin".equals(buildDevice));
+    public static final boolean deviceIsRedmi1 = (a.device_is_HM201302x && !a.device_is_armani && !a.device_is_HM201401x);
+    public static final boolean deviceIsRedmi1S4G = a.device_is_HM2014501;
+    public static final boolean deviceIsRedmi1STD = a.device_is_HM201401x;
+    public static final boolean deviceIsRedmi1SW = a.device_is_armani;
+    public static final boolean deviceIsRedmi2A = a.device_is_lte26007;
+    public static final boolean deviceIsRedmiK30Pro = ("lmi".equals(buildDevice) || "lmiin".equals(buildDevice));
+    public static final boolean deviceIsRedmiK30ProZoom = ("lmipro".equals(buildDevice) || "lmiinpro".equals(buildDevice));
+    public static final boolean deviceIsRedmiNote1WTD = a.device_is_lcsh92_wet_x;
+    public static final boolean deviceIsRedmiNote7Pro = "violet".equals(buildDevice);
+    public static final boolean deviceIsRedmiNote8 = "ginkgo".equals(buildDevice);
+    public static final boolean deviceIsRedmiNote8Pro = "begonia".equals(buildDevice);
+    public static final boolean deviceIsRedmiNote8ProIndia = "begoniain".equals(buildDevice);
+    private static final int eight = 8;
+    private static final int four = 4;
+    private static final int hundred = 100;
     public static final boolean nv;
-    public static final boolean og = a.model_is_m2ax;
-    public static final boolean ov = "crux".equals(vu);
+    private static final int one = 1;
+    public static final boolean propRoCustTestEqCm = a.ro_cust_test_is_cm;
     public static final boolean pv = a.build_type_user_version_incremental_not_XYZ;
-    public static final boolean qv = a.ro_cust_test_is_cm;
     public static final boolean rv = a.carrier_name_is_cm_variant_cn_chinamobile_cta;
-    public static final boolean sg = d.getBoolean(d.is_xiaomi, false);
-    private static final int sv = 1;
-    private static final int tv = 4;
-    private static final int uv = 8;
-    public static final String vu = Build.DEVICE;
-    private static ArrayList<String> vv = null;
-    public static final String wu = "qcom";
+    public static final String str_mediatek = "mediatek";
+    public static final String str_qcom = "qcom";
+    private static final String str_ro_boot_hwversion = "ro.boot.hwversion";
+    private static ArrayList<String> vv;
     private static final String[] wv = {"KR", "JP"};
-    public static final String xu = "mediatek";
-    private static final String xv = "ro.boot.hwversion";
-    private static final int yu = 100;
     private static final AtomicReference<Optional<Boolean>> yv = new AtomicReference<>(Optional.empty());
-    public static final String zu = Build.MODEL;
 
     static {
         boolean z = true;
-        if (!"picasso".equals(vu) && !"picassoin".equals(vu)) {
+        if (!"picasso".equals(buildDevice) && !"picassoin".equals(buildDevice)) {
             z = false;
         }
         nv = z;
@@ -134,7 +133,7 @@ public class b {
     }
 
     public static boolean Kl() {
-        return !DataRepository.dataItemFeature().s_b_a_OR_T() && Pu;
+        return !DataRepository.dataItemFeature().s_b_a_OR_T() && devFeatIsHongmi;
     }
 
     public static boolean Ll() {
@@ -158,7 +157,7 @@ public class b {
     }
 
     public static boolean Qk() {
-        return !qv && d.getBoolean(d.support_camera_boost_brightness, false);
+        return !propRoCustTestEqCm && d.getBoolean(d.support_camera_boost_brightness, false);
     }
 
     public static boolean Ql() {
@@ -256,7 +255,7 @@ public class b {
     }
 
     public static boolean Zk() {
-        return DataRepository.dataItemFeature().s_a_u_e_f_m() || Yu;
+        return DataRepository.dataItemFeature().s_a_u_e_f_m() || deviceIsPocoXx;
     }
 
     public static boolean Zl() {
@@ -286,8 +285,8 @@ public class b {
     }
 
     public static boolean bl() {
-        String str = SystemProperties.get(xv);
-        return ov && (TextUtils.equals(str, "7.1.7") || TextUtils.equals(str, "7.2.0"));
+        String str = SystemProperties.get(str_ro_boot_hwversion);
+        return deviceIsMi9Pro5G && (TextUtils.equals(str, "7.1.7") || TextUtils.equals(str, "7.2.0"));
     }
 
     public static boolean bm() {
@@ -295,10 +294,10 @@ public class b {
     }
 
     public static boolean cl() {
-        if (!"onc".equals(vu)) {
+        if (!"onc".equals(buildDevice)) {
             return false;
         }
-        String str = SystemProperties.get(xv);
+        String str = SystemProperties.get(str_ro_boot_hwversion);
         return !TextUtils.isEmpty(str) && '2' == str.charAt(0);
     }
 
@@ -307,7 +306,7 @@ public class b {
     }
 
     public static boolean dl() {
-        return vu.equalsIgnoreCase("lavender") && "India_48_5".equalsIgnoreCase(SystemProperties.get("ro.boot.hwc"));
+        return buildDevice.equalsIgnoreCase("lavender") && "India_48_5".equalsIgnoreCase(SystemProperties.get("ro.boot.hwc"));
     }
 
     public static boolean dm() {
@@ -315,7 +314,7 @@ public class b {
     }
 
     public static boolean el() {
-        return Lu || Mu || Qu;
+        return deviceIsMiMix || deviceIsMiMix2 || deviceIsMiMix2S;
     }
 
     public static boolean em() {
@@ -323,7 +322,7 @@ public class b {
     }
 
     public static boolean fl() {
-        return hl() || bv || Wu || DataRepository.dataItemFeature().s_a_u_e_f_m();
+        return hl() || deviceIsMi9Lite || deviceIsMi9SE || DataRepository.dataItemFeature().s_a_u_e_f_m();
     }
 
     public static boolean fm() {
@@ -340,7 +339,7 @@ public class b {
     }
 
     public static boolean gl() {
-        return !Fu && !Hu && !a.device_is_HM2014xxx && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && d.getBoolean(d.is_front_video_quality_1080p, true);
+        return !deviceIsRedmi1SW && !deviceIsRedmi2A && !a.device_is_HM2014xxx && !deviceIsMi3W && !deviceIsRedmiNote1WTD && !deviceIsRedmi1 && !deviceIsRedmi1STD && !deviceIsRedmi1S4G && !deviceIsMi2SA && !deviceIsMi2Ax && !deviceIsMi3W && d.getBoolean(d.is_front_video_quality_1080p, true);
     }
 
     public static boolean gm() {
@@ -348,7 +347,7 @@ public class b {
     }
 
     public static boolean hl() {
-        return Uu && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
+        return deviceIsMiMix3 && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean hm() {
@@ -356,7 +355,7 @@ public class b {
     }
 
     public static boolean il() {
-        return vu.equalsIgnoreCase("davinci") && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
+        return buildDevice.equalsIgnoreCase("davinci") && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean im() {
@@ -367,7 +366,7 @@ public class b {
         if (!yv.get().isPresent()) {
             synchronized (yv) {
                 if (!yv.get().isPresent()) {
-                    yv.set(Optional.of(Boolean.valueOf(xu.equals(d.getString(d.VENDOR)))));
+                    yv.set(Optional.of(Boolean.valueOf(str_mediatek.equals(d.getString(d.VENDOR)))));
                 }
             }
         }
@@ -383,7 +382,7 @@ public class b {
     }
 
     public static boolean jl() {
-        return vu.equalsIgnoreCase("raphael") && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
+        return buildDevice.equalsIgnoreCase("raphael") && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean jm() {
@@ -391,7 +390,7 @@ public class b {
     }
 
     public static boolean kl() {
-        return bv && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
+        return deviceIsMi9Lite && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean km() {
@@ -403,7 +402,7 @@ public class b {
     }
 
     public static boolean ll() {
-        return fv && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
+        return deviceIsMiNote10 && a.ro_boot_hwc_contains_GLOBAL_or_is_android_one;
     }
 
     public static boolean lm() {
@@ -431,7 +430,7 @@ public class b {
     }
 
     public static boolean ol() {
-        return Nu && "India".equalsIgnoreCase(SystemProperties.get("ro.boot.hwc"));
+        return deviceIsPocoF1 && "India".equalsIgnoreCase(SystemProperties.get("ro.boot.hwc"));
     }
 
     public static boolean om() {
@@ -447,15 +446,15 @@ public class b {
     }
 
     public static boolean pm() {
-        return !sg && !Pu;
+        return !devFeatIsXiaomi && !devFeatIsHongmi;
     }
 
     public static boolean ql() {
-        return kv || lv;
+        return deviceIsRedmiK30Pro || deviceIsRedmiK30ProZoom;
     }
 
     public static boolean qm() {
-        return !Fu && !Hu && !a.device_is_HM2014xxx && !Au && !Gu && !Cu && !Du && !Eu && !lg && !og && !Bu && !Iu && d.getBoolean(d.is_video_snapshot_size_limit, true);
+        return !deviceIsRedmi1SW && !deviceIsRedmi2A && !a.device_is_HM2014xxx && !deviceIsMi3W && !deviceIsRedmiNote1WTD && !deviceIsRedmi1 && !deviceIsRedmi1STD && !deviceIsRedmi1S4G && !deviceIsMi2SA && !deviceIsMi2Ax && !deviceIsMi3W && !deviceIsMi4W && d.getBoolean(d.is_video_snapshot_size_limit, true);
     }
 
     public static boolean rl() {
@@ -479,15 +478,15 @@ public class b {
     }
 
     public static boolean ul() {
-        return vu.equalsIgnoreCase("raphael") && Build.MODEL.endsWith("Premium Edition");
+        return buildDevice.equalsIgnoreCase("raphael") && Build.MODEL.endsWith("Premium Edition");
     }
 
     public static boolean vl() {
-        return fv && !gv;
+        return deviceIsMiNote10 && !deviceIsMiNote10WithCamVendor03;
     }
 
     public static boolean wl() {
-        return wu.equals(d.getString(d.VENDOR));
+        return str_qcom.equals(d.getString(d.VENDOR));
     }
 
     public static boolean xl() {

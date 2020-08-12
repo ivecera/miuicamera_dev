@@ -801,13 +801,13 @@
 .method private isSupportedAndroidScalerStream()Z
     .locals 2
 
-    sget-boolean v0, Lcom/mi/config/b;->Wu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9SE:Z
 
     const/4 v1, 0x1
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->bv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     if-eqz v0, :cond_1
 

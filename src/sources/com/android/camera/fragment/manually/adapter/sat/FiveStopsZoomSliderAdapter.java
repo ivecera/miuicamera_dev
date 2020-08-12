@@ -434,10 +434,10 @@ public class FiveStopsZoomSliderAdapter extends MultiStopsZoomSliderAdapter {
 
     @Override // com.android.camera.fragment.manually.adapter.MultiStopsZoomSliderAdapter
     public MultiStopsZoomRatioResolver getZoomRatioResolver() {
-        if (b.fv || b.jv) {
+        if (b.deviceIsMiNote10 || b.deviceIsMi10Pro) {
             return new _6_10_50_100_500(this);
         }
-        if (b.lv) {
+        if (b.deviceIsRedmiK30ProZoom) {
             return new _6_10_30_100_300(this);
         }
         throw new IllegalStateException("Device not supported");

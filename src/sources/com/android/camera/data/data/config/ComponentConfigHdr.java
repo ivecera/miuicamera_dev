@@ -204,10 +204,10 @@ public class ComponentConfigHdr extends ComponentData {
                             this.mAutoSupported = true;
                             arrayList.add(new ComponentDataItem(getConfigHDRAutoRes(), getConfigHDRAutoRes(), (int) R.string.pref_camera_hdr_entry_auto, "auto"));
                         }
-                        if (!b.lg || !b.Ol()) {
+                        if (!b.deviceIsMi2SA || !b.Ol()) {
                             arrayList.add(new ComponentDataItem(getConfigHDRNormalRes(), getConfigHDRNormalRes(), (int) R.string.pref_simple_hdr_entry_on, "normal"));
                         } else {
-                            if (!b.og) {
+                            if (!b.deviceIsMi2Ax) {
                                 arrayList.add(new ComponentDataItem(getConfigHDRNormalRes(), getConfigHDRNormalRes(), (int) R.string.pref_camera_hdr_entry_normal, "normal"));
                             }
                             arrayList.add(new ComponentDataItem(getConfigHDRLiveRes(), getConfigHDRLiveRes(), (int) R.string.pref_camera_hdr_entry_live, "live"));
@@ -230,7 +230,7 @@ public class ComponentConfigHdr extends ComponentData {
             arrayList.add(new ComponentDataItem(getConfigHDROffRes(), getConfigHDROffRes(), (int) R.string.pref_camera_hdr_entry_off, "off"));
             if (cameraCapabilities.isSupportAutoHdr()) {
             }
-            if (!b.lg) {
+            if (!b.deviceIsMi2SA) {
             }
             arrayList.add(new ComponentDataItem(getConfigHDRNormalRes(), getConfigHDRNormalRes(), (int) R.string.pref_simple_hdr_entry_on, "normal"));
             if (cameraCapabilities.isSupportHdrCheckerStatus()) {

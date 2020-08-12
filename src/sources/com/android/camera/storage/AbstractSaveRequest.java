@@ -139,7 +139,7 @@ public abstract class AbstractSaveRequest implements SaveRequest {
                     bArr3 = drawJPEGAttribute.mData;
                     byte[] bArr6 = drawJPEGAttribute.mDataOfTheRegionUnderWatermarks;
                     iArr = drawJPEGAttribute.mCoordinatesOfTheRegionUnderWatermarks;
-                    if (b.fv) {
+                    if (b.deviceIsMiNote10) {
                         iArr = null;
                     } else {
                         bArr5 = bArr6;
@@ -349,7 +349,7 @@ public abstract class AbstractSaveRequest implements SaveRequest {
                 i5 = drawJPEGAttribute.mHeight;
                 bArr = drawJPEGAttribute.mDataOfTheRegionUnderWatermarks;
                 iArr = drawJPEGAttribute.mCoordinatesOfTheRegionUnderWatermarks;
-                if (b.fv) {
+                if (b.deviceIsMiNote10) {
                     iArr = null;
                     bArr = null;
                 }

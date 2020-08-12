@@ -246,7 +246,7 @@
 
     if-nez p0, :cond_0
 
-    sget-boolean p0, Lcom/mi/config/b;->bv:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     if-eqz p0, :cond_1
 
@@ -367,19 +367,19 @@
 
     if-nez v0, :cond_4
 
-    sget-boolean v0, Lcom/mi/config/b;->fv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-nez v0, :cond_4
 
-    sget-boolean v0, Lcom/mi/config/b;->hv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10:Z
 
     if-nez v0, :cond_4
 
-    sget-boolean v0, Lcom/mi/config/b;->lv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiK30ProZoom:Z
 
     if-nez v0, :cond_4
 
-    sget-boolean v0, Lcom/mi/config/b;->jv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     if-eqz v0, :cond_5
 
@@ -419,7 +419,7 @@
 
     invoke-static {p1, v0, v5}, Lcom/android/camera2/compat/MiCameraCompat;->applyHdrParameter(Landroid/hardware/camera2/CaptureRequest$Builder;Ljava/lang/Integer;Ljava/lang/Integer;)V
 
-    sget-boolean v0, Lcom/mi/config/b;->fv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-eqz v0, :cond_6
 
@@ -435,15 +435,15 @@
     goto :goto_5
 
     :cond_6
-    sget-boolean v0, Lcom/mi/config/b;->jv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     if-nez v0, :cond_8
 
-    sget-boolean v0, Lcom/mi/config/b;->hv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10:Z
 
     if-nez v0, :cond_8
 
-    sget-boolean v0, Lcom/mi/config/b;->lv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiK30ProZoom:Z
 
     if-eqz v0, :cond_7
 
@@ -503,7 +503,7 @@
 
     if-ne v3, v5, :cond_a
 
-    sget-boolean v3, Lcom/mi/config/b;->lv:Z
+    sget-boolean v3, Lcom/mi/config/b;->deviceIsRedmiK30ProZoom:Z
 
     if-eqz v3, :cond_a
 
@@ -1266,7 +1266,7 @@
 
     if-nez v1, :cond_1
 
-    sget-boolean v1, Lcom/mi/config/b;->bv:Z
+    sget-boolean v1, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     if-eqz v1, :cond_2
 
@@ -1436,7 +1436,7 @@
 
     if-nez v2, :cond_8
 
-    sget-boolean v2, Lcom/mi/config/b;->bv:Z
+    sget-boolean v2, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     if-nez v2, :cond_8
 
@@ -1493,7 +1493,7 @@
 
     if-ne v1, v4, :cond_b
 
-    sget-boolean v1, Lcom/mi/config/b;->jv:Z
+    sget-boolean v1, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     if-eqz v1, :cond_a
 
@@ -1613,7 +1613,7 @@
 
     iput-boolean v2, p0, Lcom/android/camera2/MiCamera2ShotParallelBurst;->mIsHdrBokeh:Z
 
-    sget-boolean v2, Lcom/mi/config/b;->jv:Z
+    sget-boolean v2, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     if-eqz v2, :cond_0
 
@@ -2025,7 +2025,7 @@
     goto :goto_0
 
     :cond_3
-    sget-boolean v3, Lcom/mi/config/b;->hv:Z
+    sget-boolean v3, Lcom/mi/config/b;->deviceIsMi10:Z
 
     if-nez v3, :cond_4
 

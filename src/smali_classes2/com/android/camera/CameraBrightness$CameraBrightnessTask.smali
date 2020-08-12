@@ -698,7 +698,7 @@
 
     check-cast v2, Lcom/android/camera/CameraBrightnessCallback;
 
-    sget-boolean v3, Lcom/mi/config/b;->Yu:Z
+    sget-boolean v3, Lcom/mi/config/b;->deviceIsPocoXx:Z
 
     const/4 v4, 0x1
 

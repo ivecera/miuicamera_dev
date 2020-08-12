@@ -802,7 +802,7 @@ public abstract class VideoBase extends BaseModule implements Camera2Proxy.FaceD
             return false;
         }
         long uptimeMillis = (SystemClock.uptimeMillis() - this.mRecordingStartTime) / 60000;
-        return isFrontCamera() ? uptimeMillis >= 10 : (b.Xu || b.Zu) ? uptimeMillis >= 3 : uptimeMillis >= 20;
+        return isFrontCamera() ? uptimeMillis >= 10 : (b.deviceIsRedmiNote8Pro || b.deviceIsRedmiNote8ProIndia) ? uptimeMillis >= 3 : uptimeMillis >= 20;
     }
 
     @Override // com.android.camera.module.Module

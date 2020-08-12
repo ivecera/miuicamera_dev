@@ -4519,7 +4519,7 @@
     invoke-static {v3}, Lcom/android/camera/HybridZoomingSystem;->setZoomingSourceIdentity(I)V
 
     :goto_2
-    sget-boolean v3, Lcom/mi/config/b;->mv:Z
+    sget-boolean v3, Lcom/mi/config/b;->deviceIsMiMixAlpha:Z
 
     if-eqz v3, :cond_b
 
@@ -4749,7 +4749,7 @@
     return p0
 
     :cond_5
-    sget-boolean v5, Lcom/mi/config/b;->mv:Z
+    sget-boolean v5, Lcom/mi/config/b;->deviceIsMiMixAlpha:Z
 
     if-eqz v5, :cond_7
 

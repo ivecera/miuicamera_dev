@@ -365,7 +365,7 @@
 
     invoke-virtual {p0}, Landroid/os/ConditionVariable;->block()V
 
-    sget-boolean p0, Lcom/mi/config/b;->fv:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-nez p0, :cond_1
 

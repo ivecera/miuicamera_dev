@@ -75,7 +75,7 @@ public class LocalParallelService extends Service {
 
         LocalBinder() {
             ReprocessorFactory.init(LocalParallelService.this);
-            if (b.Su) {
+            if (b.deviceIsMi8) {
                 ReprocessorFactory.getDefaultReprocessor().setVirtualCameraIds("5", "6");
             } else if (b.Bl()) {
                 ReprocessorFactory.getDefaultReprocessor().setVirtualCameraIds(String.valueOf(Camera2RoleContainer.getInstance().getVirtualBackCameraId()), String.valueOf(Camera2RoleContainer.getInstance().getVirtualFrontCameraId()));

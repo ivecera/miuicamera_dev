@@ -177,7 +177,7 @@ public class CameraBrightness implements CameraBrightnessCallback {
             } catch (Settings.SettingNotFoundException unused) {
             }
             CameraBrightnessCallback cameraBrightnessCallback = this.mCallbackWeakReference.get();
-            if (com.mi.config.b.Yu && cameraBrightnessCallback != null) {
+            if (com.mi.config.b.deviceIsPocoXx && cameraBrightnessCallback != null) {
                 if (!this.mPaused && !this.mUseDefaultValue) {
                     cameraBrightnessCallback.setPreviousBrightnessMode(this.mBrightnessMode);
                     if (this.mBrightnessMode == 1) {

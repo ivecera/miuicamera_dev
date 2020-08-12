@@ -73,7 +73,7 @@ public class FilterProcessor {
             this.mBlockVariable.close();
             SnapshotRender.getRender().processImageSync(yuvAttributeWrapper);
             this.mBlockVariable.block();
-            if (!b.fv) {
+            if (!b.deviceIsMiNote10) {
                 parallelTaskData.setDataOfTheRegionUnderWatermarks(drawYuvAttribute.mDataOfTheRegionUnderWatermarks);
                 parallelTaskData.setCoordinatesOfTheRegionUnderWatermarks(drawYuvAttribute.mCoordinatesOfTheRegionUnderWatermarks);
             }

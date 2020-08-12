@@ -1280,7 +1280,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
             if (i == 24 || i == 25 || i == 87 || i == 88) {
                 HybridZoomingSystem.setZoomingSourceIdentity(((ActivityBase) this).mCurrentModule.hashCode());
             }
-            return (!b.mv || !(i == 24 || i == 25 || i == 87 || i == 88)) ? ((ActivityBase) this).mCurrentModule.onKeyDown(i, keyEvent) || super.onKeyDown(i, keyEvent) : super.onKeyDown(i, keyEvent);
+            return (!b.deviceIsMiMixAlpha || !(i == 24 || i == 25 || i == 87 || i == 88)) ? ((ActivityBase) this).mCurrentModule.onKeyDown(i, keyEvent) || super.onKeyDown(i, keyEvent) : super.onKeyDown(i, keyEvent);
         } else if (i == 24 || i == 25 || i == 27 || i == 66 || i == 80 || i == 87 || i == 88) {
             return true;
         } else {
@@ -1308,7 +1308,7 @@ public class Camera extends ActivityBase implements ActivityCompat.OnRequestPerm
             this.mLastKeyUpEventTime = keyEvent.getEventTime();
             String str2 = this.TAG;
             Log.d(str2, "onKeyUp: mLastKeyUpEventTime " + this.mLastKeyUpEventTime + " keyCode : " + i);
-            return !isCurrentModuleAlive() ? super.onKeyUp(i, keyEvent) : (!b.mv || !(i == 24 || i == 25 || i == 87 || i == 88)) ? ((ActivityBase) this).mCurrentModule.onKeyUp(i, keyEvent) || super.onKeyUp(i, keyEvent) : super.onKeyUp(i, keyEvent);
+            return !isCurrentModuleAlive() ? super.onKeyUp(i, keyEvent) : (!b.deviceIsMiMixAlpha || !(i == 24 || i == 25 || i == 87 || i == 88)) ? ((ActivityBase) this).mCurrentModule.onKeyUp(i, keyEvent) || super.onKeyUp(i, keyEvent) : super.onKeyUp(i, keyEvent);
         }
     }
 

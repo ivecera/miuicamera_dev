@@ -77,7 +77,7 @@ public class CameraAppImpl extends Application {
         System.setProperty("rx2.purge-period-seconds", "3600");
         AftersalesManager.checkSelf(this);
         boolean z = true;
-        if ("avenger".equals(b.vu)) {
+        if ("avenger".equals(b.buildDevice)) {
             getPackageManager().setApplicationEnabledSetting("com.android.camera", 2, 1);
         }
         MarshalQueryableRegister.preload();

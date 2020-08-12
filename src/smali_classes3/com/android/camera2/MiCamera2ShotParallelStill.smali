@@ -228,7 +228,7 @@
 
     if-eqz v0, :cond_1
 
-    sget-boolean v0, Lcom/mi/config/b;->Uu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiMix3:Z
 
     if-nez v0, :cond_1
 

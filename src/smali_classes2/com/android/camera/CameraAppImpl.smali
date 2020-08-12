@@ -182,7 +182,7 @@
 
     invoke-static {p0}, Lcom/android/camera/aftersales/AftersalesManager;->checkSelf(Landroid/content/Context;)V
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "avenger"
 

@@ -926,7 +926,7 @@
 
     iget-object v1, v1, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mCoordinatesOfTheRegionUnderWatermarks:[I
 
-    sget-boolean v5, Lcom/mi/config/b;->fv:Z
+    sget-boolean v5, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-eqz v5, :cond_6
 
@@ -2192,7 +2192,7 @@
 
     iget-object v0, v0, Lcom/android/camera/effect/draw_mode/DrawJPEGAttribute;->mCoordinatesOfTheRegionUnderWatermarks:[I
 
-    sget-boolean v5, Lcom/mi/config/b;->fv:Z
+    sget-boolean v5, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-eqz v5, :cond_5
 

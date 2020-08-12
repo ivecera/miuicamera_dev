@@ -70,7 +70,7 @@ public class MiCamera2ShotParallelStill extends MiCamera2ShotParallel<ParallelTa
         if (((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isHDREnabled() || ((MiCamera2Shot) this).mMiCamera.isBeautyOn()) {
             return false;
         }
-        if (CameraSettings.isFrontCamera() && !b.Uu) {
+        if (CameraSettings.isFrontCamera() && !b.deviceIsMiMix3) {
             return false;
         }
         if (((MiCamera2Shot) this).mMiCamera.getCapabilities().isRemosaicDetecedSupported()) {

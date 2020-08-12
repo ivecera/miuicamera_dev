@@ -4,105 +4,103 @@
 
 
 # static fields
-.field public static final Au:Z
+.field public static final deviceIsMi3W:Z
 
-.field public static final Bu:Z
+.field public static final deviceIsRedmi1:Z
 
-.field public static final Cu:Z
+.field public static final deviceIsRedmi1STD:Z
 
-.field public static final Du:Z
+.field public static final deviceIsRedmi1S4G:Z
 
-.field public static final Eu:Z
+.field public static final deviceIsRedmi1SW:Z
 
-.field public static final Fu:Z
+.field public static final deviceIsRedmiNote1WTD:Z
 
-.field public static final Gu:Z
+.field public static final deviceIsRedmi2A:Z
 
-.field public static final Hu:Z
+.field public static final deviceIsMi4W:Z
 
-.field public static final Iu:Z
+.field public static final deviceIsMiNote:Z
 
-.field public static final Ju:Z
+.field public static final deviceIsMiNotePro:Z
 
-.field public static final Ku:Z
+.field public static final deviceIsMiMix:Z
 
-.field public static final Lu:Z
+.field public static final deviceIsMiMix2:Z
 
-.field public static final Mu:Z
+.field public static final deviceIsPocoF1:Z
 
-.field public static final Nu:Z
+.field public static final deviceIsRedmiNote7Pro:Z
 
-.field public static final Ou:Z
+.field public static final devFeatIsHongmi:Z
 
-.field public static final Pu:Z
+.field public static final deviceIsMiMix2S:Z
 
-.field public static final Qu:Z
+.field public static final deviceIsMi8SE:Z
 
-.field public static final Ru:Z
+.field public static final deviceIsMi8:Z
 
-.field public static final Su:Z
+.field public static final deviceIsMiMix35G:Z
 
-.field public static final Tu:Z
+.field public static final deviceIsMiMix3:Z
 
-.field public static final Uu:Z
+.field public static final deviceIsMi9:Z
 
-.field public static final Vu:Z
+.field public static final deviceIsMi9SE:Z
 
-.field public static final Wu:Z
+.field public static final deviceIsRedmiNote8Pro:Z
 
-.field public static final Xu:Z
+.field public static final deviceIsPocoXx:Z
 
-.field public static final Yu:Z
+.field public static final deviceIsRedmiNote8ProIndia:Z
 
-.field public static final Zu:Z
+.field public static final deviceIsRedmiNote8:Z
 
-.field public static final _u:Z
+.field public static final deviceIsMi9Lite:Z
 
-.field public static final bv:Z
+.field public static final deviceIsMiCC9:Z
 
-.field public static final cv:Z
+.field public static final deviceIsMiCC9e:Z
 
-.field public static final dv:Z
+.field public static final deviceIsMiA3:Z
 
-.field public static final ev:Z
+.field public static final deviceIsMiNote10:Z
 
-.field public static final fv:Z
+.field public static final deviceIsMiNote10WithCamVendor03:Z
 
-.field public static final gv:Z
+.field public static final deviceIsMi10:Z
 
-.field public static final hv:Z
+.field public static final deviceIsMi10Pro:Z
 
-.field public static final jv:Z
+.field public static final deviceIsRedmiK30Pro:Z
 
-.field public static final kv:Z
+.field public static final deviceIsMi2SA:Z
 
-.field public static final lg:Z
+.field public static final deviceIsRedmiK30ProZoom:Z
 
-.field public static final lv:Z
-
-.field public static final mv:Z
+.field public static final deviceIsMiMixAlpha:Z
 
 .field public static final nv:Z
 
-.field public static final og:Z
+.field public static final deviceIsMi2Ax:Z
 
-.field public static final ov:Z
+.field public static final deviceIsMi9Pro5G:Z
 
 .field public static final pv:Z
 
-.field public static final qv:Z
+.field public static final propRoCustTestEqCm:Z
 
 .field public static final rv:Z
 
-.field public static final sg:Z
+.field public static final devFeatIsXiaomi:Z
 
-.field private static final sv:I = 0x1
+.field private static final one:I = 0x1
 
-.field private static final tv:I = 0x4
+.field private static final four:I = 0x4
 
-.field private static final uv:I = 0x8
+.field private static final eight:I = 0x8
 
-.field public static final vu:Ljava/lang/String;
+.field public static final buildDevice:Ljava/lang/String;
 
 .field private static vv:Ljava/util/ArrayList; = null
     .annotation system Ldalvik/annotation/Signature;
@@ -114,15 +112,15 @@
     .end annotation
 .end field
 
-.field public static final wu:Ljava/lang/String; = "qcom"
+.field public static final str_qcom:Ljava/lang/String; = "qcom"
 
 .field private static final wv:[Ljava/lang/String;
 
-.field public static final xu:Ljava/lang/String; = "mediatek"
+.field public static final str_mediatek:Ljava/lang/String; = "mediatek"
 
-.field private static final xv:Ljava/lang/String; = "ro.boot.hwversion"
+.field private static final str_ro_boot_hwversion:Ljava/lang/String; = "ro.boot.hwversion"
 
-.field private static final yu:I = 0x64
+.field private static final hundred:I = 0x64
 
 .field private static final yv:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
@@ -135,7 +133,7 @@
     .end annotation
 .end field
 
-.field public static final zu:Ljava/lang/String;
+.field public static final buildModel:Ljava/lang/String;
 
 
 # direct methods
@@ -144,21 +142,21 @@
 
     sget-object v0, Landroid/os/Build;->DEVICE:Ljava/lang/String;
 
-    sput-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sput-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
-    sput-object v0, Lcom/mi/config/b;->zu:Ljava/lang/String;
+    sput-object v0, Lcom/mi/config/b;->buildModel:Ljava/lang/String;
 
     sget-boolean v0, Ld/d/a;->device_is_aries_or_taurus:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->lg:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi2SA:Z
 
     sget-boolean v0, Ld/d/a;->model_is_m2ax:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->og:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi2Ax:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "cancro"
 
@@ -190,11 +188,7 @@
     move v0, v2
 
     :goto_0
-    sput-boolean v0, Lcom/mi/config/b;->Au:Z
-
-    sget-boolean v0, Lcom/mi/config/b;->Au:Z
-
-    sput-boolean v0, Lcom/mi/config/b;->Bu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi3W:Z
 
     sget-boolean v0, Ld/d/a;->device_is_HM201302x:Z
 
@@ -216,37 +210,37 @@
     move v0, v2
 
     :goto_1
-    sput-boolean v0, Lcom/mi/config/b;->Cu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1:Z
 
     sget-boolean v0, Ld/d/a;->device_is_HM201401x:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->Du:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1STD:Z
 
     sget-boolean v0, Ld/d/a;->device_is_HM2014501:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->Eu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1S4G:Z
 
     sget-boolean v0, Ld/d/a;->device_is_armani:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->Fu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1SW:Z
 
     sget-boolean v0, Ld/d/a;->device_is_lcsh92_wet_x:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->Gu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmiNote1WTD:Z
 
     sget-boolean v0, Ld/d/a;->device_is_lte26007:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->Hu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmi2A:Z
 
     sget-boolean v0, Ld/d/a;->device_is_cancro_mi4:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->Iu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi4W:Z
 
     sget-boolean v0, Ld/d/a;->device_is_virgo:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->Ju:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiNote:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "leo"
 
@@ -254,9 +248,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Ku:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiNotePro:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "lithium"
 
@@ -264,9 +258,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Lu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiMix:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "chiron"
 
@@ -274,9 +268,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Mu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiMix2:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "beryllium"
 
@@ -284,9 +278,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Nu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsPocoF1:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "violet"
 
@@ -294,7 +288,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Ou:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmiNote7Pro:Z
 
     const-string v0, "is_hongmi"
 
@@ -302,7 +296,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Pu:Z
+    sput-boolean v0, Lcom/mi/config/b;->devFeatIsHongmi:Z
 
     const-string v0, "is_xiaomi"
 
@@ -310,9 +304,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->sg:Z
+    sput-boolean v0, Lcom/mi/config/b;->devFeatIsXiaomi:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "polaris"
 
@@ -320,9 +314,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Qu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiMix2S:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "sirius"
 
@@ -330,9 +324,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Ru:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi8SE:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "dipper"
 
@@ -340,9 +334,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Su:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi8:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "andromeda"
 
@@ -350,9 +344,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Tu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiMix35G:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "perseus"
 
@@ -360,9 +354,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Uu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiMix3:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "cepheus"
 
@@ -370,9 +364,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Vu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi9:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "grus"
 
@@ -380,9 +374,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Wu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi9SE:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "begonia"
 
@@ -390,9 +384,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Xu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmiNote8Pro:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "phoenix"
 
@@ -402,7 +396,7 @@
 
     if-nez v0, :cond_3
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "phoenixin"
 
@@ -424,9 +418,9 @@
     move v0, v1
 
     :goto_3
-    sput-boolean v0, Lcom/mi/config/b;->Yu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsPocoXx:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "begoniain"
 
@@ -434,9 +428,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->Zu:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmiNote8ProIndia:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "ginkgo"
 
@@ -444,9 +438,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->_u:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmiNote8:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "pyxis"
 
@@ -454,9 +448,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->bv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "vela"
 
@@ -464,9 +458,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->cv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiCC9:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "laurus"
 
@@ -474,9 +468,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->dv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiCC9e:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "laurel_sprout"
 
@@ -484,9 +478,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->ev:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiA3:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "tucana"
 
@@ -494,9 +488,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->fv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -526,9 +520,9 @@
     move v0, v2
 
     :goto_4
-    sput-boolean v0, Lcom/mi/config/b;->gv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10WithCamVendor03:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "umi"
 
@@ -536,9 +530,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->hv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi10:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "cmi"
 
@@ -546,9 +540,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->jv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "lmi"
 
@@ -558,7 +552,7 @@
 
     if-nez v0, :cond_6
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "lmiin"
 
@@ -580,9 +574,9 @@
     move v0, v1
 
     :goto_6
-    sput-boolean v0, Lcom/mi/config/b;->kv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmiK30Pro:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "lmipro"
 
@@ -592,7 +586,7 @@
 
     if-nez v0, :cond_8
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "lmiinpro"
 
@@ -614,9 +608,9 @@
     move v0, v1
 
     :goto_8
-    sput-boolean v0, Lcom/mi/config/b;->lv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsRedmiK30ProZoom:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "draco"
 
@@ -624,9 +618,9 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->mv:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMiMixAlpha:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "picasso"
 
@@ -636,7 +630,7 @@
 
     if-nez v0, :cond_a
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "picassoin"
 
@@ -655,7 +649,7 @@
     :goto_9
     sput-boolean v1, Lcom/mi/config/b;->nv:Z
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "crux"
 
@@ -663,7 +657,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/mi/config/b;->ov:Z
+    sput-boolean v0, Lcom/mi/config/b;->deviceIsMi9Pro5G:Z
 
     sget-boolean v0, Ld/d/a;->build_type_user_version_incremental_not_XYZ:Z
 
@@ -671,7 +665,7 @@
 
     sget-boolean v0, Ld/d/a;->ro_cust_test_is_cm:Z
 
-    sput-boolean v0, Lcom/mi/config/b;->qv:Z
+    sput-boolean v0, Lcom/mi/config/b;->propRoCustTestEqCm:Z
 
     sget-boolean v0, Ld/d/a;->carrier_name_is_cm_variant_cn_chinamobile_cta:Z
 
@@ -931,7 +925,7 @@
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Pu:Z
+    sget-boolean v0, Lcom/mi/config/b;->devFeatIsHongmi:Z
 
     if-eqz v0, :cond_0
 
@@ -1044,7 +1038,7 @@
 .method public static Qk()Z
     .locals 2
 
-    sget-boolean v0, Lcom/mi/config/b;->qv:Z
+    sget-boolean v0, Lcom/mi/config/b;->propRoCustTestEqCm:Z
 
     const/4 v1, 0x0
 
@@ -1609,7 +1603,7 @@
 
     if-nez v0, :cond_1
 
-    sget-boolean v0, Lcom/mi/config/b;->Yu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsPocoXx:Z
 
     if-eqz v0, :cond_0
 
@@ -1723,7 +1717,7 @@
 
     move-result-object v0
 
-    sget-boolean v1, Lcom/mi/config/b;->ov:Z
+    sget-boolean v1, Lcom/mi/config/b;->deviceIsMi9Pro5G:Z
 
     if-eqz v1, :cond_1
 
@@ -1772,7 +1766,7 @@
 .method public static cl()Z
     .locals 3
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "onc"
 
@@ -1827,7 +1821,7 @@
 .method public static dl()Z
     .locals 2
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "lavender"
 
@@ -1879,15 +1873,15 @@
 .method public static el()Z
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->Lu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiMix:Z
 
     if-nez v0, :cond_1
 
-    sget-boolean v0, Lcom/mi/config/b;->Mu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiMix2:Z
 
     if-nez v0, :cond_1
 
-    sget-boolean v0, Lcom/mi/config/b;->Qu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiMix2S:Z
 
     if-eqz v0, :cond_0
 
@@ -1938,11 +1932,11 @@
 
     if-nez v0, :cond_1
 
-    sget-boolean v0, Lcom/mi/config/b;->bv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     if-nez v0, :cond_1
 
-    sget-boolean v0, Lcom/mi/config/b;->Wu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9SE:Z
 
     if-nez v0, :cond_1
 
@@ -2027,13 +2021,13 @@
 .method public static gl()Z
     .locals 2
 
-    sget-boolean v0, Lcom/mi/config/b;->Fu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1SW:Z
 
     const/4 v1, 0x1
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Hu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi2A:Z
 
     if-nez v0, :cond_0
 
@@ -2041,35 +2035,35 @@
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Au:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi3W:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Gu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiNote1WTD:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Cu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Du:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1STD:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Eu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1S4G:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->lg:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi2SA:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->og:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi2Ax:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Bu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi3W:Z
 
     if-nez v0, :cond_0
 
@@ -2107,7 +2101,7 @@
 .method public static hl()Z
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->Uu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiMix3:Z
 
     if-eqz v0, :cond_0
 
@@ -2143,7 +2137,7 @@
 .method public static il()Z
     .locals 2
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "davinci"
 
@@ -2310,7 +2304,7 @@
 .method public static jl()Z
     .locals 2
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "raphael"
 
@@ -2352,7 +2346,7 @@
 .method public static kl()Z
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->bv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     if-eqz v0, :cond_0
 
@@ -2402,7 +2396,7 @@
 .method public static ll()Z
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->fv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-eqz v0, :cond_0
 
@@ -2520,7 +2514,7 @@
 .method public static ol()Z
     .locals 2
 
-    sget-boolean v0, Lcom/mi/config/b;->Nu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsPocoF1:Z
 
     if-eqz v0, :cond_0
 
@@ -2594,11 +2588,11 @@
 .method public static pm()Z
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->sg:Z
+    sget-boolean v0, Lcom/mi/config/b;->devFeatIsXiaomi:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Pu:Z
+    sget-boolean v0, Lcom/mi/config/b;->devFeatIsHongmi:Z
 
     if-nez v0, :cond_0
 
@@ -2616,11 +2610,11 @@
 .method public static ql()Z
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->kv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiK30Pro:Z
 
     if-nez v0, :cond_1
 
-    sget-boolean v0, Lcom/mi/config/b;->lv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiK30ProZoom:Z
 
     if-eqz v0, :cond_0
 
@@ -2642,13 +2636,13 @@
 .method public static qm()Z
     .locals 2
 
-    sget-boolean v0, Lcom/mi/config/b;->Fu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1SW:Z
 
     const/4 v1, 0x1
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Hu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi2A:Z
 
     if-nez v0, :cond_0
 
@@ -2656,39 +2650,39 @@
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Au:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi3W:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Gu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiNote1WTD:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Cu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Du:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1STD:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Eu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1S4G:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->lg:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi2SA:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->og:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi2Ax:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Bu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi3W:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Iu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi4W:Z
 
     if-nez v0, :cond_0
 
@@ -2776,7 +2770,7 @@
 .method public static ul()Z
     .locals 2
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "raphael"
 
@@ -2810,11 +2804,11 @@
 .method public static vl()Z
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->fv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->gv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10WithCamVendor03:Z
 
     if-nez v0, :cond_0
 

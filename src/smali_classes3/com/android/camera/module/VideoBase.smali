@@ -2189,11 +2189,11 @@
     return v0
 
     :cond_2
-    sget-boolean p0, Lcom/mi/config/b;->Xu:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsRedmiNote8Pro:Z
 
     if-nez p0, :cond_5
 
-    sget-boolean p0, Lcom/mi/config/b;->Zu:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsRedmiNote8ProIndia:Z
 
     if-eqz p0, :cond_3
 

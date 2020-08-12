@@ -1808,7 +1808,7 @@ public final class Util {
 
     private static File getColorMapXmlMapFile() {
         if (Build.VERSION.SDK_INT >= 26) {
-            File file = (!b.ev || !SystemProperties.get("ro.boot.hwc").equalsIgnoreCase("India")) ? new File("/vendor/etc/screen_light.xml") : new File("/vendor/etc/screen_light_ind.xml");
+            File file = (!b.deviceIsMiA3 || !SystemProperties.get("ro.boot.hwc").equalsIgnoreCase("India")) ? new File("/vendor/etc/screen_light.xml") : new File("/vendor/etc/screen_light_ind.xml");
             if (file.exists()) {
                 return file;
             }
@@ -4582,7 +4582,7 @@ public final class Util {
     }
 
     public static boolean workaroundForJ1() {
-        return b.vu.equals("cmi");
+        return b.buildDevice.equals("cmi");
     }
 
     public static void writeFile2Stream(File file, ByteArrayOutputStream byteArrayOutputStream, int i) {

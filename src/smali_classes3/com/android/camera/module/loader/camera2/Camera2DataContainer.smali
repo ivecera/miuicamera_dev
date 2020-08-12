@@ -509,7 +509,7 @@
 
     if-ne v7, v6, :cond_0
 
-    sget-boolean v7, Lcom/mi/config/b;->_u:Z
+    sget-boolean v7, Lcom/mi/config/b;->deviceIsRedmiNote8:Z
 
     if-nez v7, :cond_0
 
@@ -1241,7 +1241,7 @@
 
     if-eqz v2, :cond_15
 
-    sget-boolean v2, Lcom/mi/config/b;->fv:Z
+    sget-boolean v2, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-nez v2, :cond_15
 

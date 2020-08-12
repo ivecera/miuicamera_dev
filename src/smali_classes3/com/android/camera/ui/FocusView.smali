@@ -3353,7 +3353,7 @@
 
     move-result v0
 
-    sget-boolean v2, Lcom/mi/config/b;->cv:Z
+    sget-boolean v2, Lcom/mi/config/b;->deviceIsMiCC9:Z
 
     if-eqz v2, :cond_1
 

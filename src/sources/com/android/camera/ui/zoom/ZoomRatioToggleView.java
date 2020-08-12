@@ -229,7 +229,7 @@ public class ZoomRatioToggleView extends ViewGroup implements View.OnClickListen
 
     /* access modifiers changed from: private */
     public static void debugUi(String str, String str2) {
-        if (UI_DEBUG_ENABLED || b.hv || b.jv) {
+        if (UI_DEBUG_ENABLED || b.deviceIsMi10 || b.deviceIsMi10Pro) {
             com.android.camera.log.Log.d(str, str2);
         }
     }

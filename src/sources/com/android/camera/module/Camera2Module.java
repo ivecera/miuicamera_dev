@@ -1035,7 +1035,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             if ((!ModuleManager.isSuperNightScene() && !this.mShowSuperNightHint) || DataRepository.dataItemFeature().c_19039_0x0021()) {
                 if (((BaseModule) this).mMutexModePicker.isHdr()) {
                     boolean z2 = true;
-                    if (!b.jv || ((BaseModule) this).mCamera2Device.getCapabilities().getFacing() != 1 || ((BaseModule) this).mCamera2Device.isMacroMode() || ((BaseModule) this).mCamera2Device.getCameraConfigs().isRearBokehEnabled()) {
+                    if (!b.deviceIsMi10Pro || ((BaseModule) this).mCamera2Device.getCapabilities().getFacing() != 1 || ((BaseModule) this).mCamera2Device.isMacroMode() || ((BaseModule) this).mCamera2Device.getCameraConfigs().isRearBokehEnabled()) {
                         z2 = false;
                     }
                     if (z2) {
@@ -2063,7 +2063,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 return true;
             }
             if (this.mOperatingMode != 32773 || b.Dl()) {
-                return DataRepository.dataItemFeature().isSupportUltraWide() || b.Ou || b.Tu;
+                return DataRepository.dataItemFeature().isSupportUltraWide() || b.deviceIsRedmiNote7Pro || b.deviceIsMiMix35G;
             }
             return false;
         }
@@ -2340,7 +2340,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 ModeProtocol.TopAlert topAlert2 = (ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172);
                 ModeProtocol.ConfigChanges configChanges = (ModeProtocol.ConfigChanges) ModeCoordinatorImpl.getInstance().getAttachProtocol(164);
                 boolean z2 = true;
-                if (!isFrontCamera() && !b.gv) {
+                if (!isFrontCamera() && !b.deviceIsMiNote10WithCamVendor03) {
                     ((BaseModule) this).mCamera2Device.setCameraAI30(i == 25);
                 }
                 if (this.mIsGoogleLensAvailable) {
@@ -3325,7 +3325,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                 range = range2;
             }
         }
-        if (b.Ru && CameraSettings.isPortraitModeBackOn()) {
+        if (b.deviceIsMi8SE && CameraSettings.isPortraitModeBackOn()) {
             ((BaseModule) this).mCamera2Device.setFpsRange(new Range<>(30, 30));
         }
     }
@@ -3419,7 +3419,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                     if (DataRepository.dataItemFeature().c_27810_0x0006()) {
                     }
                 }
-                if (b.Qu) {
+                if (b.deviceIsMiMix2S) {
                 }
                 if (((BaseModule) this).mMutexModePicker.isNormal()) {
                     if (!CameraSettings.isGroupShotOn()) {
@@ -3456,7 +3456,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             ((BaseModule) this).mCamera2Device.setEnableOIS(false);
         } else if (((BaseModule) this).mModuleIndex == 167 && Long.parseLong(getManualValue(CameraSettings.KEY_QC_EXPOSURETIME, getString(R.string.pref_camera_exposuretime_default))) > 1000000000) {
             ((BaseModule) this).mCamera2Device.setEnableOIS(false);
-        } else if (b.hv && isDualCamera() && getZoomRatio() > 1.0f) {
+        } else if (b.deviceIsMi10 && isDualCamera() && getZoomRatio() > 1.0f) {
             ((BaseModule) this).mCamera2Device.setEnableOIS(true);
         } else if (!isDualCamera() || ((BaseModule) this).mCameraCapabilities.isTeleOISSupported() || getZoomRatio() <= 1.0f) {
             ((BaseModule) this).mCamera2Device.setEnableOIS(true);
@@ -3575,7 +3575,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             if (!this.mEnableParallelSession || !isPortraitMode()) {
                 List<CameraSize> supportedOutputSizeWithAssignedMode3 = ((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(i);
                 CameraSize bestPictureSize = getBestPictureSize(supportedOutputSizeWithAssignedMode3);
-                if (b.Wu && getOperatingMode() == 36867) {
+                if (b.deviceIsMi9SE && getOperatingMode() == 36867) {
                     bestPictureSize = new CameraSize(bestPictureSize.width / 2, bestPictureSize.height / 2);
                 }
                 if (b.isMTKPlatform() && isFrontCamera() && isParallelSessionEnable()) {
@@ -3723,7 +3723,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
         Log.d(TAG, "BS = " + z2 + " UW = " + z + " id = " + i2);
         PictureSizeManager.initializeLimitWidth(((BaseModule) this).mCameraCapabilities.getSupportedOutputSizeWithAssignedMode(i), isBackCamera() ? DataRepository.dataItemFeature().c_22367_0x0004() : 0, ((BaseModule) this).mModuleIndex, ((BaseModule) this).mBogusCameraId);
         CameraSize bestPictureSize = PictureSizeManager.getBestPictureSize();
-        if (b.Wu && getOperatingMode() == 36867) {
+        if (b.deviceIsMi9SE && getOperatingMode() == 36867) {
             bestPictureSize = new CameraSize(bestPictureSize.width / 2, bestPictureSize.height / 2);
         }
         if (b.isMTKPlatform() && isFrontCamera()) {
@@ -3750,7 +3750,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     }
 
     private void updateSRAndMFNR() {
-        if ((b.fv || b.vu.equals("cmi")) && !((BaseModule) this).mMutexModePicker.isHdr()) {
+        if ((b.deviceIsMiNote10 || b.buildDevice.equals("cmi")) && !((BaseModule) this).mMutexModePicker.isHdr()) {
             if (isIn3OrMoreSatMode() && getZoomRatio() > 1.0f && ((BaseModule) this).mCamera2Device.getSatMasterCameraId() == 2) {
                 ((BaseModule) this).mMutexModePicker.resetMutexMode();
             } else {
@@ -4584,13 +4584,13 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
 
     /* access modifiers changed from: protected */
     /* JADX WARNING: Code restructure failed: missing block: B:119:0x01f6, code lost:
-        if (com.mi.config.b.hv == false) goto L_0x01b1;
+        if (com.mi.config.b.deviceIsMi10 == false) goto L_0x01b1;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:92:0x01a2, code lost:
         if (((com.android.camera.module.BaseModule) r10).mCameraCapabilities.isSupportLightTripartite() != false) goto L_0x01a4;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:97:0x01ae, code lost:
-        if (com.mi.config.b.hv != false) goto L_0x01a4;
+        if (com.mi.config.b.deviceIsMi10 != false) goto L_0x01a4;
      */
     @Override // com.android.camera.module.BaseModule
     public int getOperatingMode() {
@@ -4607,7 +4607,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
                     i2 = CameraCapabilities.SESSION_OPERATION_MODE_ALGO_UP_MANUAL_ULTRA_PIXEL;
                 } else {
                     Log.d(TAG, "getOperatingMode: SESSION_OPERATION_MODE_ALGO_UP_MANUAL");
-                    i2 = (b.Xu || b.Zu) ? CameraCapabilities.SESSION_OPERATION_MODE_ALGO_UP_MANUAL_G7 : CameraCapabilities.SESSION_OPERATION_MODE_ALGO_UP_MANUAL;
+                    i2 = (b.deviceIsRedmiNote8Pro || b.deviceIsRedmiNote8ProIndia) ? CameraCapabilities.SESSION_OPERATION_MODE_ALGO_UP_MANUAL_G7 : CameraCapabilities.SESSION_OPERATION_MODE_ALGO_UP_MANUAL;
                 }
             } else if (171 == getModuleIndex()) {
                 if (!isFrontCamera() || isDualFrontCamera()) {
@@ -4870,7 +4870,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
 
     @Override // com.android.camera2.Camera2Proxy.SuperNightCallback
     public boolean isSupportSuperNight() {
-        if (!DataRepository.dataItemFeature().c_22367_0x0003() || (b.gv && !Util.sSuperNightDefaultModeEnable)) {
+        if (!DataRepository.dataItemFeature().c_22367_0x0003() || (b.deviceIsMiNote10WithCamVendor03 && !Util.sSuperNightDefaultModeEnable)) {
             return false;
         }
         return (163 == getModuleIndex() || 165 == getModuleIndex()) && isBackCamera() && 1.0f == CameraSettings.readZoom() && !this.mIsMacroModeEnable && isSuperNightSeEnable();
@@ -5913,7 +5913,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             return false;
         } else {
             if (((BaseModule) this).mIsSatFallback == 0 || !shouldCheckSatFallbackState()) {
-                boolean z = b.Vu && isZoomRatioBetweenUltraAndWide();
+                boolean z = b.deviceIsMi9 && isZoomRatioBetweenUltraAndWide();
                 if (!CameraSettings.isBurstShootingEnable() || !ModuleManager.isCameraModule() || this.mIsImageCaptureIntent || CameraSettings.isGroupShotOn() || CameraSettings.isGradienterOn() || CameraSettings.isTiltShiftOn() || DataRepository.dataItemRunning().isSwitchOn("pref_camera_hand_night_key") || DataRepository.dataItemRunning().isSwitchOn("pref_camera_scenemode_setting_key") || CameraSettings.isPortraitModeBackOn() || !isBackCamera() || this.mMultiSnapStatus || ((BaseModule) this).mHandler.hasMessages(24) || this.mPendingMultiCapture || isUltraWideBackCamera() || z || CameraSettings.isUltraPixelOn() || isStandaloneMacroCamera() || CameraSettings.isAIWatermarkOn()) {
                     this.mLongPressedAutoFocus = true;
                     ((BaseModule) this).mMainProtocol.setFocusViewType(false);

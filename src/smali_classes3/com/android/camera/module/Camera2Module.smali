@@ -1458,7 +1458,7 @@
 
     if-eqz v0, :cond_6
 
-    sget-boolean v0, Lcom/mi/config/b;->jv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     const/4 v1, 0x1
 
@@ -6804,11 +6804,11 @@
 
     if-nez p0, :cond_a
 
-    sget-boolean p0, Lcom/mi/config/b;->Ou:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsRedmiNote7Pro:Z
 
     if-nez p0, :cond_a
 
-    sget-boolean p0, Lcom/mi/config/b;->Tu:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMiMix35G:Z
 
     if-eqz p0, :cond_b
 
@@ -8181,7 +8181,7 @@
 
     if-nez v3, :cond_7
 
-    sget-boolean v3, Lcom/mi/config/b;->gv:Z
+    sget-boolean v3, Lcom/mi/config/b;->deviceIsMiNote10WithCamVendor03:Z
 
     if-nez v3, :cond_7
 
@@ -12861,7 +12861,7 @@
     goto :goto_0
 
     :cond_2
-    sget-boolean v0, Lcom/mi/config/b;->Ru:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi8SE:Z
 
     if-eqz v0, :cond_3
 
@@ -13308,7 +13308,7 @@
     goto :goto_2
 
     :cond_8
-    sget-boolean p1, Lcom/mi/config/b;->Qu:Z
+    sget-boolean p1, Lcom/mi/config/b;->deviceIsMiMix2S:Z
 
     if-eqz p1, :cond_9
 
@@ -13509,7 +13509,7 @@
     return-void
 
     :cond_1
-    sget-boolean v0, Lcom/mi/config/b;->hv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10:Z
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -14254,7 +14254,7 @@
 
     move-result-object v11
 
-    sget-boolean v12, Lcom/mi/config/b;->Wu:Z
+    sget-boolean v12, Lcom/mi/config/b;->deviceIsMi9SE:Z
 
     if-eqz v12, :cond_19
 
@@ -15140,7 +15140,7 @@
 
     move-result-object v6
 
-    sget-boolean v7, Lcom/mi/config/b;->Wu:Z
+    sget-boolean v7, Lcom/mi/config/b;->deviceIsMi9SE:Z
 
     const/4 v8, 0x2
 
@@ -15264,11 +15264,11 @@
 .method private updateSRAndMFNR()V
     .locals 2
 
-    sget-boolean v0, Lcom/mi/config/b;->fv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "cmi"
 
@@ -18536,11 +18536,11 @@
 
     invoke-static {v0, v1}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v0, Lcom/mi/config/b;->Xu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiNote8Pro:Z
 
     if-nez v0, :cond_3
 
-    sget-boolean v0, Lcom/mi/config/b;->Zu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiNote8ProIndia:Z
 
     if-eqz v0, :cond_2
 
@@ -18930,7 +18930,7 @@
 
     if-eqz v0, :cond_17
 
-    sget-boolean v0, Lcom/mi/config/b;->hv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10:Z
 
     if-eqz v0, :cond_17
 
@@ -19023,7 +19023,7 @@
 
     if-eqz v0, :cond_17
 
-    sget-boolean v0, Lcom/mi/config/b;->hv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10:Z
 
     if-eqz v0, :cond_17
 
@@ -19950,7 +19950,7 @@
 
     if-eqz v0, :cond_6
 
-    sget-boolean v0, Lcom/mi/config/b;->gv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10WithCamVendor03:Z
 
     if-eqz v0, :cond_0
 
@@ -24976,7 +24976,7 @@
     return v1
 
     :cond_2
-    sget-boolean v0, Lcom/mi/config/b;->Vu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9:Z
 
     const/4 v2, 0x1
 

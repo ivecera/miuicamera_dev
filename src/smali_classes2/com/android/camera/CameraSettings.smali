@@ -1782,7 +1782,7 @@
 .method public static getCameraProximityLockSettingNeedRemove(IZ)Z
     .locals 0
 
-    sget-boolean p0, Lcom/mi/config/b;->cv:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMiCC9:Z
 
     const/4 p1, 0x1
 
@@ -1824,7 +1824,7 @@
     return v0
 
     :cond_1
-    sget-boolean p0, Lcom/mi/config/b;->cv:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMiCC9:Z
 
     if-eqz p0, :cond_2
 
@@ -2294,7 +2294,7 @@
     return p0
 
     :cond_1
-    sget-boolean v0, Lcom/mi/config/b;->gv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10WithCamVendor03:Z
 
     if-eqz v0, :cond_4
 
@@ -2314,11 +2314,11 @@
     return p0
 
     :cond_3
-    sget-boolean v0, Lcom/mi/config/b;->Ju:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote:Z
 
     if-nez v0, :cond_5
 
-    sget-boolean v0, Lcom/mi/config/b;->Ku:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNotePro:Z
 
     if-eqz v0, :cond_4
 
@@ -2377,7 +2377,7 @@
 .method public static final getDualCameraWaterMarkFilePathVendor(Z)Ljava/lang/String;
     .locals 2
 
-    sget-boolean v0, Lcom/mi/config/b;->Nu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsPocoF1:Z
 
     if-eqz v0, :cond_0
 
@@ -3185,7 +3185,7 @@
     return v0
 
     :cond_0
-    sget-boolean p1, Lcom/mi/config/b;->cv:Z
+    sget-boolean p1, Lcom/mi/config/b;->deviceIsMiCC9:Z
 
     if-eqz p1, :cond_1
 
@@ -4227,7 +4227,7 @@
 .method public static getRetainCameraModeSettingNeedRemove(IZ)Z
     .locals 0
 
-    sget-boolean p0, Lcom/mi/config/b;->cv:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMiCC9:Z
 
     if-eqz p0, :cond_0
 
@@ -4313,7 +4313,7 @@
     return v0
 
     :cond_0
-    sget-boolean p1, Lcom/mi/config/b;->cv:Z
+    sget-boolean p1, Lcom/mi/config/b;->deviceIsMiCC9:Z
 
     if-eqz p1, :cond_1
 
@@ -5413,7 +5413,7 @@
     return p1
 
     :cond_0
-    sget-boolean p0, Lcom/mi/config/b;->mv:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMiMixAlpha:Z
 
     if-eqz p0, :cond_1
 
@@ -5444,7 +5444,7 @@
     return v0
 
     :cond_1
-    sget-boolean p1, Lcom/mi/config/b;->mv:Z
+    sget-boolean p1, Lcom/mi/config/b;->deviceIsMiMixAlpha:Z
 
     if-eqz p1, :cond_2
 
@@ -5517,7 +5517,7 @@
     return v0
 
     :cond_2
-    sget-boolean p0, Lcom/mi/config/b;->mv:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMiMixAlpha:Z
 
     if-eqz p0, :cond_3
 
@@ -5586,7 +5586,7 @@
     return v0
 
     :cond_3
-    sget-boolean p0, Lcom/mi/config/b;->mv:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMiMixAlpha:Z
 
     if-eqz p0, :cond_4
 
@@ -10437,11 +10437,11 @@
 .method public static isVideoCaptureVisible()Z
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->Uu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiMix3:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->Tu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiMix35G:Z
 
     if-eqz v0, :cond_1
 

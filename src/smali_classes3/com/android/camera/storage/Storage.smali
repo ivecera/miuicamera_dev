@@ -181,7 +181,7 @@
 
     sput-object v0, Lcom/android/camera/storage/Storage;->SECONDARY_STORAGE_PATH:Ljava/lang/String;
 
-    sget-boolean v0, Lcom/mi/config/b;->Cu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmi1:Z
 
     if-eqz v0, :cond_0
 

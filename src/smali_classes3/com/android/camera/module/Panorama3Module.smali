@@ -4310,7 +4310,7 @@
 
     iput v0, p0, Lcom/android/camera/module/Panorama3Module;->mViewAngleV:F
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "lavender"
 

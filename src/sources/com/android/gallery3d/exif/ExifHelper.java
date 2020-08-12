@@ -532,7 +532,7 @@ public class ExifHelper {
                 try {
                     setTagValue(exifInterface, ExifInterface.TAG_ORIENTATION, Short.valueOf(ExifInterface.getExifOrientationValue(i)));
                     setTagValue(exifInterface, ExifInterface.TAG_MAKE, Build.MANUFACTURER);
-                    setTagValue(exifInterface, ExifInterface.TAG_MODEL, b.zu);
+                    setTagValue(exifInterface, ExifInterface.TAG_MODEL, b.buildModel);
                     if (j > 0) {
                         exifInterface.addDateTimeStampTag(ExifInterface.TAG_DATE_TIME, j, TimeZone.getDefault());
                         exifInterface.addSubTagSecTime(ExifInterface.TAG_SUB_SEC_TIME, j, TimeZone.getDefault());
@@ -698,7 +698,7 @@ public class ExifHelper {
             try {
                 setTagValue(exifInterface, ExifInterface.TAG_ORIENTATION, Short.valueOf(ExifInterface.getExifOrientationValue(i)));
                 setTagValue(exifInterface, ExifInterface.TAG_MAKE, Build.MANUFACTURER);
-                setTagValue(exifInterface, ExifInterface.TAG_MODEL, b.zu);
+                setTagValue(exifInterface, ExifInterface.TAG_MODEL, b.buildModel);
                 if (j > 0) {
                     exifInterface.addDateTimeStampTag(ExifInterface.TAG_DATE_TIME, j, TimeZone.getDefault());
                     exifInterface.addSubTagSecTime(ExifInterface.TAG_SUB_SEC_TIME, j, TimeZone.getDefault());

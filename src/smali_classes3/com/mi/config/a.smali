@@ -32,7 +32,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v1, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v1, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1150,7 +1150,7 @@
 .method public Ib()I
     .locals 2
 
-    sget-boolean v0, Lcom/mi/config/b;->gv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10WithCamVendor03:Z
 
     if-eqz v0, :cond_0
 
@@ -1628,7 +1628,7 @@
     return v1
 
     :cond_0
-    sget-boolean v0, Lcom/mi/config/b;->bv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     if-eqz v0, :cond_1
 
@@ -2943,7 +2943,7 @@
 .method public isCinematicPhotoSupported()Z
     .locals 3
 
-    sget-boolean v0, Lcom/mi/config/b;->bv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     const/4 v1, 0x0
 

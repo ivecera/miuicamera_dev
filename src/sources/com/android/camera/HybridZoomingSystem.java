@@ -27,7 +27,7 @@ public class HybridZoomingSystem {
     public static final float FLOAT_ZOOM_RATIO_5X = 5.0f;
     public static final float FLOAT_ZOOM_RATIO_MACRO = 0.0f;
     public static final float FLOAT_ZOOM_RATIO_NONE = 1.0f;
-    public static final float FLOAT_ZOOM_RATIO_TELE = (b.lv ? 3.0f : 2.0f);
+    public static final float FLOAT_ZOOM_RATIO_TELE = (b.deviceIsRedmiK30ProZoom ? 3.0f : 2.0f);
     public static final float FLOAT_ZOOM_RATIO_ULTR = 0.6f;
     public static final float FLOAT_ZOOM_RATIO_ULTRA_TELE_THRESHHOLD = 3.7f;
     public static final float FLOAT_ZOOM_RATIO_WIDE = 1.0f;
@@ -130,7 +130,7 @@ public class HybridZoomingSystem {
             i3++;
         }
         Log.d(TAG, Arrays.toString(sSupportedOpticalZoomRatios) + "[" + sDefaultOpticalZoomRatioIndex + "]");
-        if (b.lv == 1) {
+        if (b.deviceIsRedmiK30ProZoom == 1) {
             sFunOrLiveSupportedOpticalZoomRatios = sSupportedOpticalZoomRatios;
         }
         if (DataRepository.dataItemFeature().isSupportMacroMode() == 1) {
@@ -162,7 +162,7 @@ public class HybridZoomingSystem {
         }
         if (DataRepository.dataItemFeature().c_33066_0x0003() == 1) {
             sNightSupportedOpticalZoomRatios = new float[]{0.6f, 1.0f, 2.0f};
-            if (b.lv == 1) {
+            if (b.deviceIsRedmiK30ProZoom == 1) {
                 sNightSupportedOpticalZoomRatios = sSupportedOpticalZoomRatios;
             }
             sNightSupportedZoomRatioIndex = 1;

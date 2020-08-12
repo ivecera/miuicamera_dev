@@ -67,7 +67,7 @@ public class Storage {
     public static String CAMERA_TEMP_DIRECTORY = (FIRST_CONSIDER_STORAGE_PATH + CAMERA_STORAGE_PATH_TEMP);
     public static String DIRECTORY = (FIRST_CONSIDER_STORAGE_PATH + CAMERA_STORAGE_PATH_SUFFIX);
     public static final String DOCUMENT_PICTURE = "DOCUMENT_PICTURE";
-    public static String FIRST_CONSIDER_STORAGE_PATH = (b.Cu ? SECONDARY_STORAGE_PATH : PRIMARY_STORAGE_PATH);
+    public static String FIRST_CONSIDER_STORAGE_PATH = (b.deviceIsRedmi1 ? SECONDARY_STORAGE_PATH : PRIMARY_STORAGE_PATH);
     public static final String GIF_SUFFIX = ".gif";
     public static final String HEIC_SUFFIX = ".HEIC";
     public static String HIDEDIRECTORY = (FIRST_CONSIDER_STORAGE_PATH + HIDE_CAMERA_STORAGE_PATH_SUFFIX);
@@ -781,9 +781,9 @@ public class Storage {
     }
 
     public static boolean hasSecondaryStorage() {
-        boolean z = (!b.fm() || SECONDARY_STORAGE_PATH == null) ? false : true;
+        boolean z = b.fm() && SECONDARY_STORAGE_PATH != null;
         if (Build.VERSION.SDK_INT >= 28) {
-            z = (UserHandle.myUserId() != 0 || !z) ? false : true;
+            z = UserHandle.myUserId() == 0 && z;
         }
         String str = TAG;
         Log.d(str, "hasSecondaryStorage=" + z);
@@ -862,12 +862,12 @@ public class Storage {
 
     public static boolean isCurrentStorageIsSecondary() {
         String str = SECONDARY_STORAGE_PATH;
-        return (str == null || !str.equals(sCurrentStoragePath)) ? false : true;
+        return str != null && str.equals(sCurrentStoragePath);
     }
 
     public static boolean isDirectoryExistsAndCanWrite(String str) {
         File file = new File(str);
-        return (!file.exists() || !file.isDirectory() || !file.canWrite()) ? false : true;
+        return file.exists() && file.isDirectory() && file.canWrite();
     }
 
     public static boolean isDocumentPicture(String str) {
@@ -899,7 +899,7 @@ public class Storage {
     }
 
     public static boolean isQuotaSupported() {
-        return (!sQuotaSupported || sQuotaBytes <= 0) ? false : true;
+        return sQuotaSupported && sQuotaBytes > 0;
     }
 
     public static boolean isRelatedStorage(Uri uri) {
@@ -915,7 +915,7 @@ public class Storage {
     }
 
     public static boolean isSecondPhoneStorage(String str) {
-        return (str == null || TextUtils.isEmpty(SECONDARY_STORAGE_PATH) || !str.startsWith(SECONDARY_STORAGE_PATH)) ? false : true;
+        return str != null && !TextUtils.isEmpty(SECONDARY_STORAGE_PATH) && str.startsWith(SECONDARY_STORAGE_PATH);
     }
 
     public static boolean isUseDocumentMode() {
@@ -1085,7 +1085,7 @@ public class Storage {
         sb.append(SECONDARY_STORAGE_PATH);
         sb.append(File.separator);
         sb.append(Environment.DIRECTORY_DCIM);
-        return (!hasSecondaryStorage() || getAvailableSpace(sb.toString()) <= 0) ? false : true;
+        return hasSecondaryStorage() && getAvailableSpace(sb.toString()) > 0;
     }
 
     private static void setLeftSpace(long j) {
@@ -1231,7 +1231,7 @@ public class Storage {
         String str5;
         boolean z2;
         boolean z3 = false;
-        boolean z4 = (str2 != null || !isUseDocumentMode()) ? false : true;
+        boolean z4 = str2 == null && isUseDocumentMode();
         String generateFilepath4Image = generateFilepath4Image(str, z);
         if (z4) {
             str3 = generateFilepath4Image;

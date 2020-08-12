@@ -8,7 +8,7 @@ public abstract class AbstractZoomSliderAdapter extends BaseHorizontalZoomView.H
     protected ZoomValueListener mZoomValueListener;
 
     protected static int getRealZoomRatioTele() {
-        return b.Qu ? 17 : 20;
+        return b.deviceIsMiMix2S ? 17 : 20;
     }
 
     public abstract boolean isEnable();

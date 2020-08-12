@@ -85,7 +85,7 @@ public class MiCamera2 extends Camera2Proxy {
     private static final int DEF_QUICK_SHOT_THRESHOLD_INTERVAL_TIME = 50;
     private static final int DEF_QUICK_SHOT_THRESHOLD_SHOT_CACHE_COUNT = 10;
     private static final int DEF_QUICK_SHOT_THRESHOLD_SHOT_CACHE_TIME_OUT = 10000;
-    private static final int MAX_IMAGE_BUFFER_SIZE = ((b.hl() || (("tucana".equals(b.vu) && !b.gv) || b.jv)) ? 12 : 10);
+    private static final int MAX_IMAGE_BUFFER_SIZE = ((b.hl() || (("tucana".equals(b.buildDevice) && !b.deviceIsMiNote10WithCamVendor03) || b.deviceIsMi10Pro)) ? 12 : 10);
     private static final int MSG_CHECK_CAMERA_ALIVE = 3;
     private static final int MSG_WAITING_AF_LOCK_TIMEOUT = 1;
     private static final int MSG_WAITING_LOCAL_PARALLEL_SERVICE_READY = 2;
@@ -827,7 +827,7 @@ public class MiCamera2 extends Camera2Proxy {
             CaptureRequestBuilder.applyFlashMode(builder, this.mCapabilities, this.mConfigs);
             if (i != 3) {
                 if (i != 6) {
-                    if (i == 7 && b.jv && flashMode == 3) {
+                    if (i == 7 && b.deviceIsMi10Pro && flashMode == 3) {
                         CaptureRequestBuilder.applyBackSoftLight(this.mCapabilities, this.mPreviewRequestBuilder, false);
                         this.mConfigs.setFlashCurrent(0);
                         CaptureRequestBuilder.applyFlashCurrent(this.mPreviewRequestBuilder, this.mCapabilities, this.mConfigs);
@@ -840,7 +840,7 @@ public class MiCamera2 extends Camera2Proxy {
                 Log.d(TAG, "applyFlashMode: flashMode = " + i2 + ", mScreenLightCallback = " + screenLightCallback);
                 CaptureRequestBuilder.applyScreenLightHint(this.mCapabilities, builder, i2 != 101);
                 if (!(i2 == 200 || i2 == 0)) {
-                    if (!b.fv) {
+                    if (!b.deviceIsMiNote10) {
                         CaptureRequestBuilder.applyBackSoftLight(this.mCapabilities, builder, flashMode == 5 || flashMode == 3);
                     } else {
                         CaptureRequestBuilder.applyBackSoftLight(this.mCapabilities, builder, i2 == 5);
@@ -930,7 +930,7 @@ public class MiCamera2 extends Camera2Proxy {
                     Camera2Proxy.ScreenLightCallback screenLightCallback2 = getScreenLightCallback();
                     Log.d(TAG, "applyFlashMode: flashMode = " + i2 + ", mScreenLightCallback = " + screenLightCallback2);
                     CaptureRequestBuilder.applyScreenLightHint(this.mCapabilities, builder, i2 != 101);
-                    if (!b.fv) {
+                    if (!b.deviceIsMiNote10) {
                     }
                     if (i2 != 0) {
                     }
@@ -941,7 +941,7 @@ public class MiCamera2 extends Camera2Proxy {
                 Camera2Proxy.ScreenLightCallback screenLightCallback22 = getScreenLightCallback();
                 Log.d(TAG, "applyFlashMode: flashMode = " + i2 + ", mScreenLightCallback = " + screenLightCallback22);
                 CaptureRequestBuilder.applyScreenLightHint(this.mCapabilities, builder, i2 != 101);
-                if (!b.fv) {
+                if (!b.deviceIsMiNote10) {
                 }
                 if (i2 != 0) {
                 }
@@ -951,7 +951,7 @@ public class MiCamera2 extends Camera2Proxy {
             Camera2Proxy.ScreenLightCallback screenLightCallback222 = getScreenLightCallback();
             Log.d(TAG, "applyFlashMode: flashMode = " + i2 + ", mScreenLightCallback = " + screenLightCallback222);
             CaptureRequestBuilder.applyScreenLightHint(this.mCapabilities, builder, i2 != 101);
-            if (!b.fv) {
+            if (!b.deviceIsMiNote10) {
             }
             if (i2 != 0) {
             }
@@ -1257,7 +1257,7 @@ public class MiCamera2 extends Camera2Proxy {
     private void configMaxParallelRequestNumberLock() {
         LocalParallelService.LocalBinder localBinder = AlgoConnector.getInstance().getLocalBinder(true);
         if (localBinder != null) {
-            int s_p_r_n_OR_M1 = b.bv ? DataRepository.dataItemGlobal().getCurrentCameraId() == 1 ? 3 : DataRepository.dataItemFeature().s_p_r_n_OR_M1() : DataRepository.dataItemFeature().s_p_r_n_OR_M1();
+            int s_p_r_n_OR_M1 = b.deviceIsMi9Lite ? DataRepository.dataItemGlobal().getCurrentCameraId() == 1 ? 3 : DataRepository.dataItemFeature().s_p_r_n_OR_M1() : DataRepository.dataItemFeature().s_p_r_n_OR_M1();
             if (s_p_r_n_OR_M1 <= 0) {
                 s_p_r_n_OR_M1 = 5;
             }
@@ -1950,7 +1950,7 @@ public class MiCamera2 extends Camera2Proxy {
                 if (this.mCapabilities.isSupportSnapShotTorch()) {
                     MiCameraCompat.applySnapshotTorch(this.mPreviewRequestBuilder, true);
                 }
-                if (b.jv && this.mConfigs.getFlashMode() == 3) {
+                if (b.deviceIsMi10Pro && this.mConfigs.getFlashMode() == 3) {
                     if (this.mConfigs.isFaceExist()) {
                         i = 30;
                         i2 = SystemProperties.getInt("flash_auto_face", -1);
@@ -2589,7 +2589,7 @@ public class MiCamera2 extends Camera2Proxy {
     @Override // com.android.camera2.Camera2Proxy
     public int getSatMasterCameraId() {
         int satMasterCameraId = CaptureResultParser.getSatMasterCameraId(this.mCaptureCallback.getPreviewCaptureResult());
-        if (b.Vu || "davinci".equals(b.vu) || "raphael".equals(b.vu)) {
+        if (b.deviceIsMi9 || "davinci".equals(b.buildDevice) || "raphael".equals(b.buildDevice)) {
             float zoomRatio = getZoomRatio();
             if (zoomRatio < 1.0f && satMasterCameraId != 1) {
                 String str = TAG;

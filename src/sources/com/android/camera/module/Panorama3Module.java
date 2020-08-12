@@ -1760,7 +1760,7 @@ public class Panorama3Module extends BaseModule implements ModeProtocol.CameraAc
         Log.v(TAG, "SetupCameraThread done");
         this.mViewAngleH = ((BaseModule) this).mCameraCapabilities.getViewAngle(false);
         this.mViewAngleV = ((BaseModule) this).mCameraCapabilities.getViewAngle(true);
-        if (b.vu.equals("lavender") && this.mViewAngleH > 50.0f) {
+        if (b.buildDevice.equals("lavender") && this.mViewAngleH > 50.0f) {
             this.mGoalAngle = 291;
         }
         this.mCameraOrientation = ((BaseModule) this).mCameraCapabilities.getSensorOrientation();

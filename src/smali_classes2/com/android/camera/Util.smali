@@ -7481,7 +7481,7 @@
 
     if-lt v0, v2, :cond_2
 
-    sget-boolean v0, Lcom/mi/config/b;->ev:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiA3:Z
 
     if-eqz v0, :cond_0
 
@@ -20029,7 +20029,7 @@
 .method public static workaroundForJ1()Z
     .locals 2
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "cmi"
 

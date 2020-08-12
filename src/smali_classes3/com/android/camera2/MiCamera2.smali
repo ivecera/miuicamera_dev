@@ -255,7 +255,7 @@
 
     if-nez v0, :cond_2
 
-    sget-object v0, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v0, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v1, "tucana"
 
@@ -265,12 +265,12 @@
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->gv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10WithCamVendor03:Z
 
     if-eqz v0, :cond_2
 
     :cond_0
-    sget-boolean v0, Lcom/mi/config/b;->jv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     if-eqz v0, :cond_1
 
@@ -1378,7 +1378,7 @@
     goto :goto_2
 
     :cond_1
-    sget-boolean v10, Lcom/mi/config/b;->jv:Z
+    sget-boolean v10, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     if-eqz v10, :cond_7
 
@@ -1537,7 +1537,7 @@
 
     if-eqz v10, :cond_d
 
-    sget-boolean v16, Lcom/mi/config/b;->fv:Z
+    sget-boolean v16, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-eqz v16, :cond_b
 
@@ -3265,7 +3265,7 @@
 
     if-eqz p0, :cond_3
 
-    sget-boolean v1, Lcom/mi/config/b;->bv:Z
+    sget-boolean v1, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     if-eqz v1, :cond_1
 
@@ -6336,7 +6336,7 @@
     invoke-static {v0, v2}, Lcom/android/camera2/compat/MiCameraCompat;->applySnapshotTorch(Landroid/hardware/camera2/CaptureRequest$Builder;Z)V
 
     :cond_0
-    sget-boolean v0, Lcom/mi/config/b;->jv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     if-eqz v0, :cond_3
 
@@ -9110,13 +9110,13 @@
 
     move-result v0
 
-    sget-boolean v1, Lcom/mi/config/b;->Vu:Z
+    sget-boolean v1, Lcom/mi/config/b;->deviceIsMi9:Z
 
     const/4 v2, 0x2
 
     if-nez v1, :cond_0
 
-    sget-object v1, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v1, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "davinci"
 
@@ -9126,7 +9126,7 @@
 
     if-nez v1, :cond_0
 
-    sget-object v1, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v1, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     const-string v3, "raphael"
 

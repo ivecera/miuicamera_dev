@@ -1335,15 +1335,15 @@
 
     invoke-interface {v3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    sget-boolean v0, Lcom/mi/config/b;->bv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9Lite:Z
 
     if-nez v0, :cond_5
 
-    sget-boolean v0, Lcom/mi/config/b;->cv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiCC9:Z
 
     if-nez v0, :cond_5
 
-    sget-boolean v0, Lcom/mi/config/b;->dv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiCC9e:Z
 
     if-eqz v0, :cond_6
 

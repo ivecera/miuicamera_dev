@@ -851,7 +851,7 @@
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_4
-    sget-boolean p1, Lcom/mi/config/b;->lg:Z
+    sget-boolean p1, Lcom/mi/config/b;->deviceIsMi2SA:Z
 
     const-string p4, "normal"
 
@@ -866,7 +866,7 @@
     goto :goto_0
 
     :cond_5
-    sget-boolean p1, Lcom/mi/config/b;->og:Z
+    sget-boolean p1, Lcom/mi/config/b;->deviceIsMi2Ax:Z
 
     if-nez p1, :cond_6
 

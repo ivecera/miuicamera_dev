@@ -401,7 +401,7 @@
 
     invoke-static {v10, v8}, Lcom/android/camera/log/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    sget-boolean v8, Lcom/mi/config/b;->lv:Z
+    sget-boolean v8, Lcom/mi/config/b;->deviceIsRedmiK30ProZoom:Z
 
     if-eqz v8, :cond_5
 
@@ -572,7 +572,7 @@
 
     sput-object v0, Lcom/android/camera/HybridZoomingSystem;->sNightSupportedOpticalZoomRatios:[F
 
-    sget-boolean v0, Lcom/mi/config/b;->lv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiK30ProZoom:Z
 
     if-eqz v0, :cond_b
 
@@ -655,7 +655,7 @@
 
     sput-boolean v0, Lcom/android/camera/HybridZoomingSystem;->IS_4_OR_MORE_SAT:Z
 
-    sget-boolean v0, Lcom/mi/config/b;->lv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiK30ProZoom:Z
 
     if-eqz v0, :cond_d
 

@@ -159,7 +159,7 @@ public class FragmentMimoji extends FragmentLiveBase implements ModeProtocol.Mim
         mimojiInfo3.mConfigPath = "pig";
         mimojiInfo3.mThumbnailUrl = MimojiHelper.DATA_DIR + "/pig.png";
         this.mMimojiInfoList.add(mimojiInfo3);
-        if (b.bv || b.cv || b.dv) {
+        if (b.deviceIsMi9Lite || b.deviceIsMiCC9 || b.deviceIsMiCC9e) {
             MimojiInfo mimojiInfo4 = new MimojiInfo();
             mimojiInfo4.mAvatarTemplatePath = AvatarEngineManager.RoyanTemplatePath;
             mimojiInfo4.mConfigPath = "royan";

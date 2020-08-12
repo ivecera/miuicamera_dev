@@ -337,7 +337,7 @@ public class FragmentMimojiBottomList extends FragmentLiveBase implements Mimoji
         mimojiInfo23.mConfigPath = "pig";
         mimojiInfo23.mThumbnailUrl = MimojiHelper2.DATA_DIR + "/pig.png";
         this.mMimojiInfo2List.add(mimojiInfo23);
-        if (b.bv || b.cv || b.dv) {
+        if (b.deviceIsMi9Lite || b.deviceIsMiCC9 || b.deviceIsMiCC9e) {
             MimojiInfo2 mimojiInfo24 = new MimojiInfo2();
             mimojiInfo24.mAvatarTemplatePath = AvatarEngineManager2.RoyanTemplatePath;
             mimojiInfo24.mConfigPath = "royan";

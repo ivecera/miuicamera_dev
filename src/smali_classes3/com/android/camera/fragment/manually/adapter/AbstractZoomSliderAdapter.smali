@@ -22,7 +22,7 @@
 .method protected static getRealZoomRatioTele()I
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->Qu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiMix2S:Z
 
     if-eqz v0, :cond_0
 

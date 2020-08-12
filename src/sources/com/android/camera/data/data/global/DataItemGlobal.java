@@ -239,7 +239,7 @@ public class DataItemGlobal extends DataItemBase {
     }
 
     public boolean isTiktokMoreButtonEnabled(boolean z) {
-        return getBoolean(z ? DATA_COMMON_TIKTOK_MORE_BUTTON_SHOW_APP : DATA_COMMON_TIKTOK_MORE_BUTTON_SHOW_MARKET, b.Vu ? true : z);
+        return getBoolean(z ? DATA_COMMON_TIKTOK_MORE_BUTTON_SHOW_APP : DATA_COMMON_TIKTOK_MORE_BUTTON_SHOW_MARKET, b.deviceIsMi9 ? true : z);
     }
 
     public boolean isTimeOut() {
@@ -265,7 +265,7 @@ public class DataItemGlobal extends DataItemBase {
         if (indexOf > 0) {
             String substring = string.substring(0, indexOf);
             String substring2 = string.substring(indexOf + 1);
-            if (substring.equals(b.vu + b.Uk()) && substring2.equals(c_0x40_OR_common)) {
+            if (substring.equals(b.buildDevice + b.Uk()) && substring2.equals(c_0x40_OR_common)) {
                 return true;
             }
         }
@@ -611,7 +611,7 @@ public class DataItemGlobal extends DataItemBase {
     }
 
     public void updateCustomWatermarkVersion() {
-        String str = b.vu + b.Uk() + ":" + this.mDataItemFeature.c_0x40_OR_common();
+        String str = b.buildDevice + b.Uk() + ":" + this.mDataItemFeature.c_0x40_OR_common();
         editor().putString(DATA_COMMON_CUSTOM_WATERMARK_VERSION, str).apply();
         Log.i(TAG, "custom watermark version updated: " + str);
     }

@@ -42,18 +42,18 @@
 .method public getZoomRatioResolver()Lcom/android/camera/fragment/manually/adapter/MultiStopsZoomRatioResolver;
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->fv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMiNote10:Z
 
     if-nez v0, :cond_2
 
-    sget-boolean v0, Lcom/mi/config/b;->jv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
     :cond_0
-    sget-boolean v0, Lcom/mi/config/b;->lv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsRedmiK30ProZoom:Z
 
     if-eqz v0, :cond_1
 

@@ -98,7 +98,7 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
     private void applyClearShotParameter(CaptureRequest.Builder builder) {
         MiCameraCompat.applySwMfnrEnable(builder, this.mShouldDoMFNR);
         MiCameraCompat.applyMfnrEnable(builder, false);
-        if (b.hl() || b.bv) {
+        if (b.hl() || b.deviceIsMi9Lite) {
             CompatibilityUtils.setZsl(builder, true);
         }
     }
@@ -120,13 +120,13 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
                 MiCameraCompat.applyMultiFrameInputNum(builder, this.mSequenceNum * 2);
                 builder.set(CaptureRequest.CONTROL_AE_LOCK, true);
             }
-            if (b.isMTKPlatform() || b.fv || b.hv || b.lv || b.jv) {
+            if (b.isMTKPlatform() || b.deviceIsMiNote10 || b.deviceIsMi10 || b.deviceIsRedmiK30ProZoom || b.deviceIsMi10Pro) {
                 builder.set(CaptureRequest.CONTROL_AE_LOCK, true);
             }
             builder.set(CaptureRequest.CONTROL_AE_EXPOSURE_COMPENSATION, Integer.valueOf(this.mHdrCheckerEvValue[i]));
             MiCameraCompat.applyHdrParameter(builder, Integer.valueOf(this.mHdrCheckerSceneType), Integer.valueOf(this.mHdrCheckerAdrc));
-            boolean z = !b.fv ? (b.jv || b.hv || b.lv) && this.mHdrCheckerEvValue[i] == 0 : this.mHdrCheckerEvValue[i] >= 0;
-            if (DataRepository.dataItemFeature().c_28041_0x0007() && ((((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 2 || ((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 1 || (((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 3 && b.lv)) && z && isIn3OrMoreSatMode() && this.mSequenceNum < 4)) {
+            boolean z = !b.deviceIsMiNote10 ? (b.deviceIsMi10Pro || b.deviceIsMi10 || b.deviceIsRedmiK30ProZoom) && this.mHdrCheckerEvValue[i] == 0 : this.mHdrCheckerEvValue[i] >= 0;
+            if (DataRepository.dataItemFeature().c_28041_0x0007() && ((((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 2 || ((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 1 || (((MiCamera2Shot) this).mMiCamera.getSatMasterCameraId() == 3 && b.deviceIsRedmiK30ProZoom)) && z && isIn3OrMoreSatMode() && this.mSequenceNum < 4)) {
                 Log.d(TAG, "applyHdrParameter enable mfnr EV = " + this.mHdrCheckerEvValue[i]);
                 MiCameraCompat.applyMfnrEnable(builder, true);
             } else if (this.mSingleCaptureForHDRplusMFNR) {
@@ -323,7 +323,7 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
             Size surfaceSize = SurfaceUtils.getSurfaceSize(wideRemoteSurface);
             Log.d(TAG, String.format(Locale.ENGLISH, "[QCFA]add surface %s to capture request, size is: %s", wideRemoteSurface, surfaceSize));
             createCaptureRequest.addTarget(wideRemoteSurface);
-            if (b.hl() || b.bv) {
+            if (b.hl() || b.deviceIsMi9Lite) {
                 createCaptureRequest.addTarget(((MiCamera2Shot) this).mMiCamera.getPreviewSurface());
             }
             configParallelSession(surfaceSize);
@@ -346,7 +346,7 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
                 }
                 ((MiCamera2ShotParallel) this).mCapturedImageSize = ((MiCamera2Shot) this).mMiCamera.getPictureSize();
             }
-            if (!b.isMTKPlatform() && this.mOperationMode != 36865 && (b.hl() || b.bv || this.mOperationMode != 36867)) {
+            if (!b.isMTKPlatform() && this.mOperationMode != 36865 && (b.hl() || b.deviceIsMi9Lite || this.mOperationMode != 36867)) {
                 Surface previewSurface = ((MiCamera2Shot) this).mMiCamera.getPreviewSurface();
                 Log.d(TAG, String.format(Locale.ENGLISH, "add preview surface %s to capture request, size is: %s", previewSurface, SurfaceUtils.getSurfaceSize(previewSurface)));
                 createCaptureRequest.addTarget(previewSurface);
@@ -355,7 +355,7 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
         createCaptureRequest.set(CaptureRequest.CONTROL_AE_MODE, 1);
         ((MiCamera2Shot) this).mMiCamera.applySettingsForCapture(createCaptureRequest, 3);
         if (this.mAlgoType == 1) {
-            if (!b.jv || !this.mIsHdrBokeh) {
+            if (!b.deviceIsMi10Pro || !this.mIsHdrBokeh) {
                 Log.d(TAG, "disable ZSL for HDR");
                 CompatibilityUtils.setZsl(createCaptureRequest, false);
             }
@@ -375,7 +375,7 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
         this.mShouldDoSR = ((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isSuperResolutionEnabled();
         if (((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isHDREnabled()) {
             this.mIsHdrBokeh = ((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isRearBokehEnabled();
-            this.mSingleCaptureForHDRplusMFNR = b.jv && ((MiCamera2Shot) this).mMiCamera.getCapabilities().getFacing() == 1 && !((MiCamera2Shot) this).mMiCamera.isMacroMode() && !this.mIsHdrBokeh;
+            this.mSingleCaptureForHDRplusMFNR = b.deviceIsMi10Pro && ((MiCamera2Shot) this).mMiCamera.getCapabilities().getFacing() == 1 && !((MiCamera2Shot) this).mMiCamera.isMacroMode() && !this.mIsHdrBokeh;
             this.mAlgoType = 1;
             prepareHdr();
         } else if (DataRepository.dataItemFeature().c_9006_0x0003() && ((MiCamera2Shot) this).mMiCamera.getCameraConfigs().isRearBokehEnabled()) {
@@ -436,7 +436,7 @@ public class MiCamera2ShotParallelBurst extends MiCamera2ShotParallel<ParallelTa
                     arrayList.add(generateRequestBuilder2.build());
                 }
             }
-            if ((b.hv || b.ql()) && this.mAlgoType == 1) {
+            if ((b.deviceIsMi10 || b.ql()) && this.mAlgoType == 1) {
                 while (true) {
                     if (i >= this.mSequenceNum) {
                         break;

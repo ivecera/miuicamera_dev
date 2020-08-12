@@ -31,7 +31,7 @@ public class a extends DataItemBase implements c {
     private String Ii;
 
     public a() {
-        d(Ji + b.vu, true);
+        d(Ji + b.buildDevice, true);
     }
 
     private int N(String str) {
@@ -170,7 +170,7 @@ public class a extends DataItemBase implements c {
     }
 
     public int Ib() {
-        if (b.gv) {
+        if (b.deviceIsMiNote10WithCamVendor03) {
             return 6;
         }
         return getInt(c.c_9006_0x0001, 5);
@@ -188,7 +188,7 @@ public class a extends DataItemBase implements c {
         if (Util.isGlobalVersion()) {
             return false;
         }
-        if (!b.bv || Build.VERSION.SDK_INT != 28) {
+        if (!b.deviceIsMi9Lite || Build.VERSION.SDK_INT != 28) {
             return getBoolean(c.c_0x60, false);
         }
         return false;
@@ -904,7 +904,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean isCinematicPhotoSupported() {
-        if (!b.bv || Build.VERSION.SDK_INT != 28) {
+        if (!b.deviceIsMi9Lite || Build.VERSION.SDK_INT != 28) {
             return getBoolean(c.c_33066_0x0002, false);
         }
         return false;

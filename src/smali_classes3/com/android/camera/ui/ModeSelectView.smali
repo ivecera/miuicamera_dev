@@ -397,7 +397,7 @@
 
     invoke-virtual {v5, v3}, Lcom/android/camera/ui/ColorActivateTextView;->setActivateColor(I)V
 
-    sget-boolean v3, Lcom/mi/config/b;->cv:Z
+    sget-boolean v3, Lcom/mi/config/b;->deviceIsMiCC9:Z
 
     if-nez v3, :cond_3
 

@@ -548,11 +548,11 @@ public class CameraSettings {
     }
 
     public static boolean getCameraProximityLockSettingNeedRemove(int i, boolean z) {
-        return b.cv || !ProximitySensorLock.supported();
+        return b.deviceIsMiCC9 || !ProximitySensorLock.supported();
     }
 
     public static boolean getCameraSnapSettingNeedRemove(int i, boolean z) {
-        return z || isInAllRecordModeSet(i) || b.cv || !b.em();
+        return z || isInAllRecordModeSet(i) || b.deviceIsMiCC9 || !b.em();
     }
 
     public static String getColorEffect() {
@@ -628,14 +628,14 @@ public class CameraSettings {
                     if (b.gl() && isFrontCamera()) {
                         return R.string.pref_mi_front_video_quality_default;
                     }
-                    if (b.gv) {
+                    if (b.deviceIsMiNote10WithCamVendor03) {
                         return R.string.pref_video_quality_1080P;
                     }
                 }
             } else if (Util.isAntibanding60()) {
                 return R.string.pref_camera_antibanding_entryvalue_60hz;
             }
-        } else if (b.Ju || b.Ku) {
+        } else if (b.deviceIsMiNote || b.deviceIsMiNotePro) {
             return R.bool.pref_camera_auto_chroma_flash_virgo_default;
         }
         return i;
@@ -650,7 +650,7 @@ public class CameraSettings {
     }
 
     public static final String getDualCameraWaterMarkFilePathVendor(boolean z) {
-        if (b.Nu && "india".equalsIgnoreCase(SystemProperties.get("ro.boot.hwc"))) {
+        if (b.deviceIsPocoF1 && "india".equalsIgnoreCase(SystemProperties.get("ro.boot.hwc"))) {
             return DUAL_CAMERA_WATER_MARK_FILE_FROM_VENDOR_INDIA;
         }
         if (!DataRepository.dataItemFeature().c_0x4a()) {
@@ -779,7 +779,7 @@ public class CameraSettings {
     }
 
     public static boolean getLongPressShutterSettingNeedRemove(int i, boolean z) {
-        return z || b.cv || !b.Xl() || isInAllRecordModeSet(i);
+        return z || b.deviceIsMiCC9 || !b.Xl() || isInAllRecordModeSet(i);
     }
 
     public static boolean getLongPressViewFinderSettingNeedRemove(int i, boolean z, boolean z2) {
@@ -942,7 +942,7 @@ public class CameraSettings {
     }
 
     public static boolean getRetainCameraModeSettingNeedRemove(int i, boolean z) {
-        return b.cv;
+        return b.deviceIsMiCC9;
     }
 
     public static String getSaturation() {
@@ -957,7 +957,7 @@ public class CameraSettings {
     }
 
     public static boolean getScanQrcodeSettingNeedRemove(int i, boolean z) {
-        return z || b.cv || DataRepository.dataItemFeature().c_0x44() || b.Te() || isInAllRecordModeSet(i);
+        return z || b.deviceIsMiCC9 || DataRepository.dataItemFeature().c_0x44() || b.Te() || isInAllRecordModeSet(i);
     }
 
     public static int getScreenLightBrightness() {
@@ -1113,15 +1113,15 @@ public class CameraSettings {
     }
 
     public static boolean getVolumeCameraSettingNeedRemove(int i, boolean z) {
-        return isInAllRecordModeSet(i) || b.mv;
+        return isInAllRecordModeSet(i) || b.deviceIsMiMixAlpha;
     }
 
     public static boolean getVolumeLiveSettingNeedRemove(int i, boolean z) {
-        return isInAllCaptureModeSet(i) || i == 0 || b.mv || i == 161 || i == 162 || i == 169 || i == 172 || i == 180 || i == 177 || i == 184;
+        return isInAllCaptureModeSet(i) || i == 0 || b.deviceIsMiMixAlpha || i == 161 || i == 162 || i == 169 || i == 172 || i == 180 || i == 177 || i == 184;
     }
 
     public static boolean getVolumeProVideoSettingNeedRemove(int i, boolean z) {
-        return isInAllCaptureModeSet(i) || i != 180 || i == 0 || b.mv;
+        return isInAllCaptureModeSet(i) || i != 180 || i == 0 || b.deviceIsMiMixAlpha;
     }
 
     public static boolean getVolumeVideoSettingNeedRemove(int i, boolean z) {
@@ -1131,7 +1131,7 @@ public class CameraSettings {
         if (isAutoZoomEnabled(i)) {
             return false;
         }
-        return i == 174 || i == 183 || i == 179 || i == 177 || i == 184 || i == 180 || i == 0 || b.mv;
+        return i == 174 || i == 183 || i == 179 || i == 177 || i == 184 || i == 180 || i == 0 || b.deviceIsMiMixAlpha;
     }
 
     public static String getWhiteBalance() {
@@ -1815,7 +1815,7 @@ public class CameraSettings {
     }
 
     public static boolean isVideoCaptureVisible() {
-        return (!b.Uu && !b.Tu) || !isVideoBokehOn();
+        return (!b.deviceIsMiMix3 && !b.deviceIsMiMix35G) || !isVideoBokehOn();
     }
 
     public static boolean isVideoQuality8KOpen(int i) {

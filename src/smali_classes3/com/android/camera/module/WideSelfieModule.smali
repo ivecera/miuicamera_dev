@@ -1002,7 +1002,7 @@
 
     move-result-object v0
 
-    sget-boolean v1, Lcom/mi/config/b;->Wu:Z
+    sget-boolean v1, Lcom/mi/config/b;->deviceIsMi9SE:Z
 
     if-eqz v1, :cond_0
 

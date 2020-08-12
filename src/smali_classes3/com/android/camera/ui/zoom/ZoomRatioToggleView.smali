@@ -565,11 +565,11 @@
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->hv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10:Z
 
     if-nez v0, :cond_0
 
-    sget-boolean v0, Lcom/mi/config/b;->jv:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi10Pro:Z
 
     if-eqz v0, :cond_1
 

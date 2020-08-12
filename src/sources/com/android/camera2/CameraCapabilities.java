@@ -228,7 +228,7 @@ public class CameraCapabilities {
     }
 
     private boolean isSupportedAndroidScalerStream() {
-        return (b.Wu || b.bv) && getFacing() == 1;
+        return (b.deviceIsMi9SE || b.deviceIsMi9Lite) && getFacing() == 1;
     }
 
     private boolean isUltraPixelPhotographyMode(int i) {

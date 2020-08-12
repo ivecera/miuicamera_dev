@@ -1379,7 +1379,7 @@
 
     sget p1, Lcom/android/gallery3d/exif/ExifInterface;->TAG_MODEL:I
 
-    sget-object v2, Lcom/mi/config/b;->zu:Ljava/lang/String;
+    sget-object v2, Lcom/mi/config/b;->buildModel:Ljava/lang/String;
 
     invoke-static {v1, p1, v2}, Lcom/android/gallery3d/exif/ExifHelper;->setTagValue(Lcom/android/gallery3d/exif/ExifInterface;ILjava/lang/Object;)V
 
@@ -1816,7 +1816,7 @@
 
     sget p1, Lcom/android/gallery3d/exif/ExifInterface;->TAG_MODEL:I
 
-    sget-object v2, Lcom/mi/config/b;->zu:Ljava/lang/String;
+    sget-object v2, Lcom/mi/config/b;->buildModel:Ljava/lang/String;
 
     invoke-static {v0, p1, v2}, Lcom/android/gallery3d/exif/ExifHelper;->setTagValue(Lcom/android/gallery3d/exif/ExifInterface;ILjava/lang/Object;)V
 

@@ -765,7 +765,7 @@
 .method public isTiktokMoreButtonEnabled(Z)Z
     .locals 1
 
-    sget-boolean v0, Lcom/mi/config/b;->Vu:Z
+    sget-boolean v0, Lcom/mi/config/b;->deviceIsMi9:Z
 
     if-eqz v0, :cond_0
 
@@ -901,7 +901,7 @@
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v6, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v6, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2019,7 +2019,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v2, Lcom/mi/config/b;->vu:Ljava/lang/String;
+    sget-object v2, Lcom/mi/config/b;->buildDevice:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

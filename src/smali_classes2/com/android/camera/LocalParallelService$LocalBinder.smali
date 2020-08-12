@@ -58,7 +58,7 @@
 
     invoke-static {p1}, Lcom/xiaomi/camera/imagecodec/ReprocessorFactory;->init(Landroid/content/Context;)V
 
-    sget-boolean p0, Lcom/mi/config/b;->Su:Z
+    sget-boolean p0, Lcom/mi/config/b;->deviceIsMi8:Z
 
     if-eqz p0, :cond_0
 
