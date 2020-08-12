@@ -194,10 +194,6 @@ public class a extends DataItemBase implements c {
         return false;
     }
 
-    public boolean Qd() {
-        return getBoolean(c.c_22367_0x0007, false);
-    }
-
     public boolean Qe() {
         return getBoolean(c.c_28196_0x0003, true);
     }
@@ -482,6 +478,10 @@ public class a extends DataItemBase implements c {
 
     public String c_22367_0x0006() {
         return getString(c.c_22367_0x0006, null);
+    }
+
+    public boolean c_22367_0x0007() {
+        return getBoolean(c.c_22367_0x0007, false);
     }
 
     public boolean c_22367_0x0009() {

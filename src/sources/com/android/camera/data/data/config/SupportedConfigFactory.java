@@ -448,7 +448,7 @@ public class SupportedConfigFactory {
                         break;
                     }
                 } else {
-                    if (z && dataItemFeature.Qd()) {
+                    if (z && dataItemFeature.c_22367_0x0007()) {
                         arrayList.add(createConfigItem(218));
                     }
                     if (z && (capabilities = Camera2DataContainer.getInstance().getCapabilities(0)) != null && ComponentConfigVideoQuality.is8K30FpsCamcorderSupported(0, capabilities)) {

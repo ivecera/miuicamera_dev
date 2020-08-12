@@ -1959,7 +1959,7 @@
 
     if-eqz p2, :cond_19
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Qd()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_22367_0x0007()Z
 
     move-result v1
 

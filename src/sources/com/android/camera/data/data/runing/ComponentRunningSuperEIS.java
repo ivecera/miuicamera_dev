@@ -47,7 +47,7 @@ public class ComponentRunningSuperEIS extends ComponentData {
 
     public boolean isEnabled(int i) {
         Boolean bool;
-        if (DataRepository.dataItemFeature().Qd() && this.mIsNormalIntent && this.mCameraId == 0 && i == 162 && (bool = this.mValues.get(getKey(i))) != null) {
+        if (DataRepository.dataItemFeature().c_22367_0x0007() && this.mIsNormalIntent && this.mCameraId == 0 && i == 162 && (bool = this.mValues.get(getKey(i))) != null) {
             return bool.booleanValue();
         }
         return false;
