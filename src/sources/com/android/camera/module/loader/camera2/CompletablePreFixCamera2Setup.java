@@ -115,7 +115,7 @@ public class CompletablePreFixCamera2Setup implements CompletableOnSubscribe, Ob
             Pair<Integer, Integer> parseIntent = dataItemGlobal.parseIntent(intent, Boolean.valueOf(this.isFromVoiceControl), this.mStartFromKeyguard, true, true);
             int intValue = parseIntent.first.intValue();
             int intValue2 = parseIntent.second.intValue();
-            if (DataRepository.dataItemFeature().ud()) {
+            if (DataRepository.dataItemFeature().c_0x03()) {
                 NetworkUtils.tryRequestTTSticker();
             }
             if (DataRepository.dataItemFeature().ye()) {

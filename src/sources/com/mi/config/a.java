@@ -206,8 +206,16 @@ public class a extends DataItemBase implements c {
         return (ro_boot_hwc_EQ_india() || uc()) && getBoolean(c.s_p_l_i_e, false);
     }
 
+    public boolean a_e_d() {
+        return getBoolean(c.a_e_d, false);
+    }
+
     public int c_0x01_p_g_a_v_OR_280() {
         return getInt(c.c_0x01_p_g_a_v, 280);
+    }
+
+    public boolean c_0x03() {
+        return getBoolean(c.c_0x03, false);
     }
 
     public boolean c_0x08() {
@@ -381,6 +389,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_0x51() {
         return getBoolean(c.c_0x51, false);
+    }
+
+    public boolean c_0x52_OR_T() {
+        return getBoolean(c.c_0x52, true);
     }
 
     public boolean c_0x53() {
@@ -1053,24 +1065,12 @@ public class a extends DataItemBase implements c {
         return ((float) Util.sWindowHeight) / ((float) Util.sWindowWidth) >= 2.1666667f && getBoolean(c.s_f_s, false);
     }
 
-    public boolean ub() {
-        return getBoolean(c.a_e_d, false);
-    }
-
     public boolean uc() {
         return d.d.a.getRegion().endsWith("IN");
     }
 
-    public boolean ud() {
-        return getBoolean(c.c_0x03, false);
-    }
-
     public boolean ue() {
         return ((double) Math.abs((((float) Util.sWindowHeight) / ((float) Util.sWindowWidth)) - 2.1111112f)) <= 0.02d && getBoolean(c.s_19_9_s, false);
-    }
-
-    public boolean uf() {
-        return getBoolean(c.c_0x52, true);
     }
 
     public int vb() {

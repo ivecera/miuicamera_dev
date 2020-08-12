@@ -369,7 +369,7 @@ public class CameraIntentManager {
             case 6:
                 return 165;
             case 7:
-                if (DataRepository.dataItemFeature().ud()) {
+                if (DataRepository.dataItemFeature().c_0x03()) {
                     return 174;
                 }
                 return DataRepository.dataItemFeature().c_36211_0x0001() ? 183 : 161;

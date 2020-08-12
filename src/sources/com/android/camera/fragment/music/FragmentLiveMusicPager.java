@@ -123,7 +123,7 @@ public class FragmentLiveMusicPager extends Fragment implements View.OnClickList
     public void loadOnlineMusicByFeature() {
         if (!NetworkDependencies.isConnected(getContext())) {
             onLoadError();
-        } else if (DataRepository.dataItemFeature().ud()) {
+        } else if (DataRepository.dataItemFeature().c_0x03()) {
             loadTikTokMusic();
         } else {
             loadTMMusic();

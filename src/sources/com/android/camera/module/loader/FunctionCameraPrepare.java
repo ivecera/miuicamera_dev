@@ -201,7 +201,7 @@ public class FunctionCameraPrepare extends Func1Base<Camera, BaseModule> {
                 resetAutoZoom(dataItemRunning.getComponentRunningAutoZoom());
                 resetSubtitle(dataItemRunning.getComponentRunningSubtitle());
                 resetSuperEIS(dataItemRunning.getComponentRunningSuperEIS());
-                if (DataRepository.dataItemFeature().ud() || DataRepository.dataItemFeature().c_36211_0x0001()) {
+                if (DataRepository.dataItemFeature().c_0x03() || DataRepository.dataItemFeature().c_36211_0x0001()) {
                     editor3.remove(CameraSettings.KEY_LIVE_MUSIC_PATH).remove(CameraSettings.KEY_LIVE_MUSIC_HINT).remove(CameraSettings.KEY_LIVE_STICKER).remove(CameraSettings.KEY_LIVE_STICKER_NAME).remove(CameraSettings.KEY_LIVE_STICKER_HINT).remove(CameraSettings.KEY_LIVE_SPEED).remove(CameraSettings.KEY_LIVE_FILTER).remove("key_live_shrink_face_ratio").remove("key_live_enlarge_eye_ratio").remove("key_live_smooth_strength").remove(CameraSettings.KEY_LIVE_BEAUTY_STATUS);
                 }
                 if (DataRepository.dataItemFeature().od()) {

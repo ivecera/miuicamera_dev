@@ -1746,7 +1746,7 @@ public class CameraSettings {
     }
 
     public static boolean isSupportedZslShutter() {
-        return DataRepository.dataItemFeature().uf();
+        return DataRepository.dataItemFeature().c_0x52_OR_T();
     }
 
     public static boolean isSwitchOn(String str) {

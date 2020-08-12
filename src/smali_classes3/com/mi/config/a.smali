@@ -4184,7 +4184,7 @@
     return p0
 .end method
 
-.method public ub()Z
+.method public a_e_d()Z
     .locals 2
 
     const-string v0, "a_e_d"
@@ -4214,7 +4214,7 @@
     return p0
 .end method
 
-.method public ud()Z
+.method public c_0x03()Z
     .locals 2
 
     const-string v0, "c_0x03"
@@ -4273,7 +4273,7 @@
     return v1
 .end method
 
-.method public uf()Z
+.method public c_0x52_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x52"

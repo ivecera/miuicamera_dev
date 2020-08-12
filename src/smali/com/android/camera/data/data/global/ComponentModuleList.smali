@@ -161,7 +161,7 @@
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1
-    invoke-virtual {v2}, Lcom/mi/config/a;->ud()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x03()Z
 
     move-result v3
 
@@ -192,7 +192,7 @@
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_2
-    invoke-virtual {v2}, Lcom/mi/config/a;->ud()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x03()Z
 
     move-result v3
 
@@ -221,7 +221,7 @@
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_3
-    invoke-virtual {v2}, Lcom/mi/config/a;->ud()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x03()Z
 
     move-result v3
 

@@ -69,7 +69,7 @@ public class ComponentConfigMacro extends ComponentData {
 
     public boolean isMacroOn(int i) {
         if (!isEmpty() && !isClosed(i)) {
-            return ((ComponentData) this).mParentDataItem.getBoolean(getKey(i), DataRepository.dataItemFeature().ub());
+            return ((ComponentData) this).mParentDataItem.getBoolean(getKey(i), DataRepository.dataItemFeature().a_e_d());
         }
         return false;
     }

@@ -44,7 +44,7 @@ public class ComponentConfigAi extends ComponentData {
 
     public boolean isAiSceneOn(int i) {
         if (!isEmpty() && !isClosed()) {
-            return ((ComponentData) this).mParentDataItem.getBoolean(getKey(i), DataRepository.dataItemFeature().ub());
+            return ((ComponentData) this).mParentDataItem.getBoolean(getKey(i), DataRepository.dataItemFeature().a_e_d());
         }
         return false;
     }
