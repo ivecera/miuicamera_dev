@@ -32,7 +32,7 @@ public class RecordingStateChangeImpl implements ModeProtocol.RecordState {
     }
 
     private boolean isFPS960() {
-        if (getCurrentModuleIndex() != 172 || !DataRepository.dataItemFeature().Zd()) {
+        if (getCurrentModuleIndex() != 172 || !DataRepository.dataItemFeature().s_f_9()) {
             return false;
         }
         return DataRepository.dataItemConfig().getComponentConfigSlowMotion().isSlowMotionFps960();

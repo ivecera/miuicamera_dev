@@ -203,27 +203,11 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean Yd() {
-        return !Zd() && getBoolean(c.s_s_m_t, false);
+        return !s_f_9() && getBoolean(c.s_s_m_t, false);
     }
 
     public boolean Ye() {
         return (tc() || uc()) && getBoolean(c.s_p_l_i_e, false);
-    }
-
-    public boolean Zb() {
-        return getInt(c.c_22367_0x0008, 0) == 0;
-    }
-
-    public boolean Zc() {
-        return getBoolean(c.c_36658_0x0002, false);
-    }
-
-    public boolean Zd() {
-        return getBoolean(c.s_f_9, false);
-    }
-
-    public boolean Ze() {
-        return getBoolean(c.s_p_l_b, false);
     }
 
     public boolean _b() {
@@ -432,6 +416,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_22367_0x0007, false);
     }
 
+    public boolean c_22367_0x0008_OR_0_EQ_0() {
+        return getInt(c.c_22367_0x0008, 0) == 0;
+    }
+
     public boolean c_22367_0x0008_OR_0_EQ_1() {
         return getInt(c.c_22367_0x0008, 0) == 1;
     }
@@ -524,6 +512,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.c_36211_0x0001, false);
     }
 
+    public boolean c_36658_0x0002() {
+        return getBoolean(c.c_36658_0x0002, false);
+    }
+
     public boolean c_9006_0x0003() {
         return getBoolean(c.c_9006_0x0003, false);
     }
@@ -553,7 +545,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean ce() {
-        return !Zd() && !Yd() && getBoolean(c.c_22367_0x0000, false);
+        return !s_f_9() && !Yd() && getBoolean(c.c_22367_0x0000, false);
     }
 
     public boolean cf() {
@@ -758,7 +750,7 @@ public class a extends DataItemBase implements c {
     }
 
     public boolean ke() {
-        return (tc() && rd()) || Zc();
+        return (tc() && rd()) || c_36658_0x0002();
     }
 
     public boolean kf() {
@@ -959,6 +951,10 @@ public class a extends DataItemBase implements c {
         return getBoolean(c.s_e_l, false);
     }
 
+    public boolean s_f_9() {
+        return getBoolean(c.s_f_9, false);
+    }
+
     public boolean s_f_a() {
         return getBoolean(c.s_f_a, false);
     }
@@ -981,6 +977,10 @@ public class a extends DataItemBase implements c {
 
     public boolean s_p_a() {
         return getBoolean(c.s_p_a, false);
+    }
+
+    public boolean s_p_l_b() {
+        return getBoolean(c.s_p_l_b, false);
     }
 
     public int s_p_r_n_OR_M1() {

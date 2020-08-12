@@ -15688,7 +15688,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Ze()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->s_p_l_b()Z
 
     move-result v0
 

@@ -3829,7 +3829,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
     private void updateShotDetermine() {
         int i;
         int i2 = 1;
-        boolean z = ((BaseModule) this).mModuleIndex == 171 && (!isBackCamera() ? DataRepository.dataItemFeature()._e() || DataRepository.dataItemFeature().c_35955_0x0004() : b.Cl() || DataRepository.dataItemFeature().Ze());
+        boolean z = ((BaseModule) this).mModuleIndex == 171 && (!isBackCamera() ? DataRepository.dataItemFeature()._e() || DataRepository.dataItemFeature().c_35955_0x0004() : b.Cl() || DataRepository.dataItemFeature().s_p_l_b());
         this.mEnableParallelSession = isParallelSessionEnable();
         if (!this.mIsImageCaptureIntent) {
             this.mEnableShot2Gallery = !this.mEnableParallelSession && DataRepository.dataItemFeature().ff() && enablePreviewAsThumbnail() && !CameraSettings.isLiveShotOn();

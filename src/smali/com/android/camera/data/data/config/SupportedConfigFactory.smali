@@ -1999,7 +1999,7 @@
     invoke-interface {v6, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1a
-    invoke-virtual {v4}, Lcom/mi/config/a;->Zb()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_22367_0x0008_OR_0_EQ_0()Z
 
     move-result v1
 

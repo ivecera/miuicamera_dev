@@ -30,7 +30,7 @@ public class PortraitNewbieDialogFragment extends BaseDialogFragment {
     @Override // android.support.v4.app.Fragment
     @Nullable
     public View onCreateView(LayoutInflater layoutInflater, @Nullable ViewGroup viewGroup, @Nullable Bundle bundle) {
-        View inflate = DataRepository.dataItemFeature().Ze() ? layoutInflater.inflate(R.layout.fragment_dialog_portait_lighting_hint, viewGroup, false) : layoutInflater.inflate(R.layout.fragment_dialog_portait_hint, viewGroup, false);
+        View inflate = DataRepository.dataItemFeature().s_p_l_b() ? layoutInflater.inflate(R.layout.fragment_dialog_portait_lighting_hint, viewGroup, false) : layoutInflater.inflate(R.layout.fragment_dialog_portait_hint, viewGroup, false);
         initViewOnTouchListener(inflate);
         adjustViewHeight(inflate.findViewById(R.id.portrait_use_hint_layout));
         return inflate;
