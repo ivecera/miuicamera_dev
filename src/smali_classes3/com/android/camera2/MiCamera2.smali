@@ -17927,7 +17927,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/mi/config/a;->Jb()I
+    invoke-virtual {v1}, Lcom/mi/config/a;->s_b_m_s_c_OR_M1()I
 
     move-result v1
 

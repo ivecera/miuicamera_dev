@@ -4636,7 +4636,7 @@ public class MiCamera2 extends Camera2Proxy {
 
     public /* synthetic */ void y(boolean z) {
         boolean z2 = false;
-        boolean z3 = this.mMiCamera2ShotQueue.size() < DataRepository.dataItemFeature().Jb();
+        boolean z3 = this.mMiCamera2ShotQueue.size() < DataRepository.dataItemFeature().s_b_m_s_c_OR_M1();
         Camera2Proxy.CaptureCallback captureCallback = this.mFrontQuickCaptureCallback;
         if (z && z3) {
             z2 = true;

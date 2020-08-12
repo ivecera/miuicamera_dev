@@ -1212,7 +1212,7 @@
     return p0
 .end method
 
-.method public Jb()I
+.method public s_b_m_s_c_OR_M1()I
     .locals 2
 
     const-string v0, "s_b_m_s_c"
