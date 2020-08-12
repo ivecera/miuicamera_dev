@@ -61,7 +61,7 @@ public class ComponentConfigHdr extends ComponentData {
 
     @Override // com.android.camera.data.data.ComponentData
     public String getComponentValue(int i) {
-        return (!isClosed() && !isEmpty()) ? (171 != i || !CameraSettings.isBackCamera() || !DataRepository.dataItemFeature().Ke()) ? super.getComponentValue(i) : "auto" : "off";
+        return (!isClosed() && !isEmpty()) ? (171 != i || !CameraSettings.isBackCamera() || !DataRepository.dataItemFeature().c_9006_0x0007()) ? super.getComponentValue(i) : "auto" : "off";
     }
 
     @Override // com.android.camera.data.data.ComponentData
@@ -69,7 +69,7 @@ public class ComponentConfigHdr extends ComponentData {
         if (isClosed() || isEmpty() || CameraSettings.isFrontCamera()) {
             return "off";
         }
-        if (171 == i && CameraSettings.isBackCamera() && DataRepository.dataItemFeature().Ke()) {
+        if (171 == i && CameraSettings.isBackCamera() && DataRepository.dataItemFeature().c_9006_0x0007()) {
             return "auto";
         }
         String h_d_v = DataRepository.dataItemFeature().h_d_v();
@@ -215,7 +215,7 @@ public class ComponentConfigHdr extends ComponentData {
                         if (cameraCapabilities.isSupportHdrCheckerStatus()) {
                             this.mSupportHdrCheckerWhenOn = true;
                         }
-                    } else if (DataRepository.dataItemFeature().Ke() && CameraSettings.isBackCamera()) {
+                    } else if (DataRepository.dataItemFeature().c_9006_0x0007() && CameraSettings.isBackCamera()) {
                         arrayList.add(new ComponentDataItem(getConfigHDROffRes(), getConfigHDROffRes(), (int) R.string.pref_camera_hdr_entry_off, "off"));
                         if (cameraCapabilities.isSupportAutoHdr()) {
                             this.mAutoSupported = true;

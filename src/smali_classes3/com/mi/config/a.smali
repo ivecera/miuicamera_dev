@@ -1298,7 +1298,7 @@
     return p0
 .end method
 
-.method public Ke()Z
+.method public c_9006_0x0007()Z
     .locals 2
 
     const-string v0, "c_9006_0x0007"
