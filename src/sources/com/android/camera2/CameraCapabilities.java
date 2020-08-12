@@ -522,7 +522,7 @@ public class CameraCapabilities {
         if (streamConfigurationMap == null) {
             return new ArrayList(0);
         }
-        if (!DataRepository.dataItemFeature().Le()) {
+        if (!DataRepository.dataItemFeature().c_19039_0x0012()) {
             return convertToPictureSize(streamConfigurationMap.getOutputSizes(i));
         }
         ArrayList arrayList = new ArrayList();

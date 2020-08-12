@@ -176,10 +176,6 @@ public class a extends DataItemBase implements c {
         return getInt(c.c_9006_0x0001, 5);
     }
 
-    public boolean Le() {
-        return getBoolean(c.c_19039_0x0012, false);
-    }
-
     public int Mb() {
         return getInt(c.c_t_r, 20);
     }
@@ -502,6 +498,10 @@ public class a extends DataItemBase implements c {
 
     public boolean c_19039_0x0008() {
         return getBoolean(c.c_19039_0x0008, false);
+    }
+
+    public boolean c_19039_0x0012() {
+        return getBoolean(c.c_19039_0x0012, false);
     }
 
     public boolean c_19039_0x0013() {
