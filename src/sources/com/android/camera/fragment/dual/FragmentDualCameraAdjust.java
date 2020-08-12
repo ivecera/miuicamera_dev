@@ -160,10 +160,10 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
         if (r10 == -1) goto L_0x0071;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:139:0x01a4, code lost:
-        if (com.android.camera.data.DataRepository.dataItemFeature().Ac() != false) goto L_0x01f7;
+        if (com.android.camera.data.DataRepository.dataItemFeature().c_19039_0x0005_eq_2() != false) goto L_0x01f7;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:168:0x01f4, code lost:
-        if (com.android.camera.data.DataRepository.dataItemFeature().Ac() != false) goto L_0x01f7;
+        if (com.android.camera.data.DataRepository.dataItemFeature().c_19039_0x0005_eq_2() != false) goto L_0x01f7;
      */
     /* JADX WARNING: Code restructure failed: missing block: B:192:0x0239, code lost:
         if (r10 == -1) goto L_0x0071;
@@ -189,7 +189,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
         boolean z7 = false;
         int i5 = -1;
         boolean z8 = true;
-        if (DataRepository.dataItemGlobal().getCurrentCameraId() != 1 && ((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().Ac()) && !CameraSettings.isAutoZoomEnabled(i) && !CameraSettings.isSuperEISEnabled(i) && HybridZoomingSystem.IS_2_OR_MORE_SAT)) {
+        if (DataRepository.dataItemGlobal().getCurrentCameraId() != 1 && ((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isAutoZoomEnabled(i) && !CameraSettings.isSuperEISEnabled(i) && HybridZoomingSystem.IS_2_OR_MORE_SAT)) {
             if (i != 175 || !DataRepository.dataItemFeature().Hd()) {
                 if (i == 161) {
                     i3 = (!HybridZoomingSystem.IS_2_SAT && !CameraSettings.isUltraWideConfigOpen(i)) ? 1 : -1;
@@ -208,7 +208,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
                         z6 = true;
                     }
                     if (i == 162) {
-                        int i6 = (!HybridZoomingSystem.IS_2_SAT && ((miBeautyProtocol = (ModeProtocol.MiBeautyProtocol) ModeCoordinatorImpl.getInstance().getAttachProtocol(194)) == null || !miBeautyProtocol.isBeautyPanelShow()) && !DataRepository.dataItemRunning().getComponentRunningShine().isVideoBeautyOpen(162) && (((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().Ac()) && !CameraSettings.isUltraWideConfigOpen(i)) || DataRepository.dataItemFeature().m1if())) ? 1 : -1;
+                        int i6 = (!HybridZoomingSystem.IS_2_SAT && ((miBeautyProtocol = (ModeProtocol.MiBeautyProtocol) ModeCoordinatorImpl.getInstance().getAttachProtocol(194)) == null || !miBeautyProtocol.isBeautyPanelShow()) && !DataRepository.dataItemRunning().getComponentRunningShine().isVideoBeautyOpen(162) && (((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isUltraWideConfigOpen(i)) || DataRepository.dataItemFeature().m1if())) ? 1 : -1;
                         boolean z9 = i6 == -1 || (!isNormalIntent && currentCameraCapabilities != null && currentCameraCapabilities.isSupportLightTripartite());
                         if (i6 != -1 && (isNormalIntent || currentCameraCapabilities == null || !currentCameraCapabilities.isSupportLightTripartite())) {
                             z8 = false;
@@ -226,7 +226,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
                         z2 = i3 == -1;
                     } else {
                         if (i == 163) {
-                            int i7 = (((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().Ac()) && !CameraSettings.isUltraWideConfigOpen(i) && !CameraSettings.isUltraPixelRearOn()) || DataRepository.dataItemFeature().m1if()) ? 1 : -1;
+                            int i7 = (((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isUltraWideConfigOpen(i) && !CameraSettings.isUltraPixelRearOn()) || DataRepository.dataItemFeature().m1if()) ? 1 : -1;
                             if (!CameraSettings.isAIWatermarkOn() || !CameraSettings.isBackCamera()) {
                                 i5 = i7;
                             }
@@ -240,7 +240,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
                             }
                             return new ZoomRatioToggleView.ViewSpec(i2, z2, z, z7);
                         } else if (i == 165) {
-                            if ((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().Ac()) && !CameraSettings.isUltraWideConfigOpen(i)) {
+                            if ((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isUltraWideConfigOpen(i)) {
                                 i5 = 1;
                             }
                             z4 = HybridZoomingSystem.IS_2_SAT || (!isNormalIntent && currentCameraCapabilities != null && currentCameraCapabilities.isSupportLightTripartite());
@@ -892,7 +892,7 @@ public class FragmentDualCameraAdjust extends BaseFragment implements ZoomRatioT
             this.mZoomRatioToggleView.setRotation((float) ((BaseFragment) this).mDegree);
             this.mZoomRatioToggleView.setSuppressed(viewSpecForCapturingMode.suppress, capturingMode);
             this.mZoomRatioToggleView.setImmersive(z || viewSpecForCapturingMode.immersive, capturingMode);
-            this.mZoomRatioToggleView.setZoomRatio((!DataRepository.dataItemFeature().Ac() || !CameraSettings.isMacroModeEnabled(((BaseFragment) this).mCurrentMode)) ? this.mZoomRatio : 0.0f, -1);
+            this.mZoomRatioToggleView.setZoomRatio((!DataRepository.dataItemFeature().c_19039_0x0005_eq_2() || !CameraSettings.isMacroModeEnabled(((BaseFragment) this).mCurrentMode)) ? this.mZoomRatio : 0.0f, -1);
             this.mZoomRatioToggleView.setUseSliderAllowed(viewSpecForCapturingMode.useSlider);
             this.mIsUseSlider = viewSpecForCapturingMode.useSlider;
             this.mZoomRatioToggleView.startInactiveTimer();

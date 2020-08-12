@@ -697,7 +697,7 @@ public class FragmentBeauty extends BaseFragment implements ModeProtocol.HandleB
             if (CameraSettings.isUltraPixelOn() && !DataRepository.dataItemFeature().Hd()) {
                 return;
             }
-            if (!CameraSettings.isMacroModeEnabled(((BaseFragment) this).mCurrentMode) || DataRepository.dataItemFeature().Ac()) {
+            if (!CameraSettings.isMacroModeEnabled(((BaseFragment) this).mCurrentMode) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) {
                 dualController.showZoomButton();
                 ModeProtocol.TopAlert topAlert = (ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172);
                 if (topAlert != null) {

@@ -723,7 +723,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
             this.mVideoTagFileName = ((VideoBase) this).mCurrentVideoFilename;
             mainContentProtocol.processingStart(this.mIsVideoTagSupported ? this.mVideoTagFileName : null);
         }
-        if (HybridZoomingSystem.IS_3_OR_MORE_SAT && (i = ((BaseModule) this).mModuleIndex) != 172 && i != 180 && ((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().Ac()) && !CameraSettings.isAutoZoomEnabled(((BaseModule) this).mModuleIndex) && !CameraSettings.isSuperEISEnabled(((BaseModule) this).mModuleIndex) && isBackCamera())) {
+        if (HybridZoomingSystem.IS_3_OR_MORE_SAT && (i = ((BaseModule) this).mModuleIndex) != 172 && i != 180 && ((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isAutoZoomEnabled(((BaseModule) this).mModuleIndex) && !CameraSettings.isSuperEISEnabled(((BaseModule) this).mModuleIndex) && isBackCamera())) {
             ((BaseModule) this).mPreZoomRation = getZoomRatio();
             updateZoomRatioToggleButtonState(true);
             if (isUltraWideBackCamera()) {
@@ -2271,7 +2271,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
             if ((i != 2 && i != 1) || ((VideoBase) this).mMediaRecorderRecording || ((VideoBase) this).mMediaRecorderRecordingPaused) {
                 return;
             }
-            if (DataRepository.dataItemFeature().Ac() || !CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex)) {
+            if (DataRepository.dataItemFeature().c_19039_0x0005_eq_2() || !CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex)) {
                 dualController.setImmersiveModeEnabled(false);
             }
         }
@@ -2623,7 +2623,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
             if (mainContentProtocol != null) {
                 mainContentProtocol.processingFinish(this.mIsVideoTagSupported);
             }
-            if (HybridZoomingSystem.IS_3_OR_MORE_SAT && (i = ((BaseModule) this).mModuleIndex) != 172 && i != 180 && ((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().Ac()) && !CameraSettings.isAutoZoomEnabled(((BaseModule) this).mModuleIndex) && !CameraSettings.isSuperEISEnabled(((BaseModule) this).mModuleIndex) && isBackCamera())) {
+            if (HybridZoomingSystem.IS_3_OR_MORE_SAT && (i = ((BaseModule) this).mModuleIndex) != 172 && i != 180 && ((!CameraSettings.isMacroModeEnabled(i) || DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) && !CameraSettings.isAutoZoomEnabled(((BaseModule) this).mModuleIndex) && !CameraSettings.isSuperEISEnabled(((BaseModule) this).mModuleIndex) && isBackCamera())) {
                 updateZoomRatioToggleButtonState(false);
                 if (isUltraWideBackCamera()) {
                     if (CameraSettings.isMacroModeEnabled(((BaseModule) this).mModuleIndex)) {

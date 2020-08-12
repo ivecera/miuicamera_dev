@@ -578,7 +578,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
             if (!z4 || !z3) {
                 z = false;
             } else {
-                z = DataRepository.dataItemFeature().Ac();
+                z = DataRepository.dataItemFeature().c_19039_0x0005_eq_2();
                 DataRepository.dataItemGlobal().setCurrentMode(162);
             }
             switchOffElementsSilent(216);
@@ -592,7 +592,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
                 configAIWatermark(3);
                 DataRepository.dataItemRunning().getComponentRunningAIWatermark().setAIWatermarkEnable(false);
             }
-            if (!DataRepository.dataItemFeature().Ac() || z4) {
+            if (!DataRepository.dataItemFeature().c_19039_0x0005_eq_2() || z4) {
                 HybridZoomingSystem.clearZoomRatioHistory();
             }
             setUpdateTipState(255, true);
@@ -617,7 +617,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
                     bottomPopupTips.directHideTipImage();
                     bottomPopupTips.directShowOrHideLeftTipImage(false);
                 }
-                if (dualController != null && !DataRepository.dataItemFeature().Ac()) {
+                if (dualController != null && !DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) {
                     dualController.hideZoomButton();
                     return;
                 }
@@ -629,7 +629,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
             if (bottomPopupTips != null && !z2) {
                 bottomPopupTips.reInitTipImage();
             }
-            if (dualController != null && !z2 && !DataRepository.dataItemFeature().Ac()) {
+            if (dualController != null && !z2 && !DataRepository.dataItemFeature().c_19039_0x0005_eq_2()) {
                 if (!CameraSettings.isUltraWideConfigOpen(moduleIndex) && (moduleIndex != 172 || !DataRepository.dataItemFeature().zd())) {
                     dualController.showZoomButton();
                 }

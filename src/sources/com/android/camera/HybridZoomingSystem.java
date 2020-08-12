@@ -102,7 +102,7 @@ public class HybridZoomingSystem {
         ArrayList<String> arrayList = new ArrayList();
         Scanner scanner = new Scanner(OPTICAL_ZOOM_RATIO_COMBINATION);
         scanner.useDelimiter("\\s*[:,]\\s*");
-        if (DataRepository.dataItemFeature().Ac() == 1) {
+        if (DataRepository.dataItemFeature().c_19039_0x0005_eq_2() == 1) {
             sMacroZoomRatioIndex = 0;
             arrayList.add("0");
             i = 0;

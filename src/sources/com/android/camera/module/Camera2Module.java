@@ -6730,7 +6730,7 @@ public class Camera2Module extends BaseModule implements FocusManager2.Listener,
             } else {
                 updateHDR(componentValue);
             }
-            if ((!"off".equals(componentValue) || this.mAiSceneEnabled) && ((getZoomRatio() <= 1.0f || "normal".equals(componentValue)) && !this.mIsMoonMode && ((!DataRepository.dataItemFeature().Ac() || !isStandaloneMacroCamera() || !"auto".equals(componentValue)) && !CameraSettings.isSuperNightOn()))) {
+            if ((!"off".equals(componentValue) || this.mAiSceneEnabled) && ((getZoomRatio() <= 1.0f || "normal".equals(componentValue)) && !this.mIsMoonMode && ((!DataRepository.dataItemFeature().c_19039_0x0005_eq_2() || !isStandaloneMacroCamera() || !"auto".equals(componentValue)) && !CameraSettings.isSuperNightOn()))) {
                 resetAiSceneInHdrOrFlashOn();
                 resetAsdSceneInHdrOrFlashChange();
                 if (isHdrOnWithChecker || "auto".equals(componentValue)) {
