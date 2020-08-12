@@ -2605,7 +2605,7 @@ public class ConfigChangeImpl implements ModeProtocol.ConfigChanges {
         ModeProtocol.TopAlert topAlert = (ModeProtocol.TopAlert) ModeCoordinatorImpl.getInstance().getAttachProtocol(172);
         if (topAlert != null && this.mActivity != null) {
             Optional<BaseModule> baseModule = getBaseModule();
-            if (baseModule.isPresent() && CameraSettings.isAutoZoomEnabled(baseModule.get().getModuleIndex()) && DataRepository.dataItemFeature().Yb() && !isVideoRecoding(baseModule.get())) {
+            if (baseModule.isPresent() && CameraSettings.isAutoZoomEnabled(baseModule.get().getModuleIndex()) && DataRepository.dataItemFeature().c_22367_0x0008_OR_0_EQ_1() && !isVideoRecoding(baseModule.get())) {
                 topAlert.alertSwitchHint(2, R.string.autozoom_hint, 3000);
             }
         }

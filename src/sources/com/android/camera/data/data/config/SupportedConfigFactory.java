@@ -371,7 +371,7 @@ public class SupportedConfigFactory {
                 if (dataItemRunning.supportMacroMode() && dataItemFeature.zc()) {
                     supportedConfigs.add(255);
                 }
-                if (z && dataItemFeature.Yc() && dataItemFeature.Yb()) {
+                if (z && dataItemFeature.c_0x17() && dataItemFeature.c_22367_0x0008_OR_0_EQ_1()) {
                     supportedConfigs.add(253);
                 }
                 if (z && dataItemFeature.wd()) {
@@ -454,7 +454,7 @@ public class SupportedConfigFactory {
                     if (z && (capabilities = Camera2DataContainer.getInstance().getCapabilities(0)) != null && ComponentConfigVideoQuality.is8K30FpsCamcorderSupported(0, capabilities)) {
                         arrayList.add(createConfigItem(256));
                     }
-                    if (dataItemFeature.Zb() && dataItemFeature.Yc() && z) {
+                    if (dataItemFeature.Zb() && dataItemFeature.c_0x17() && z) {
                         arrayList.add(createConfigItem(253, 17));
                     }
                     if (z && dataItemFeature.xd()) {

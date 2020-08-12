@@ -56,7 +56,7 @@ public class ComponentRunningAutoZoom extends ComponentData {
 
     public boolean isEnabled(int i) {
         Boolean bool;
-        if (DataRepository.dataItemFeature().Yc() && this.mCameraId == 0 && i == 162 && this.mIsNormalIntent && (bool = this.mValues.get(getKey(i))) != null) {
+        if (DataRepository.dataItemFeature().c_0x17() && this.mCameraId == 0 && i == 162 && this.mIsNormalIntent && (bool = this.mValues.get(getKey(i))) != null) {
             return bool.booleanValue();
         }
         return false;

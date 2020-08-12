@@ -2140,7 +2140,7 @@
     return p0
 .end method
 
-.method public Yb()Z
+.method public c_22367_0x0008_OR_0_EQ_1()Z
     .locals 2
 
     const/4 v0, 0x0
@@ -2161,7 +2161,7 @@
     return v0
 .end method
 
-.method public Yc()Z
+.method public c_0x17()Z
     .locals 2
 
     const-string v0, "c_0x17"

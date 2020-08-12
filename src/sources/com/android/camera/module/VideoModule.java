@@ -361,7 +361,7 @@ public class VideoModule extends VideoBase implements Camera2Proxy.VideoRecordSt
     }
 
     private void initAutoZoom() {
-        if (DataRepository.dataItemFeature().Yc()) {
+        if (DataRepository.dataItemFeature().c_0x17()) {
             if (CameraSettings.isAutoZoomEnabled(((BaseModule) this).mModuleIndex)) {
                 startAutoZoom();
             } else {

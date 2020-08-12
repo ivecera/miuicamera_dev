@@ -1124,13 +1124,13 @@
     :cond_2d
     if-eqz p4, :cond_2e
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->Yc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_0x17()Z
 
     move-result v0
 
     if-eqz v0, :cond_2e
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->Yb()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_22367_0x0008_OR_0_EQ_1()Z
 
     move-result v0
 
@@ -2005,7 +2005,7 @@
 
     if-eqz v1, :cond_1b
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Yc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_0x17()Z
 
     move-result v1
 
