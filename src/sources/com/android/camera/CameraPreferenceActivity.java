@@ -198,7 +198,7 @@ public class CameraPreferenceActivity extends BasePreferenceActivity {
         if (!CameraSettings.isSupportedPortrait()) {
             removePreference(this.mPreferenceGroup, "pref_camera_portrait_with_facebeauty_key");
         }
-        if (!b.isSupportedOpticalZoom() && !DataRepository.dataItemFeature().Xd()) {
+        if (!b.isSupportedOpticalZoom() && !DataRepository.dataItemFeature().c_0x34_OR_T()) {
             removePreference(this.mPreferenceGroup, "pref_camera_dual_enable_key");
         }
         if (!b.isSupportedOpticalZoom()) {
