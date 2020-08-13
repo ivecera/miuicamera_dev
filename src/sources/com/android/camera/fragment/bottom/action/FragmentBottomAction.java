@@ -209,7 +209,7 @@ public class FragmentBottomAction extends BaseFragment implements View.OnClickLi
     }
 
     private boolean isFPS960() {
-        if (((BaseFragment) this).mCurrentMode != 172 || !DataRepository.dataItemFeature().s_f_9()) {
+        if (((BaseFragment) this).mCurrentMode != 172 || !DataRepository.dataItemFeature().enSlowMotion_960_240_120()) {
             return false;
         }
         return DataRepository.dataItemConfig().getComponentConfigSlowMotion().isSlowMotionFps960();

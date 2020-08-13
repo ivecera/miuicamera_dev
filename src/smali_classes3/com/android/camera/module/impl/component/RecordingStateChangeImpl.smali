@@ -70,7 +70,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->s_f_9()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->enSlowMotion_960_240_120()Z
 
     move-result p0
 

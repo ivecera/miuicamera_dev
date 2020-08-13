@@ -278,7 +278,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->s_f_9()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->enSlowMotion_960_240_120()Z
 
     move-result p1
 
@@ -301,7 +301,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->s_s_m_t_ANDNOT_s_f_9()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->enSlowMotion_240_120_only()Z
 
     move-result p1
 
@@ -320,7 +320,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->c_22367_0x0000_ANDNOT_s_f_9_ANDNOT_ssmt()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->enSlowMotion_120_only()Z
 
     move-result p1
 

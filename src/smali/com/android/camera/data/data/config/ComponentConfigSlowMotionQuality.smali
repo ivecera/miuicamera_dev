@@ -585,7 +585,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p3}, Lcom/mi/config/a;->c_22367_0x0000_ANDNOT_s_f_9_ANDNOT_ssmt()Z
+    invoke-virtual {p3}, Lcom/mi/config/a;->enSlowMotion_120_only()Z
 
     move-result p3
 
