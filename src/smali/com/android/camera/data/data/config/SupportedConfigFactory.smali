@@ -719,7 +719,7 @@
 
     if-eqz v0, :cond_10
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->zc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_19039_0x0005_EQ_0()Z
 
     move-result v0
 
@@ -732,13 +732,13 @@
 
     if-eqz p4, :cond_13
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->rc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_13254_0x02_AND_c_28041_0x0002_OR_india()Z
 
     move-result v1
 
     if-eqz v1, :cond_11
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->vd()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_0x00_s_l_s_IFNOT_global()Z
 
     move-result v1
 
@@ -764,13 +764,13 @@
     goto :goto_1
 
     :cond_12
-    invoke-virtual {v5}, Lcom/mi/config/a;->vd()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_0x00_s_l_s_IFNOT_global()Z
 
     move-result v1
 
     if-eqz v1, :cond_13
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->xc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_28041_0x0002()Z
 
     move-result v1
 
@@ -794,7 +794,7 @@
     :cond_14
     if-eqz p4, :cond_15
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->ed()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_35893_0x0002()Z
 
     move-result v0
 
@@ -806,7 +806,7 @@
 
     :cond_15
     :goto_2
-    invoke-virtual {v5}, Lcom/mi/config/a;->we()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_35955_0x0001_IF_india_OR_china()Z
 
     move-result v0
 
@@ -852,7 +852,7 @@
 
     invoke-virtual {v2, v0}, Lcom/android/camera/data/data/config/SupportedConfigs;->add(I)Lcom/android/camera/data/data/config/SupportedConfigs;
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->zd()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_19039_0x0007()Z
 
     move-result v0
 
@@ -887,7 +887,7 @@
 
     if-ne v1, v13, :cond_1b
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->be()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_0x35_OR_T()Z
 
     move-result v0
 
@@ -1020,7 +1020,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->qb()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_r_i_m_m()Z
 
     move-result v0
 
@@ -1073,7 +1073,7 @@
     goto :goto_3
 
     :cond_28
-    invoke-virtual {v5}, Lcom/mi/config/a;->nd()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_27810_0x0005()Z
 
     move-result v1
 
@@ -1113,7 +1113,7 @@
 
     if-eqz v0, :cond_2d
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->zc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_19039_0x0005_EQ_0()Z
 
     move-result v0
 
@@ -1124,13 +1124,13 @@
     :cond_2d
     if-eqz p4, :cond_2e
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->Yc()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_0x17()Z
 
     move-result v0
 
     if-eqz v0, :cond_2e
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->Yb()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_22367_0x0008_OR_0_EQ_1()Z
 
     move-result v0
 
@@ -1156,7 +1156,7 @@
     :cond_2f
     if-eqz p4, :cond_30
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->fd()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_35905_0x0001()Z
 
     move-result v0
 
@@ -1528,7 +1528,7 @@
 
     if-eqz v1, :cond_7
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->rf()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->s_v_b()Z
 
     move-result v0
 
@@ -1613,7 +1613,7 @@
 
     if-eqz p2, :cond_9
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Ud()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_22367_0x0002_OR_T()Z
 
     move-result v0
 
@@ -1866,7 +1866,7 @@
 
     if-eqz v0, :cond_15
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Bc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_19039_0x0005_EQ_1()Z
 
     move-result v0
 
@@ -1883,13 +1883,13 @@
     :cond_15
     if-eqz p2, :cond_16
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->vd()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_0x00_s_l_s_IFNOT_global()Z
 
     move-result v0
 
     if-eqz v0, :cond_16
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->xc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_28041_0x0002()Z
 
     move-result v0
 
@@ -1959,7 +1959,7 @@
 
     if-eqz p2, :cond_19
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Qd()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_22367_0x0007()Z
 
     move-result v1
 
@@ -1999,13 +1999,13 @@
     invoke-interface {v6, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1a
-    invoke-virtual {v4}, Lcom/mi/config/a;->Zb()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_22367_0x0008_OR_0_EQ_0()Z
 
     move-result v1
 
     if-eqz v1, :cond_1b
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Yc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_0x17()Z
 
     move-result v1
 
@@ -2047,7 +2047,7 @@
 
     if-eqz v0, :cond_1d
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Bc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_19039_0x0005_EQ_1()Z
 
     move-result v0
 
@@ -2135,7 +2135,7 @@
 
     if-ne v0, v13, :cond_23
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->rf()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->s_v_b()Z
 
     move-result v0
 
@@ -2193,7 +2193,7 @@
 
     if-eqz v1, :cond_26
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->rf()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->s_v_b()Z
 
     move-result v0
 
@@ -2291,7 +2291,7 @@
     :cond_2c
     if-eqz p2, :cond_2f
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->rc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_13254_0x02_AND_c_28041_0x0002_OR_india()Z
 
     move-result v0
 
@@ -2320,7 +2320,7 @@
     goto :goto_1
 
     :cond_2d
-    invoke-virtual {v4}, Lcom/mi/config/a;->xc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_28041_0x0002()Z
 
     move-result v0
 
@@ -2329,7 +2329,7 @@
     if-ne v1, v11, :cond_2f
 
     :cond_2e
-    invoke-virtual {v4}, Lcom/mi/config/a;->vd()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_0x00_s_l_s_IFNOT_global()Z
 
     move-result v0
 
@@ -2374,7 +2374,7 @@
 
     if-eqz v0, :cond_31
 
-    invoke-virtual {v4}, Lcom/mi/config/a;->Bc()Z
+    invoke-virtual {v4}, Lcom/mi/config/a;->c_19039_0x0005_EQ_1()Z
 
     move-result v0
 

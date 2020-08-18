@@ -655,7 +655,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p3}, Lcom/mi/config/a;->ac()Z
+    invoke-virtual {p3}, Lcom/mi/config/a;->c_9006_0x0006()Z
 
     move-result p3
 

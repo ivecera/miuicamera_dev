@@ -569,7 +569,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Zd()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->supportSloMo_960_240_120()Z
 
     move-result p0
 
@@ -1956,7 +1956,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->ke()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_36658_0x0002_OR_c_36658_0x0001_IF_india()Z
 
     move-result v2
 
@@ -2089,7 +2089,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->ke()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_36658_0x0002_OR_c_36658_0x0001_IF_india()Z
 
     move-result v2
 
@@ -3130,7 +3130,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Wd()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_d_e_f_w()Z
 
     move-result v0
 
@@ -6783,7 +6783,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/mi/config/a;->ke()Z
+    invoke-virtual {v1}, Lcom/mi/config/a;->c_36658_0x0002_OR_c_36658_0x0001_IF_india()Z
 
     move-result v1
 
@@ -7548,7 +7548,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->ae()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_35893_0x0001()Z
 
     move-result v0
 
@@ -7568,7 +7568,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->be()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x35_OR_T()Z
 
     move-result v0
 
@@ -7590,7 +7590,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->bf()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x5e()Z
 
     move-result v0
 
@@ -7616,7 +7616,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Wd()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_d_e_f_w()Z
 
     move-result v0
 

@@ -178,7 +178,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/mi/config/a;->Rb()I
+    invoke-virtual {v3}, Lcom/mi/config/a;->c_35955_0x0002_OR_1()I
 
     move-result v3
 

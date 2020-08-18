@@ -114,7 +114,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->ke()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_36658_0x0002_OR_c_36658_0x0001_IF_india()Z
 
     move-result p1
 

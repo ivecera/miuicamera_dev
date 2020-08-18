@@ -1543,7 +1543,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->df()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_26813_0x0003()Z
 
     move-result p1
 
@@ -2653,7 +2653,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->we()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_35955_0x0001_IF_india_OR_china()Z
 
     move-result v0
 
@@ -4700,7 +4700,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Lcom/mi/config/a;->df()Z
+    invoke-virtual {v7}, Lcom/mi/config/a;->c_26813_0x0003()Z
 
     move-result v7
 

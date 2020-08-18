@@ -270,7 +270,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->ze()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->s_a_u_e_f_m()Z
 
     move-result v0
 
@@ -313,7 +313,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->ze()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->s_a_u_e_f_m()Z
 
     move-result v0
 
@@ -469,7 +469,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->oe()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->c_28041_0x0007()Z
 
     move-result v5
 
@@ -1662,7 +1662,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->Oe()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_9006_0x0003()Z
 
     move-result v2
 
@@ -1962,7 +1962,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Lcom/mi/config/a;->ze()Z
+    invoke-virtual {v7}, Lcom/mi/config/a;->s_a_u_e_f_m()Z
 
     move-result v7
 
@@ -1985,7 +1985,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v7}, Lcom/mi/config/a;->ze()Z
+    invoke-virtual {v7}, Lcom/mi/config/a;->s_a_u_e_f_m()Z
 
     move-result v7
 

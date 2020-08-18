@@ -167,7 +167,7 @@
     return-object p0
 .end method
 
-.method private Qm()I
+.method private c_28041_0x0004_or_0()I
     .locals 2
 
     const-string v0, "c_28041_0x0004"
@@ -214,7 +214,7 @@
     return v1
 .end method
 
-.method private Sm()Z
+.method private c_s_a_u_q()Z
     .locals 2
 
     const-string v0, "c_s_a_u_q"
@@ -610,7 +610,7 @@
     return p0
 .end method
 
-.method public Ac()Z
+.method public c_19039_0x0005_eq_2()Z
     .locals 2
 
     const-string v0, "c_19039_0x0005"
@@ -636,7 +636,7 @@
     return p0
 .end method
 
-.method public Ad()Z
+.method public c_36211_0x0001()Z
     .locals 2
 
     const-string v0, "c_36211_0x0001"
@@ -650,7 +650,7 @@
     return p0
 .end method
 
-.method public Ae()Z
+.method public c_s_a_u_q_OR_s_a_u()Z
     .locals 2
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -659,7 +659,7 @@
 
     if-le v0, v1, :cond_0
 
-    invoke-direct {p0}, Lcom/mi/config/a;->Sm()Z
+    invoke-direct {p0}, Lcom/mi/config/a;->c_s_a_u_q()Z
 
     move-result p0
 
@@ -677,7 +677,7 @@
     return p0
 .end method
 
-.method public Bb()Ljava/lang/String;
+.method public h_d_v()Ljava/lang/String;
     .locals 2
 
     const-string v0, "h_d_v"
@@ -691,7 +691,7 @@
     return-object p0
 .end method
 
-.method public Bc()Z
+.method public c_19039_0x0005_EQ_1()Z
     .locals 2
 
     const-string v0, "c_19039_0x0005"
@@ -765,7 +765,7 @@
     return v0
 .end method
 
-.method public Cb()Ljava/lang/String;
+.method public c_27810_0x0004()Ljava/lang/String;
     .locals 2
 
     const-string v0, "c_27810_0x0004"
@@ -779,7 +779,7 @@
     return-object p0
 .end method
 
-.method public Cc()Z
+.method public s_m_c_t_f()Z
     .locals 2
 
     const-string v0, "s_m_c_t_f"
@@ -793,7 +793,7 @@
     return p0
 .end method
 
-.method public Cd()Z
+.method public c_0x54()Z
     .locals 2
 
     const-string v0, "c_0x54"
@@ -807,7 +807,7 @@
     return p0
 .end method
 
-.method public Ce()Z
+.method public s_b_m()Z
     .locals 2
 
     const-string v0, "s_b_m"
@@ -837,7 +837,7 @@
     return p0
 .end method
 
-.method public Dc()Z
+.method public e_m_a_u_q_s()Z
     .locals 2
 
     const-string v0, "e_m_a_u_q_s"
@@ -851,7 +851,7 @@
     return p0
 .end method
 
-.method public Dd()Z
+.method public c_27845_0x0001()Z
     .locals 2
 
     const-string v0, "c_27845_0x0001"
@@ -865,7 +865,7 @@
     return p0
 .end method
 
-.method public De()Z
+.method public s_c_w_b_OR_T()Z
     .locals 2
 
     const-string v0, "s_c_w_b"
@@ -879,7 +879,7 @@
     return p0
 .end method
 
-.method public Eb()I
+.method public c_0x01_p_g_a_v_OR_280()I
     .locals 2
 
     const-string v0, "c_0x01_p_g_a_v"
@@ -893,7 +893,7 @@
     return p0
 .end method
 
-.method public Ec()Z
+.method public s_m_l()Z
     .locals 2
 
     const-string v0, "s_m_l"
@@ -907,7 +907,7 @@
     return p0
 .end method
 
-.method public Ed()Z
+.method public c_0x58()Z
     .locals 2
 
     const-string v0, "c_0x58"
@@ -921,7 +921,7 @@
     return p0
 .end method
 
-.method public Ee()Z
+.method public s_e_l()Z
     .locals 2
 
     const-string v0, "s_e_l"
@@ -935,7 +935,7 @@
     return p0
 .end method
 
-.method public Fb()I
+.method public c_0x5a_OR_0()I
     .locals 2
 
     const-string v0, "c_0x5a"
@@ -949,7 +949,7 @@
     return p0
 .end method
 
-.method public Fc()Z
+.method public c_27810_0x0003()Z
     .locals 2
 
     const-string v0, "c_27810_0x0003"
@@ -963,7 +963,7 @@
     return p0
 .end method
 
-.method public Fd()Z
+.method public c_0x10_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x10"
@@ -977,7 +977,7 @@
     return p0
 .end method
 
-.method public Fe()Z
+.method public s_f_a()Z
     .locals 2
 
     const-string v0, "s_f_a"
@@ -991,7 +991,7 @@
     return p0
 .end method
 
-.method public Gb()I
+.method public s_p_r_n_OR_M1()I
     .locals 2
 
     const-string v0, "s_p_r_n"
@@ -1005,7 +1005,7 @@
     return p0
 .end method
 
-.method public Gc()Z
+.method public c_27810_0x0002_HAS_NO_PIXEL()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"
@@ -1039,7 +1039,7 @@
     return p0
 .end method
 
-.method public Gd()Z
+.method public c_19039_0x0008()Z
     .locals 2
 
     const-string v0, "c_19039_0x0008"
@@ -1053,7 +1053,7 @@
     return p0
 .end method
 
-.method public Ge()Z
+.method public c_35955_0x0004()Z
     .locals 2
 
     const-string v0, "c_35955_0x0004"
@@ -1085,7 +1085,7 @@
     return p0
 .end method
 
-.method public Hc()Z
+.method public c_27810_0x0002_HAS_PRO()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"
@@ -1119,7 +1119,7 @@
     return p0
 .end method
 
-.method public Hd()Z
+.method public c_27810_0x0006()Z
     .locals 2
 
     const-string v0, "c_27810_0x0006"
@@ -1133,7 +1133,7 @@
     return p0
 .end method
 
-.method public He()Z
+.method public c_0x46()Z
     .locals 2
 
     const-string v0, "c_0x46"
@@ -1170,7 +1170,7 @@
     return p0
 .end method
 
-.method public Ic()Z
+.method public i_q_a_u_m()Z
     .locals 2
 
     const-string v0, "i_q_a_u_m"
@@ -1184,7 +1184,7 @@
     return p0
 .end method
 
-.method public Id()Z
+.method public i_s_q_c()Z
     .locals 2
 
     const-string v0, "i_s_q_c"
@@ -1198,7 +1198,7 @@
     return p0
 .end method
 
-.method public Ie()Z
+.method public c_19039_0x0017()Z
     .locals 2
 
     const-string v0, "c_19039_0x0017"
@@ -1212,7 +1212,7 @@
     return p0
 .end method
 
-.method public Jb()I
+.method public s_b_m_s_c_OR_M1()I
     .locals 2
 
     const-string v0, "s_b_m_s_c"
@@ -1226,7 +1226,7 @@
     return p0
 .end method
 
-.method public Jc()Z
+.method public c_0x5c()Z
     .locals 2
 
     const-string v0, "c_0x5c"
@@ -1240,7 +1240,7 @@
     return p0
 .end method
 
-.method public Jd()Z
+.method public c_22367_0x0009()Z
     .locals 2
 
     const-string v0, "c_22367_0x0009"
@@ -1254,7 +1254,7 @@
     return p0
 .end method
 
-.method public Je()Z
+.method public c_19039_0x0013()Z
     .locals 2
 
     const-string v0, "c_19039_0x0013"
@@ -1268,7 +1268,7 @@
     return p0
 .end method
 
-.method public Kb()J
+.method public s_b_m_d_t_OR_M1()J
     .locals 2
 
     const-string v0, "s_b_m_d_t"
@@ -1284,17 +1284,7 @@
     return-wide v0
 .end method
 
-.method public Kc()Z
-    .locals 0
-
-    invoke-virtual {p0}, Lcom/mi/config/a;->qb()Z
-
-    move-result p0
-
-    return p0
-.end method
-
-.method public Kd()Z
+.method public i_s_s_b()Z
     .locals 2
 
     const-string v0, "i_s_s_b"
@@ -1308,7 +1298,7 @@
     return p0
 .end method
 
-.method public Ke()Z
+.method public c_9006_0x0007()Z
     .locals 2
 
     const-string v0, "c_9006_0x0007"
@@ -1322,7 +1312,7 @@
     return p0
 .end method
 
-.method public Lb()I
+.method public c_32889_0x0002_OR_0()I
     .locals 2
 
     const-string v0, "c_32889_0x0002"
@@ -1336,7 +1326,7 @@
     return p0
 .end method
 
-.method public Lc()Z
+.method public s_s_s()Z
     .locals 2
 
     const-string v0, "s_s_s"
@@ -1350,7 +1340,7 @@
     return p0
 .end method
 
-.method public Ld()Z
+.method public c_19039_0x0001()Z
     .locals 2
 
     const-string v0, "c_19039_0x0001"
@@ -1364,7 +1354,7 @@
     return p0
 .end method
 
-.method public Le()Z
+.method public c_19039_0x0012()Z
     .locals 2
 
     const-string v0, "c_19039_0x0012"
@@ -1378,7 +1368,7 @@
     return p0
 .end method
 
-.method public Mb()I
+.method public c_t_r_OR_20()I
     .locals 2
 
     const-string v0, "c_t_r"
@@ -1392,7 +1382,7 @@
     return p0
 .end method
 
-.method public Mc()Z
+.method public i_s_e_r()Z
     .locals 2
 
     const-string v0, "i_s_e_r"
@@ -1406,7 +1396,7 @@
     return p0
 .end method
 
-.method public Md()Z
+.method public c_19039_0x0002()Z
     .locals 2
 
     const-string v0, "c_19039_0x0002"
@@ -1420,7 +1410,7 @@
     return p0
 .end method
 
-.method public Me()Z
+.method public s_i_a_AND_india()Z
     .locals 2
 
     const/4 v0, 0x0
@@ -1433,7 +1423,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result p0
 
@@ -1463,7 +1453,7 @@
     return-object p0
 .end method
 
-.method public Nc()Z
+.method public s_s_v_OR_T()Z
     .locals 2
 
     const-string v0, "s_s_v"
@@ -1477,7 +1467,7 @@
     return p0
 .end method
 
-.method public Nd()Z
+.method public c_22367_0x0001()Z
     .locals 2
 
     const-string v0, "c_22367_0x0001"
@@ -1491,7 +1481,7 @@
     return p0
 .end method
 
-.method public Ne()Z
+.method public c_0x0c()Z
     .locals 2
 
     const/4 v0, 0x0
@@ -1504,7 +1494,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result p0
 
@@ -1534,7 +1524,7 @@
     return-object p0
 .end method
 
-.method public Oc()Z
+.method public c_27810_0x0002_HAS_MACRO()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"
@@ -1568,7 +1558,7 @@
     return p0
 .end method
 
-.method public Od()Z
+.method public c_0x25()Z
     .locals 2
 
     const-string v0, "c_0x25"
@@ -1582,7 +1572,7 @@
     return p0
 .end method
 
-.method public Oe()Z
+.method public c_9006_0x0003()Z
     .locals 2
 
     const-string v0, "c_9006_0x0003"
@@ -1596,7 +1586,7 @@
     return p0
 .end method
 
-.method public Pb()I
+.method public c_22367_0x000A_OR_0()I
     .locals 2
 
     const-string v0, "c_22367_0x000A"
@@ -1610,7 +1600,7 @@
     return p0
 .end method
 
-.method public Pc()Z
+.method public c_27810_0x0007()Z
     .locals 2
 
     const-string v0, "c_27810_0x0007"
@@ -1660,7 +1650,7 @@
     return p0
 .end method
 
-.method public Pe()Z
+.method public c_0x48()Z
     .locals 2
 
     const-string v0, "c_0x48"
@@ -1674,7 +1664,7 @@
     return p0
 .end method
 
-.method public Qb()Ljava/lang/String;
+.method public c_22367_0x0006()Ljava/lang/String;
     .locals 2
 
     const-string v0, "c_22367_0x0006"
@@ -1688,7 +1678,7 @@
     return-object p0
 .end method
 
-.method public Qc()Z
+.method public c_19039_0x0006()Z
     .locals 2
 
     const-string v0, "c_19039_0x0006"
@@ -1702,7 +1692,7 @@
     return p0
 .end method
 
-.method public Qd()Z
+.method public c_22367_0x0007()Z
     .locals 2
 
     const-string v0, "c_22367_0x0007"
@@ -1716,7 +1706,7 @@
     return p0
 .end method
 
-.method public Qe()Z
+.method public c_28196_0x0003()Z
     .locals 2
 
     const-string v0, "c_28196_0x0003"
@@ -1730,7 +1720,7 @@
     return p0
 .end method
 
-.method public Rb()I
+.method public c_35955_0x0002_OR_1()I
     .locals 2
 
     const-string v0, "c_35955_0x0002"
@@ -1744,7 +1734,7 @@
     return p0
 .end method
 
-.method public Rc()Z
+.method public c_0x27_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x27"
@@ -1758,7 +1748,7 @@
     return p0
 .end method
 
-.method public Rd()Z
+.method public c_22367_0x0003()Z
     .locals 2
 
     const-string v0, "c_22367_0x0003"
@@ -1772,7 +1762,7 @@
     return p0
 .end method
 
-.method public Re()Z
+.method public c_27845_0x0002()Z
     .locals 2
 
     const-string v0, "c_27845_0x0002"
@@ -1786,7 +1776,7 @@
     return p0
 .end method
 
-.method public Sb()I
+.method public c_0x57_OR_0()I
     .locals 2
 
     const-string v0, "c_0x57"
@@ -1800,7 +1790,7 @@
     return p0
 .end method
 
-.method public Sc()Z
+.method public c_19039_0x0016()Z
     .locals 2
 
     const-string v0, "c_19039_0x0016"
@@ -1835,7 +1825,7 @@
     return p0
 .end method
 
-.method public Se()Z
+.method public c_19039_0x0000()Z
     .locals 2
 
     const-string v0, "c_19039_0x0000"
@@ -1849,7 +1839,7 @@
     return p0
 .end method
 
-.method public Tb()I
+.method public c_26813_0x0002_OR_0()I
     .locals 2
 
     const-string v0, "c_26813_0x0002"
@@ -1863,7 +1853,7 @@
     return p0
 .end method
 
-.method public Tc()Z
+.method public c_19039_0x0010()Z
     .locals 2
 
     const-string v0, "c_19039_0x0010"
@@ -1877,7 +1867,7 @@
     return p0
 .end method
 
-.method public Td()Z
+.method public c_0x0a()Z
     .locals 2
 
     const-string v0, "c_0x0a"
@@ -1891,7 +1881,7 @@
     return p0
 .end method
 
-.method public Te()Z
+.method public c_0x1a_ANDNOT_global()Z
     .locals 2
 
     invoke-static {}, Lcom/android/camera/Util;->isGlobalVersion()Z
@@ -1914,7 +1904,7 @@
     return p0
 .end method
 
-.method public Ub()I
+.method public c_28041_0x0008_OR_0()I
     .locals 2
 
     const-string v0, "c_28041_0x0008"
@@ -1928,7 +1918,7 @@
     return p0
 .end method
 
-.method public Uc()Z
+.method public c_0x31()Z
     .locals 2
 
     const-string v0, "c_0x31"
@@ -1942,7 +1932,7 @@
     return p0
 .end method
 
-.method public Ud()Z
+.method public c_22367_0x0002_OR_T()Z
     .locals 2
 
     const-string v0, "c_22367_0x0002"
@@ -1956,7 +1946,7 @@
     return p0
 .end method
 
-.method public Ue()Z
+.method public c_27845_0x0003()Z
     .locals 2
 
     const-string v0, "c_27845_0x0003"
@@ -1996,7 +1986,7 @@
     return v1
 .end method
 
-.method public Vc()Z
+.method public c_0x59()Z
     .locals 2
 
     const-string v0, "c_0x59"
@@ -2010,7 +2000,7 @@
     return p0
 .end method
 
-.method public Vd()Z
+.method public c_32889_0x0001()Z
     .locals 2
 
     const-string v0, "c_32889_0x0001"
@@ -2024,7 +2014,7 @@
     return p0
 .end method
 
-.method public Ve()Z
+.method public s_o_a_w()Z
     .locals 2
 
     const-string v0, "s_o_a_w"
@@ -2038,7 +2028,7 @@
     return p0
 .end method
 
-.method public Wb()Z
+.method public c_0x44()Z
     .locals 2
 
     const-string v0, "c_0x44"
@@ -2052,7 +2042,7 @@
     return p0
 .end method
 
-.method public Wc()Z
+.method public s_b_a_OR_T()Z
     .locals 2
 
     const-string v0, "s_b_a"
@@ -2066,7 +2056,7 @@
     return p0
 .end method
 
-.method public Wd()Z
+.method public c_d_e_f_w()Z
     .locals 2
 
     const-string v0, "c_d_e_f_w"
@@ -2080,7 +2070,7 @@
     return p0
 .end method
 
-.method public We()Z
+.method public c_0x4a_1()Z
     .locals 2
 
     const-string v0, "c_0x4a_1"
@@ -2094,7 +2084,7 @@
     return p0
 .end method
 
-.method public Xb()Z
+.method public c_19039_0x0011()Z
     .locals 2
 
     const-string v0, "c_19039_0x0011"
@@ -2108,7 +2098,7 @@
     return p0
 .end method
 
-.method public Xc()Z
+.method public s_a()Z
     .locals 2
 
     const-string v0, "s_a"
@@ -2122,7 +2112,7 @@
     return p0
 .end method
 
-.method public Xd()Z
+.method public c_0x34_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x34"
@@ -2136,7 +2126,7 @@
     return p0
 .end method
 
-.method public Xe()Z
+.method public s_p_a()Z
     .locals 2
 
     const-string v0, "s_p_a"
@@ -2150,7 +2140,7 @@
     return p0
 .end method
 
-.method public Yb()Z
+.method public c_22367_0x0008_OR_0_EQ_1()Z
     .locals 2
 
     const/4 v0, 0x0
@@ -2171,7 +2161,7 @@
     return v0
 .end method
 
-.method public Yc()Z
+.method public c_0x17()Z
     .locals 2
 
     const-string v0, "c_0x17"
@@ -2185,10 +2175,10 @@
     return p0
 .end method
 
-.method public Yd()Z
+.method public supportSloMo_240_120_Only()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Zd()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->supportSloMo_960_240_120()Z
 
     move-result v0
 
@@ -2213,7 +2203,7 @@
 .method public Ye()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result v0
 
@@ -2242,7 +2232,7 @@
     return v1
 .end method
 
-.method public Zb()Z
+.method public c_22367_0x0008_OR_0_EQ_0()Z
     .locals 2
 
     const/4 v0, 0x0
@@ -2261,7 +2251,7 @@
     return v0
 .end method
 
-.method public Zc()Z
+.method public c_36658_0x0002()Z
     .locals 2
 
     const-string v0, "c_36658_0x0002"
@@ -2275,7 +2265,7 @@
     return p0
 .end method
 
-.method public Zd()Z
+.method public supportSloMo_960_240_120()Z
     .locals 2
 
     const-string v0, "s_f_9"
@@ -2289,7 +2279,7 @@
     return p0
 .end method
 
-.method public Ze()Z
+.method public s_p_l_b()Z
     .locals 2
 
     const-string v0, "s_p_l_b"
@@ -2303,7 +2293,7 @@
     return p0
 .end method
 
-.method public _b()Z
+.method public c_9006_0x0002()Z
     .locals 2
 
     const-string v0, "c_9006_0x0002"
@@ -2317,7 +2307,7 @@
     return p0
 .end method
 
-.method public _c()Z
+.method public s_c_w_m()Z
     .locals 2
 
     const-string v0, "s_c_w_m"
@@ -2331,7 +2321,7 @@
     return p0
 .end method
 
-.method public _d()Z
+.method public s_f_z_i()Z
     .locals 2
 
     const-string v0, "s_f_z_i"
@@ -2345,7 +2335,7 @@
     return p0
 .end method
 
-.method public _e()Z
+.method public s_p_l_f()Z
     .locals 2
 
     const-string v0, "s_p_l_f"
@@ -2359,7 +2349,7 @@
     return p0
 .end method
 
-.method public ac()Z
+.method public c_9006_0x0006()Z
     .locals 2
 
     const-string v0, "c_9006_0x0006"
@@ -2373,7 +2363,7 @@
     return p0
 .end method
 
-.method public ad()Z
+.method public c_0x19_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x19"
@@ -2387,7 +2377,7 @@
     return p0
 .end method
 
-.method public ae()Z
+.method public c_35893_0x0001()Z
     .locals 2
 
     const-string v0, "c_35893_0x0001"
@@ -2401,7 +2391,7 @@
     return p0
 .end method
 
-.method public af()Z
+.method public c_19039_0x0015()Z
     .locals 2
 
     const-string v0, "c_19039_0x0015"
@@ -2415,7 +2405,7 @@
     return p0
 .end method
 
-.method public bc()Z
+.method public ro_boot_hwc_EQ_cn()Z
     .locals 1
 
     iget-object v0, p0, Lcom/mi/config/a;->Ii:Ljava/lang/String;
@@ -2442,7 +2432,7 @@
     return p0
 .end method
 
-.method public bd()Z
+.method public c_22367_0x0005()Z
     .locals 2
 
     const-string v0, "c_22367_0x0005"
@@ -2456,7 +2446,7 @@
     return p0
 .end method
 
-.method public be()Z
+.method public c_0x35_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x35"
@@ -2470,7 +2460,7 @@
     return p0
 .end method
 
-.method public bf()Z
+.method public c_0x5e()Z
     .locals 2
 
     const-string v0, "c_0x5e"
@@ -2484,7 +2474,7 @@
     return p0
 .end method
 
-.method public cc()Z
+.method public c_27810_0x0002_HAS_CAPTURE_INTENT()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"
@@ -2518,7 +2508,7 @@
     return p0
 .end method
 
-.method public cd()Z
+.method public c_0x21()Z
     .locals 2
 
     const-string v0, "c_0x21"
@@ -2532,10 +2522,10 @@
     return p0
 .end method
 
-.method public ce()Z
+.method public supportSloMo_120_Only()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Zd()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->supportSloMo_960_240_120()Z
 
     move-result v0
 
@@ -2543,7 +2533,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Yd()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->supportSloMo_240_120_Only()Z
 
     move-result v0
 
@@ -2563,7 +2553,7 @@
     return v1
 .end method
 
-.method public cf()Z
+.method public c_28041_0x0001()Z
     .locals 2
 
     const-string v0, "c_28041_0x0001"
@@ -2577,7 +2567,7 @@
     return p0
 .end method
 
-.method public dc()Z
+.method public c_0x23()Z
     .locals 3
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -2600,7 +2590,7 @@
     return p0
 .end method
 
-.method public dd()Z
+.method public c_19039_0x0003()Z
     .locals 2
 
     const-string v0, "c_19039_0x0003"
@@ -2639,7 +2629,7 @@
     return p0
 .end method
 
-.method public df()Z
+.method public c_26813_0x0003()Z
     .locals 2
 
     const-string v0, "c_26813_0x0003"
@@ -2653,7 +2643,7 @@
     return p0
 .end method
 
-.method public ec()Z
+.method public c_13254_0x01()Z
     .locals 2
 
     const-string v0, "c_13254_0x01"
@@ -2667,7 +2657,7 @@
     return p0
 .end method
 
-.method public ed()Z
+.method public c_35893_0x0002()Z
     .locals 2
 
     const-string v0, "c_35893_0x0002"
@@ -2681,7 +2671,7 @@
     return p0
 .end method
 
-.method public ee()Z
+.method public s_s_n()Z
     .locals 3
 
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -2706,7 +2696,7 @@
     return v1
 .end method
 
-.method public ef()Z
+.method public c_19039_0x0019()Z
     .locals 2
 
     const-string v0, "c_19039_0x0019"
@@ -2720,7 +2710,7 @@
     return p0
 .end method
 
-.method public fc()Z
+.method public c_0x55_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x55"
@@ -2734,7 +2724,7 @@
     return p0
 .end method
 
-.method public fd()Z
+.method public c_35905_0x0001()Z
     .locals 2
 
     const-string v0, "c_35905_0x0001"
@@ -2748,7 +2738,7 @@
     return p0
 .end method
 
-.method public fe()Z
+.method public c_33066_0x0003()Z
     .locals 2
 
     const-string v0, "c_33066_0x0003"
@@ -2762,7 +2752,7 @@
     return p0
 .end method
 
-.method public ff()Z
+.method public c_0x1c()Z
     .locals 2
 
     const-string v0, "c_0x1c"
@@ -2776,7 +2766,7 @@
     return p0
 .end method
 
-.method public gd()Z
+.method public c_0x36()Z
     .locals 2
 
     const-string v0, "c_0x36"
@@ -2790,7 +2780,7 @@
     return p0
 .end method
 
-.method public ge()Z
+.method public s_v_f_m()Z
     .locals 2
 
     const-string v0, "s_v_f_m"
@@ -2804,7 +2794,7 @@
     return p0
 .end method
 
-.method public gf()Z
+.method public c_19039_0x0020()Z
     .locals 2
 
     const-string v0, "c_19039_0x0020"
@@ -2818,7 +2808,7 @@
     return p0
 .end method
 
-.method public hc()Z
+.method public c_e_f_a_l()Z
     .locals 2
 
     const-string v0, "c_e_f_a_l"
@@ -2832,7 +2822,7 @@
     return p0
 .end method
 
-.method public hd()Z
+.method public c_33066_0x0001()Z
     .locals 2
 
     const-string v0, "c_33066_0x0001"
@@ -2846,7 +2836,7 @@
     return p0
 .end method
 
-.method public he()Z
+.method public c_27810_0x0002_HAS_ULTRA_WIDE()Z
     .locals 2
 
     const-string v0, "c_27810_0x0002"
@@ -2880,7 +2870,7 @@
     return p0
 .end method
 
-.method public hf()Z
+.method public c_19039_0x0018()Z
     .locals 2
 
     const-string v0, "c_19039_0x0018"
@@ -2894,7 +2884,7 @@
     return p0
 .end method
 
-.method public ic()Z
+.method public s_f_s_c()Z
     .locals 2
 
     const-string v0, "s_f_s_c"
@@ -2908,7 +2898,7 @@
     return p0
 .end method
 
-.method public ie()Z
+.method public c_0x11()Z
     .locals 2
 
     const-string v0, "c_0x11"
@@ -2922,7 +2912,7 @@
     return p0
 .end method
 
-.method public if()Z
+.method public c_0x50()Z
     .locals 2
 
     const-string v0, "c_0x50"
@@ -3119,7 +3109,7 @@
     return p0
 .end method
 
-.method public jc()Z
+.method public c_0x20_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x20"
@@ -3133,7 +3123,7 @@
     return p0
 .end method
 
-.method public jd()Z
+.method public c_0x16()Z
     .locals 2
 
     const-string v0, "c_0x16"
@@ -3147,7 +3137,7 @@
     return p0
 .end method
 
-.method public je()Z
+.method public i_v_b_c_f_d()Z
     .locals 2
 
     const-string v0, "i_v_b_c_f_d"
@@ -3161,7 +3151,7 @@
     return p0
 .end method
 
-.method public jf()Z
+.method public c_0x53()Z
     .locals 2
 
     const-string v0, "c_0x53"
@@ -3175,7 +3165,7 @@
     return p0
 .end method
 
-.method public kc()Z
+.method public c_27810_0x0001()Z
     .locals 2
 
     const-string v0, "c_27810_0x0001"
@@ -3189,7 +3179,7 @@
     return p0
 .end method
 
-.method public kd()Z
+.method public c_0x38()Z
     .locals 2
 
     const-string v0, "c_0x38"
@@ -3203,23 +3193,23 @@
     return p0
 .end method
 
-.method public ke()Z
+.method public c_36658_0x0002_OR_c_36658_0x0001_IF_india()Z
     .locals 1
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->rd()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_36658_0x0001()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     :cond_0
-    invoke-virtual {p0}, Lcom/mi/config/a;->Zc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_36658_0x0002()Z
 
     move-result p0
 
@@ -3237,7 +3227,7 @@
     return p0
 .end method
 
-.method public kf()Z
+.method public c_0x51()Z
     .locals 2
 
     const-string v0, "c_0x51"
@@ -3251,7 +3241,7 @@
     return p0
 .end method
 
-.method public lc()Z
+.method public f_a_u_u()Z
     .locals 2
 
     const-string v0, "f_a_u_u"
@@ -3265,7 +3255,7 @@
     return p0
 .end method
 
-.method public ld()Z
+.method public c_19039_0x0009()Z
     .locals 2
 
     const-string v0, "c_19039_0x0009"
@@ -3279,7 +3269,7 @@
     return p0
 .end method
 
-.method public le()Z
+.method public c_0x42_m()Z
     .locals 2
 
     const-string v0, "c_0x42_m"
@@ -3293,7 +3283,7 @@
     return p0
 .end method
 
-.method public lf()Z
+.method public c_19039_0x0021()Z
     .locals 2
 
     const-string v0, "c_19039_0x0021"
@@ -3307,7 +3297,7 @@
     return p0
 .end method
 
-.method public mc()Z
+.method public c_19086_0x0001()Z
     .locals 2
 
     const-string v0, "c_19086_0x0001"
@@ -3321,7 +3311,7 @@
     return p0
 .end method
 
-.method public md()Z
+.method public c_28196_0x0002()Z
     .locals 2
 
     const-string v0, "c_28196_0x0002"
@@ -3335,10 +3325,10 @@
     return p0
 .end method
 
-.method public me()Z
+.method public c_0x42_OR_NEG_c_0x56()Z
     .locals 2
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->vf()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_0x56()Z
 
     move-result v0
 
@@ -3353,7 +3343,7 @@
     return p0
 .end method
 
-.method public mf()Z
+.method public s_m_f()Z
     .locals 2
 
     const-string v0, "s_m_f"
@@ -3367,7 +3357,7 @@
     return p0
 .end method
 
-.method public n(Ljava/lang/String;)Ljava/lang/String;
+.method public c_22756_0x0001_OR_param(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     const-string v0, "c_22756_0x0001"
@@ -3379,7 +3369,7 @@
     return-object p0
 .end method
 
-.method public nb()Z
+.method public c_28041_0x0005()Z
     .locals 2
 
     const-string v0, "c_28041_0x0005"
@@ -3393,7 +3383,7 @@
     return p0
 .end method
 
-.method public nc()Z
+.method public c_0x39()Z
     .locals 2
 
     const-string v0, "c_0x39"
@@ -3407,7 +3397,7 @@
     return p0
 .end method
 
-.method public nd()Z
+.method public c_27810_0x0005()Z
     .locals 2
 
     const-string v0, "c_27810_0x0005"
@@ -3421,7 +3411,7 @@
     return p0
 .end method
 
-.method public ne()Z
+.method public c_0x0e()Z
     .locals 2
 
     const-string v0, "c_0x0e"
@@ -3435,7 +3425,7 @@
     return p0
 .end method
 
-.method public nf()Z
+.method public c_9006_0x0000()Z
     .locals 2
 
     const-string v0, "c_9006_0x0000"
@@ -3449,7 +3439,7 @@
     return p0
 .end method
 
-.method public o(Ljava/lang/String;)Ljava/lang/String;
+.method public c_28041_0x0000_OR_param(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     const-string v0, "c_28041_0x0000"
@@ -3461,7 +3451,7 @@
     return-object p0
 .end method
 
-.method public ob()Z
+.method public c_0x26()Z
     .locals 2
 
     const-string v0, "c_0x26"
@@ -3475,7 +3465,7 @@
     return p0
 .end method
 
-.method public oc()Z
+.method public c_0x1b()Z
     .locals 2
 
     const-string v0, "c_0x1b"
@@ -3512,7 +3502,7 @@
     return v0
 .end method
 
-.method public oe()Z
+.method public c_28041_0x0007()Z
     .locals 2
 
     const-string v0, "c_28041_0x0007"
@@ -3550,14 +3540,14 @@
     return p0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/mi/config/a;->re()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_0x33_OR_T()Z
 
     move-result p0
 
     return p0
 .end method
 
-.method public pb()Z
+.method public c_19039_0x0014()Z
     .locals 2
 
     const-string v0, "c_19039_0x0014"
@@ -3571,7 +3561,7 @@
     return p0
 .end method
 
-.method public pc()Z
+.method public c_0x5d()Z
     .locals 2
 
     const-string v0, "c_0x5d"
@@ -3585,7 +3575,7 @@
     return p0
 .end method
 
-.method public pd()Z
+.method public c_0x14()Z
     .locals 2
 
     const-string v0, "c_0x14"
@@ -3599,7 +3589,7 @@
     return p0
 .end method
 
-.method public pe()I
+.method public c_0x0b_OR_180()I
     .locals 2
 
     const-string v0, "c_0x0b"
@@ -3613,7 +3603,7 @@
     return p0
 .end method
 
-.method public pf()Z
+.method public c_0x49_IF_3P_SAT()Z
     .locals 2
 
     sget-boolean v0, Lcom/android/camera/HybridZoomingSystem;->IS_3_OR_MORE_SAT:Z
@@ -3656,7 +3646,7 @@
     return p0
 .end method
 
-.method public qb()Z
+.method public c_r_i_m_m()Z
     .locals 2
 
     const-string v0, "c_r_i_m_m"
@@ -3670,7 +3660,7 @@
     return p0
 .end method
 
-.method public qc()Z
+.method public c_0x45()Z
     .locals 2
 
     const-string v0, "c_0x45"
@@ -3684,7 +3674,7 @@
     return p0
 .end method
 
-.method public qd()Z
+.method public c_35893_0x0003_IFNOT_global()Z
     .locals 2
 
     invoke-static {}, Lcom/android/camera/Util;->isGlobalVersion()Z
@@ -3721,7 +3711,7 @@
     return v1
 .end method
 
-.method public qe()Z
+.method public c_28041_0x0003()Z
     .locals 2
 
     const-string v0, "c_28041_0x0003"
@@ -3735,7 +3725,7 @@
     return p0
 .end method
 
-.method public qf()Z
+.method public c_0x4a()Z
     .locals 2
 
     const-string v0, "c_0x4a"
@@ -3749,7 +3739,7 @@
     return p0
 .end method
 
-.method public r(Z)Z
+.method public c_0x43_AND_param(Z)Z
     .locals 1
 
     const/4 v0, 0x0
@@ -3770,7 +3760,7 @@
     return v0
 .end method
 
-.method public rb()Z
+.method public e_p_p_l_t()Z
     .locals 2
 
     const-string v0, "e_p_p_l_t"
@@ -3784,7 +3774,7 @@
     return p0
 .end method
 
-.method public rc()Z
+.method public c_13254_0x02_AND_c_28041_0x0002_OR_india()Z
     .locals 2
 
     const/4 v0, 0x0
@@ -3797,13 +3787,13 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->xc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_28041_0x0002()Z
 
     move-result p0
 
@@ -3816,7 +3806,7 @@
     return v0
 .end method
 
-.method public rd()Z
+.method public c_36658_0x0001()Z
     .locals 2
 
     const-string v0, "c_36658_0x0001"
@@ -3830,7 +3820,7 @@
     return p0
 .end method
 
-.method public re()Z
+.method public c_0x33_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x33"
@@ -3844,7 +3834,7 @@
     return p0
 .end method
 
-.method public rf()Z
+.method public s_v_b()Z
     .locals 2
 
     const-string v0, "s_v_b"
@@ -3858,7 +3848,7 @@
     return p0
 .end method
 
-.method public s(Z)Ljava/lang/String;
+.method public c_0x29_OR_4_5_OR_c_0x30_OR_4(Z)Ljava/lang/String;
     .locals 1
 
     if-eqz p1, :cond_0
@@ -3885,7 +3875,7 @@
     return-object p0
 .end method
 
-.method public sb()I
+.method public getAECLuxHeightLight()I
     .locals 2
 
     const-string v0, "a_l_h_l"
@@ -3899,7 +3889,7 @@
     return p0
 .end method
 
-.method public sc()Z
+.method public c_0x24()Z
     .locals 2
 
     const-string v0, "c_0x24"
@@ -3913,7 +3903,7 @@
     return p0
 .end method
 
-.method public sd()Z
+.method public c_0x08()Z
     .locals 2
 
     const-string v0, "c_0x08"
@@ -3972,7 +3962,7 @@
     return v1
 .end method
 
-.method public sf()Z
+.method public c_28041_0x0006()Z
     .locals 2
 
     const/4 v0, 0x0
@@ -4042,7 +4032,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result p0
 
@@ -4054,7 +4044,7 @@
     return v0
 .end method
 
-.method public tb()I
+.method public getAECLuxLastLight()I
     .locals 2
 
     const-string v0, "a_l_l_l"
@@ -4068,7 +4058,7 @@
     return p0
 .end method
 
-.method public tc()Z
+.method public ro_boot_hwc_EQ_india()Z
     .locals 2
 
     iget-object v0, p0, Lcom/mi/config/a;->Ii:Ljava/lang/String;
@@ -4131,7 +4121,7 @@
     return p0
 .end method
 
-.method public td()Z
+.method public c_0x09()Z
     .locals 2
 
     const-string v0, "c_0x09"
@@ -4180,7 +4170,7 @@
     return v1
 .end method
 
-.method public tf()Z
+.method public s_z_m()Z
     .locals 2
 
     const-string v0, "s_z_m"
@@ -4194,7 +4184,7 @@
     return p0
 .end method
 
-.method public ub()Z
+.method public a_e_d()Z
     .locals 2
 
     const-string v0, "a_e_d"
@@ -4224,7 +4214,7 @@
     return p0
 .end method
 
-.method public ud()Z
+.method public c_0x03()Z
     .locals 2
 
     const-string v0, "c_0x03"
@@ -4283,7 +4273,7 @@
     return v1
 .end method
 
-.method public uf()Z
+.method public c_0x52_OR_T()Z
     .locals 2
 
     const-string v0, "c_0x52"
@@ -4297,7 +4287,7 @@
     return p0
 .end method
 
-.method public vb()I
+.method public c_22367_0x0004()I
     .locals 2
 
     const-string v0, "c_22367_0x0004"
@@ -4311,7 +4301,7 @@
     return p0
 .end method
 
-.method public vc()Z
+.method public c_0x04_i_l_h_d()Z
     .locals 2
 
     const-string v0, "c_0x04_i_l_h_d"
@@ -4325,7 +4315,7 @@
     return p0
 .end method
 
-.method public vd()Z
+.method public c_0x00_s_l_s_IFNOT_global()Z
     .locals 2
 
     invoke-static {}, Lcom/android/camera/Util;->isGlobalVersion()Z
@@ -4383,7 +4373,7 @@
     return v1
 .end method
 
-.method public vf()Z
+.method public c_0x56()Z
     .locals 2
 
     const-string v0, "c_0x56"
@@ -4397,7 +4387,7 @@
     return p0
 .end method
 
-.method public wb()Ljava/lang/String;
+.method public c_0x40_OR_common()Ljava/lang/String;
     .locals 2
 
     const-string v0, "c_0x40"
@@ -4411,7 +4401,7 @@
     return-object p0
 .end method
 
-.method public wc()Z
+.method public i_l_m_d()Z
     .locals 2
 
     const-string v0, "i_l_m_d"
@@ -4436,7 +4426,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/mi/config/a;->Qm()I
+    invoke-direct {p0}, Lcom/mi/config/a;->c_28041_0x0004_or_0()I
 
     move-result p0
 
@@ -4451,7 +4441,7 @@
     return v1
 .end method
 
-.method public we()Z
+.method public c_35955_0x0001_IF_india_OR_china()Z
     .locals 2
 
     const/4 v0, 0x0
@@ -4464,13 +4454,13 @@
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->bc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->ro_boot_hwc_EQ_cn()Z
 
     move-result p0
 
@@ -4483,7 +4473,7 @@
     return v0
 .end method
 
-.method public wf()Z
+.method public supportShortVideo()Z
     .locals 2
 
     const/4 v0, 0x0
@@ -4527,7 +4517,7 @@
     return v0
 .end method
 
-.method public xb()I
+.method public c_0x13_OR_0()I
     .locals 2
 
     const-string v0, "c_0x13"
@@ -4541,7 +4531,7 @@
     return p0
 .end method
 
-.method public xc()Z
+.method public c_28041_0x0002()Z
     .locals 2
 
     const-string v0, "c_28041_0x0002"
@@ -4564,7 +4554,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-direct {p0}, Lcom/mi/config/a;->Qm()I
+    invoke-direct {p0}, Lcom/mi/config/a;->c_28041_0x0004_or_0()I
 
     move-result p0
 
@@ -4581,7 +4571,7 @@
     return p0
 .end method
 
-.method public xe()Z
+.method public s_a_3()Z
     .locals 2
 
     const-string v0, "s_a_3"
@@ -4595,7 +4585,7 @@
     return p0
 .end method
 
-.method public yb()Ljava/lang/String;
+.method public c_0x47_OR_v0()Ljava/lang/String;
     .locals 2
 
     const-string v0, "c_0x47"
@@ -4609,7 +4599,7 @@
     return-object p0
 .end method
 
-.method public yc()Z
+.method public c_190920()Z
     .locals 2
 
     const-string v0, "c_190920"
@@ -4623,7 +4613,7 @@
     return p0
 .end method
 
-.method public yd()Z
+.method public c_16001_0x0002_OR_T()Z
     .locals 2
 
     const-string v0, "c_16001_0x0002"
@@ -4650,7 +4640,7 @@
 
     if-nez v2, :cond_0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Ae()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_s_a_u_q_OR_s_a_u()Z
 
     move-result p0
 
@@ -4738,7 +4728,7 @@
     return v1
 .end method
 
-.method public zb()I
+.method public s_f_s_2_s_t_OR_M1()I
     .locals 2
 
     const-string v0, "s_f_s_2_s_t"
@@ -4752,7 +4742,7 @@
     return p0
 .end method
 
-.method public zc()Z
+.method public c_19039_0x0005_EQ_0()Z
     .locals 2
 
     const-string v0, "c_19039_0x0005"
@@ -4776,7 +4766,7 @@
     return p0
 .end method
 
-.method public zd()Z
+.method public c_19039_0x0007()Z
     .locals 2
 
     const-string v0, "c_19039_0x0007"
@@ -4790,7 +4780,7 @@
     return p0
 .end method
 
-.method public ze()Z
+.method public s_a_u_e_f_m()Z
     .locals 2
 
     const-string v0, "s_a_u_e_f_m"

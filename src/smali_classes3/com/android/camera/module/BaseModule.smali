@@ -1343,7 +1343,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Qb()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_22367_0x0006()Ljava/lang/String;
 
     move-result-object v0
 
@@ -2090,7 +2090,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->hc()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_e_f_a_l()Z
 
     move-result v0
 
@@ -2144,7 +2144,7 @@
     :goto_2
     iput-boolean v0, p0, Lcom/android/camera/module/BaseModule;->mFocusOrAELockSupported:Z
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->ld()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_19039_0x0009()Z
 
     move-result p1
 
@@ -2260,7 +2260,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Hd()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_27810_0x0006()Z
 
     move-result v0
 
@@ -2398,7 +2398,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->sf()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_28041_0x0006()Z
 
     move-result v0
 
@@ -2666,7 +2666,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Hd()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_27810_0x0006()Z
 
     move-result v0
 
@@ -3920,7 +3920,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->mc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_19086_0x0001()Z
 
     move-result p0
 
@@ -5095,7 +5095,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->sd()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_0x08()Z
 
     move-result p1
 
@@ -7238,7 +7238,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Ed()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_0x58()Z
 
     move-result p1
 
@@ -7277,7 +7277,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->if()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_0x50()Z
 
     move-result p1
 
@@ -7620,7 +7620,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->vf()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x56()Z
 
     move-result v0
 

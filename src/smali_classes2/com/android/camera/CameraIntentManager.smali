@@ -908,7 +908,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->wf()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->supportShortVideo()Z
 
     move-result p0
 
@@ -936,7 +936,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->ud()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_0x03()Z
 
     move-result p0
 
@@ -951,7 +951,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Ad()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_36211_0x0001()Z
 
     move-result p0
 
@@ -1671,7 +1671,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Wb()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x44()Z
 
     move-result v0
 

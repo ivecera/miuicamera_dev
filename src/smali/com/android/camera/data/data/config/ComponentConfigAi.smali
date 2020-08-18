@@ -103,7 +103,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->ub()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->a_e_d()Z
 
     move-result p1
 
@@ -168,7 +168,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Xe()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->s_p_a()Z
 
     move-result p1
 
@@ -187,7 +187,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Fe()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->s_f_a()Z
 
     move-result p1
 
@@ -219,7 +219,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Wc()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->s_b_a_OR_T()Z
 
     move-result p1
 
@@ -238,7 +238,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Fe()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->s_f_a()Z
 
     move-result p1
 

@@ -585,7 +585,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p3}, Lcom/mi/config/a;->ce()Z
+    invoke-virtual {p3}, Lcom/mi/config/a;->supportSloMo_120_Only()Z
 
     move-result p3
 

@@ -108,7 +108,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p3}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p3}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result p3
 
@@ -132,7 +132,7 @@
 
     move-result-object p3
 
-    invoke-virtual {p3}, Lcom/mi/config/a;->tc()Z
+    invoke-virtual {p3}, Lcom/mi/config/a;->ro_boot_hwc_EQ_india()Z
 
     move-result p3
 

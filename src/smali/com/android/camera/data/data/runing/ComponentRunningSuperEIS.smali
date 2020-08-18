@@ -130,7 +130,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Qd()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_22367_0x0007()Z
 
     move-result v0
 

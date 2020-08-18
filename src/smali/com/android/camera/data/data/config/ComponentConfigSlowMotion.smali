@@ -278,7 +278,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Zd()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->supportSloMo_960_240_120()Z
 
     move-result p1
 
@@ -301,7 +301,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Yd()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->supportSloMo_240_120_Only()Z
 
     move-result p1
 
@@ -320,7 +320,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->ce()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->supportSloMo_120_Only()Z
 
     move-result p1
 
@@ -346,7 +346,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->ae()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_35893_0x0001()Z
 
     move-result p1
 

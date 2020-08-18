@@ -97,7 +97,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/mi/config/a;->Ed()Z
+    invoke-virtual {v3}, Lcom/mi/config/a;->c_0x58()Z
 
     move-result v3
 
@@ -130,7 +130,7 @@
 
     if-nez v3, :cond_1
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->wf()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->supportShortVideo()Z
 
     move-result v3
 
@@ -161,7 +161,7 @@
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1
-    invoke-virtual {v2}, Lcom/mi/config/a;->ud()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x03()Z
 
     move-result v3
 
@@ -169,7 +169,7 @@
 
     if-nez v3, :cond_2
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->Ad()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_36211_0x0001()Z
 
     move-result v3
 
@@ -192,13 +192,13 @@
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_2
-    invoke-virtual {v2}, Lcom/mi/config/a;->ud()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x03()Z
 
     move-result v3
 
     if-nez v3, :cond_3
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->Ad()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_36211_0x0001()Z
 
     move-result v3
 
@@ -221,7 +221,7 @@
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_3
-    invoke-virtual {v2}, Lcom/mi/config/a;->ud()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x03()Z
 
     move-result v3
 
@@ -353,7 +353,7 @@
     invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_9
-    invoke-virtual {v2}, Lcom/mi/config/a;->Xd()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x34_OR_T()Z
 
     move-result v3
 
@@ -378,13 +378,13 @@
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_a
-    invoke-virtual {v2}, Lcom/mi/config/a;->ee()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->s_s_n()Z
 
     move-result v3
 
     if-nez v3, :cond_b
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->cf()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_28041_0x0001()Z
 
     move-result v3
 
@@ -592,7 +592,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/mi/config/a;->Ld()Z
+    invoke-virtual {v1}, Lcom/mi/config/a;->c_19039_0x0001()Z
 
     move-result v1
 

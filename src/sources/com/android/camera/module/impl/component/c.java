@@ -1,0 +1,18 @@
+package com.android.camera.module.impl.component;
+
+import com.android.camera.module.BaseModule;
+import java.util.function.Consumer;
+
+/* compiled from: lambda */
+public final /* synthetic */ class c implements Consumer {
+    private final /* synthetic */ boolean Hi;
+
+    public /* synthetic */ c(boolean z) {
+        this.Hi = z;
+    }
+
+    @Override // java.util.function.Consumer
+    public final void accept(Object obj) {
+        ConfigChangeImpl.b(this.Hi, (BaseModule) obj);
+    }
+}

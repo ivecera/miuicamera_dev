@@ -964,7 +964,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lcom/mi/config/a;->Ee()Z
+    invoke-virtual {v5}, Lcom/mi/config/a;->s_e_l()Z
 
     move-result v5
 

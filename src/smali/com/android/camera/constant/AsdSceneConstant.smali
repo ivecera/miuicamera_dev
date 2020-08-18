@@ -59,7 +59,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->tb()I
+    invoke-virtual {v0}, Lcom/mi/config/a;->getAECLuxLastLight()I
 
     move-result v0
 
@@ -71,7 +71,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->sb()I
+    invoke-virtual {v0}, Lcom/mi/config/a;->getAECLuxHeightLight()I
 
     move-result v0
 
@@ -184,7 +184,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Lc()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->s_s_s()Z
 
     move-result p0
 

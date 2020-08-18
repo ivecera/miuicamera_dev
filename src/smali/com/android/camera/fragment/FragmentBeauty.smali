@@ -1891,7 +1891,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/mi/config/a;->Ce()Z
+    invoke-virtual {v1}, Lcom/mi/config/a;->s_b_m()Z
 
     move-result v1
 
@@ -2008,7 +2008,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->Fd()Z
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x10_OR_T()Z
 
     move-result v0
 
@@ -2064,7 +2064,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/mi/config/a;->Hd()Z
+    invoke-virtual {v1}, Lcom/mi/config/a;->c_27810_0x0006()Z
 
     move-result v1
 
@@ -2083,7 +2083,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->Ac()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_19039_0x0005_eq_2()Z
 
     move-result p0
 

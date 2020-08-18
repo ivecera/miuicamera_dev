@@ -179,7 +179,7 @@
 
     iget-object p1, p0, Lcom/android/camera/data/data/global/DataItemGlobal;->mDataItemFeature:Lcom/mi/config/a;
 
-    invoke-virtual {p1}, Lcom/mi/config/a;->Ed()Z
+    invoke-virtual {p1}, Lcom/mi/config/a;->c_0x58()Z
 
     move-result p1
 
@@ -275,7 +275,7 @@
     :pswitch_0
     iget-object v2, p0, Lcom/android/camera/data/data/global/DataItemGlobal;->mDataItemFeature:Lcom/mi/config/a;
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->ae()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_35893_0x0001()Z
 
     move-result v2
 
@@ -309,7 +309,7 @@
     :pswitch_1
     iget-object v2, p0, Lcom/android/camera/data/data/global/DataItemGlobal;->mDataItemFeature:Lcom/mi/config/a;
 
-    invoke-virtual {v2}, Lcom/mi/config/a;->be()Z
+    invoke-virtual {v2}, Lcom/mi/config/a;->c_0x35_OR_T()Z
 
     move-result v2
 
@@ -402,7 +402,7 @@
     :pswitch_1
     iget-object p0, p0, Lcom/android/camera/data/data/global/DataItemGlobal;->mDataItemFeature:Lcom/mi/config/a;
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->be()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_0x35_OR_T()Z
 
     move-result p0
 
@@ -612,7 +612,7 @@
 
     move-result-object p0
 
-    invoke-virtual {p0}, Lcom/mi/config/a;->dd()Z
+    invoke-virtual {p0}, Lcom/mi/config/a;->c_19039_0x0003()Z
 
     move-result p0
 
@@ -835,7 +835,7 @@
 
     iget-object v0, p0, Lcom/android/camera/data/data/global/DataItemGlobal;->mDataItemFeature:Lcom/mi/config/a;
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->wb()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x40_OR_common()Ljava/lang/String;
 
     move-result-object v0
 
@@ -978,7 +978,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lcom/mi/config/a;->Lc()Z
+    invoke-virtual {v3}, Lcom/mi/config/a;->s_s_s()Z
 
     move-result v3
 
@@ -1518,7 +1518,7 @@
 
     move-result-object v8
 
-    invoke-virtual {v8}, Lcom/mi/config/a;->wf()Z
+    invoke-virtual {v8}, Lcom/mi/config/a;->supportShortVideo()Z
 
     move-result v8
 
@@ -2011,7 +2011,7 @@
 
     iget-object v0, p0, Lcom/android/camera/data/data/global/DataItemGlobal;->mDataItemFeature:Lcom/mi/config/a;
 
-    invoke-virtual {v0}, Lcom/mi/config/a;->wb()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/mi/config/a;->c_0x40_OR_common()Ljava/lang/String;
 
     move-result-object v0
 
