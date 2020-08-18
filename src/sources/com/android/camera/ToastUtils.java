@@ -90,8 +90,8 @@ public class ToastUtils {
         Context context = weakReference.get();
         boolean z2 = true;
         boolean z3 = false;
-        boolean z4 = ((context instanceof Activity) == 1 && (intent = ((Activity) context).getIntent()) != null && intent.getBooleanExtra(a.mf, false) == 1) ? true : false;
-        if (TextUtils.isEmpty(str) != 1) {
+        boolean z4 = (context instanceof Activity) && (intent = ((Activity) context).getIntent()) != null && intent.getBooleanExtra(a.mf, false);
+        if (!TextUtils.isEmpty(str)) {
             if (sToast != null) {
                 sTwoTime = System.currentTimeMillis();
                 String str2 = sOldMsg;
@@ -100,18 +100,18 @@ public class ToastUtils {
                     sToast.setText(str);
                     z3 = true;
                 }
-                if (z == 1 && !(sGravity == sToast.getGravity() && sXOffset == sToast.getXOffset() && sYOffset == sToast.getYOffset())) {
+                if (z && !(sGravity == sToast.getGravity() && sXOffset == sToast.getXOffset() && sYOffset == sToast.getYOffset())) {
                     sToast.setGravity(sGravity, sXOffset, sYOffset);
                     z3 = true;
                 }
-                if (z == 1 || (i == sToast.getGravity() && i2 == sToast.getXOffset() && i3 == sToast.getYOffset())) {
+                if (z || (i == sToast.getGravity() && i2 == sToast.getXOffset() && i3 == sToast.getYOffset())) {
                     z2 = z3;
                 } else {
                     sToast.setGravity(i, i2, i3);
                 }
-                if (z2 == 1 || sTwoTime - sOneTime > SHORT_DURATION_TIMEOUT) {
+                if (z2 || sTwoTime - sOneTime > SHORT_DURATION_TIMEOUT) {
                     sOneTime = sTwoTime;
-                    if (z4 == 1) {
+                    if (z4) {
                         prepareShowOnKeyguard(sToast);
                     }
                     sToast.show();
@@ -125,7 +125,7 @@ public class ToastUtils {
                     if (!z) {
                         sToast.setGravity(i, i2, i3);
                     }
-                    if (z4 == 1) {
+                    if (z4) {
                         prepareShowOnKeyguard(sToast);
                     }
                     sToast.show();

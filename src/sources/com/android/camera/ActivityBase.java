@@ -185,7 +185,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
 
         public void run() {
             Bitmap bitmap = this.mBitmap;
-            if (bitmap != null && bitmap.isRecycled() != 1) {
+            if (bitmap != null && !bitmap.isRecycled()) {
                 Util.saveLastFrameGaussian2File(this.mBitmap);
             }
         }
@@ -209,14 +209,14 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
     private void checkKeyguardFlag() {
         String str;
         this.mStartFromKeyguard = getKeyguardFlag();
-        this.mKeyguardSecureLocked = (this.mStartFromKeyguard == 1 && this.mKeyguardManager.isKeyguardSecure() == 1 && this.mKeyguardManager.isKeyguardLocked() == 1) ? true : false;
-        if (this.mStartFromKeyguard == 1 && !this.mIsFinishInKeyguard) {
+        this.mKeyguardSecureLocked = this.mStartFromKeyguard && this.mKeyguardManager.isKeyguardSecure() && this.mKeyguardManager.isKeyguardLocked();
+        if (this.mStartFromKeyguard && !this.mIsFinishInKeyguard) {
             setShowWhenLocked(true);
             this.mIsFinishInKeyguard = false;
             this.mHandler.sendEmptyMessageDelayed(1, 100);
         }
         DataRepository.dataItemGlobal().setStartFromKeyguard(this.mKeyguardSecureLocked);
-        if (this.mKeyguardSecureLocked != 1 && isGalleryLocked() != 1) {
+        if (!this.mKeyguardSecureLocked && !isGalleryLocked()) {
             this.mSecureUriList = null;
         } else if (this.mSecureUriList == null) {
             this.mSecureUriList = new ArrayList<>();
@@ -246,7 +246,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
     private long[] getSecureStoreIds() {
         ArrayList<Uri> arrayList = this.mSecureUriList;
         int i = 0;
-        if (arrayList == null || arrayList.isEmpty() == 1) {
+        if (arrayList == null || arrayList.isEmpty()) {
             return new long[0];
         }
         long[] jArr = new long[this.mSecureUriList.size()];
@@ -342,7 +342,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
 
                 @Override // com.android.camera.CameraScreenNail.RequestRenderListener
                 public void requestRender() {
-                    if (ActivityBase.this.mCameraScreenNail.isAnimationRunning() == 1 || ActivityBase.this.mCameraScreenNail.getExternalFrameProcessor() == null || !ActivityBase.this.mCameraScreenNail.getExternalFrameProcessor().isProcessorReady()) {
+                    if (ActivityBase.this.mCameraScreenNail.isAnimationRunning() || ActivityBase.this.mCameraScreenNail.getExternalFrameProcessor() == null || !ActivityBase.this.mCameraScreenNail.getExternalFrameProcessor().isProcessorReady()) {
                         ActivityBase.this.mGLView.requestRender();
                     }
                     Module module = ActivityBase.this.mCurrentModule;
@@ -383,7 +383,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
     }
 
     public void dismissKeyguard() {
-        if (this.mStartFromKeyguard == 1) {
+        if (this.mStartFromKeyguard) {
             sendBroadcast(new Intent(Util.ACTION_DISMISS_KEY_GUARD));
         }
     }
@@ -457,7 +457,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
 
     public void gotoGallery() {
         Thumbnail thumbnail;
-        if (isActivityPaused() != 1 && (thumbnail = this.mThumbnailUpdater.getThumbnail()) != null) {
+        if (!isActivityPaused() && (thumbnail = this.mThumbnailUpdater.getThumbnail()) != null) {
             Uri uri = thumbnail.getUri();
             if (!Util.isUriValid(uri, getContentResolver())) {
                 Log.e(TAG, "Uri invalid. uri=" + uri);
@@ -471,7 +471,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
                 Intent intent = new Intent(Util.REVIEW_ACTION, uri);
                 intent.setPackage(DataRepository.dataItemFeature().c_0x44() ? Util.ANDROID_ONE_REVIEW_ACTIVITY_PACKAGE : Util.REVIEW_ACTIVITY_PACKAGE);
                 intent.putExtra(Util.KEY_REVIEW_FROM_MIUICAMERA, true);
-                if (b.Qk() == 1) {
+                if (b.Qk()) {
                     if (this.mCameraBrightness.getCurrentBrightnessAuto() != 0.0f) {
                         intent.putExtra(Util.KEY_CAMERA_BRIGHTNESS_AUTO, this.mCameraBrightness.getCurrentBrightnessAuto());
                     } else {
@@ -479,25 +479,25 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
                         intent.putExtra(Util.KEY_CAMERA_BRIGHTNESS, this.mCameraBrightness.getCurrentBrightness());
                     }
                 }
-                if (startFromKeyguard() == 1) {
-                    if (DataRepository.dataItemFeature().c_0x44() == 1) {
+                if (startFromKeyguard()) {
+                    if (DataRepository.dataItemFeature().c_0x44()) {
                         intent.putExtra(Util.ANDROID_ONE_EXTRA_IS_SECURE_MODE, true);
                     } else {
                         intent.putExtra(a.mf, true);
                     }
                 }
-                if (Util.isAppLocked(this, Util.REVIEW_ACTIVITY_PACKAGE) == 1) {
+                if (Util.isAppLocked(this, Util.REVIEW_ACTIVITY_PACKAGE)) {
                     intent.putExtra(Util.EXTRAS_SKIP_LOCK, true);
                 }
                 if (this.mSecureUriList != null) {
-                    if (DataRepository.dataItemFeature().c_0x44() == 1) {
+                    if (DataRepository.dataItemFeature().c_0x44()) {
                         intent.putExtra(Util.ANDROID_ONE_EXTRA_SECURE_MODE_MEDIA_STORE_IDS, getSecureStoreIds());
                     } else {
                         intent.putParcelableArrayListExtra(Util.KEY_SECURE_ITEMS, this.mSecureUriList);
                     }
                 }
-                if (DataRepository.dataItemFeature().c_19039_0x0003() == 1) {
-                    intent.putExtra("using_deputy_screen", DataRepository.dataItemGlobal().getDisplayMode() == 2 ? true : false);
+                if (DataRepository.dataItemFeature().c_19039_0x0003()) {
+                    intent.putExtra("using_deputy_screen", DataRepository.dataItemGlobal().getDisplayMode() == 2);
                 }
                 intent.putExtra("device_orientation", this.mOrientation);
                 startActivity(intent);
@@ -532,7 +532,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
                 this.mGLView.onResume();
                 return false;
             }
-        } else if (Util.sIsFullScreenNavBarHidden == 1) {
+        } else if (Util.sIsFullScreenNavBarHidden) {
             this.mHandler.post(new Runnable() {
                 /* class com.android.camera.ActivityBase.AnonymousClass9 */
 
@@ -568,7 +568,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
 
     public boolean isCameraAliveWhenResume() {
         Module module;
-        return (this.mReleaseByModule == 1 || ((module = this.mCurrentModule) != null && module.isCreated() == 1 && !this.mCurrentModule.isDeparted())) ? true : false;
+        return this.mReleaseByModule || ((module = this.mCurrentModule) != null && module.isCreated() && !this.mCurrentModule.isDeparted());
     }
 
     public boolean isGalleryLocked() {
@@ -576,20 +576,20 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
     }
 
     public boolean isGotoGallery() {
-        return this.mJumpFlag == 1 ? true : false;
+        return this.mJumpFlag == 1;
     }
 
     public boolean isGotoSettings() {
-        return this.mJumpFlag == 2 ? true : false;
+        return this.mJumpFlag == 2;
     }
 
     public boolean isJumpBack() {
-        return this.mLastJumpFlag != 0 ? true : false;
+        return this.mLastJumpFlag != 0;
     }
 
     public boolean isPostProcessing() {
         Module module = this.mCurrentModule;
-        return (module != null && module.isCreated() == 1 && this.mCurrentModule.isPostProcessing() == 1) ? true : false;
+        return module != null && module.isCreated() && this.mCurrentModule.isPostProcessing();
     }
 
     public boolean isPreviewThumbnail() {
@@ -599,7 +599,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
     /* access modifiers changed from: protected */
     public boolean isShowBottomIntentDone() {
         ModeProtocol.BaseDelegate baseDelegate;
-        return ((getCameraIntentManager().isImageCaptureIntent() == 1 || getCameraIntentManager().isVideoCaptureIntent() == 1) && (baseDelegate = (ModeProtocol.BaseDelegate) ModeCoordinatorImpl.getInstance().getAttachProtocol(160)) != null && baseDelegate.getActiveFragment(R.id.bottom_action) == 4083) ? true : false;
+        return (getCameraIntentManager().isImageCaptureIntent() || getCameraIntentManager().isVideoCaptureIntent()) && (baseDelegate = (ModeProtocol.BaseDelegate) ModeCoordinatorImpl.getInstance().getAttachProtocol(160)) != null && baseDelegate.getActiveFragment(R.id.bottom_action) == 4083;
     }
 
     public boolean isSwitchingModule() {
@@ -628,7 +628,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
 
     @Override // android.support.v4.app.SupportActivity, android.support.v4.app.FragmentActivity
     public void onCreate(Bundle bundle) {
-        if (Util.isContentViewExtendToTopEdges() == 1) {
+        if (Util.isContentViewExtendToTopEdges()) {
             CompatibilityUtils.setCutoutModeShortEdges(getWindow());
         }
         getWindow().addFlags(1024);
@@ -639,14 +639,14 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
         this.mThumbnailUpdater = new ThumbnailUpdater(this);
         this.mKeyguardManager = (KeyguardManager) getSystemService("keyguard");
         this.mStartFromKeyguard = getKeyguardFlag();
-        if (this.mStartFromKeyguard == 1) {
-            this.mKeyguardSecureLocked = (this.mKeyguardManager.isKeyguardSecure() == 1 && this.mKeyguardManager.isKeyguardLocked() == 1) ? true : false;
+        if (this.mStartFromKeyguard) {
+            this.mKeyguardSecureLocked = this.mKeyguardManager.isKeyguardSecure() && this.mKeyguardManager.isKeyguardLocked();
         }
-        boolean z2 = (getWindowManager().getDefaultDisplay().getState() & 2) != 0 ? true : false;
-        if (!this.mStartFromKeyguard || z2 == 1) {
+        boolean z2 = (getWindowManager().getDefaultDisplay().getState() & 2) != 0;
+        if (!this.mStartFromKeyguard || z2) {
             z = false;
         }
-        if (z == 1) {
+        if (z) {
             Log.d(TAG, "onCreate: addFlag --> FLAG_TURN_SCREEN_ON");
             getWindow().addFlags(2097152);
         }
@@ -732,7 +732,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
         super.onPause();
         getWindow().clearFlags(1024);
         if (this.mCameraScreenNail != null && !isShowBottomIntentDone()) {
-            if ((DataRepository.dataItemFeature().c_0x1c() == 1 || CameraSettings.isCameraParallelProcessEnable() == 1) && this.mJumpFlag == 1) {
+            if ((DataRepository.dataItemFeature().c_0x1c() || CameraSettings.isCameraParallelProcessEnable()) && this.mJumpFlag == 1) {
                 this.mCameraScreenNail.doPreviewGaussianForever();
             } else if (!DataRepository.dataItemFeature().c_0x25()) {
                 Log.d(TAG, "onPause: readLastFrameGaussian...");
@@ -748,7 +748,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
             alertDialog.dismiss();
         }
         pause();
-        if (startFromKeyguard() == 1 && this.mIsFinishInKeyguard == 1) {
+        if (startFromKeyguard() && this.mIsFinishInKeyguard) {
             boolean isChangingConfigurations = isChangingConfigurations();
             Log.d(TAG, "onPause: clearFlag --> FLAG_TURN_SCREEN_ON and isChangingConfigurations is " + isChangingConfigurations);
             getWindow().clearFlags(2097152);
@@ -824,7 +824,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
         if (locationManager != null) {
             locationManager.recordLocation(false);
         }
-        if (this.mPreviewThumbnail == 1) {
+        if (this.mPreviewThumbnail) {
             this.mThumbnailUpdater.setThumbnail(null, false, false);
             this.mPreviewThumbnail = false;
             return;
@@ -895,7 +895,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
                 if (cameraScreenNail != null) {
                     bitmap = cameraScreenNail.getLastFrameGaussianBitmap();
                 }
-                if (bitmap == null || bitmap.isRecycled() == 1) {
+                if (bitmap == null || bitmap.isRecycled()) {
                     this.mGLCoverDisposable = new Single<Bitmap>() {
                         /* class com.android.camera.ActivityBase.AnonymousClass2 */
 
@@ -910,7 +910,7 @@ public abstract class ActivityBase extends FragmentActivity implements AppContro
                         /* class com.android.camera.ActivityBase.AnonymousClass3 */
 
                         public void accept(Bitmap bitmap) {
-                            if (bitmap == null || bitmap.isRecycled() == 1) {
+                            if (bitmap == null || bitmap.isRecycled()) {
                                 ActivityBase.this.mGLCoverView.setVisibility(8);
                             } else {
                                 ActivityBase.this.showBlurView(bitmap);

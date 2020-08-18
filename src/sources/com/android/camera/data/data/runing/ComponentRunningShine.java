@@ -347,7 +347,7 @@ public class ComponentRunningShine extends ComponentData {
             return true;
         }
         if (i != 169 || !this.mSupportSmoothLevel) {
-            return (i != 180 || !this.mSupportVideoFilter) ? false : true;
+            return i == 180 && this.mSupportVideoFilter;
         }
         return true;
     }

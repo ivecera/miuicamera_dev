@@ -30,7 +30,7 @@ public class ThumbnailUpdater {
         public Thumbnail doInBackground(Void... voidArr) {
             int i;
             Log.d(ThumbnailUpdater.TAG, "LoadThumbnailTask execute, lookatcache=" + this.mLookAtCache);
-            if (isCancelled() == 1) {
+            if (isCancelled()) {
                 return null;
             }
             if (ThumbnailUpdater.this.mThumbnail != null) {
@@ -39,17 +39,17 @@ public class ThumbnailUpdater {
                     return ThumbnailUpdater.this.mThumbnail;
                 }
                 Module currentModule = ThumbnailUpdater.this.mActivityBase.getCurrentModule();
-                if (currentModule != null && currentModule.shouldReleaseLater() == 1) {
+                if (currentModule != null && currentModule.shouldReleaseLater()) {
                     return ThumbnailUpdater.this.mThumbnail;
                 }
             }
-            Thumbnail lastThumbnailFromFile = (((ThumbnailUpdater.this.mActivityBase.startFromSecureKeyguard() == 1 || ThumbnailUpdater.this.mActivityBase.isGalleryLocked() == 1) && (ThumbnailUpdater.this.mActivityBase.getSecureUriList() == null || ThumbnailUpdater.this.mActivityBase.getSecureUriList().size() <= 0)) || !this.mLookAtCache) ? null : Thumbnail.getLastThumbnailFromFile(ThumbnailUpdater.this.mActivityBase.getFilesDir(), ThumbnailUpdater.this.mContentResolver);
-            if (isCancelled() == 1) {
+            Thumbnail lastThumbnailFromFile = (((ThumbnailUpdater.this.mActivityBase.startFromSecureKeyguard() || ThumbnailUpdater.this.mActivityBase.isGalleryLocked()) && (ThumbnailUpdater.this.mActivityBase.getSecureUriList() == null || ThumbnailUpdater.this.mActivityBase.getSecureUriList().size() <= 0)) || !this.mLookAtCache) ? null : Thumbnail.getLastThumbnailFromFile(ThumbnailUpdater.this.mActivityBase.getFilesDir(), ThumbnailUpdater.this.mContentResolver);
+            if (isCancelled()) {
                 return null;
             }
             Uri uri2 = lastThumbnailFromFile != null ? lastThumbnailFromFile.getUri() : null;
             Thumbnail[] thumbnailArr = new Thumbnail[1];
-            if (ThumbnailUpdater.this.mActivityBase.startFromSecureKeyguard() == 1 || ThumbnailUpdater.this.mActivityBase.isGalleryLocked() == 1) {
+            if (ThumbnailUpdater.this.mActivityBase.startFromSecureKeyguard() || ThumbnailUpdater.this.mActivityBase.isGalleryLocked()) {
                 i = Thumbnail.getLastThumbnailFromUriList(ThumbnailUpdater.this.mActivityBase, thumbnailArr, ThumbnailUpdater.this.mActivityBase.getSecureUriList(), uri2);
                 Log.d(ThumbnailUpdater.TAG, "get last thumbnail from uri list, code is " + i);
             } else {
@@ -77,7 +77,7 @@ public class ThumbnailUpdater {
             sb.append(thumbnail);
             sb.append(isCancelled() ? ", canceled" : ", not canceled");
             Log.d(ThumbnailUpdater.TAG, sb.toString());
-            if (isCancelled() != 1) {
+            if (!isCancelled()) {
                 ThumbnailUpdater.this.setThumbnail(thumbnail, true, false);
             }
         }
@@ -132,14 +132,14 @@ public class ThumbnailUpdater {
 
     public void saveThumbnailToFile() {
         Thumbnail thumbnail = this.mThumbnail;
-        if (thumbnail != null && thumbnail.fromFile() != 1) {
+        if (thumbnail != null && !thumbnail.fromFile()) {
             new SaveThumbnailTask().execute(this.mThumbnail);
         }
     }
 
     public void setThumbnail(Thumbnail thumbnail, boolean z, boolean z2) {
         this.mThumbnail = thumbnail;
-        if (z == 1) {
+        if (z) {
             updateThumbnailView(z2);
         }
     }

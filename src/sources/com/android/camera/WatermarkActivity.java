@@ -291,7 +291,7 @@ public class WatermarkActivity extends BasePreferenceActivity implements TextWat
         if (this.mUserDefineWatermark != null) {
             this.mDefindWatermark = CameraSettings.getCustomWatermark();
             ((ValuePreference) this.mUserDefineWatermark).setValue(this.mDefindWatermark.equals(CameraSettings.getDefaultWatermarkStr()) ? "" : this.mDefindWatermark);
-            ((ValuePreference) this.mUserDefineWatermark).setEnabled((!CameraSettings.isSupportedDualCameraWaterMark() || !((BasePreferenceActivity) this).mPreferences.getBoolean("pref_dualcamera_watermark_key", b.G(CameraSettings.getBool(R.bool.pref_device_watermark_default)))) ? false : true);
+            ((ValuePreference) this.mUserDefineWatermark).setEnabled(CameraSettings.isSupportedDualCameraWaterMark() && ((BasePreferenceActivity) this).mPreferences.getBoolean("pref_dualcamera_watermark_key", b.G(CameraSettings.getBool(R.bool.pref_device_watermark_default))));
         }
     }
 
